@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-22",
+  "code_commit": "ad018b6a505449777ab5745ff39e03b9f41e7107",
+  "recovered_commit": "3e5e4eb",
+  "deterministic_tests": {
+    "passed": 197,
+    "deselected": 1,
+    "command": "uv run pytest"
+  },
+  "pyright": {
+    "errors": 0,
+    "warnings": 0,
+    "command": "uv run pyright"
+  },
+  "ninerouter": {
+    "command": "uv run pytest -m ninerouter",
+    "skipped": 1,
+    "deselected": 197,
+    "real_model_calls": 0,
+    "reason": "No configured credential environment variables; no credential file was consumed."
+  },
+  "mlflow": {
+    "installed": false,
+    "tracking_configured": false,
+    "experiment_configured": false,
+    "evaluation_run": false
+  },
+  "backtest": {
+    "run_id": "codex-takeover-validation",
+    "period": [
+      "2026-10-04T00:00:00Z",
+      "2026-10-13T00:00:00Z"
+    ],
+    "decider": "BASELINE",
+    "trades": 9,
+    "decisions": 1726,
+    "realized_pnl_tmn": "-165497",
+    "return_pct": "-3.3099",
+    "fees_tmn": "64505",
+    "max_drawdown_pct": "3.3099",
+    "final_cash_tmn": "4834503",
+    "open_positions": 0,
+    "unresolved_orders": 0,
+    "artifact": "runs/published/codex-takeover-validation",
+    "code_commit": "bb76e58e29ba2706d7428353ac4b25339130355a"
+  },
+  "replay": {
+    "replay_run": "replay-of-codex-takeover-validation-44291e8b",
+    "decisions": 1726,
+    "identical_decisions": true,
+    "identical_trades": true,
+    "missing_recordings": 0,
+    "realized_pnl_tmn": "-165497"
+  },
+  "live": {
+    "enabled": false,
+    "private_wallex_calls": 0,
+    "real_order_writes": 0
+  },
+  "public_shadow": [
+    {
+      "run_id": "codex-public-advisor",
+      "autonomy": "ADVISOR",
+      "code": {
+        "git_commit": "bb76e58e29ba2706d7428353ac4b25339130355a",
+        "dirty": false
+      },
+      "period_start": "2026-10-22T13:08:03.604441+00:00",
+      "period_end": "2026-10-22T13:10:13.876261+00:00",
+      "decisions": 4,
+      "no_candidate_cycles": 4,
+      "trades": 0,
+      "entries_submitted": 0,
+      "execution_errors": 0,
+      "unresolved_orders": 0,
+      "real_order_writes": 0,
+      "model_calls": 0,
+      "source": "public Wallex REST; 1m smoke cadence; BASELINE; ShadowVenue"
+    },
+    {
+      "run_id": "codex-public-approval",
+      "autonomy": "APPROVAL_REQUIRED",
+      "code": {
+        "git_commit": "bb76e58e29ba2706d7428353ac4b25339130355a",
+        "dirty": false
+      },
+      "period_start": "2026-10-22T13:12:05.872117+00:00",
+      "period_end": "2026-10-22T13:14:32.762293+00:00",
+      "decisions": 4,
+      "no_candidate_cycles": 4,
+      "trades": 0,
+      "entries_submitted": 0,
+      "execution_errors": 0,
+      "unresolved_orders": 0,
+      "real_order_writes": 0,
+      "model_calls": 0,
+      "source": "public Wallex REST; 1m smoke cadence; BASELINE; ShadowVenue"
+    },
+    {
+      "run_id": "codex-public-autonomous",
+      "autonomy": "AUTONOMOUS",
+      "code": {
+        "git_commit": "391fe1cf654fc403fc3e2fb42606443386d1adfc",
+        "dirty": false
+      },
+      "period_start": "2026-10-22T13:15:27.726853+00:00",
+      "period_end": "2026-10-22T13:17:54.686512+00:00",
+      "decisions": 4,
+      "no_candidate_cycles": 4,
+      "trades": 0,
+      "entries_submitted": 0,
+      "execution_errors": 0,
+      "unresolved_orders": 0,
+      "real_order_writes": 0,
+      "model_calls": 0,
+      "source": "public Wallex REST; 1m smoke cadence; BASELINE; ShadowVenue"
+    }
+  ],
+  "phase03_status": "PARTIAL",
+  "safety_review": {
+    "reviewer": "GPT-6.1 Sol / max",
+    "recovered_branch_verdict": "CHANGES_REQUIRED",
+    "fix_verification": "author TDD pass; later Claude review required",
+    "restart": "refused; durable recovery not implemented"
+  },
+  "process_deviation": {
+    "commit": "391fe1c",
+    "issue": "new test strict generic-list annotation error was inspected after commit",
+    "corrected_by": "ad018b6",
+    "current_pyright_errors": 0
+  },
+  "secret_scan": {
+    "status": "PASS",
+    "report": "reports/phase-03/CODEX_SECRET_SCAN.json"
+  }
+}

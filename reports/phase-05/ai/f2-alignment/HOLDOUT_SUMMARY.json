@@ -1,0 +1,65 @@
+{
+ "frozen": {
+  "frozen_at": "2026-10-23T10:02:28.297250+00:00",
+  "role": "VETO",
+  "prompt_version": "veto_v1",
+  "prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346",
+  "brief_version": "f2-brief-1",
+  "brief_sha256": "1b91d728523b79699e9a12d59e90b9b71f1d9a55dd64091920460184f956e0e5",
+  "model_id": "cx/gpt-6.1-sol",
+  "note": "frozen before the 417-case holdout; not tuned afterwards"
+ },
+ "cases": 417,
+ "status_counts": {
+  "VALID": 415,
+  "UNKNOWN_REFERENCE": 2
+ },
+ "actions": {
+  "ENTER": 415,
+  "WAIT": 2
+ },
+ "wait_rate": 0.004796163069544364,
+ "model_wait_rate": 0.0,
+ "veto_unsupported": 0,
+ "invalid_candidate_references": 0,
+ "changed_vs_decision_v2": 351,
+ "changed_detail": {
+  "WAIT->ENTER": 351
+ },
+ "baseline_entry_points": 18,
+ "baseline_entry_points_entered_new": 17,
+ "baseline_entry_points_entered_v2": 0,
+ "veto_reasons": {},
+ "latency_ms_p50": 8035,
+ "latency_ms_max": 11816,
+ "responders": [
+  "ninerouter:gpt-6.1-sol"
+ ],
+ "tool_calls": 0,
+ "counterfactual_replay": {
+  "period": [
+   "2026-08-20T00:00:00+00:00",
+   "2026-10-13T00:00:00+00:00"
+  ],
+  "deterministic_f2_baseline": {
+   "trades": 18,
+   "net_pnl_tmn": "228155",
+   "wins": 13,
+   "max_drawdown_pct": "1.250"
+  },
+  "decision_v2_selector": {
+   "trades": 9,
+   "net_pnl_tmn": "186966",
+   "wins": 9,
+   "max_drawdown_pct": "0.704"
+  },
+  "frozen_veto": {
+   "trades": 18,
+   "net_pnl_tmn": "205845",
+   "wins": 13,
+   "max_drawdown_pct": "1.250"
+  }
+ },
+ "evidence_journal": "var/precheck/holdout-replay.sqlite run frozen-replay (git-ignored; export with wallex-agent evidence)",
+ "note": "retrospective holdout, run once after freezing; nothing tuned from it. Replay re-validates recorded outputs in the real kernel (risk, fills, exits); decision_v2 outputs are reconstructed from action/candidate only."
+}

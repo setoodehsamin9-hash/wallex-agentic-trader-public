@@ -1,0 +1,396 @@
+{
+ "schema_version": "1",
+ "experiment_id": "p04r2-test-f2",
+ "complete": true,
+ "status": "PASS",
+ "manifest_hash": "0cd4028a27b978541af3ae87853295e12cd91b348e1c072967d5b510108a65fb",
+ "test_evaluated": true,
+ "trials": [
+  {
+   "trial_id": "4f6f2aa894ea521cfdb65d5ddfc5abab7c8aa3f8e3b3a5153f37444feebcbf91",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "b866ce45e46e7354eecfd3b7e94eb4fa9885ee4abb15da0813e76cdee4d7ab1b",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "2b9ab2c996f2eeca51438f0aec43a1b305049bfdc75a41d411e09f92b243ddc8",
+   "split": {
+    "name": "x",
+    "role": "TEST",
+    "start_utc": "2026-10-13T00:00:00Z",
+    "end_utc": "2026-10-22T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "5be766dc528561255ec238e1afe728d846d3dd9e",
+    "dirty": false
+   },
+   "source_hash": "42807558933c5013d127f6b72095ad98999713662e3f1a111e3b5c5887b8e249",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:16:06.772694Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "4f6f2aa894ea521cfdb65d5ddfc5abab7c8aa3f8e3b3a5153f37444feebcbf91",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-10-13T00:00:00+00:00",
+    "period_end": "2026-10-22T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5009948.7845551791092000",
+    "cash_tmn": "5009948.7845551791092000",
+    "realized_pnl_tmn": "9948.7845551791092000",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "3880.4417673760908000",
+    "net_pnl_tmn": "9948.7845551791092000",
+    "realized_return_pct": "0.1990",
+    "return_pct": "0.1990",
+    "peak_equity_tmn": "5011358",
+    "max_drawdown_pct": "0.1262",
+    "trades": 2,
+    "wins": 1,
+    "losses": 1,
+    "win_rate_pct": "50.0000",
+    "avg_trade_pnl_tmn": "4974.3922775895546000",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "10577.4855444297342000",
+    "gross_loss_tmn": "628.7009892506250",
+    "profit_factor": "16.82435008896276996146685842",
+    "fee_burden_pct": "0.0776",
+    "avg_holding_s": "28800",
+    "time_in_market_pct": "4.6296",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 108,
+    "no_candidate_cycles": 101,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 1,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 2,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      3
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ],
+     [
+      "one_position_per_symbol",
+      1
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "978e7b0a0672755ae64f21b4dd04c4b81d84f1ab7f82baedc5f58d04cecb97ea"
+  },
+  {
+   "trial_id": "bb0ed70481eabff1554d19c1410d1fb7490498bf6a562321662a8e7f9b9e3f2b",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "1b7a6f8c8820cde6e0c470d2d73388f861caae3ff614b1df6902cbe88517a391",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "2b9ab2c996f2eeca51438f0aec43a1b305049bfdc75a41d411e09f92b243ddc8",
+   "split": {
+    "name": "x",
+    "role": "TEST",
+    "start_utc": "2026-10-13T00:00:00Z",
+    "end_utc": "2026-10-22T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "5be766dc528561255ec238e1afe728d846d3dd9e",
+    "dirty": false
+   },
+   "source_hash": "42807558933c5013d127f6b72095ad98999713662e3f1a111e3b5c5887b8e249",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:16:07.493180Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "bb0ed70481eabff1554d19c1410d1fb7490498bf6a562321662a8e7f9b9e3f2b",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-10-13T00:00:00+00:00",
+    "period_end": "2026-10-22T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5007346.690254773975780",
+    "cash_tmn": "5007346.690254773975780",
+    "realized_pnl_tmn": "7346.690254773975780",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "5283.180154732224220",
+    "net_pnl_tmn": "7346.690254773975780",
+    "realized_return_pct": "0.1469",
+    "return_pct": "0.1469",
+    "peak_equity_tmn": "5009116",
+    "max_drawdown_pct": "0.1229",
+    "trades": 2,
+    "wins": 1,
+    "losses": 1,
+    "win_rate_pct": "50.0000",
+    "avg_trade_pnl_tmn": "3673.345127386987890",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "8940.904286388690780",
+    "gross_loss_tmn": "1594.214031614715",
+    "profit_factor": "5.608346250304176512886473356",
+    "fee_burden_pct": "0.1057",
+    "avg_holding_s": "28800",
+    "time_in_market_pct": "4.6296",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 108,
+    "no_candidate_cycles": 101,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 1,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 2,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      3
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ],
+     [
+      "one_position_per_symbol",
+      1
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "4720aa9870b33e571d340d444355a3d8d141b9c87610a4facfbae4b8aff3d874"
+  },
+  {
+   "trial_id": "c1e7f183ff7d00d494d5125a72818508503c08e6a6d2f739a1318e893de3001b",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "bf29082355b162e4d189e6654f0e516dc6f272d35520a27741ca45447a420961",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "2b9ab2c996f2eeca51438f0aec43a1b305049bfdc75a41d411e09f92b243ddc8",
+   "split": {
+    "name": "x",
+    "role": "TEST",
+    "start_utc": "2026-10-13T00:00:00Z",
+    "end_utc": "2026-10-22T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "5be766dc528561255ec238e1afe728d846d3dd9e",
+    "dirty": false
+   },
+   "source_hash": "42807558933c5013d127f6b72095ad98999713662e3f1a111e3b5c5887b8e249",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:16:08.218446Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "c1e7f183ff7d00d494d5125a72818508503c08e6a6d2f739a1318e893de3001b",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-10-13T00:00:00+00:00",
+    "period_end": "2026-10-22T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5010912.5927010575226600",
+    "cash_tmn": "5010912.5927010575226600",
+    "realized_pnl_tmn": "10912.5927010575226600",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "3162.1310842299273400",
+    "net_pnl_tmn": "10912.5927010575226600",
+    "realized_return_pct": "0.2183",
+    "return_pct": "0.2183",
+    "peak_equity_tmn": "5012353",
+    "max_drawdown_pct": "0.1286",
+    "trades": 2,
+    "wins": 1,
+    "losses": 1,
+    "win_rate_pct": "50.0000",
+    "avg_trade_pnl_tmn": "5456.2963505287613300",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "11214.5306850350326600",
+    "gross_loss_tmn": "301.9379839775100",
+    "profit_factor": "37.14183468175488818920069174",
+    "fee_burden_pct": "0.0632",
+    "avg_holding_s": "28800",
+    "time_in_market_pct": "4.6296",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 108,
+    "no_candidate_cycles": 101,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 1,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 2,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      3
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ],
+     [
+      "one_position_per_symbol",
+      1
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "8dc3588b07c625aec6d1338d232b460405a6bf90fe6664d3c5196919128d023b"
+  }
+ ],
+ "observations": [
+  {
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "x/base: 2 < 5"
+  },
+  {
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "x/adverse: 2 < 5"
+  },
+  {
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "x/low: 2 < 5"
+  }
+ ],
+ "configurations_for_claude_review": [
+  "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b"
+ ],
+ "review_policy": "all configurations, ordered by hash; no ranking, selection or KEEP/MODIFY/REJECT decision",
+ "metric_definitions": {
+  "gross_profit_tmn": "sum of positive CLOSED trade net P&L after fees",
+  "gross_loss_tmn": "absolute sum of negative CLOSED trade net P&L after fees",
+  "profit_factor": "gross_profit / gross_loss; null when gross_loss = 0",
+  "fee_burden_pct": "all fees paid / starting capital * 100",
+  "time_in_market_pct": "union of holding intervals / split duration * 100",
+  "undefined": "null in JSON; empty in CSV; — in Persian report"
+ }
+}

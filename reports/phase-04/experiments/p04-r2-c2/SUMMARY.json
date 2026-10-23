@@ -1,0 +1,3895 @@
+{
+ "schema_version": "1",
+ "experiment_id": "p04-r2-c2",
+ "complete": true,
+ "status": "PASS",
+ "manifest_hash": "a801961d224e4acc99758aeade2547746283e88ffc2df044f754db2cc1afce74",
+ "test_evaluated": false,
+ "trials": [
+  {
+   "trial_id": "38c2570de3bb869176e18d8a9fc0ee91e6b7192a4179a5fcb65878d3ab51f077",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "e7198cfa969b5664f4998e7d187e76ac8dd445bc43191e4637ae3a96aed7a878",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "0826426a4249c8941e5b2db2592c0fef51190eddf33e4b5dffbeb9a6dc585acc",
+   "split": {
+    "name": "t1",
+    "role": "TRAIN",
+    "start_utc": "2026-09-10T00:00:00Z",
+    "end_utc": "2026-09-17T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:20.998260Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "38c2570de3bb869176e18d8a9fc0ee91e6b7192a4179a5fcb65878d3ab51f077",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-10T00:00:00+00:00",
+    "period_end": "2026-09-17T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4906231.9206101839897625",
+    "cash_tmn": "4906231.9206101839897625",
+    "realized_pnl_tmn": "-93768.0793898160102375",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "19913.1710894017552375",
+    "net_pnl_tmn": "-93768.0793898160102375",
+    "realized_return_pct": "-1.8754",
+    "return_pct": "-1.8754",
+    "peak_equity_tmn": "5033278",
+    "max_drawdown_pct": "2.5241",
+    "trades": 5,
+    "wins": 0,
+    "losses": 5,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-18753.6158779632020475",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "93768.0793898160102375",
+    "profit_factor": "0E+16",
+    "fee_burden_pct": "0.3983",
+    "avg_holding_s": "115128",
+    "time_in_market_pct": "60.3770",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 336,
+    "no_candidate_cycles": 273,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 54,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      59
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      53
+     ],
+     [
+      "max_open_positions",
+      46
+     ],
+     [
+      "drawdown_pause",
+      2
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "d90b3ace73d6940fa5da34805e24333b30f367bfcf49db238b70fc1fd001444a"
+  },
+  {
+   "trial_id": "d8b6ae9a212523a63bb65064f490deb0234f8e4d9a4de27ee7b3609e2753aae9",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "f3f0d037a0b8ad8147babc82f46341d6554c3161e9fffa75301f8671f94eae62",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "0826426a4249c8941e5b2db2592c0fef51190eddf33e4b5dffbeb9a6dc585acc",
+   "split": {
+    "name": "t1",
+    "role": "TRAIN",
+    "start_utc": "2026-09-10T00:00:00Z",
+    "end_utc": "2026-09-17T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:21.482607Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "d8b6ae9a212523a63bb65064f490deb0234f8e4d9a4de27ee7b3609e2753aae9",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-10T00:00:00+00:00",
+    "period_end": "2026-09-17T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4896654.727005865409450",
+    "cash_tmn": "4896654.727005865409450",
+    "realized_pnl_tmn": "-103345.272994134590550",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "20725.796431458010550",
+    "net_pnl_tmn": "-103345.272994134590550",
+    "realized_return_pct": "-2.0669",
+    "return_pct": "-2.0669",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "2.1446",
+    "trades": 5,
+    "wins": 0,
+    "losses": 5,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-20669.054598826918110",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "103345.272994134590550",
+    "profit_factor": "0E+15",
+    "fee_burden_pct": "0.4145",
+    "avg_holding_s": "75288",
+    "time_in_market_pct": "45.3869",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 336,
+    "no_candidate_cycles": 313,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 14,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      19
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      14
+     ],
+     [
+      "max_open_positions",
+      7
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "894cdadbd051a9edc483a014372483cd5486376c84352555e81d3afc34d0282f"
+  },
+  {
+   "trial_id": "87c46d536445116475fc9e4ceaa8b41cff9b1b54d0ae330e68c5c8336e04c5b4",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "28a31fb7b5e15b63d1dd9a15f500c77e80d94665ad97f8a5f13890036be53f95",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "0826426a4249c8941e5b2db2592c0fef51190eddf33e4b5dffbeb9a6dc585acc",
+   "split": {
+    "name": "t1",
+    "role": "TRAIN",
+    "start_utc": "2026-09-10T00:00:00Z",
+    "end_utc": "2026-09-17T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:21.978313Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "87c46d536445116475fc9e4ceaa8b41cff9b1b54d0ae330e68c5c8336e04c5b4",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-10T00:00:00+00:00",
+    "period_end": "2026-09-17T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4883817.0127795650557300",
+    "cash_tmn": "4883817.0127795650557300",
+    "realized_pnl_tmn": "-116182.9872204349442700",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "20898.4030656067992700",
+    "net_pnl_tmn": "-116182.9872204349442700",
+    "realized_return_pct": "-2.3237",
+    "return_pct": "-2.3237",
+    "peak_equity_tmn": "5017637",
+    "max_drawdown_pct": "2.6670",
+    "trades": 6,
+    "wins": 0,
+    "losses": 6,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-19363.8312034058240450",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "116182.9872204349442700",
+    "profit_factor": "0E+16",
+    "fee_burden_pct": "0.4180",
+    "avg_holding_s": "102940",
+    "time_in_market_pct": "60.3770",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 336,
+    "no_candidate_cycles": 268,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 58,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 6,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      64
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      57
+     ],
+     [
+      "max_open_positions",
+      54
+     ],
+     [
+      "drawdown_pause",
+      4
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "cb52c9d6cdd4948e2166594044e7b062e3f1e0b483aaed3b5b1cf31ce2056268"
+  },
+  {
+   "trial_id": "097091837f7132774eabf502a55cbff5376cc58ee6cf643a01daf138df4cb14a",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "bea0383c273fac71e5bcbbefaa749b6590ed98d7ebcf9929bb5f740b52e3f56d",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "15db2a07412fff4759cd9646452ad7c3dc66a59d44558280b294a4a021141f81",
+   "split": {
+    "name": "t2",
+    "role": "TRAIN",
+    "start_utc": "2026-09-17T00:00:00Z",
+    "end_utc": "2026-09-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:22.545084Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "097091837f7132774eabf502a55cbff5376cc58ee6cf643a01daf138df4cb14a",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-17T00:00:00+00:00",
+    "period_end": "2026-09-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5147797.8072751244530250",
+    "cash_tmn": "5147797.8072751244530250",
+    "realized_pnl_tmn": "147797.8072751244530250",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "18742.4429158534769750",
+    "net_pnl_tmn": "147797.8072751244530250",
+    "realized_return_pct": "2.9560",
+    "return_pct": "2.9560",
+    "peak_equity_tmn": "5176317",
+    "max_drawdown_pct": "1.0013",
+    "trades": 5,
+    "wins": 5,
+    "losses": 0,
+    "win_rate_pct": "100.0000",
+    "avg_trade_pnl_tmn": "29559.5614550248906050",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "147797.8072751244530250",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.3748",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "86.9048",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 332,
+    "no_candidate_cycles": 147,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 127,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      132
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      127
+     ],
+     [
+      "max_open_positions",
+      109
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "60dcc41026213c59f96bc47fecc608c238639135c627f4ab7dd59c95a58836f4"
+  },
+  {
+   "trial_id": "db3568244b8a452294d1e40287288b9dbb6833ef18c87d55b298ca6a524c06e6",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "aa3ab907d64d175d0cbbe177e2779ea43f80fe3f274b4d47a6888260fdfe0da5",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "15db2a07412fff4759cd9646452ad7c3dc66a59d44558280b294a4a021141f81",
+   "split": {
+    "name": "t2",
+    "role": "TRAIN",
+    "start_utc": "2026-09-17T00:00:00Z",
+    "end_utc": "2026-09-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:23.022704Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "db3568244b8a452294d1e40287288b9dbb6833ef18c87d55b298ca6a524c06e6",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-17T00:00:00+00:00",
+    "period_end": "2026-09-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5057248.103851818045510",
+    "cash_tmn": "5057248.103851818045510",
+    "realized_pnl_tmn": "57248.103851818045510",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "17306.105459397734490",
+    "net_pnl_tmn": "57248.103851818045510",
+    "realized_return_pct": "1.1450",
+    "return_pct": "1.1450",
+    "peak_equity_tmn": "5077464",
+    "max_drawdown_pct": "1.0145",
+    "trades": 4,
+    "wins": 3,
+    "losses": 1,
+    "win_rate_pct": "75.0000",
+    "avg_trade_pnl_tmn": "14312.0259629545113775",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "59398.432481528005",
+    "gross_loss_tmn": "2150.328629709959490",
+    "profit_factor": "27.62295570121287980027833758",
+    "fee_burden_pct": "0.3461",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "91.6667",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 332,
+    "no_candidate_cycles": 216,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 59,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 4,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      63
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      59
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "max_open_positions",
+      22
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "6377a6818a8952204ee2b398f4890148add4ba96e69d9621dad72d3dbda5a4dc"
+  },
+  {
+   "trial_id": "0bac8e386e4b50f8fff3f72799af5b40e4739aa2a819f6105bc96f30b48db267",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "bae4c8b947e3e6dad636ebe270a7776d31a3b0fb53bd20b6d7db54020f5629c3",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "15db2a07412fff4759cd9646452ad7c3dc66a59d44558280b294a4a021141f81",
+   "split": {
+    "name": "t2",
+    "role": "TRAIN",
+    "start_utc": "2026-09-17T00:00:00Z",
+    "end_utc": "2026-09-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:23.602839Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "0bac8e386e4b50f8fff3f72799af5b40e4739aa2a819f6105bc96f30b48db267",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-17T00:00:00+00:00",
+    "period_end": "2026-09-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5176506.3655681537932600",
+    "cash_tmn": "5176506.3655681537932600",
+    "realized_pnl_tmn": "176506.3655681537932600",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "20464.4125599772467400",
+    "net_pnl_tmn": "176506.3655681537932600",
+    "realized_return_pct": "3.5301",
+    "return_pct": "3.5301",
+    "peak_equity_tmn": "5200746",
+    "max_drawdown_pct": "1.5178",
+    "trades": 6,
+    "wins": 6,
+    "losses": 0,
+    "win_rate_pct": "100.0000",
+    "avg_trade_pnl_tmn": "29417.72759469229887666666667",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "176506.3655681537932600",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.4093",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "88.6905",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 332,
+    "no_candidate_cycles": 127,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 146,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 6,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      152
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      146
+     ],
+     [
+      "max_open_positions",
+      142
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "a4abf64eb45a0b31e2dbe940ccfd00b87d35dcbb370f1bf2239368f78c9c5615"
+  },
+  {
+   "trial_id": "62ed988f8939cbcf204b7513a7b381505c56f34c2f28537d7a0136b6f03505fb",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "8af1856dea5f418567d6ddeac475a5666de6f5469cab6f33faba3cc0683b2720",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "283a9384fc3599652319c106e81f76168585142872fa3d79cc2aec76422035b2",
+   "split": {
+    "name": "t3",
+    "role": "TRAIN",
+    "start_utc": "2026-09-24T00:00:00Z",
+    "end_utc": "2026-10-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:24.217563Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "62ed988f8939cbcf204b7513a7b381505c56f34c2f28537d7a0136b6f03505fb",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-24T00:00:00+00:00",
+    "period_end": "2026-10-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5060869.9305054755445125",
+    "cash_tmn": "5060869.9305054755445125",
+    "realized_pnl_tmn": "60869.9305054755445125",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "26111.6117124555504875",
+    "net_pnl_tmn": "60869.9305054755445125",
+    "realized_return_pct": "1.2174",
+    "return_pct": "1.2174",
+    "peak_equity_tmn": "5095330",
+    "max_drawdown_pct": "1.3579",
+    "trades": 6,
+    "wins": 2,
+    "losses": 4,
+    "win_rate_pct": "33.3333",
+    "avg_trade_pnl_tmn": "10144.98841757925741875",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "99812.5392711026487000",
+    "gross_loss_tmn": "38942.6087656271041875",
+    "profit_factor": "2.563067612440045483105764920",
+    "fee_burden_pct": "0.5222",
+    "avg_holding_s": "124260",
+    "time_in_market_pct": "69.0972",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 334,
+    "no_candidate_cycles": 161,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 114,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 6,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      120
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      114
+     ],
+     [
+      "max_open_positions",
+      106
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "f470524a36c740534eaf5c7cf84522e764534614e01a3dfa83201e3c6e93ac62"
+  },
+  {
+   "trial_id": "b55f5f42ef7355796056c6f2a5c4eead4d811b5359cf69fe4b3dbd10ac9630e0",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "788e80188eff326bc35f702faaf6e0bcb6836b1375390b89162c8bd45b5f1e6c",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "283a9384fc3599652319c106e81f76168585142872fa3d79cc2aec76422035b2",
+   "split": {
+    "name": "t3",
+    "role": "TRAIN",
+    "start_utc": "2026-09-24T00:00:00Z",
+    "end_utc": "2026-10-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:24.671355Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "b55f5f42ef7355796056c6f2a5c4eead4d811b5359cf69fe4b3dbd10ac9630e0",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-24T00:00:00+00:00",
+    "period_end": "2026-10-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5011195.510959804241835",
+    "cash_tmn": "5011195.510959804241835",
+    "realized_pnl_tmn": "11195.510959804241835",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "13914.156020680948165",
+    "net_pnl_tmn": "11195.510959804241835",
+    "realized_return_pct": "0.2239",
+    "return_pct": "0.2239",
+    "peak_equity_tmn": "5051645",
+    "max_drawdown_pct": "0.9560",
+    "trades": 3,
+    "wins": 2,
+    "losses": 1,
+    "win_rate_pct": "66.6667",
+    "avg_trade_pnl_tmn": "3731.836986601413945",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "16702.212991123541835",
+    "gross_loss_tmn": "5506.702031319300",
+    "profit_factor": "3.033070047394958198141661870",
+    "fee_burden_pct": "0.2783",
+    "avg_holding_s": "153000",
+    "time_in_market_pct": "60.4167",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 334,
+    "no_candidate_cycles": 244,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 34,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 3,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      37
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "one_position_per_symbol",
+      34
+     ],
+     [
+      "max_open_positions",
+      16
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "23be7cb05fea4ddfe4d38b5d1471e8d1ebf7d948cfb851df0d12ccd34725a062"
+  },
+  {
+   "trial_id": "b6875dbb34943c0ff6d015d219821b4daa4b78ee11b481739f5c558939ab3963",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "3adbfef168485f0d043b950d09beded43eb7a4a73f8612199f885e7444cf162a",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "283a9384fc3599652319c106e81f76168585142872fa3d79cc2aec76422035b2",
+   "split": {
+    "name": "t3",
+    "role": "TRAIN",
+    "start_utc": "2026-09-24T00:00:00Z",
+    "end_utc": "2026-10-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:25.255735Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "b6875dbb34943c0ff6d015d219821b4daa4b78ee11b481739f5c558939ab3963",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-24T00:00:00+00:00",
+    "period_end": "2026-10-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5050229.7245779048758400",
+    "cash_tmn": "5050229.7245779048758400",
+    "realized_pnl_tmn": "50229.7245779048758400",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "33084.2400413385941600",
+    "net_pnl_tmn": "50229.7245779048758400",
+    "realized_return_pct": "1.0046",
+    "return_pct": "1.0046",
+    "peak_equity_tmn": "5107776",
+    "max_drawdown_pct": "1.4346",
+    "trades": 9,
+    "wins": 2,
+    "losses": 7,
+    "win_rate_pct": "22.2222",
+    "avg_trade_pnl_tmn": "5581.080508656097315555555556",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "145645.8816959605990000",
+    "gross_loss_tmn": "95416.1571180557231600",
+    "profit_factor": "1.526427872333582379345657103",
+    "fee_burden_pct": "0.6617",
+    "avg_holding_s": "89053.33333333333333333333333",
+    "time_in_market_pct": "71.2103",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 334,
+    "no_candidate_cycles": 149,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 123,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 9,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      132
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      123
+     ],
+     [
+      "max_open_positions",
+      118
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "1f4f1c53dda0ea125dabcf14be983def597437542e198782683fc3560558b14c"
+  },
+  {
+   "trial_id": "838f5635c26608291b3195ce49811f8462275c8d372d497a5a32b647eaec406c",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "457ba2dc1accb2a7e97caf3042176dad85fbf7cf813da2617114c72b23385a7f",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "65b1efcee6efc8e4ed444bb26231abc3792f3833c4bdd2a3ed86277379820170",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-01T00:00:00Z",
+    "end_utc": "2026-10-07T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:25.710586Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "838f5635c26608291b3195ce49811f8462275c8d372d497a5a32b647eaec406c",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-01T00:00:00+00:00",
+    "period_end": "2026-10-07T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5059730.0605159628130125",
+    "cash_tmn": "5059730.0605159628130125",
+    "realized_pnl_tmn": "59730.0605159628130125",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "21037.4416822452019875",
+    "net_pnl_tmn": "59730.0605159628130125",
+    "realized_return_pct": "1.1946",
+    "return_pct": "1.1946",
+    "peak_equity_tmn": "5093691",
+    "max_drawdown_pct": "1.1186",
+    "trades": 5,
+    "wins": 3,
+    "losses": 2,
+    "win_rate_pct": "60.0000",
+    "avg_trade_pnl_tmn": "11946.0121031925626025",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "72978.6984639107349750",
+    "gross_loss_tmn": "13248.6379479479219625",
+    "profit_factor": "5.508392541983109013280292311",
+    "fee_burden_pct": "0.4207",
+    "avg_holding_s": "164520",
+    "time_in_market_pct": "94.7917",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 288,
+    "no_candidate_cycles": 208,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 71,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      76
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      71
+     ],
+     [
+      "max_open_positions",
+      61
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "a4d06ff36eb3d4c2c9d32fd3005ef6abc86b54c0938c2663979d1695f7c959ab"
+  },
+  {
+   "trial_id": "63c94b6cfaef5bc6167899b96fc3159ab97cd1d2219eb30ea0501f7b217e112b",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "8df95ae4f7c0c03c48a08f63943f1b4303c2abb704ed91ff06f0d0ce5c5a1a60",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "65b1efcee6efc8e4ed444bb26231abc3792f3833c4bdd2a3ed86277379820170",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-01T00:00:00Z",
+    "end_utc": "2026-10-07T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:26.097337Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "63c94b6cfaef5bc6167899b96fc3159ab97cd1d2219eb30ea0501f7b217e112b",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-01T00:00:00+00:00",
+    "period_end": "2026-10-07T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5044249.991864862775175",
+    "cash_tmn": "5044249.991864862775175",
+    "realized_pnl_tmn": "44249.991864862775175",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "8805.803193749974825",
+    "net_pnl_tmn": "44249.991864862775175",
+    "realized_return_pct": "0.8850",
+    "return_pct": "0.8850",
+    "peak_equity_tmn": "5047727",
+    "max_drawdown_pct": "0.9452",
+    "trades": 2,
+    "wins": 2,
+    "losses": 0,
+    "win_rate_pct": "100.0000",
+    "avg_trade_pnl_tmn": "22124.9959324313875875",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "44249.991864862775175",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.1761",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "34.0278",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 288,
+    "no_candidate_cycles": 265,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 17,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 2,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      19
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      17
+     ],
+     [
+      "max_open_positions",
+      17
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "7b69355796902e81a5da1d629d3c74dc0ee10fe4ad7ce4ed96d6bd2e05ba229b"
+  },
+  {
+   "trial_id": "72de23cab73b3132a9494a211db4516b49e1b4dd9bd45b9dda85022321145cec",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "2ca73c89967ec5601c3b21e0e0ccddf58be1ac9982024cf73c1d3d93ec90ebca",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "65b1efcee6efc8e4ed444bb26231abc3792f3833c4bdd2a3ed86277379820170",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-01T00:00:00Z",
+    "end_utc": "2026-10-07T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:26.673787Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "72de23cab73b3132a9494a211db4516b49e1b4dd9bd45b9dda85022321145cec",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-01T00:00:00+00:00",
+    "period_end": "2026-10-07T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5056805.0488759808705500",
+    "cash_tmn": "5056805.0488759808705500",
+    "realized_pnl_tmn": "56805.0488759808705500",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "26545.9684581489144500",
+    "net_pnl_tmn": "56805.0488759808705500",
+    "realized_return_pct": "1.1361",
+    "return_pct": "1.1361",
+    "peak_equity_tmn": "5119426",
+    "max_drawdown_pct": "1.3229",
+    "trades": 7,
+    "wins": 4,
+    "losses": 3,
+    "win_rate_pct": "57.1429",
+    "avg_trade_pnl_tmn": "8115.006982282981507142857143",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "116821.0296901630437300",
+    "gross_loss_tmn": "60015.9808141821731800",
+    "profit_factor": "1.946498717597521322560541060",
+    "fee_burden_pct": "0.5309",
+    "avg_holding_s": "123437.1428571428571428571429",
+    "time_in_market_pct": "94.0972",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 288,
+    "no_candidate_cycles": 166,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 111,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 7,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      118
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      111
+     ],
+     [
+      "max_open_positions",
+      111
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "38bafc20d3fedae855502c047d26e768278d8e88301f9973f82d681ffb58eaee"
+  },
+  {
+   "trial_id": "5baad6d0c77656696476aa2968a53581de5e339556d1c0effdba6b07917fbaf0",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "ea53a7a080bc116f659b4a10ea2181eadf826ae7c72cae842ece5b2bd0c64ff9",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "9d094c39a5ece158baf89fffa866a68f4245ff02dab502129200f35378566ed5",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-07T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:27.083136Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "5baad6d0c77656696476aa2968a53581de5e339556d1c0effdba6b07917fbaf0",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-07T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4910662.0229293111580000",
+    "cash_tmn": "4910662.0229293111580000",
+    "realized_pnl_tmn": "-89337.9770706888420000",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "20694.3552366468520000",
+    "net_pnl_tmn": "-89337.9770706888420000",
+    "realized_return_pct": "-1.7868",
+    "return_pct": "-1.7868",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "1.7868",
+    "trades": 5,
+    "wins": 0,
+    "losses": 5,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-17867.5954141377684000",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "89337.9770706888420000",
+    "profit_factor": "0E+16",
+    "fee_burden_pct": "0.4139",
+    "avg_holding_s": "94824",
+    "time_in_market_pct": "63.1713",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 286,
+    "no_candidate_cycles": 259,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 20,
+    "blocked": 0,
+    "outside_window_or_cutoff": 0,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      25
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      20
+     ],
+     [
+      "max_open_positions",
+      5
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "7dc5895d00981c0b7d40cae2bb40b97ace0102a88db297a0c283f1a35c06bd81"
+  },
+  {
+   "trial_id": "75b30daf4f2718b6b069edb990a4433454077b5a7169a4d02e29fee4382f3f1c",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "8323ddfd953e0f2fcaa90e10d1b0c8dcb68bac0391c94631c4588231512ea796",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "9d094c39a5ece158baf89fffa866a68f4245ff02dab502129200f35378566ed5",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-07T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:27.482995Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "75b30daf4f2718b6b069edb990a4433454077b5a7169a4d02e29fee4382f3f1c",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-07T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4975636.222216893056000",
+    "cash_tmn": "4975636.222216893056000",
+    "realized_pnl_tmn": "-24363.777783106944000",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "4185.656674379544000",
+    "net_pnl_tmn": "-24363.777783106944000",
+    "realized_return_pct": "-0.4873",
+    "return_pct": "-0.4873",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "0.4873",
+    "trades": 1,
+    "wins": 0,
+    "losses": 1,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-24363.777783106944000",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "24363.777783106944000",
+    "profit_factor": "0E+15",
+    "fee_burden_pct": "0.0837",
+    "avg_holding_s": "25560",
+    "time_in_market_pct": "4.9306",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 286,
+    "no_candidate_cycles": 282,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 1,
+    "blocked": 0,
+    "outside_window_or_cutoff": 0,
+    "entries_submitted": 1,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      2
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "DATA_QUALITY:GAP",
+      2
+     ],
+     [
+      "one_position_per_symbol",
+      1
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "eafba527fe2cb22f71529ee0f8199e3f583c2582c14f77bc92e4c9efcb51caa0"
+  },
+  {
+   "trial_id": "699dc0119584d1a1804b92be17e083d15a34f06167b7e4978e3e947fc9c50daa",
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "1018a4f8cf8884cbc97dddb9bb28591942966f001ac5f11092e049033c853581",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "9d094c39a5ece158baf89fffa866a68f4245ff02dab502129200f35378566ed5",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-07T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:27.907891Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "699dc0119584d1a1804b92be17e083d15a34f06167b7e4978e3e947fc9c50daa",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-07T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4911349.7579633004889000",
+    "cash_tmn": "4911349.7579633004889000",
+    "realized_pnl_tmn": "-88650.2420366995111000",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "17683.2723308726811000",
+    "net_pnl_tmn": "-88650.2420366995111000",
+    "realized_return_pct": "-1.7730",
+    "return_pct": "-1.7730",
+    "peak_equity_tmn": "5000496",
+    "max_drawdown_pct": "1.7827",
+    "trades": 5,
+    "wins": 0,
+    "losses": 5,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-17730.0484073399022200",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "88650.2420366995111000",
+    "profit_factor": "0E+16",
+    "fee_burden_pct": "0.3537",
+    "avg_holding_s": "94812",
+    "time_in_market_pct": "63.1597",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 286,
+    "no_candidate_cycles": 254,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 25,
+    "blocked": 0,
+    "outside_window_or_cutoff": 0,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      30
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      25
+     ],
+     [
+      "max_open_positions",
+      5
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "5f9ed5cb981ba7bb1df59829895a18a77eb3319bf5951e699cb3df57e4bb0852"
+  },
+  {
+   "trial_id": "4ae21c063ad27d4f2eb9f07b70c5cd78cd8393330f3bf617eb1ce739a0d7c19f",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "abdf295ed7593a94f68edd4f768c33ec18f49ffba8b995d31687584b8fcf7bcc",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "0826426a4249c8941e5b2db2592c0fef51190eddf33e4b5dffbeb9a6dc585acc",
+   "split": {
+    "name": "t1",
+    "role": "TRAIN",
+    "start_utc": "2026-09-10T00:00:00Z",
+    "end_utc": "2026-09-17T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:28.402434Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "4ae21c063ad27d4f2eb9f07b70c5cd78cd8393330f3bf617eb1ce739a0d7c19f",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-10T00:00:00+00:00",
+    "period_end": "2026-09-17T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4883088.3366326245205875",
+    "cash_tmn": "4883088.3366326245205875",
+    "realized_pnl_tmn": "-116911.6633673754794125",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "20096.4327352563044125",
+    "net_pnl_tmn": "-116911.6633673754794125",
+    "realized_return_pct": "-2.3382",
+    "return_pct": "-2.3382",
+    "peak_equity_tmn": "5023865",
+    "max_drawdown_pct": "2.8022",
+    "trades": 5,
+    "wins": 0,
+    "losses": 5,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-23382.3326734750958825",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "116911.6633673754794125",
+    "profit_factor": "0E+16",
+    "fee_burden_pct": "0.4019",
+    "avg_holding_s": "109872",
+    "time_in_market_pct": "56.0317",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 336,
+    "no_candidate_cycles": 293,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 34,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      39
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      34
+     ],
+     [
+      "max_open_positions",
+      29
+     ],
+     [
+      "drawdown_pause",
+      6
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "71a25dd0eb99a3c3ff1e0d52f8f4d39d37fc4af3f7d8fd1122044bac16d7a711"
+  },
+  {
+   "trial_id": "e152204371ad268ac32aaee4cde585c7ba27e44ddd67dff6f5dbcb90e97ae981",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "28fbf60c6b5c59461e891fddd032970b68d7a8efd7eb9554612ef9d41a1122c6",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "0826426a4249c8941e5b2db2592c0fef51190eddf33e4b5dffbeb9a6dc585acc",
+   "split": {
+    "name": "t1",
+    "role": "TRAIN",
+    "start_utc": "2026-09-10T00:00:00Z",
+    "end_utc": "2026-09-17T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:28.893639Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "e152204371ad268ac32aaee4cde585c7ba27e44ddd67dff6f5dbcb90e97ae981",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-10T00:00:00+00:00",
+    "period_end": "2026-09-17T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4905341.274573752819450",
+    "cash_tmn": "4905341.274573752819450",
+    "realized_pnl_tmn": "-94658.725426247180550",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "16179.505537630600550",
+    "net_pnl_tmn": "-94658.725426247180550",
+    "realized_return_pct": "-1.8932",
+    "return_pct": "-1.8932",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "1.8932",
+    "trades": 4,
+    "wins": 0,
+    "losses": 4,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-23664.6813565617951375",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "94658.725426247180550",
+    "profit_factor": "0E+15",
+    "fee_burden_pct": "0.3236",
+    "avg_holding_s": "91860",
+    "time_in_market_pct": "43.8988",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 336,
+    "no_candidate_cycles": 318,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 10,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 4,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      14
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      10
+     ],
+     [
+      "max_open_positions",
+      4
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "e1b7e9666c7afc4ba1bf34958befa35ba263f5622e44c744db219dc38fc25693"
+  },
+  {
+   "trial_id": "29bf3b134aaa43b67507f09192562f58602e2840ce462825f5a5944c23f53688",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "439882b24f41859d65dc500db78fc4d5116a8bbbd28b2359c4a45e0abfe631e1",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "0826426a4249c8941e5b2db2592c0fef51190eddf33e4b5dffbeb9a6dc585acc",
+   "split": {
+    "name": "t1",
+    "role": "TRAIN",
+    "start_utc": "2026-09-10T00:00:00Z",
+    "end_utc": "2026-09-17T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:29.381242Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "29bf3b134aaa43b67507f09192562f58602e2840ce462825f5a5944c23f53688",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-10T00:00:00+00:00",
+    "period_end": "2026-09-17T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4870640.2769100943975600",
+    "cash_tmn": "4870640.2769100943975600",
+    "realized_pnl_tmn": "-129359.7230899056024400",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "21920.1620590231124400",
+    "net_pnl_tmn": "-129359.7230899056024400",
+    "realized_return_pct": "-2.5872",
+    "return_pct": "-2.5872",
+    "peak_equity_tmn": "5033098",
+    "max_drawdown_pct": "3.2278",
+    "trades": 6,
+    "wins": 0,
+    "losses": 6,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-21559.95384831760040666666667",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "129359.7230899056024400",
+    "profit_factor": "0E+16",
+    "fee_burden_pct": "0.4384",
+    "avg_holding_s": "97800",
+    "time_in_market_pct": "56.4782",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 336,
+    "no_candidate_cycles": 288,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 38,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 6,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      44
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      37
+     ],
+     [
+      "max_open_positions",
+      35
+     ],
+     [
+      "drawdown_pause",
+      4
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "066b42542864dadb4454d2eac9165e0e26a24aa91d3c134da9617309ef0e60c9"
+  },
+  {
+   "trial_id": "0779399b1a345743ac3981cf94a77ef60864b40b5b682113dec7b403aedb9065",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "050869fce00941a11680f50eb65d9f195339d39839922354b0bf2086dc3a775c",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "15db2a07412fff4759cd9646452ad7c3dc66a59d44558280b294a4a021141f81",
+   "split": {
+    "name": "t2",
+    "role": "TRAIN",
+    "start_utc": "2026-09-17T00:00:00Z",
+    "end_utc": "2026-09-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:29.933852Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "0779399b1a345743ac3981cf94a77ef60864b40b5b682113dec7b403aedb9065",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-17T00:00:00+00:00",
+    "period_end": "2026-09-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5095217.9680802696630750",
+    "cash_tmn": "5095217.9680802696630750",
+    "realized_pnl_tmn": "95217.9680802696630750",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "19667.0991813009469250",
+    "net_pnl_tmn": "95217.9680802696630750",
+    "realized_return_pct": "1.9044",
+    "return_pct": "1.9044",
+    "peak_equity_tmn": "5123885",
+    "max_drawdown_pct": "1.3102",
+    "trades": 5,
+    "wins": 5,
+    "losses": 0,
+    "win_rate_pct": "100.0000",
+    "avg_trade_pnl_tmn": "19043.5936160539326150",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "95217.9680802696630750",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.3933",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "87.5000",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 332,
+    "no_candidate_cycles": 176,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 98,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      103
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      98
+     ],
+     [
+      "max_open_positions",
+      79
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "3410e6f34848769c14d828b8dffe67ecd3705ca6c19553528040943e0c960b97"
+  },
+  {
+   "trial_id": "e592fffdd262c8f0e84c1985166cee92a11de20ff5e5f8d670097d4169c4dcb1",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "195b18b7a453ed3463492bfd365a5ee74f156f5dae83868751ab4550c6c26995",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "15db2a07412fff4759cd9646452ad7c3dc66a59d44558280b294a4a021141f81",
+   "split": {
+    "name": "t2",
+    "role": "TRAIN",
+    "start_utc": "2026-09-17T00:00:00Z",
+    "end_utc": "2026-09-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:30.399709Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "e592fffdd262c8f0e84c1985166cee92a11de20ff5e5f8d670097d4169c4dcb1",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-17T00:00:00+00:00",
+    "period_end": "2026-09-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5022480.286908303108620",
+    "cash_tmn": "5022480.286908303108620",
+    "realized_pnl_tmn": "22480.286908303108620",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "13949.012857301251380",
+    "net_pnl_tmn": "22480.286908303108620",
+    "realized_return_pct": "0.4496",
+    "return_pct": "0.4496",
+    "peak_equity_tmn": "5045494",
+    "max_drawdown_pct": "1.0133",
+    "trades": 3,
+    "wins": 2,
+    "losses": 1,
+    "win_rate_pct": "66.6667",
+    "avg_trade_pnl_tmn": "7493.428969434369540",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "24617.091458580930",
+    "gross_loss_tmn": "2136.804550277821380",
+    "profit_factor": "11.52051620976765717214987211",
+    "fee_burden_pct": "0.2790",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "63.6905",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 332,
+    "no_candidate_cycles": 224,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 52,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 3,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      55
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      52
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "max_open_positions",
+      20
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "e7bb19bd12b8b1109797257274d58f866be36eb2eba5fa90f3eb32e751cc53d9"
+  },
+  {
+   "trial_id": "058202e719e7f1762ab7e8abca314eea93284f6f0981a3625d8aef5143c758f7",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "da656a5a64aaa6b571cb706e13c5aa0eea8bea842963696ccb805a820298a0d3",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "15db2a07412fff4759cd9646452ad7c3dc66a59d44558280b294a4a021141f81",
+   "split": {
+    "name": "t2",
+    "role": "TRAIN",
+    "start_utc": "2026-09-17T00:00:00Z",
+    "end_utc": "2026-09-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:30.951851Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "058202e719e7f1762ab7e8abca314eea93284f6f0981a3625d8aef5143c758f7",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-17T00:00:00+00:00",
+    "period_end": "2026-09-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5172723.7852244124274600",
+    "cash_tmn": "5172723.7852244124274600",
+    "realized_pnl_tmn": "172723.7852244124274600",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "17336.1309636385525400",
+    "net_pnl_tmn": "172723.7852244124274600",
+    "realized_return_pct": "3.4545",
+    "return_pct": "3.4545",
+    "peak_equity_tmn": "5199211",
+    "max_drawdown_pct": "1.5343",
+    "trades": 5,
+    "wins": 5,
+    "losses": 0,
+    "win_rate_pct": "100.0000",
+    "avg_trade_pnl_tmn": "34544.7570448824854920",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "172723.7852244124274600",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.3467",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "86.3095",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 332,
+    "no_candidate_cycles": 161,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 113,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      118
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      113
+     ],
+     [
+      "max_open_positions",
+      98
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "582e5575e1b91ac7cba6d8ba24d1aac4b7a6270a8a222484e3b981ebfe914dd1"
+  },
+  {
+   "trial_id": "6dfec9c4adf3dcde1f201f3224193addd51ffc259f1ad5c13bd9fdd8b2a40990",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "e2a476db412208c7884db16fafcb5454662dd3887dfc61f7f9177499086380ff",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "283a9384fc3599652319c106e81f76168585142872fa3d79cc2aec76422035b2",
+   "split": {
+    "name": "t3",
+    "role": "TRAIN",
+    "start_utc": "2026-09-24T00:00:00Z",
+    "end_utc": "2026-10-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:31.539440Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "6dfec9c4adf3dcde1f201f3224193addd51ffc259f1ad5c13bd9fdd8b2a40990",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-24T00:00:00+00:00",
+    "period_end": "2026-10-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5048686.7163230944952750",
+    "cash_tmn": "5048686.7163230944952750",
+    "realized_pnl_tmn": "48686.7163230944952750",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "25743.2594382948947250",
+    "net_pnl_tmn": "48686.7163230944952750",
+    "realized_return_pct": "0.9737",
+    "return_pct": "0.9737",
+    "peak_equity_tmn": "5083884",
+    "max_drawdown_pct": "1.3407",
+    "trades": 6,
+    "wins": 2,
+    "losses": 4,
+    "win_rate_pct": "33.3333",
+    "avg_trade_pnl_tmn": "8114.4527205157492125",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "96519.0387291347472750",
+    "gross_loss_tmn": "47832.3224060402520000",
+    "profit_factor": "2.017862271244148301178723255",
+    "fee_burden_pct": "0.5149",
+    "avg_holding_s": "124250",
+    "time_in_market_pct": "66.7163",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 334,
+    "no_candidate_cycles": 189,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 86,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 6,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      92
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      86
+     ],
+     [
+      "max_open_positions",
+      80
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "32979f4dca8a42768015cbab1fbc8da0f1da1407ec23cf7f026b3769c7a57c17"
+  },
+  {
+   "trial_id": "28015d58a52fa7449c5dd0250ab69efb8a5019f0caaebad506d08a4d07c02f0e",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "68affb4a37e66410356104b07ceaf4c24a8b097aaf42f413fbb1315037fdc5cc",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "283a9384fc3599652319c106e81f76168585142872fa3d79cc2aec76422035b2",
+   "split": {
+    "name": "t3",
+    "role": "TRAIN",
+    "start_utc": "2026-09-24T00:00:00Z",
+    "end_utc": "2026-10-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:31.998145Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "28015d58a52fa7449c5dd0250ab69efb8a5019f0caaebad506d08a4d07c02f0e",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-24T00:00:00+00:00",
+    "period_end": "2026-10-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4996390.507070094045050",
+    "cash_tmn": "4996390.507070094045050",
+    "realized_pnl_tmn": "-3609.492929905954950",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "13466.699298389174950",
+    "net_pnl_tmn": "-3609.492929905954950",
+    "realized_return_pct": "-0.0722",
+    "return_pct": "-0.0722",
+    "peak_equity_tmn": "5034745",
+    "max_drawdown_pct": "0.8785",
+    "trades": 3,
+    "wins": 1,
+    "losses": 2,
+    "win_rate_pct": "33.3333",
+    "avg_trade_pnl_tmn": "-1203.164309968651650",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "14886.329478347205",
+    "gross_loss_tmn": "18495.822408253159950",
+    "profit_factor": "0.8048482057064228743261715833",
+    "fee_burden_pct": "0.2693",
+    "avg_holding_s": "131400",
+    "time_in_market_pct": "60.4167",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 334,
+    "no_candidate_cycles": 253,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 25,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 3,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      28
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "one_position_per_symbol",
+      25
+     ],
+     [
+      "max_open_positions",
+      4
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "7da27ff41a577bb4c52598ded68de1c077571b1ccb617d1ba3b4ff499d6c23de"
+  },
+  {
+   "trial_id": "8c9c4680f11938f9f849a6a1291afdbb842511fed3e97d168660a37c007e9ded",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "26bc36f9aa77b6a99b091707e6effc7daf375b366379e0b8057885d22a74a97a",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "283a9384fc3599652319c106e81f76168585142872fa3d79cc2aec76422035b2",
+   "split": {
+    "name": "t3",
+    "role": "TRAIN",
+    "start_utc": "2026-09-24T00:00:00Z",
+    "end_utc": "2026-10-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:32.558739Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "8c9c4680f11938f9f849a6a1291afdbb842511fed3e97d168660a37c007e9ded",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-09-24T00:00:00+00:00",
+    "period_end": "2026-10-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5037011.3202260248462800",
+    "cash_tmn": "5037011.3202260248462800",
+    "realized_pnl_tmn": "37011.3202260248462800",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "28672.8430057256837200",
+    "net_pnl_tmn": "37011.3202260248462800",
+    "realized_return_pct": "0.7402",
+    "return_pct": "0.7402",
+    "peak_equity_tmn": "5083085",
+    "max_drawdown_pct": "1.4966",
+    "trades": 8,
+    "wins": 2,
+    "losses": 6,
+    "win_rate_pct": "25.0000",
+    "avg_trade_pnl_tmn": "4626.4150282531057850",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "118119.8590971967057000",
+    "gross_loss_tmn": "81108.5388711718594200",
+    "profit_factor": "1.456318419011486567569108059",
+    "fee_burden_pct": "0.5735",
+    "avg_holding_s": "99772.5",
+    "time_in_market_pct": "67.0437",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 334,
+    "no_candidate_cycles": 180,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 93,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 8,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      101
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      93
+     ],
+     [
+      "max_open_positions",
+      92
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      49
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "73d1702bccb74b065e1c44fe3cd50ee2d8ec52fa6f323d1b384be354d646d066"
+  },
+  {
+   "trial_id": "119a4e1e6ac18e4dd76fda667955be537ec61d82adcd4fa92f1f2ff1b998ebb1",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "64847eac4fc1cff22a334377d4a7c465d64f0281172f02123865a8a24e5f3f6d",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "65b1efcee6efc8e4ed444bb26231abc3792f3833c4bdd2a3ed86277379820170",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-01T00:00:00Z",
+    "end_utc": "2026-10-07T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:32.999015Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "119a4e1e6ac18e4dd76fda667955be537ec61d82adcd4fa92f1f2ff1b998ebb1",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-01T00:00:00+00:00",
+    "period_end": "2026-10-07T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5068126.5596826921303875",
+    "cash_tmn": "5068126.5596826921303875",
+    "realized_pnl_tmn": "68126.5596826921303875",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "16435.2514694975146125",
+    "net_pnl_tmn": "68126.5596826921303875",
+    "realized_return_pct": "1.3625",
+    "return_pct": "1.3625",
+    "peak_equity_tmn": "5090060",
+    "max_drawdown_pct": "1.1323",
+    "trades": 4,
+    "wins": 3,
+    "losses": 1,
+    "win_rate_pct": "75.0000",
+    "avg_trade_pnl_tmn": "17031.639920673032596875",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "69373.8652098661872750",
+    "gross_loss_tmn": "1247.3055271740568875",
+    "profit_factor": "55.61898323904831070831660203",
+    "fee_burden_pct": "0.3287",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "73.6111",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 288,
+    "no_candidate_cycles": 223,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 57,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 4,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      61
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      57
+     ],
+     [
+      "max_open_positions",
+      47
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "4c0b85d6e933efa635bc015f97130cc57615485a86c981495ac969e30546da0a"
+  },
+  {
+   "trial_id": "fd2c0ed7ec516fe8948d03c94ce2f9b8a17d4de394df923df62eb82352073328",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "426d96d9275ee0270b16d38a1652b6c7836accf4c6bf66928ed2e68773e5dfcd",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "65b1efcee6efc8e4ed444bb26231abc3792f3833c4bdd2a3ed86277379820170",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-01T00:00:00Z",
+    "end_utc": "2026-10-07T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:33.375039Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "fd2c0ed7ec516fe8948d03c94ce2f9b8a17d4de394df923df62eb82352073328",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-01T00:00:00+00:00",
+    "period_end": "2026-10-07T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5044249.991864862775175",
+    "cash_tmn": "5044249.991864862775175",
+    "realized_pnl_tmn": "44249.991864862775175",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "8805.803193749974825",
+    "net_pnl_tmn": "44249.991864862775175",
+    "realized_return_pct": "0.8850",
+    "return_pct": "0.8850",
+    "peak_equity_tmn": "5047727",
+    "max_drawdown_pct": "0.9452",
+    "trades": 2,
+    "wins": 2,
+    "losses": 0,
+    "win_rate_pct": "100.0000",
+    "avg_trade_pnl_tmn": "22124.9959324313875875",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "44249.991864862775175",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.1761",
+    "avg_holding_s": "172800",
+    "time_in_market_pct": "34.0278",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 288,
+    "no_candidate_cycles": 274,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 8,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 2,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      10
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      8
+     ],
+     [
+      "max_open_positions",
+      8
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "2953580237ba9c75d88dc00e83196b67ff4458b98472c98d25a82ee8e6ca245a"
+  },
+  {
+   "trial_id": "f301ca179c11d33b677fe41f9a0e02637a2cbcfb7d35d58249805d6b426b0dea",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "b49bb70f1971b56fb198b39e4b26221ff0bd81b9f25c7e92062a3d8e225d091d",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "65b1efcee6efc8e4ed444bb26231abc3792f3833c4bdd2a3ed86277379820170",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-01T00:00:00Z",
+    "end_utc": "2026-10-07T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:33.894071Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "f301ca179c11d33b677fe41f9a0e02637a2cbcfb7d35d58249805d6b426b0dea",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-01T00:00:00+00:00",
+    "period_end": "2026-10-07T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5055680.2395402294956600",
+    "cash_tmn": "5055680.2395402294956600",
+    "realized_pnl_tmn": "55680.2395402294956600",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "18574.7181446130143400",
+    "net_pnl_tmn": "55680.2395402294956600",
+    "realized_return_pct": "1.1136",
+    "return_pct": "1.1136",
+    "peak_equity_tmn": "5097898",
+    "max_drawdown_pct": "1.1664",
+    "trades": 5,
+    "wins": 4,
+    "losses": 1,
+    "win_rate_pct": "80.0000",
+    "avg_trade_pnl_tmn": "11136.0479080458991320",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "78749.6639161339956600",
+    "gross_loss_tmn": "23069.4243759045000",
+    "profit_factor": "3.413594662482617721916369761",
+    "fee_burden_pct": "0.3715",
+    "avg_holding_s": "144288",
+    "time_in_market_pct": "73.8889",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 288,
+    "no_candidate_cycles": 185,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 94,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      99
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      94
+     ],
+     [
+      "max_open_positions",
+      87
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "70908c8d5dd2165d8be96088e6d126dac124d506f93c7656a28031ff6a620608"
+  },
+  {
+   "trial_id": "475fbaa6ab76502334252b5b77615eede64b5f299f1b48b3eb7156734ca591f3",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "d54f1ea55a66b903f944c42b670294a161bb87c6ef134a0e08cf12e86030fb0f",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "9d094c39a5ece158baf89fffa866a68f4245ff02dab502129200f35378566ed5",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-07T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:34.275474Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "475fbaa6ab76502334252b5b77615eede64b5f299f1b48b3eb7156734ca591f3",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-07T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4934342.0518971107034125",
+    "cash_tmn": "4934342.0518971107034125",
+    "realized_pnl_tmn": "-65657.9481028892965875",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "13515.8520211281715875",
+    "net_pnl_tmn": "-65657.9481028892965875",
+    "realized_return_pct": "-1.3132",
+    "return_pct": "-1.3132",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "1.3132",
+    "trades": 3,
+    "wins": 0,
+    "losses": 3,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-21885.9827009630988625",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "65657.9481028892965875",
+    "profit_factor": "0E+16",
+    "fee_burden_pct": "0.2703",
+    "avg_holding_s": "89460",
+    "time_in_market_pct": "51.7708",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 286,
+    "no_candidate_cycles": 270,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 11,
+    "blocked": 0,
+    "outside_window_or_cutoff": 0,
+    "entries_submitted": 3,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      14
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      11
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "b180ed125cabe24c63b046679b6a450fa51628574fe3450243a6c4614ef123a9"
+  },
+  {
+   "trial_id": "09d1ddc0b77edf22d721ae305c034840271424dfbf8d38541f5b990e3a134eae",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "bcf7e7a0f7bb4b5f8b5bfc29b07e604b8cb55fab4a8573cd7b4fe9929c259ce1",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "9d094c39a5ece158baf89fffa866a68f4245ff02dab502129200f35378566ed5",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-07T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:34.624883Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "09d1ddc0b77edf22d721ae305c034840271424dfbf8d38541f5b990e3a134eae",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-07T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5000000",
+    "cash_tmn": "5000000",
+    "realized_pnl_tmn": "0",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "0",
+    "net_pnl_tmn": "0",
+    "realized_return_pct": "0.0000",
+    "return_pct": "0.0000",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "0.0000",
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate_pct": null,
+    "avg_trade_pnl_tmn": null,
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.0000",
+    "avg_holding_s": null,
+    "time_in_market_pct": "0.0000",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 286,
+    "no_candidate_cycles": 284,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 0,
+    "blocked": 0,
+    "outside_window_or_cutoff": 0,
+    "entries_submitted": 0,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [],
+    "top_risk_blocks": [
+     [
+      "DATA_QUALITY:GAP",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "28459574cfb44a6de86ab583587c28abdc5d474609ef839dec545f7aab53322b"
+  },
+  {
+   "trial_id": "e56b7f69b62be693d2bbe8a027cf301ce5d79f415562d489ffff92692d761c24",
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "parameters": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "1",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1"
+   },
+   "config_hash": "9c199c28a65e84ac528c3c538b78776da9ebf55ba1596e1a01cf08ea37e95398",
+   "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+   "split_hash": "9d094c39a5ece158baf89fffa866a68f4245ff02dab502129200f35378566ed5",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-07T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "C2_trend_hold",
+   "strategy_version": "c2-0.2.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+    "dirty": false
+   },
+   "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T19:29:35.337029Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "e56b7f69b62be693d2bbe8a027cf301ce5d79f415562d489ffff92692d761c24",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04-c2-trend-hold-v2",
+    "period_start": "2026-10-07T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4931813.1092851038805000",
+    "cash_tmn": "4931813.1092851038805000",
+    "realized_pnl_tmn": "-68186.8907148961195000",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "12447.8672017308695000",
+    "net_pnl_tmn": "-68186.8907148961195000",
+    "realized_return_pct": "-1.3637",
+    "return_pct": "-1.3637",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "1.3637",
+    "trades": 3,
+    "wins": 0,
+    "losses": 3,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-22728.96357163203983333333333",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "0",
+    "gross_loss_tmn": "68186.8907148961195000",
+    "profit_factor": "0E+16",
+    "fee_burden_pct": "0.2490",
+    "avg_holding_s": "68560",
+    "time_in_market_pct": "39.6759",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 286,
+    "no_candidate_cycles": 265,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 16,
+    "blocked": 0,
+    "outside_window_or_cutoff": 0,
+    "entries_submitted": 3,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      19
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      16
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "c2-0.2.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "975a38f0517191af19aaa9451aa6eca67386f64ab43329b4b34ca3d8c608af0f"
+  }
+ ],
+ "observations": [
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t1/base: 5 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t1/adverse: 4 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t1/low: 6 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t2/base: 5 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t2/adverse: 3 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t2/low: 5 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t3/base: 6 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t3/adverse: 3 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t3/low: 8 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v1/base: 4 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v1/adverse: 2 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v1/low: 5 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v2/base: 3 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v2/adverse: 0 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v2/low: 3 < 10"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "RETURN_SIGN_CHANGE",
+   "detail": "positive and negative returns across base-cost periods"
+  },
+  {
+   "parameter_hash": "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+   "code": "COST_ERASED_POSITIVE_RETURN",
+   "detail": "t3: base → adverse"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t1/base: 5 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t1/adverse: 5 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t1/low: 6 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t2/base: 5 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t2/adverse: 4 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t2/low: 6 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t3/base: 6 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t3/adverse: 3 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "t3/low: 9 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v1/base: 5 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v1/adverse: 2 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v1/low: 7 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v2/base: 5 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v2/adverse: 1 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v2/low: 5 < 10"
+  },
+  {
+   "parameter_hash": "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc",
+   "code": "RETURN_SIGN_CHANGE",
+   "detail": "positive and negative returns across base-cost periods"
+  }
+ ],
+ "configurations_for_claude_review": [
+  "5066850feafa56104864475a39d619bc84704ef1eab7eab73181304f130d0a0e",
+  "6dec5c57d08ae9f769bbf5ccbae775333939a865efda16ddead971e7156b09cc"
+ ],
+ "review_policy": "all configurations, ordered by hash; no ranking, selection or KEEP/MODIFY/REJECT decision",
+ "metric_definitions": {
+  "gross_profit_tmn": "sum of positive CLOSED trade net P&L after fees",
+  "gross_loss_tmn": "absolute sum of negative CLOSED trade net P&L after fees",
+  "profit_factor": "gross_profit / gross_loss; null when gross_loss = 0",
+  "fee_burden_pct": "all fees paid / starting capital * 100",
+  "time_in_market_pct": "union of holding intervals / split duration * 100",
+  "undefined": "null in JSON; empty in CSV; — in Persian report"
+ }
+}

@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "base_commit": "751942e7d4e36c158247366651d1cdf7c47dd196",
+  "branch": "phase-05/observability-evidence",
+  "python": "3.12.13",
+  "checks": {
+    "pytest": {
+      "command": [
+        "uv",
+        "run",
+        "pytest"
+      ],
+      "exit_code": 0,
+      "output_tail": [
+        "........................................................................ [ 71%]",
+        "........................................................................ [ 85%]",
+        "........................................................................ [ 99%]",
+        "..                                                                       [100%]",
+        "504 passed, 2 skipped, 2 deselected in 91.84s (0:01:31)"
+      ]
+    },
+    "pyright": {
+      "command": [
+        "uv",
+        "run",
+        "pyright"
+      ],
+      "exit_code": 0,
+      "output_tail": [
+        "0 errors, 0 warnings, 0 informations"
+      ]
+    },
+    "pyright_first_attempt": {
+      "command": [
+        "uv",
+        "run",
+        "pyright"
+      ],
+      "exit_code": 1,
+      "output_tail": [
+        "      \"decide\" is an incompatible type",
+        "        Type \"(context: DecisionContext) -> tuple[ValidatedDecision, DecisionProvenance]\" is not assignable to type \"(ctx: DecisionContext) -> tuple[ValidatedDecision, DecisionProvenance]\"",
+        "          Parameter name mismatch: \"ctx\" versus \"context\" (reportArgumentType)",
+        "1 error, 0 warnings, 0 informations"
+      ]
+    },
+    "secret_scan": {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/phase04r2_verify.py",
+        "secrets"
+      ],
+      "exit_code": 0,
+      "files": 466,
+      "findings": 0
+    },
+    "pytest_first_attempt": {
+      "command": [
+        "uv",
+        "run",
+        "pytest"
+      ],
+      "exit_code": 0,
+      "output_tail": [
+        "........................................................................ [ 85%]",
+        "........................................................................ [ 99%]",
+        "..                                                                       [100%]",
+        "504 passed, 2 skipped, 2 deselected in 59.17s"
+      ]
+    },
+    "evidence_smoke": {
+      "BACKTEST": {
+        "run_id": "observability-smoke-backtest",
+        "real_wallex_write_count": 0,
+        "write_count_evidence": {
+          "method": "state-chain/execution-source cross-check v1",
+          "matched_state_events": 379,
+          "orders": 84,
+          "sources": [
+            "BACKTEST_SIM"
+          ],
+          "complete_operation_audit": false,
+          "reason": "Every persisted order/state is matched to this run's simulator source; scope is the observed journal prefix."
+        },
+        "decisions": 576,
+        "closed_trades": 42,
+        "source_directory_unchanged": true,
+        "fixed_timestamp_byte_identical": true,
+        "generation_time_independent_content_hash": true,
+        "bundle_reconstruction_matches": true,
+        "cli_export_identical": true,
+        "reproducible_content_sha256": "2d703b290bd4e25705bf9a8a75baa1751e849179532329aaeefb0526978f09a8",
+        "artifact_count": 16,
+        "bundle_path": "var/observability-final-gate/backtest-take-1"
+      },
+      "SHADOW": {
+        "run_id": "observability-smoke-shadow",
+        "real_wallex_write_count": 0,
+        "write_count_evidence": {
+          "method": "state-chain/execution-source cross-check v1",
+          "matched_state_events": 4,
+          "orders": 1,
+          "sources": [
+            "SHADOW_SIM"
+          ],
+          "complete_operation_audit": false,
+          "reason": "Every persisted order/state is matched to this run's simulator source; scope is the observed journal prefix."
+        },
+        "decisions": 1,
+        "closed_trades": 0,
+        "source_directory_unchanged": true,
+        "fixed_timestamp_byte_identical": true,
+        "generation_time_independent_content_hash": true,
+        "bundle_reconstruction_matches": true,
+        "cli_export_identical": true,
+        "reproducible_content_sha256": "1c664e3f3f509d2899e266246ddcb04d380535b4d25346073225344908eb95f1",
+        "artifact_count": 16,
+        "bundle_path": "var/observability-final-gate/shadow-take-1"
+      }
+    }
+  },
+  "wallex_private_calls": 0,
+  "wallex_write_calls": 0,
+  "real_model_calls": 0,
+  "note": "All runtime smoke inputs are synthetic fixtures; no challenge/live performance claim.",
+  "gate_repairs": [
+    "Test fixture protocol parameter renamed context to ctx.",
+    "Native-context demo display changed to canonical JSON; native bundle regression RED then GREEN; full pytest and strict typing rerun after this presentation-only fix."
+  ],
+  "review": {
+    "independent_passes": 1,
+    "important_findings": 5,
+    "fixed_with_red_green_regressions": 5,
+    "critical_findings": 0,
+    "deferred_minors": []
+  },
+  "completed_at_utc": "2026-10-23T05:22:37.839757+00:00"
+}

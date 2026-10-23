@@ -1,0 +1,3 @@
+{"at": "2026-10-23T05:42:08.983797+00:00", "kind": "RECOVERY_STARTED", "run_id": "sh-f2-drill", "environment": "SHADOW", "autonomy": "AUTONOMOUS", "venue_source": "SHADOW_SIM"}
+{"at": "2026-10-23T05:42:08.983797+00:00", "kind": "RECOVERY_STATE_RECONSTRUCTED", "records": 1, "orders": 0, "positions": [], "trades": 0, "cash_tmn": "5000000", "reserved_tmn": "0", "checkpoints_verified": 1}
+{"at": "2026-10-23T05:42:08.983797+00:00", "kind": "RECOVERY_READY", "phase": "DONE", "blockers": [], "warnings": [], "entry_gate": {}}

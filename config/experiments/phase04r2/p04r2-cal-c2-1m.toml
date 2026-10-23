@@ -1,0 +1,48 @@
+# Simulator calibration: C2 v0.2 baseline, kernel on 1m bars, VAL-B
+schema_version = "1"
+experiment_id = "p04r2-cal-c2-1m"
+base_config = "../phase04/base-1h-c2-v2.toml"
+dataset_dir = "../../../data/raw/historical-pack/export/datasets/1m"
+dataset_resolution_seconds = 60
+strategy_id = "C2_trend_hold"
+strategy_version = "c2-0.2.0"
+seed = 7
+max_trials = 9
+base_cost_id = "base"
+min_trades_observation = 5
+
+[[splits]]
+name = "v5"
+role = "VALIDATION"
+start_utc = 2026-07-24T00:00:00Z
+end_utc = 2026-08-20T00:00:00Z
+
+[[splits]]
+name = "v6"
+role = "VALIDATION"
+start_utc = 2026-08-20T00:00:00Z
+end_utc = 2026-09-16T00:00:00Z
+
+[[splits]]
+name = "v7"
+role = "VALIDATION"
+start_utc = 2026-09-16T00:00:00Z
+end_utc = 2026-10-13T00:00:00Z
+
+[[costs]]
+name = "base"
+fee_rate = "0.0025"
+slippage_bps = "5"
+fee_source = "ASSUMED"
+
+[[costs]]
+name = "adverse"
+fee_rate = "0.0035"
+slippage_bps = "10"
+fee_source = "ASSUMED"
+
+[[costs]]
+name = "low"
+fee_rate = "0.0020"
+slippage_bps = "5"
+fee_source = "ASSUMED"

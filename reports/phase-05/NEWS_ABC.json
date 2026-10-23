@@ -1,0 +1,58 @@
+{
+ "run": "sh-f2-p05",
+ "summary": {
+  "decisions": 2,
+  "A_entries": 2,
+  "B_candidates": 2,
+  "C_entries": 0,
+  "news_vetoes": 2,
+  "news_block_states": 2,
+  "news_unavailable": 0,
+  "verdict": "INCONCLUSIVE",
+  "note": "news is veto-only; subsequent-price and P&L comparison needs entries and forward data (none yet)"
+ },
+ "rows": [
+  {
+   "symbol": "BTCTMN",
+   "as_of": "2026-10-23T08:00:00+00:00",
+   "status": "WAITED",
+   "quality_flags": [],
+   "A_entry_signal": true,
+   "B_candidate": true,
+   "C_after_news": false,
+   "news_action": "BLOCK_NEW_ENTRIES",
+   "news_reason": "NEWS_SHOCK",
+   "news_context_id": "19558f1a1226fdaa79c287e7ca93b66fd73639f50e913360b1cb20a1979ecaaf",
+   "news_story_ids": [
+    "cb993b781deec5fd20fdde7c058ae714ceec2d64cf43d9910c8313051f7192e2"
+   ],
+   "close": "22184430941",
+   "ema48": "21783154270.06879778367503508",
+   "regime": {
+    "er_rank": "0.2583333333333333333333333333",
+    "vol_rank": "0.4638888888888888888888888889"
+   }
+  },
+  {
+   "symbol": "ETHTMN",
+   "as_of": "2026-10-23T08:00:00+00:00",
+   "status": "WAITED",
+   "quality_flags": [],
+   "A_entry_signal": true,
+   "B_candidate": true,
+   "C_after_news": false,
+   "news_action": "BLOCK_NEW_ENTRIES",
+   "news_reason": "NEWS_SHOCK",
+   "news_context_id": "ac435deb0c5e271c2b761b11956873a77834d0db8ce16261d10333599eea7ce0",
+   "news_story_ids": [
+    "cb993b781deec5fd20fdde7c058ae714ceec2d64cf43d9910c8313051f7192e2"
+   ],
+   "close": "653076584",
+   "ema48": "644663208.9035239932280115961",
+   "regime": {
+    "er_rank": "0.07222222222222222222222222222",
+    "vol_rank": "0.2148148148148148148148148148"
+   }
+  }
+ ]
+}

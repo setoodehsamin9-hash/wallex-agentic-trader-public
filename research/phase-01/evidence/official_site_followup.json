@@ -1,0 +1,49 @@
+{
+  "access_date": "2026-10-22",
+  "browser_result": "Dynamic plan page did not finish through browser automation; public HTTP HTML retrieved successfully. No login, account change or transaction performed.",
+  "pages": [
+    {
+      "url": "https://wallex.ir/landing/mcp/",
+      "title": "MCP والکس",
+      "http_status": 200,
+      "internal_capture_sha256": "9d93f65b8c95ab761ce7ccd2b383980d9f7a8143ac3d36a5cea8387024d92653",
+      "findings": [
+        "Official endpoint https://api.wallex.ir/mcp",
+        "Streamable HTTP",
+        "Public tools without API key; private X-API-Key header"
+      ]
+    },
+    {
+      "url": "https://api.wallex.ir/llm.txt",
+      "title": "Wallex — canonical sources and MCP access rules",
+      "http_status": 200,
+      "internal_capture_sha256": "dbe2f9a7c35dfdc8fa08e419d87dfff4c60da72ef961839395f54f7a635fd56b",
+      "findings": [
+        "No WebSocket or withdrawal operations through MCP",
+        "Select API key for intended account or subaccount",
+        "State-changing operations described as requiring explicit user confirmation"
+      ]
+    },
+    {
+      "url": "https://wallex.ir/app/trade-credit/prop/183",
+      "title": "هکاتون استارکوچ | والکس",
+      "http_status": 200,
+      "internal_capture_sha256": "627704008f187120750ae10004223286aaa3627496f2a4c16f8b169641673cec",
+      "findings": [
+        "UI labels warning 1000 TMN and liquidation 900 TMN",
+        "3 days; 5000000 TMN credit; zero input",
+        "No exact official challenge cutoff found on the inspected page"
+      ]
+    },
+    {
+      "url": "https://wallex.ir/landing/sitemap.xml",
+      "title": "Wallex landing sitemap",
+      "http_status": 200,
+      "findings": [
+        "Links official /landing/mcp/ page"
+      ]
+    }
+  ],
+  "private_capabilities": "not tested",
+  "official_cutoff": "UNKNOWN"
+}

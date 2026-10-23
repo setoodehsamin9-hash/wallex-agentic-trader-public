@@ -1,0 +1,282 @@
+[
+  {
+    "repo": "jesse-ai/jesse",
+    "access_date": "2026-10-22",
+    "recent_commits": [
+      {
+        "sha": "4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae",
+        "date": "2026-10-17T14:26:18Z",
+        "title": "Fix the circular import when jesse.routes is imported first"
+      },
+      {
+        "sha": "34dc9dfc369958fc613782662f4e20436f5a1388",
+        "date": "2026-10-16T15:53:47Z",
+        "title": "Release 3.4.0"
+      },
+      {
+        "sha": "0e58827e70ef47ebd8c93b8fd50a3b6f7b5a1e71",
+        "date": "2026-10-16T15:45:07Z",
+        "title": "Tell MCP agents that strategy variations are code changes"
+      },
+      {
+        "sha": "42c82da6fc96afff27ee83a3919f3acd26f7d50d",
+        "date": "2026-10-16T15:45:03Z",
+        "title": "Judge trading hours by the candle that just closed"
+      },
+      {
+        "sha": "05424cdb4c22d7fee50ef99cd3a53610f70e69a6",
+        "date": "2026-10-16T15:03:25Z",
+        "title": "Release 3.3.5: rebuild the dashboard with the Backup checks settings"
+      }
+    ],
+    "release_error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "access_date": "2026-10-22",
+    "recent_commits": [
+      {
+        "sha": "c051e9065c5b677f03817dd1f83cb980af1ed684",
+        "date": "2026-10-22T05:26:11Z",
+        "title": "Merge pull request #13704 from freqtrade/renovate/pypi-certifi-vulnerability"
+      },
+      {
+        "sha": "571e90e581f922ad49c05eae77ec8340e1bdcc52",
+        "date": "2026-10-22T05:16:47Z",
+        "title": "Merge pull request #13695 from stash86/test-fix"
+      },
+      {
+        "sha": "fdb1db4bdc5fc91fa5a6a1688eb0765513b9075d",
+        "date": "2026-10-22T05:12:30Z",
+        "title": "chore: relax cerfiti \"exclude newer\" constraints"
+      },
+      {
+        "sha": "eb5d9d3e0497b3cab8d841fbd587169a734a67de",
+        "date": "2026-10-22T04:52:21Z",
+        "title": "Merge pull request #13700 from freqtrade/renovate/ta-lib"
+      },
+      {
+        "sha": "017e3e68614ad848f53eb1779c63791f91d7b211",
+        "date": "2026-10-22T04:47:56Z",
+        "title": "chore(deps): update dependency certifi to v2026.10.19 [security]"
+      }
+    ],
+    "latest_release": {
+      "tag": "2026.9",
+      "published_at": "2026-09-29T17:06:05Z",
+      "url": "https://github.com/freqtrade/freqtrade/releases/tag/2026.9"
+    }
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "access_date": "2026-10-22",
+    "recent_commits": [
+      {
+        "sha": "9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8",
+        "date": "2026-10-22T06:18:08Z",
+        "title": "Add batched data subscription commands"
+      },
+      {
+        "sha": "ab01e6b5c1bc0d1841278bb535f2c17a79bd7dec",
+        "date": "2026-10-22T06:05:15Z",
+        "title": "Preserve Binance Futures funding-fee symbol attribution"
+      },
+      {
+        "sha": "e521c463e97045aade87c4bec232e3d859366734",
+        "date": "2026-10-22T04:02:49Z",
+        "title": "Batch adapter instrument cache updates"
+      },
+      {
+        "sha": "096fee7f98285a1da744eba4e78e1b785df21c64",
+        "date": "2026-10-22T03:02:08Z",
+        "title": "Fix dYdX oracle price precision for catalog promotion"
+      },
+      {
+        "sha": "a6eb03092f267abd76c156c31c72690b9e1e4184",
+        "date": "2026-10-22T02:16:56Z",
+        "title": "Define backtest instrument re-registration behavior (#5407)"
+      }
+    ],
+    "latest_release": {
+      "tag": "v1.231.0",
+      "published_at": "2026-08-02T18:53:49Z",
+      "url": "https://github.com/nautechsystems/nautilus_trader/releases/tag/v1.231.0"
+    }
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "access_date": "2026-10-22",
+    "recent_commits": [
+      {
+        "sha": "9af100d6822da7d2d0291a906c730ef172284ee2",
+        "date": "2026-09-22T08:53:54Z",
+        "title": "Merge pull request #8467 from hummingbot/staging"
+      },
+      {
+        "sha": "aeacec9841a92f0e5f9a37cb39065d84f9b8d1ef",
+        "date": "2026-09-20T12:13:41Z",
+        "title": "Update version from dev-2.17.0 to 2.17.0"
+      },
+      {
+        "sha": "fac3a7f8c4adfd9f07f462cfaad9e2ed9e8b6467",
+        "date": "2026-09-20T12:12:58Z",
+        "title": "Update version number in setup.py"
+      },
+      {
+        "sha": "8b0e067e80ab62f10846d518dcb5a8218527ddb3",
+        "date": "2026-09-20T12:10:22Z",
+        "title": "Merge pull request #8459 from hummingbot/development"
+      },
+      {
+        "sha": "0d6cd85272a51cec67bb0b3a23a05546431c2b2d",
+        "date": "2026-09-18T07:28:47Z",
+        "title": "Merge pull request #8464 from hummingbot/fix/kalshi-perpetual-resting-close-orders"
+      }
+    ],
+    "latest_release": {
+      "tag": "v2.17.0",
+      "published_at": "2026-09-22T08:55:11Z",
+      "url": "https://github.com/hummingbot/hummingbot/releases/tag/v2.17.0"
+    }
+  },
+  {
+    "repo": "hummingbot/condor",
+    "access_date": "2026-10-22",
+    "recent_commits": [
+      {
+        "sha": "8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c",
+        "date": "2026-10-19T15:13:28Z",
+        "title": "Merge pull request #285 from hummingbot/ws/issues-of-agent-builder-cup"
+      },
+      {
+        "sha": "7cf6f2d52a96d0d23e1d9e72076dcecc943a8aae",
+        "date": "2026-10-19T14:31:59Z",
+        "title": "Merge commit '548114e17d710a1ea7147295f55af81f3f1fecd7' into ws/issues-of-agent-builder-cup"
+      },
+      {
+        "sha": "548114e17d710a1ea7147295f55af81f3f1fecd7",
+        "date": "2026-10-19T13:34:05Z",
+        "title": "Merge remote-tracking branch 'origin/main'"
+      },
+      {
+        "sha": "619b28bfdafc71312983903f95ef0e9c6fa84e7a",
+        "date": "2026-10-19T00:52:52Z",
+        "title": "Merge commit '1a7424d61e2e950624a51e2743b8ce23149dc6ed' into ws/issues-of-agent-builder-cup"
+      },
+      {
+        "sha": "df0b16be087dc219e83658db039b4904477d365c",
+        "date": "2026-10-18T23:59:00Z",
+        "title": "refactor(packages): the pure review pays for its own imports, not its package's (ARCH-744)"
+      }
+    ],
+    "release_error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "access_date": "2026-10-22",
+    "recent_commits": [
+      {
+        "sha": "4409abe925c904e570be78ebfb5e77ac3491dff8",
+        "date": "2026-09-18T01:13:20Z",
+        "title": "Merge pull request #95 from emt-Q/fix/ml-strategy-apply-risk-limits"
+      },
+      {
+        "sha": "b81617276f682e40155193904b9dd83e17d91e55",
+        "date": "2026-09-18T01:13:01Z",
+        "title": "Merge pull request #84 from 0ywfe/fix/missing-base-strategy-exports"
+      },
+      {
+        "sha": "1d72ef52497079d0e7d778766b76a9b3c1e49ca6",
+        "date": "2026-09-17T21:57:53Z",
+        "title": "style: use 'is None' identity check in create_strategy"
+      },
+      {
+        "sha": "0f3b9c71518c5475f4338df1a755ef195d014c7b",
+        "date": "2026-09-04T01:49:27Z",
+        "title": "fix(strategies): implement apply_risk_limits in MLStockSelectionStrategy"
+      },
+      {
+        "sha": "e65d6f0483ead7d2ef4a5fc940cdf960392a25c1",
+        "date": "2026-05-02T15:12:36Z",
+        "title": "Update ml_bucket_selection.py"
+      }
+    ],
+    "latest_release": {
+      "tag": "v1.0.0",
+      "published_at": "2026-03-25T08:24:51Z",
+      "url": "https://github.com/AI4Finance-Foundation/FinRL-Trading/releases/tag/v1.0.0"
+    }
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL",
+    "access_date": "2026-10-22",
+    "recent_commits": [
+      {
+        "sha": "c0018c25de864157dc8470f0047b0d10ec721715",
+        "date": "2026-10-20T08:26:37Z",
+        "title": "Merge pull request #1462 from Arc000007/codex/finrl-dow-survivorship-1458"
+      },
+      {
+        "sha": "db827e27dc774aa0d3ed9c8d9e6f70aa2de348fa",
+        "date": "2026-10-19T10:19:48Z",
+        "title": "feat: use point-in-time Dow constituents in tutorial"
+      },
+      {
+        "sha": "1c2ee2874c96fb9d709b05626a79175456800f08",
+        "date": "2026-10-19T10:02:40Z",
+        "title": "docs: address survivorship bias review"
+      },
+      {
+        "sha": "55cd2cabea0a981a66aadf3e1bef0fec9c2421b2",
+        "date": "2026-10-19T08:39:01Z",
+        "title": "docs: clarify Dow backtest survivorship bias"
+      },
+      {
+        "sha": "8511e7c15fbe1fbe5eb25e9f89932ac1ecd546a0",
+        "date": "2026-10-13T16:08:02Z",
+        "title": "Merge pull request #1456 from nicoloangileri/fix/stocktrading-tradable-check"
+      }
+    ],
+    "latest_release": {
+      "tag": "v0.3.8",
+      "published_at": "2026-03-20T10:39:25Z",
+      "url": "https://github.com/AI4Finance-Foundation/FinRL/releases/tag/v0.3.8"
+    }
+  },
+  {
+    "repo": "polakowo/vectorbt",
+    "access_date": "2026-10-22",
+    "recent_commits": [
+      {
+        "sha": "dd8eb3a3fe9ed918b1cdaf177455759ae4ac68cb",
+        "date": "2026-10-19T21:31:04Z",
+        "title": "docs(readme): clarify trading research headline"
+      },
+      {
+        "sha": "80cf3d56157d017140ea754b9d4f9201e1af60de",
+        "date": "2026-10-19T21:28:59Z",
+        "title": "docs(readme): retain matrix framing in research tagline"
+      },
+      {
+        "sha": "33b1625f0ce4e9ecaff855947dc76e6fb9735ccb",
+        "date": "2026-10-19T21:26:41Z",
+        "title": "docs(readme): position VectorBT as a trading research toolkit"
+      },
+      {
+        "sha": "9d223fe269a4731265846c227555b7eb0d46fd4f",
+        "date": "2026-10-19T18:02:43Z",
+        "title": "docs(readme): refresh candlestick demo with bullish lasso selection"
+      },
+      {
+        "sha": "0875d984fbd66f8305d172980e55ee30a45153e3",
+        "date": "2026-10-19T15:40:05Z",
+        "title": "docs(readme): restore H3 feature card headings"
+      }
+    ],
+    "latest_release": {
+      "tag": "v1.2.0",
+      "published_at": "2026-10-19T13:03:14Z",
+      "url": "https://github.com/polakowo/vectorbt/releases/tag/v1.2.0"
+    }
+  }
+]

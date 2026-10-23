@@ -1,0 +1,390 @@
+{
+ "schema_version": "1",
+ "spec": {
+  "schema_version": "1",
+  "experiment_id": "p04-r2-c2",
+  "base_config": "base-1h-c2-v2.toml",
+  "dataset_dir": "../../../data/datasets/wallex-1m-btctmn-ethtmn",
+  "strategy_id": "C2_trend_hold",
+  "strategy_version": "c2-0.2.0",
+  "seed": 7,
+  "max_trials": 30,
+  "parameters": {
+   "entry_trend_atr": [
+    "0.5",
+    "1.0"
+   ]
+  },
+  "splits": [
+   {
+    "name": "t1",
+    "role": "TRAIN",
+    "start_utc": "2026-09-10T00:00:00Z",
+    "end_utc": "2026-09-17T00:00:00Z"
+   },
+   {
+    "name": "t2",
+    "role": "TRAIN",
+    "start_utc": "2026-09-17T00:00:00Z",
+    "end_utc": "2026-09-24T00:00:00Z"
+   },
+   {
+    "name": "t3",
+    "role": "TRAIN",
+    "start_utc": "2026-09-24T00:00:00Z",
+    "end_utc": "2026-10-01T00:00:00Z"
+   },
+   {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-01T00:00:00Z",
+    "end_utc": "2026-10-07T00:00:00Z"
+   },
+   {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-07T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   {
+    "name": "x1",
+    "role": "TEST",
+    "start_utc": "2026-10-13T00:00:00Z",
+    "end_utc": "2026-10-18T00:00:00Z"
+   },
+   {
+    "name": "x2",
+    "role": "TEST",
+    "start_utc": "2026-10-18T00:00:00Z",
+    "end_utc": "2026-10-22T00:00:00Z"
+   }
+  ],
+  "costs": [
+   {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   }
+  ],
+  "base_cost_id": "base",
+  "min_trades_observation": 10
+ },
+ "spec_hash": "53d2c2ae6057dac5052fef6b49c7746f75f898c0a3154aca3d3cf72699cebac9",
+ "base_config": {
+  "run": {
+   "environment": "BACKTEST",
+   "autonomy": "AUTONOMOUS",
+   "live_autonomous_enabled": false,
+   "symbols": [
+    "BTCTMN",
+    "ETHTMN"
+   ],
+   "bar_interval_seconds": 3600,
+   "starting_capital_tmn": "5000000",
+   "seed": 7,
+   "label": "phase04-c2-trend-hold-v2"
+  },
+  "limits": {
+   "version": "sim-placeholder-2026-10-22",
+   "approved_by_owner": false,
+   "risk": {
+    "per_trade_budget_fraction": "0.005",
+    "total_loss_budget_tmn": "150000",
+    "session_loss_budget_tmn": "75000",
+    "max_position_notional_tmn": "1500000",
+    "max_total_exposure_tmn": "2500000",
+    "max_open_positions": 2,
+    "drawdown_pause_fraction": "0.02",
+    "drawdown_emergency_fraction": "0.04",
+    "loss_streak_count": 3,
+    "loss_streak_window_s": 14400,
+    "cooldown_s": 3600,
+    "max_spread_bps": "30",
+    "max_depth_fraction": "0.25",
+    "stress_cost_bps": "10",
+    "verdict_ttl_s": 30,
+    "cautious_size_fraction": "0.5"
+   },
+   "data": {
+    "max_bar_age_s": 1860,
+    "max_book_age_s": 30
+   },
+   "approval": {
+    "ticket_ttl_s": 300
+   },
+   "cutoff": {
+    "no_new_entry_before_end_s": 3600,
+    "liquidation_start_before_end_s": 1800
+   },
+   "kill": {
+    "max_consecutive_execution_errors": 3,
+    "reconciliation_tolerance_tmn": "1000"
+   }
+  },
+  "costs": {
+   "fee_rate": "0.0025",
+   "fee_source": "ASSUMED",
+   "backtest_slippage_bps": "5"
+  },
+  "execution": {
+   "entry_order_type": "LIMIT",
+   "entry_limit_slippage_bps": "20",
+   "exit_limit_slippage_bps": "30",
+   "entry_ttl_s": 900
+  },
+  "features": {
+   "atr_bars": 14,
+   "trend_bars": 24,
+   "volume_bars": 20,
+   "regime_trend_atr": "1.0",
+   "regime_shock_atr_pct": "0.02"
+  },
+  "strategy": {
+   "c1": {
+    "version": "c1-0.2.0",
+    "lookback_bars": 24,
+    "buffer_atr": "0.1",
+    "stop_atr": "3",
+    "tp_atr": null,
+    "max_holding_s": 43200,
+    "candidate_ttl_s": 600,
+    "min_edge_over_cost_bps": "20",
+    "min_volume_ratio": null,
+    "exit_mode": "TIME",
+    "min_atr_cost_ratio": "1.0"
+   },
+   "c2": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1.0"
+   },
+   "active": "C2_trend_hold"
+  },
+  "agent": {
+   "decision_provider": "BASELINE",
+   "model_id": null,
+   "decision_deadline_s": 60,
+   "max_model_requests": 4,
+   "max_tool_calls": 4,
+   "output_retries": 1,
+   "allow_exit_position": false,
+   "invalid_streak_breaker": 3,
+   "use_wallex_mcp_tools": false,
+   "prompt_version": "decision_v2",
+   "model_settings": {},
+   "replay_run_id": null
+  },
+  "trading_window": null,
+  "competition": {
+   "start_utc": null,
+   "end_utc": null
+  },
+  "backtest": {
+   "dataset": "wallex-1m-btctmn-ethtmn",
+   "start_utc": null,
+   "end_utc": null,
+   "approval_policy": "APPROVE_ALL",
+   "split": "ALL"
+  },
+  "shadow": null
+ },
+ "base_config_hash": "27f2a286ec82055385ab964e137635814e3c67ef667f497c5ddccc3d91604c91",
+ "dataset_hash": "21b1016dd2461f818bcc1e5d38f691b1e5ba094e6cdbc55f5e6730f56d0dff44",
+ "dataset_name": "wallex-1m-btctmn-ethtmn",
+ "splits": {
+  "t1": {
+   "split": {
+    "name": "t1",
+    "role": "TRAIN",
+    "start_utc": "2026-09-10T00:00:00Z",
+    "end_utc": "2026-09-17T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 10080,
+     "missing_minutes": 0
+    },
+    "ETHTMN": {
+     "bars": 10080,
+     "missing_minutes": 0
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "536d6fee9ef6fa9f69f1f1b4748a31c7fdb7183428beb2a3754b78986e0f422b",
+    "ETHTMN": "cb46badbe60aec214a8e91e4c7175a64e0663f291c565e85a0ca7bb694086c3b"
+   },
+   "split_hash": "0826426a4249c8941e5b2db2592c0fef51190eddf33e4b5dffbeb9a6dc585acc"
+  },
+  "t2": {
+   "split": {
+    "name": "t2",
+    "role": "TRAIN",
+    "start_utc": "2026-09-17T00:00:00Z",
+    "end_utc": "2026-09-24T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 10000,
+     "missing_minutes": 80
+    },
+    "ETHTMN": {
+     "bars": 9998,
+     "missing_minutes": 82
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "e3f6374cb36987b5ba420486d6c764cd9284fd5343a51e23500ecc2f20f7cda2",
+    "ETHTMN": "7e280a7d093b9820fbe7cfdbb0be58b11735f8e545bd1521a2d1fdfb0b3b2405"
+   },
+   "split_hash": "15db2a07412fff4759cd9646452ad7c3dc66a59d44558280b294a4a021141f81"
+  },
+  "t3": {
+   "split": {
+    "name": "t3",
+    "role": "TRAIN",
+    "start_utc": "2026-09-24T00:00:00Z",
+    "end_utc": "2026-10-01T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 10079,
+     "missing_minutes": 1
+    },
+    "ETHTMN": {
+     "bars": 10078,
+     "missing_minutes": 2
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "59ade9d7c8348c6dca752d9449de200c761b22c10239dfb55fe7035907272c0d",
+    "ETHTMN": "606f4ae9c3a9371672a52dee41fc902953c8881ce3299f6d73b93bf5867ab42c"
+   },
+   "split_hash": "283a9384fc3599652319c106e81f76168585142872fa3d79cc2aec76422035b2"
+  },
+  "v1": {
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-01T00:00:00Z",
+    "end_utc": "2026-10-07T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 8640,
+     "missing_minutes": 0
+    },
+    "ETHTMN": {
+     "bars": 8640,
+     "missing_minutes": 0
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "b1c785862768b795c7d1d689ac3116dd5adeeaf9cf7145ec5269aff619b25178",
+    "ETHTMN": "e2aae5be49bead2a48a98f6b17f4e099a91f9653722d48e66d72ea65a800b9d3"
+   },
+   "split_hash": "65b1efcee6efc8e4ed444bb26231abc3792f3833c4bdd2a3ed86277379820170"
+  },
+  "v2": {
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2026-10-07T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 8638,
+     "missing_minutes": 2
+    },
+    "ETHTMN": {
+     "bars": 8638,
+     "missing_minutes": 2
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "a7ed1e41f276fdf2cd4fee43717fde90e9e5b094c27d56b2f3fef56736aafdc7",
+    "ETHTMN": "5b8381850a6dd2cd8a01b285d7cfed41fb5c043410d892c1ee2e5b860e9a7985"
+   },
+   "split_hash": "9d094c39a5ece158baf89fffa866a68f4245ff02dab502129200f35378566ed5"
+  },
+  "x1": {
+   "split": {
+    "name": "x1",
+    "role": "TEST",
+    "start_utc": "2026-10-13T00:00:00Z",
+    "end_utc": "2026-10-18T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 7200,
+     "missing_minutes": 0
+    },
+    "ETHTMN": {
+     "bars": 7200,
+     "missing_minutes": 0
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "8dab58713cec7283a9e0750ed40b5541ecfa1ac008d760d3f80ab4fb1d28b0b9",
+    "ETHTMN": "f77fb3be47b081f105af20d779b49794d6c67be8992c5308ceb2fc2223b8429f"
+   },
+   "split_hash": "fd0b74b5dc8b78a62ec27e1b234fa4a603401966f08cce49547c08af93dd6f2d"
+  },
+  "x2": {
+   "split": {
+    "name": "x2",
+    "role": "TEST",
+    "start_utc": "2026-10-18T00:00:00Z",
+    "end_utc": "2026-10-22T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 5747,
+     "missing_minutes": 13
+    },
+    "ETHTMN": {
+     "bars": 5721,
+     "missing_minutes": 39
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "77490a3ebc40f7ea03538808ed89f64776e8e07957b82d4ee54c1f6aaa184e9a",
+    "ETHTMN": "8d8c33a231eb4dc04dc32d5ac199b947f3b81a4818f5167df6a50188d1f00490"
+   },
+   "split_hash": "ef6df634333127939a2e97e74e2865b7c6cbf4f914caf875a403c49fe5126b25"
+  }
+ },
+ "code": {
+  "git_commit": "a5326e5f7a88fc6c316cb5845b93a7e1f8a2659c",
+  "dirty": false
+ },
+ "source_hash": "da2fbf4468e7992c22e4da391559902b3237ce2f628fa3eb16baa90268d4c4dd",
+ "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+ "evaluate_test": false,
+ "selected_parameter_hash": null,
+ "trial_count": 30,
+ "fill_assumptions": [
+  "existing BacktestVenue; next-bar entry fills; worse stop when both barriers touch",
+  "past-only feature warmup; fresh capital/ledger per period; no carried positions",
+  "no historical depth, queue or latency model; gaps not filled; explicit assumed fee per side and slippage bps"
+ ],
+ "selection_policy": "external human/Claude decision; no automatic best configuration",
+ "manifest_hash": "a801961d224e4acc99758aeade2547746283e88ffc2df044f754db2cc1afce74"
+}

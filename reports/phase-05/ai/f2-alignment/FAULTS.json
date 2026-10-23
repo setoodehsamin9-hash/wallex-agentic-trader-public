@@ -1,0 +1,134 @@
+{
+ "network": false,
+ "rows": [
+  {
+   "role": "SELECTOR",
+   "case": "invalid_candidate_reference",
+   "status": "UNKNOWN_REFERENCE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "SELECTOR",
+   "case": "provider_failure",
+   "status": "PROVIDER_ERROR",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "SELECTOR",
+   "case": "malformed_output",
+   "status": "INVALID_SCHEMA",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "SELECTOR",
+   "case": "late_answer",
+   "status": "STALE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "SELECTOR",
+   "case": "expired_candidate_enter",
+   "status": "STALE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "SELECTOR",
+   "case": "expired_candidate_unsupported_veto",
+   "status": "VALID",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "SELECTOR",
+   "case": "unknown_evidence_id",
+   "status": "UNKNOWN_REFERENCE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "SELECTOR",
+   "case": "unsupported_veto",
+   "status": "VALID",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "VETO",
+   "case": "invalid_candidate_reference",
+   "status": "UNKNOWN_REFERENCE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "VETO",
+   "case": "provider_failure",
+   "status": "PROVIDER_ERROR",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "VETO",
+   "case": "malformed_output",
+   "status": "INVALID_SCHEMA",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "VETO",
+   "case": "late_answer",
+   "status": "STALE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "VETO",
+   "case": "expired_candidate_enter",
+   "status": "STALE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "VETO",
+   "case": "expired_candidate_unsupported_veto",
+   "status": "STALE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "VETO",
+   "case": "unknown_evidence_id",
+   "status": "UNKNOWN_REFERENCE",
+   "action": "WAIT",
+   "expected": "WAIT",
+   "ok": true
+  },
+  {
+   "role": "VETO",
+   "case": "unsupported_veto",
+   "status": "VETO_UNSUPPORTED",
+   "action": "ENTER",
+   "expected": "ENTER",
+   "ok": true
+  }
+ ],
+ "all_ok": true
+}

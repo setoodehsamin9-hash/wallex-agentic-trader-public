@@ -1,0 +1,125 @@
+{
+ "interval_s": 14400,
+ "needed_buckets": 49,
+ "rule": "window-quality-1",
+ "symbols": {
+  "BTCTMN": {
+   "A_strict_minute_only": {
+    "decisions": 490,
+    "quality_blocked_share": 0.0796,
+    "quality_status": {
+     "COVERAGE_FAILURE": 35,
+     "MINOR_GAP": 88,
+     "OK": 363,
+     "STALE": 4
+    },
+    "strict_blocked_share": 0.2592
+   },
+   "B_quality_minute_only": {
+    "decisions": 490,
+    "quality_blocked_share": 0.0796,
+    "quality_status": {
+     "COVERAGE_FAILURE": 35,
+     "MINOR_GAP": 88,
+     "OK": 363,
+     "STALE": 4
+    },
+    "strict_blocked_share": 0.2592
+   },
+   "C_quality_combined": {
+    "decisions": 490,
+    "quality_blocked_share": 0.0061,
+    "quality_status": {
+     "COVERAGE_FAILURE": 2,
+     "MINOR_GAP": 46,
+     "OK": 441,
+     "STALE": 1
+    },
+    "strict_blocked_share": 0.1
+   },
+   "four_h_buckets_dropped_combined": 1,
+   "four_h_buckets_dropped_minute_only": 4,
+   "longest_minute_gap": 80,
+   "minute_gaps": 4,
+   "minute_period": [
+    "2026-07-24T00:00:00+00:00",
+    "2026-10-21T23:59:00+00:00"
+   ],
+   "missing_minutes": 96,
+   "native_1h_4y": {
+    "decisions": 8716,
+    "period": [
+     "2022-10-22T00:00:00+00:00",
+     "2026-10-21T23:00:00+00:00"
+    ],
+    "quality_blocked_share": 0.0437,
+    "quality_status": {
+     "COVERAGE_FAILURE": 351,
+     "MINOR_GAP": 349,
+     "OK": 7986,
+     "STALE": 30
+    },
+    "strict_blocked_share": 0.0838
+   }
+  },
+  "ETHTMN": {
+   "A_strict_minute_only": {
+    "decisions": 490,
+    "quality_blocked_share": 0.0796,
+    "quality_status": {
+     "COVERAGE_FAILURE": 35,
+     "MINOR_GAP": 88,
+     "OK": 363,
+     "STALE": 4
+    },
+    "strict_blocked_share": 0.2592
+   },
+   "B_quality_minute_only": {
+    "decisions": 490,
+    "quality_blocked_share": 0.0796,
+    "quality_status": {
+     "COVERAGE_FAILURE": 35,
+     "MINOR_GAP": 88,
+     "OK": 363,
+     "STALE": 4
+    },
+    "strict_blocked_share": 0.2592
+   },
+   "C_quality_combined": {
+    "decisions": 490,
+    "quality_blocked_share": 0.0061,
+    "quality_status": {
+     "COVERAGE_FAILURE": 2,
+     "MINOR_GAP": 46,
+     "OK": 441,
+     "STALE": 1
+    },
+    "strict_blocked_share": 0.1
+   },
+   "four_h_buckets_dropped_combined": 1,
+   "four_h_buckets_dropped_minute_only": 4,
+   "longest_minute_gap": 82,
+   "minute_gaps": 4,
+   "minute_period": [
+    "2026-07-24T00:00:00+00:00",
+    "2026-10-21T23:59:00+00:00"
+   ],
+   "missing_minutes": 125,
+   "native_1h_4y": {
+    "decisions": 8716,
+    "period": [
+     "2022-10-22T00:00:00+00:00",
+     "2026-10-21T23:00:00+00:00"
+    ],
+    "quality_blocked_share": 0.0494,
+    "quality_status": {
+     "COVERAGE_FAILURE": 399,
+     "MINOR_GAP": 365,
+     "OK": 7920,
+     "STALE": 32
+    },
+    "strict_blocked_share": 0.0913
+   }
+  }
+ }
+}

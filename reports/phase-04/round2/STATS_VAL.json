@@ -1,0 +1,50 @@
+{
+ "frozen": {
+  "mean_bps": 134.8359690749921,
+  "mean_ci95_bps": [
+   45.349614103498546,
+   229.598971521715
+  ],
+  "median_bps": -93.60790658515805,
+  "n": 135,
+  "p05_bps": -449.71913033285296,
+  "p95_bps": 1236.711724161652,
+  "p_mean_le_0": 0.0017,
+  "win_share": 0.4740740740740741
+ },
+ "multiple_testing": {
+  "bonferroni_x4": 0.013289036544850499,
+  "economics_gates": 4,
+  "frozen": 2,
+  "note": "p = 1/301 is the resolution floor of 300 seeds; all 300 random paths were below",
+  "rand_x_p_value_frozen": 0.0033222591362126247,
+  "train_grid_configs": 32,
+  "validation_tested": 4
+ },
+ "rand_x_30_seeds_pooled": {
+  "mean_bps": 12.404092644019887,
+  "mean_ci95_bps": [
+   1.0253678901821368,
+   24.037231343655886
+  ],
+  "median_bps": -65.89048661459262,
+  "n": 4655,
+  "p05_bps": -410.8321224446976,
+  "p95_bps": 808.6916911072683,
+  "p_mean_le_0": 0.0162,
+  "win_share": 0.30010741138560687
+ },
+ "twin_regime_off": {
+  "mean_bps": 131.144039353797,
+  "mean_ci95_bps": [
+   45.277165111036275,
+   220.30912473977673
+  ],
+  "median_bps": -121.8755890028178,
+  "n": 161,
+  "p05_bps": -390.7547803498135,
+  "p95_bps": 1354.8909155236233,
+  "p_mean_le_0": 0.0009,
+  "win_share": 0.42857142857142855
+ }
+}

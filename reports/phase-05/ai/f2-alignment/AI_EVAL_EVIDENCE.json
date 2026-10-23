@@ -1,0 +1,8 @@
+{
+ "role": "VETO",
+ "prompt_version": "veto_v1",
+ "prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346",
+ "model_id": "cx/gpt-6.1-sol",
+ "passed": true,
+ "source": "reports/phase-05/ai/f2-alignment/EVAL_SUMMARY.json"
+}

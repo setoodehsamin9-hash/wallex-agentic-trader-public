@@ -1,0 +1,76 @@
+# Phase 04 round 1 — pre-registered in reports/phase-04/PREREGISTRATION.md (do not edit after results).
+schema_version = "1"
+experiment_id = "p04-r1-c1"
+base_config = "base-1h-c1.toml"
+dataset_dir = "../../../data/datasets/wallex-1m-btctmn-ethtmn"
+strategy_id = "C1_breakout"
+strategy_version = "c1-0.2.0"
+seed = 7
+max_trials = 120
+base_cost_id = "base"
+min_trades_observation = 10
+
+[parameters]
+lookback_bars = [24, 48]
+stop_atr = ["2", "3"]
+max_holding_s = [43200, 86400]
+
+[[splits]]
+name = "t1"
+role = "TRAIN"
+start_utc = 2026-09-10T00:00:00Z
+end_utc = 2026-09-17T00:00:00Z
+
+[[splits]]
+name = "t2"
+role = "TRAIN"
+start_utc = 2026-09-17T00:00:00Z
+end_utc = 2026-09-24T00:00:00Z
+
+[[splits]]
+name = "t3"
+role = "TRAIN"
+start_utc = 2026-09-24T00:00:00Z
+end_utc = 2026-10-01T00:00:00Z
+
+[[splits]]
+name = "v1"
+role = "VALIDATION"
+start_utc = 2026-10-01T00:00:00Z
+end_utc = 2026-10-07T00:00:00Z
+
+[[splits]]
+name = "v2"
+role = "VALIDATION"
+start_utc = 2026-10-07T00:00:00Z
+end_utc = 2026-10-13T00:00:00Z
+
+[[splits]]
+name = "x1"
+role = "TEST"
+start_utc = 2026-10-13T00:00:00Z
+end_utc = 2026-10-18T00:00:00Z
+
+[[splits]]
+name = "x2"
+role = "TEST"
+start_utc = 2026-10-18T00:00:00Z
+end_utc = 2026-10-22T00:00:00Z
+
+[[costs]]
+name = "base"
+fee_rate = "0.0025"
+slippage_bps = "5"
+fee_source = "ASSUMED"
+
+[[costs]]
+name = "adverse"
+fee_rate = "0.0035"
+slippage_bps = "10"
+fee_source = "ASSUMED"
+
+[[costs]]
+name = "low"
+fee_rate = "0.0020"
+slippage_bps = "5"
+fee_source = "ASSUMED"

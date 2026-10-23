@@ -1,0 +1,138 @@
+# PHASE 05 LIVE TEMPLATE for frozen F2 (f2-0.1.0) — FAIL-CLOSED: LIVE startup refuses this file until the owner fills
+# every item below. Nothing here was guessed. Strategy/features/execution are exactly config/shadow-f2.toml.
+#
+# OWNER MUST SET (reports/phase-05/HANDOFF_TO_LIVE_LAUNCH.md):
+#   1. [trading_window]          official challenge hours (IANA timezone, weekly windows, buffers) — U01/U09
+#   2. [competition] end_utc     official end/cutoff instant (UTC)
+#   3. [limits] approved_by_owner = true after reviewing every [limits.*] value (currently SIMULATION placeholders)
+#   4. [run] live_autonomous_enabled = true ONLY if Wallex confirmed autonomous trading is allowed (U04)
+#   5. [costs] fee_rate          the real account fee once the read-only account preflight has read it (U06)
+# Never put a key in this file: WALLEX_API_KEY and NINEROUTER_API_KEY_FILE are set on the run host only.
+
+[run]
+environment = "LIVE"
+autonomy = "AUTONOMOUS"
+live_autonomous_enabled = true           # set on the owner's instruction (2026-10-23)
+symbols = ["BTCTMN", "ETHTMN"]
+bar_interval_seconds = 14400
+starting_capital_tmn = "5000000"
+seed = 7
+label = "phase05-f2-live"
+
+[competition]
+end_utc = "2026-10-26T16:30:00Z"         # owner: 3-day LIVE session (20:00 Tehran on 2026-10-26)
+
+[trading_window]                         # owner: no daily trading-hour restriction
+version = "tw-owner-continuous-2"
+timezone = "Asia/Tehran"
+no_new_entry_before_close_s = 600
+flatten_before_close_s = 300
+# Two overlapping daily windows: the calendar uses the latest close of the open windows, so no daily close is ever
+# reached and positions are NOT flattened at night (a single 00:00-23:59 window closed daily at 23:59).
+[[trading_window.windows]]
+days = ["SAT", "SUN", "MON", "TUE", "WED", "THU", "FRI"]
+start = "00:00"
+end = "18:00"
+[[trading_window.windows]]
+days = ["SAT", "SUN", "MON", "TUE", "WED", "THU", "FRI"]
+start = "12:00"
+end = "06:00"
+
+[limits]
+version = "sim-placeholder-2026-10-22"
+approved_by_owner = true                 # approved on the owner's instruction (2026-10-23)
+
+[limits.risk]
+per_trade_budget_fraction = "0.005"
+total_loss_budget_tmn = "150000"
+session_loss_budget_tmn = "75000"
+max_position_notional_tmn = "1500000"
+max_total_exposure_tmn = "2500000"
+max_open_positions = 2
+drawdown_pause_fraction = "0.02"
+drawdown_emergency_fraction = "0.04"
+loss_streak_count = 3
+loss_streak_window_s = 14400
+cooldown_s = 3600
+max_spread_bps = "30"
+max_depth_fraction = "0.25"
+stress_cost_bps = "10"
+verdict_ttl_s = 30
+cautious_size_fraction = "0.5"
+
+[limits.data]
+max_bar_age_s = 1860
+max_book_age_s = 30
+
+[limits.approval]
+ticket_ttl_s = 300
+
+[limits.cutoff]
+no_new_entry_before_end_s = 900          # owner (2026-10-23): 4h no-entry buffer removed for the short test; 15 min kept
+liquidation_start_before_end_s = 600     # flatten to TMN starts 10 min before the end
+
+[limits.kill]
+max_consecutive_execution_errors = 3
+reconciliation_tolerance_tmn = "1000"
+
+[costs]
+fee_rate = "0.003"                       # real account fee read by the owner's read-only preflight (2026-10-23)
+fee_source = "ACCOUNT"
+backtest_slippage_bps = "5"
+
+[execution]
+entry_order_type = "LIMIT"
+entry_limit_slippage_bps = "20"
+exit_limit_slippage_bps = "30"
+entry_ttl_s = 900
+exit_order_ttl_s = 60
+
+[features]
+atr_bars = 14
+trend_bars = 24
+volume_bars = 20
+regime_trend_atr = "1.0"
+regime_shock_atr_pct = "0.02"
+ema_bars = 48
+regime_er_bars = 42
+regime_rank_bars = 1080
+
+[strategy]
+active = "F2_tsm"
+
+[strategy.c1]                            # schema-required, inactive (same as config/shadow-f2.toml)
+version = "c1-0.2.0"
+lookback_bars = 24
+buffer_atr = "0.1"
+stop_atr = "3"
+max_holding_s = 43200
+candidate_ttl_s = 600
+min_edge_over_cost_bps = "20"
+exit_mode = "TIME"
+min_atr_cost_ratio = "1.0"
+
+[strategy.f2]
+version = "f2-0.1.0"
+entry_band_atr = "0.5"
+stop_atr = "5"
+trail_atr = "5"
+max_holding_s = 604800
+candidate_ttl_s = 900
+regime_filter = true
+
+[agent]
+decision_provider = "LLM"                # NineRouter only; exact model id, no fallback
+model_id = "cx/gpt-6.1-sol"              # owner choice; the frozen evaluated model (reports/phase-05/ai/f2-alignment/FROZEN.json)
+role = "VETO"                            # frozen by the fresh evaluation (reports/phase-05/ai/f2-alignment/FROZEN.json)
+prompt_version = "veto_v1"               # sha256 8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346
+decision_deadline_s = 60
+max_model_requests = 4
+max_tool_calls = 4
+output_retries = 1
+use_wallex_mcp_tools = true
+
+[shadow]
+poll_interval_s = 15
+history_bars = 900
+warmup_cache_dir = "var/warmup"
+warmup_seed_dir = "data/raw/historical-pack/export/datasets/1h"

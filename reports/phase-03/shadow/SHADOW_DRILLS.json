@@ -1,0 +1,111 @@
+{
+ "captured_at": "2026-10-22T11:46:33.283507+00:00",
+ "as_of": "2026-10-22T11:45:00+00:00",
+ "symbols": [
+  "BTCTMN",
+  "ETHTMN"
+ ],
+ "bars": {
+  "BTCTMN": 191,
+  "ETHTMN": 191
+ },
+ "real_wallex_writes": 0,
+ "results": [
+  {
+   "drill": "stale_data",
+   "passed": true,
+   "evidence": {
+    "status": "DATA_UNUSABLE",
+    "block_reason": "DATA_QUALITY:STALE",
+    "ai_calls": 0
+   }
+  },
+  {
+   "drill": "ninerouter_timeout",
+   "passed": true,
+   "evidence": {
+    "status": "WAITED",
+    "validation": "TIMEOUT",
+    "real_ninerouter": true
+   }
+  },
+  {
+   "drill": "invalid_ai_output",
+   "passed": true,
+   "evidence": {
+    "status": "WAITED",
+    "validation": "UNKNOWN_REFERENCE"
+   }
+  },
+  {
+   "drill": "execution_simulator_timeout",
+   "passed": true,
+   "evidence": {
+    "states": [
+     "INTENT",
+     "SUBMITTING",
+     "UNKNOWN",
+     "FILLED"
+    ],
+    "submissions": 1,
+    "unresolved": []
+   }
+  },
+  {
+   "drill": "duplicate_submit",
+   "passed": true,
+   "evidence": {
+    "submissions": 1
+   }
+  },
+  {
+   "drill": "double_spend",
+   "passed": true,
+   "evidence": {
+    "symbols": [
+     "BTCTMN",
+     "ETHTMN"
+    ],
+    "statuses": [
+     "FILLED",
+     "FILLED"
+    ],
+    "spent_tmn": "998201",
+    "cash_tmn": "1799",
+    "second_failed_checks": [],
+    "second_qty": "0.00015"
+   }
+  },
+  {
+   "drill": "trading_window_closure",
+   "passed": true,
+   "evidence": {
+    "window_reason": "FLATTEN_BEFORE_WINDOW_CLOSE",
+    "blocked_reason": "FLATTEN_BEFORE_WINDOW_CLOSE",
+    "flattened": true,
+    "trades": [
+     "LIQUIDATION"
+    ]
+   }
+  },
+  {
+   "drill": "kill_switch",
+   "passed": true,
+   "evidence": {
+    "entry_after_kill": "BLOCKED",
+    "exit_after_kill": "EXECUTED"
+   }
+  },
+  {
+   "drill": "cutoff_liquidation",
+   "passed": true,
+   "evidence": {
+    "opened": true,
+    "flat": true,
+    "exits": [
+     "LIQUIDATION"
+    ]
+   }
+  }
+ ]
+}

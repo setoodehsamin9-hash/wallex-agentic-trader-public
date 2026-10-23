@@ -1,0 +1,45 @@
+# Infrastructure QA only: unchanged existing C1/B0 on the project's synthetic fixture.
+# No search space, market choice, final split ratios or live parameters are selected here.
+# Prepare var/experiment-smoke-data as described in the Phase 04 handoff.
+schema_version = "1"
+experiment_id = "synthetic-smoke"
+base_config = "../backtest.toml"
+dataset_dir = "../../var/experiment-smoke-data"
+strategy_id = "C1_breakout"
+strategy_version = "c1-0.1.0"
+seed = 7
+max_trials = 4
+base_cost_id = "base"
+min_trades_observation = 5  # reporting flag only; never a trading/risk threshold
+
+# Explicit fixture periods, not a proposed market-data evaluation protocol.
+[[splits]]
+name = "train"
+role = "TRAIN"
+start_utc = 2026-10-01T00:00:00Z
+end_utc = 2026-10-02T00:00:00Z
+
+[[splits]]
+name = "validation"
+role = "VALIDATION"
+start_utc = 2026-10-02T00:00:00Z
+end_utc = 2026-10-03T00:00:00Z
+
+[[splits]]
+name = "test"
+role = "TEST"
+start_utc = 2026-10-03T00:00:00Z
+end_utc = 2026-10-04T00:00:00Z
+
+# These are explicit simulation assumptions copied from the existing QA setup, not account fees.
+[[costs]]
+name = "base"
+fee_rate = "0.0025"
+slippage_bps = "5"
+fee_source = "ASSUMED"
+
+[[costs]]
+name = "combined-stress"
+fee_rate = "0.005"
+slippage_bps = "10"
+fee_source = "ASSUMED"

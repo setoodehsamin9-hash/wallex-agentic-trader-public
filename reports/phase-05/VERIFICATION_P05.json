@@ -1,0 +1,23 @@
+{
+ "date": "2026-10-23",
+ "branch": "phase-05/live-readiness-shadow",
+ "gate_commit": "9bd9a7f",
+ "pytest": {"command": "uv run pytest", "passed": 500, "skipped": 0, "deselected": 2,
+            "deselected_reason": "opt-in NineRouter tests (run separately below)",
+            "warnings": "1 third-party DeprecationWarning (importlib load_module, Python 3.14)"},
+ "pyright_strict": {"command": "uv run pyright", "errors": 0, "warnings": 0},
+ "secret_scan": {"pattern_scan": {"files": 487, "patterns": 8, "findings": 0},
+                 "key_literal_scan": {"scanned_files": 626, "hits": 0, "note": "owner NineRouter key literal searched in the whole worktree incl. journals; value never printed"}},
+ "exit_safety_recovery_regression": {"command": "uv run pytest tests/execution tests/recovery tests/runtime/test_shadow_warmup.py tests/market/test_window_quality.py tests/market/test_warmup.py",
+                                     "passed": 93},
+ "deterministic_replay": {"command": "uv run python scripts/phase04r2_verify.py replay", "run": "F2 f2-0.1.0 1h base V7",
+                          "decisions": 324, "identical_decisions": true, "trades": 6, "identical_trades": true,
+                          "missing_recordings": 0, "exit_signal_events": 1},
+ "gpt61_ninerouter_smoke": {"command": "NINEROUTER_MODEL=cx/gpt-6.1-sol uv run pytest -m ninerouter tests/ninerouter/test_real_candidate_path.py",
+                            "passed": 1, "model_id": "cx/gpt-6.1-sol"},
+ "shadow_zero_write": {"command": "uv run python scripts/phase05_verify.py zero-write --run sh-f2-p05", "pass": true,
+                       "real_wallex_writes": 0, "decisions": 2, "execution_events": 0},
+ "real_wallex_writes": 0,
+ "private_wallex_calls": 0,
+ "real_model_calls": "NineRouter only, model cx/gpt-6.1-sol (pinned; responders ninerouter:gpt-6.1-sol)"
+}

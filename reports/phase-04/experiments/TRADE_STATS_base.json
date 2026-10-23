@@ -1,0 +1,80 @@
+{
+ "p04-r2-c2 entry_trend_atr=0.5 stop_atr=3 max_holding_s=172800": {
+  "trades": 26,
+  "mean_move_bps": 91.8,
+  "median_move_bps": 34.2,
+  "mean_fee_bps": 50.2,
+  "win_rate": 0.385,
+  "mean_hours": 37.2,
+  "by_exit": {
+   "EXIT_STOP": {
+    "n": 8,
+    "mean_move_bps": -234.3
+   },
+   "EXIT_TIME": {
+    "n": 16,
+    "mean_move_bps": 280.7
+   },
+   "LIQUIDATION": {
+    "n": 2,
+    "mean_move_bps": -114.6
+   }
+  },
+  "by_symbol": {
+   "BTCTMN": 79523,
+   "ETHTMN": 5769
+  }
+ },
+ "p04-r2-c2 entry_trend_atr=1 stop_atr=3 max_holding_s=172800": {
+  "trades": 23,
+  "mean_move_bps": 70.3,
+  "median_move_bps": 31.7,
+  "mean_fee_bps": 50.2,
+  "win_rate": 0.435,
+  "mean_hours": 37.7,
+  "by_exit": {
+   "EXIT_STOP": {
+    "n": 8,
+    "mean_move_bps": -225.1
+   },
+   "EXIT_TIME": {
+    "n": 14,
+    "mean_move_bps": 255.0
+   },
+   "LIQUIDATION": {
+    "n": 1,
+    "mean_move_bps": -150.8
+   }
+  },
+  "by_symbol": {
+   "BTCTMN": 28624,
+   "ETHTMN": 837
+  }
+ },
+ "p04-r2-ctrl entry_trend_atr=None stop_atr=3 max_holding_s=172800": {
+  "trades": 41,
+  "mean_move_bps": 69.3,
+  "median_move_bps": -0.2,
+  "mean_fee_bps": 50.2,
+  "win_rate": 0.463,
+  "mean_hours": 32.8,
+  "by_exit": {
+   "EXIT_STOP": {
+    "n": 11,
+    "mean_move_bps": -242.0
+   },
+   "EXIT_TIME": {
+    "n": 21,
+    "mean_move_bps": 259.5
+   },
+   "LIQUIDATION": {
+    "n": 9,
+    "mean_move_bps": 5.8
+   }
+  },
+  "by_symbol": {
+   "BTCTMN": -9934,
+   "ETHTMN": 72098
+  }
+ }
+}

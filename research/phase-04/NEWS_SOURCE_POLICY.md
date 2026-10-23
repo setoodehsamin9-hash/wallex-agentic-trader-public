@@ -1,0 +1,24 @@
+# Public news source policy and evidence
+
+Checked 2026-10-22. Availability is an observation, not an uptime promise. Code license, hosted API permission and
+underlying publishers' content rights are separate. No full article URLs are fetched. Raw feeds stay local/ignored;
+reports contain metadata/hashes, and tests use synthetic text. No upstream SDK or source code is copied.
+
+| Source / adapter | Observed availability | Usage / limits | Historical limitations |
+|---|---|---|---|
+| [cryptocurrency.cv](https://cryptocurrency.cv/api/news?limit=3), JSON | HTTP 200; three requested articles, structured attribution/pubDate; 2026-10-22 18:18 UTC | [Pinned README](https://github.com/nirholas/cryptocurrency.cv/blob/e9a07f459b30ef3b2f7b91719dba2f2d22026550/README.md) explicitly permits free hosted API use; identify client and cache, fair-use throttling; numeric guaranteed quota is not established. [Pinned LICENSE](https://github.com/nirholas/cryptocurrency.cv/blob/e9a07f459b30ef3b2f7b91719dba2f2d22026550/LICENSE) is proprietary/all rights reserved. **API only**, no SDK/self-hosting/competing hosted service. `/terms` returned a client-rendered shell; no additional grant inferred. Underlying article rights remain with publishers. | README claims an archive since 2017; no reliable point-in-time history was collected or certified here. Current capture time gates all replay. No AI/sentiment endpoints called. |
+| [Federal Reserve monetary RSS](https://www.federalreserve.gov/feeds/press_monetary.xml) | HTTP 200, XML | Official [RSS catalog](https://www.federalreserve.gov/feeds/feeds.htm) expressly describes feed readers; use original attribution/links. [Website policies](https://www.federalreserve.gov/website-linking-policies.htm) distinguish external copyrighted materials; no blanket third-party rights assumed. No published numeric RSS quota established; client bounded conservatively. | Rolling announcements, not a verified historical archive. Sparse/old releases can legitimately produce no fresh context. |
+| [Bitcoin Core RSS](https://bitcoincore.org/en/rss.xml) | HTTP 200, XML, ~593 KiB | Official [announcement subscription](https://bitcoincore.org/en/list/announcements/join/). Website source [MIT LICENSE at bd39e3326742349776243c3aadb8975a03b9def2](https://github.com/bitcoin-core/bitcoincore.org/blob/bd39e3326742349776243c3aadb8975a03b9def2/LICENSE), SHA-256 b129115f05ecce1fac48edbe39abf85492f5deb42c4df36509f1c80d723ea92e. Preserve attribution/notices if redistributing licensed material; no binaries or article bodies redistributed here. | Project announcements/security/release news, not broad crypto-market reporting. Rolling RSS and current observation only. |
+| [GDELT DOC 2](https://api.gdeltproject.org/api/v2/doc/doc), JSON | HTTP 429 on one small public request; optional adapter/failure handling supported | Official [data terms](https://www.gdeltproject.org/about.html) permit academic/commercial/governmental dataset use and require GDELT citation/link on redistribution. [DOC API documentation](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/) describes bounded article-list queries and a rolling search window; it is not a complete historical feed. Client never retries 429 immediately. | `seendate` is retained as provider observation, not fabricated as publication. Without publication evidence these rows are excluded from strict NewsContext. Original linked publishers retain their content rights. |
+| [CoinDesk RSS](https://www.coindesk.com/arc/outboundfeeds/rss) | Initial availability probe HTTP 200 | **Collection disabled.** Current [terms](https://www.coindesk.com/terms), effective 2025-11-14, prohibit automated access without written permission. No further ingestion/smoke request is made; a reachable RSS URL is not treated as permission. | No archive/history claim; no CoinDesk parser SDK or code copied. Other permitted providers keep the subsystem replaceable. |
+
+Transport policy: registered fixed HTTPS GET URLs only; no article fetching, redirects, auth headers, private addresses,
+Wallex endpoints or model-generated URLs. At most two attempts for transient read/server failures, 10-second socket
+inactivity timeout and one-second minimum wait; this is **not a total wall-clock deadline**. A slow-drip response can
+take longer, so ingestion is outside trading cycles. 4xx/429 and malformed payload stop that provider. Bodies <=1 MiB,
+JSON depth <=16, first 50 items; row caps and supplied total/has-more/limited metadata remain explicit in captures and
+partial-provider context flags. No polling daemon or automatic pagination is introduced. Reassess terms/limits before
+redistribution or broader use.
+
+Initial availability evidence is preserved locally in `data/cache/news-research/source-probes.json`; final application
+smoke and capture hashes are recorded in `reports/phase-04/NEWS_PUBLIC_SOURCE_SMOKE.json` by the final gate.

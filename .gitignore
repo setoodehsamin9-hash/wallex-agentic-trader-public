@@ -1,0 +1,50 @@
+# --- Secrets: never commit ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+**/credentials*.json
+
+# --- Runtime state (journals, ledgers, recorded LLM/tool responses from live/shadow runs) ---
+# Runs that are part of a deliverable are exported deliberately into runs/published/ after a secret scan.
+var/
+runs/*
+!runs/published/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# --- Large raw market data pulls (keep small fixtures under tests/fixtures/) ---
+data/raw/
+data/cache/
+
+# --- OS / editors ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local experiment outputs, optional MLflow mirror and plan execution scratch.
+/experiments/
+/experiments-test/
+/.superpowers/
+*.sqlite-wal
+*.sqlite-shm

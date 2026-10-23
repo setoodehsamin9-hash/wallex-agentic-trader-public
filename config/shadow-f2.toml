@@ -1,0 +1,113 @@
+# PHASE 05 forward SHADOW for the frozen F2 candidate (live PUBLIC Wallex data, simulated fills, ZERO real writes).
+# Strategy/features are exactly config/experiments/phase04r2/base-4h-f2.toml (f2-0.1.0, regime-r2 on).
+# Every limit is a SIMULATION ASSUMPTION (approved_by_owner = false): the owner's LIVE values come from the pre-LIVE
+# checklist in reports/phase-05/LIVE_READINESS_FA.md. No [trading_window]: the official challenge hours are unknown,
+# so this SHADOW is PROVISIONAL (always-open market) and LIVE refuses this config (missing trading_window, cutoff, limits).
+
+[run]
+environment = "SHADOW"
+autonomy = "AUTONOMOUS"
+live_autonomous_enabled = false
+symbols = ["BTCTMN", "ETHTMN"]
+bar_interval_seconds = 14400
+starting_capital_tmn = "5000000"
+seed = 7
+label = "phase05-f2-shadow"
+
+[limits]
+version = "sim-placeholder-2026-10-22"
+approved_by_owner = false
+
+[limits.risk]
+per_trade_budget_fraction = "0.005"
+total_loss_budget_tmn = "150000"
+session_loss_budget_tmn = "75000"
+max_position_notional_tmn = "1500000"
+max_total_exposure_tmn = "2500000"
+max_open_positions = 2
+drawdown_pause_fraction = "0.02"
+drawdown_emergency_fraction = "0.04"
+loss_streak_count = 3
+loss_streak_window_s = 14400
+cooldown_s = 3600
+max_spread_bps = "30"
+max_depth_fraction = "0.25"
+stress_cost_bps = "10"
+verdict_ttl_s = 30
+cautious_size_fraction = "0.5"
+
+[limits.data]
+max_bar_age_s = 1860
+max_book_age_s = 30
+
+[limits.approval]
+ticket_ttl_s = 300
+
+[limits.cutoff]
+no_new_entry_before_end_s = 14400
+liquidation_start_before_end_s = 7200
+
+[limits.kill]
+max_consecutive_execution_errors = 3
+reconciliation_tolerance_tmn = "1000"
+
+[costs]
+fee_rate = "0.0025"                     # ASSUMED per side until the account fee is read (U06)
+fee_source = "ASSUMED"
+backtest_slippage_bps = "5"
+
+[execution]
+entry_order_type = "LIMIT"
+entry_limit_slippage_bps = "20"
+exit_limit_slippage_bps = "30"
+entry_ttl_s = 900
+exit_order_ttl_s = 60                   # resting exit: cancel + confirmed re-issue (required by LIVE)
+
+[features]
+atr_bars = 14
+trend_bars = 24
+volume_bars = 20
+regime_trend_atr = "1.0"
+regime_shock_atr_pct = "0.02"
+ema_bars = 48
+regime_er_bars = 42
+regime_rank_bars = 1080
+
+[strategy]
+active = "F2_tsm"
+
+[strategy.c1]
+version = "c1-0.2.0"
+lookback_bars = 24
+buffer_atr = "0.1"
+stop_atr = "3"
+max_holding_s = 43200
+candidate_ttl_s = 600
+min_edge_over_cost_bps = "20"
+exit_mode = "TIME"
+min_atr_cost_ratio = "1.0"
+
+[strategy.f2]
+version = "f2-0.1.0"
+entry_band_atr = "0.5"
+stop_atr = "5"
+trail_atr = "5"
+max_holding_s = 604800
+candidate_ttl_s = 900
+regime_filter = true
+
+[agent]
+decision_provider = "LLM"               # NineRouter only; GPT-6.1 Sol (exact id from the local NineRouter catalog)
+model_id = "cx/gpt-6.1-sol"
+decision_deadline_s = 60
+max_model_requests = 4
+max_tool_calls = 4
+output_retries = 1
+use_wallex_mcp_tools = true
+prompt_version = "decision_v2"
+
+[shadow]
+poll_interval_s = 15
+history_bars = 900
+warmup_cache_dir = "var/warmup"
+warmup_seed_dir = "data/raw/historical-pack/export/datasets/1h"   # validated, hash-pinned pack (local); public reads fill the tail

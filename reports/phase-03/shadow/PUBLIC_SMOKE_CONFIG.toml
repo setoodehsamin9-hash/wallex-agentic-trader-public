@@ -1,0 +1,104 @@
+# Public adapter smoke only: 1m cadence; no model; simulated venue. Not a tuning trial.
+# SHADOW run config (live public Wallex data, simulated fills, ZERO real writes). Every numeric limit below is a SIMULATION PLACEHOLDER chosen to exercise the pipeline;
+# none is owner-approved and `approved_by_owner = false` keeps LIVE from ever starting on these values.
+# Rationale per value: docs/DECISION_LOG.md (2026-10-22, "simulation placeholder limits").
+
+[run]
+environment = "SHADOW"
+autonomy = "AUTONOMOUS"
+live_autonomous_enabled = false
+symbols = ["BTCTMN", "ETHTMN"]
+bar_interval_seconds = 60
+starting_capital_tmn = "5000000"
+seed = 7
+label = "shadow-c1-llm"
+
+[limits]
+version = "sim-placeholder-2026-10-22"
+approved_by_owner = false
+
+[limits.risk]
+per_trade_budget_fraction = "0.005"     # loss at stop ~0.5% of equity (~25,000 TMN on 5M)
+total_loss_budget_tmn = "150000"        # whole-run loss budget; entries stop beyond it
+session_loss_budget_tmn = "75000"
+max_position_notional_tmn = "1500000"   # never all-in: <= 30% of 5M per position
+max_total_exposure_tmn = "2500000"      # <= 50% of 5M across positions incl. pending
+max_open_positions = 2
+drawdown_pause_fraction = "0.02"
+drawdown_emergency_fraction = "0.04"    # latches the kill switch
+loss_streak_count = 3
+loss_streak_window_s = 14400
+cooldown_s = 3600
+max_spread_bps = "30"
+max_depth_fraction = "0.25"
+stress_cost_bps = "10"
+verdict_ttl_s = 30
+cautious_size_fraction = "0.5"
+
+[limits.data]
+max_bar_age_s = 1860                    # 2 bars + 60 s
+max_book_age_s = 30
+
+[limits.approval]
+ticket_ttl_s = 300
+
+[limits.cutoff]
+no_new_entry_before_end_s = 3600
+liquidation_start_before_end_s = 1800
+
+[limits.kill]
+max_consecutive_execution_errors = 3
+reconciliation_tolerance_tmn = "1000"
+
+[costs]
+fee_rate = "0.0025"                     # ASSUMED per side until the account fee is read (U06); stressed x2 in the study
+fee_source = "ASSUMED"
+backtest_slippage_bps = "5"
+
+[execution]
+entry_order_type = "LIMIT"
+entry_limit_slippage_bps = "20"
+exit_limit_slippage_bps = "30"
+entry_ttl_s = 900
+
+[features]
+atr_bars = 14
+trend_bars = 32
+volume_bars = 20
+regime_trend_atr = "1.0"
+regime_shock_atr_pct = "0.02"
+
+[strategy.c1]
+version = "c1-0.1.0"
+lookback_bars = 16
+buffer_atr = "0.1"
+stop_atr = "1.5"
+tp_atr = "3.0"
+max_holding_s = 21600
+candidate_ttl_s = 600
+min_edge_over_cost_bps = "20"
+
+[agent]
+decision_provider = "LLM"               # through NineRouter only; model id overridable with NINEROUTER_MODEL
+model_id = "av/claude-sonnet-5-5"
+decision_deadline_s = 60
+max_model_requests = 4
+max_tool_calls = 4
+output_retries = 1
+use_wallex_mcp_tools = true
+prompt_version = "decision_v1"
+
+[shadow]
+poll_interval_s = 15
+history_bars = 900
+
+# Trading windows are REQUIRED for LIVE and must come from the owner. Example shape only (NOT the owner's hours):
+# [trading_window]
+# version = "tw-YYYYMMDD-1"
+# timezone = "Area/City"
+# no_new_entry_before_close_s = 1800
+# flatten_before_close_s = 900
+# [[trading_window.windows]]
+# days = ["SAT", "SUN", "MON", "TUE", "WED", "THU", "FRI"]
+# start = "HH:MM"
+# end = "HH:MM"

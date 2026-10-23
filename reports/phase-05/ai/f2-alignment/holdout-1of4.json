@@ -1,0 +1,6332 @@
+{
+"frozen": {
+"frozen_at": "2026-10-23T10:02:28.297250+00:00",
+"role": "VETO",
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346",
+"brief_version": "f2-brief-1",
+"brief_sha256": "1b91d728523b79699e9a12d59e90b9b71f1d9a55dd64091920460184f956e0e5",
+"model_id": "cx/gpt-6.1-sol",
+"note": "frozen before the 417-case holdout; not tuned afterwards"
+},
+"rows": [
+{
+"case": "ETHTMN@2026-08-20T04:00:00+00:00",
+"baseline_entered": true,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-dcb0deae12a0f60e",
+"offered": [
+"f2-dcb0deae12a0f60e"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 9059,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۸۴۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد به‌تنهایی نقص داده نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۸۴۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد به‌تنهایی نقص داده نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-dcb0deae12a0f60e",
+"snapshot_id": "7fc88f3c83f1bfd3fdb1df8240c481cb3064f27b73d9a1846d384dc2973c3ca2"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-08-20T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-3d14678f7860714a",
+"offered": [
+"f2-3d14678f7860714a"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8735,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۸۸۸ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. داده لازم مفقود نیست و وضعیت اجرا مانعی ندارد؛ نبود اسپرد زنده طبق راهبرد دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۸۸۸ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. داده لازم مفقود نیست و وضعیت اجرا مانعی ندارد؛ نبود اسپرد زنده طبق راهبرد دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-3d14678f7860714a",
+"snapshot_id": "a1f1a568e0804ededa3da8d6e4b0f6b03b8b046af4bdf4ad0f81926770a95258"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-08-20T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-fb7df7fa43c5e69c",
+"offered": [
+"f2-fb7df7fa43c5e69c"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8024,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۹۳۸۸۸۹ در محدوده مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل صعودی است؛ بنابراین شرط ابطالِ نوسان بالا همراه با افت قیمت برقرار نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۹۳۸۸۸۹ در محدوده مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل صعودی است؛ بنابراین شرط ابطالِ نوسان بالا همراه با افت قیمت برقرار نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-fb7df7fa43c5e69c",
+"snapshot_id": "5bc1675a5e38fd6a53d2fd011fbdc6ad7b8f2d24dd4843d2f8e68ac6a07a2d5c"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-08-21T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-5ffdf1267aa1a996",
+"offered": [
+"f2-5ffdf1267aa1a996"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8428,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۹۴۲۵۹۳ در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته، پس شرط ابطال ناشی از شوک همراه با افت قیمت برقرار نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۹۴۲۵۹۳ در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته، پس شرط ابطال ناشی از شوک همراه با افت قیمت برقرار نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-5ffdf1267aa1a996",
+"snapshot_id": "f4fdf463d7b4fdf6bd219c083898778161a89e5156bf1f807f8aad393887ebf7"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-22T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-811b9423dfbfe738",
+"offered": [
+"f2-811b9423dfbfe738"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8347,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۹۱۶۶۶۷ در محدودهٔ مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته، بنابراین شرط وتوی شوک برقرار نیست. وضعیت اجرا نیز اجازهٔ ورود می‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۹۱۶۶۶۷ در محدودهٔ مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته، بنابراین شرط وتوی شوک برقرار نیست. وضعیت اجرا نیز اجازهٔ ورود می‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-811b9423dfbfe738",
+"snapshot_id": "17e7db039d2dd08be7d98d633e1e04f8864ca506d76ef4c3b93054c1cfbb54a2"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-24T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-02860fc0a7c8bcb5",
+"offered": [
+"f2-02860fc0a7c8bcb5"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 8220,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۹۲۷ در محدوده مجاز است و با توجه به رشد قیمت نسبت به ۴۲ کندل قبل، شرط ابطال ناشی از نوسان بالا و افت قیمت وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۹۲۷ در محدوده مجاز است و با توجه به رشد قیمت نسبت به ۴۲ کندل قبل، شرط ابطال ناشی از نوسان بالا و افت قیمت وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-02860fc0a7c8bcb5",
+"snapshot_id": "4aa96d24aecad3d1a8efd37f8d9e45c471258c3b8f2ee46b5d9c204b10b94361"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-24T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-6620cc559748e454",
+"offered": [
+"f2-6620cc559748e454"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8263,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۹۳۹۸۱۵ در محدوده مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل صعودی است؛ بنابراین شرط ابطالِ نوسان بالا همراه با افت قیمت برقرار نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۹۳۹۸۱۵ در محدوده مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل صعودی است؛ بنابراین شرط ابطالِ نوسان بالا همراه با افت قیمت برقرار نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-6620cc559748e454",
+"snapshot_id": "66d90bb68585688945105b63787c5242e030ae1ad6e47f45482279c5a2510a43"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-24T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-45a988bfd9e65408",
+"offered": [
+"f2-45a988bfd9e65408"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14"
+],
+"latency_ms": 9389,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۹۴۳۵ در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ بنابراین شرط ابطال ناشی از شوک همراه با افت قیمت وجود ندارد. وضعیت اجرا مجاز است و نبود اسپرد زنده طبق راهبرد دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۹۴۳۵ در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ بنابراین شرط ابطال ناشی از شوک همراه با افت قیمت وجود ندارد. وضعیت اجرا مجاز است و نبود اسپرد زنده طبق راهبرد دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-45a988bfd9e65408",
+"snapshot_id": "94d40a6d4d9c79b24a7fd00ecfbff5a10620bb076be1647efa35f1b14e2fd7be"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-25T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-c2b984261833d053",
+"offered": [
+"f2-c2b984261833d053"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 6745,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل صعودی است؛ شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل صعودی است؛ شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-c2b984261833d053",
+"snapshot_id": "26e779bbcc36b7f74fac43d1628889dcbbeff693995beb09d4602af4c11f085c"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-08-25T12:00:00+00:00",
+"baseline_entered": false,
+"status": "UNKNOWN_REFERENCE",
+"action": "WAIT",
+"detail": "snapshot_id not the one provided",
+"model_action": "ENTER",
+"candidate": "f2-3d399719e55f78a1",
+"offered": [
+"f2-3d399719e55f78a1"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 6465,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-3d399719e55f78a1",
+"snapshot_id": "4ed3412231e55f78a1"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-08-26T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-e26bd9e648388133",
+"offered": [
+"f2-e26bd9e648388133"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8101,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-e26bd9e648388133",
+"snapshot_id": "129badd7f54fb79dcc90fff398d39641e882e89b8f39d550bb933972b6ce681e"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-26T16:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-85a3bd1592e9fe36",
+"offered": [
+"f2-85a3bd1592e9fe36"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8480,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۹۴۵۳۷ در محدودهٔ مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته، بنابراین شرط ابطالِ شوک همراه با افت قیمت برقرار نیست. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۹۴۵۳۷ در محدودهٔ مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته، بنابراین شرط ابطالِ شوک همراه با افت قیمت برقرار نیست. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-85a3bd1592e9fe36",
+"snapshot_id": "7731e19d7fafbaf5831f0ee8b022f18cae7e366614d7ed707c5b04c819c1f29d"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-27T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-c95f87af46e7ed20",
+"offered": [
+"f2-c95f87af46e7ed20"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 7104,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۷۵ در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۷۵ در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-c95f87af46e7ed20",
+"snapshot_id": "92da080fa73f82300fdd9ed2184d94e474cfaccf57fbc77bf976e7a28ce69968"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-27T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-8529c5a78436d5bb",
+"offered": [
+"f2-8529c5a78436d5bb"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14"
+],
+"latency_ms": 8816,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۸۱۷ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است؛ نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست و کنترل آن بر عهده موتور ریسک است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۸۱۷ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است؛ نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست و کنترل آن بر عهده موتور ریسک است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-8529c5a78436d5bb",
+"snapshot_id": "fe1a81085d55d145e143fd3c3112c8411dfe83c29a23f6fd8b78f2eb6ab5cbe9"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-27T16:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-13e0f16160c910eb",
+"offered": [
+"f2-13e0f16160c910eb"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14"
+],
+"latency_ms": 7559,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۷۸۲۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۷۸۲۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-13e0f16160c910eb",
+"snapshot_id": "05df6dae03ef46e44c3635f70beca4c1a4f6d2a7602030b14c6a78b2444ca9ed"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-28T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-f1b5b1e367bec7e4",
+"offered": [
+"f2-f1b5b1e367bec7e4"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8297,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و نیز بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۵۴۷۲۲۲ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ مانع مستندی برای تأیید نامزد وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و نیز بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۵۴۷۲۲۲ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ مانع مستندی برای تأیید نامزد وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-f1b5b1e367bec7e4",
+"snapshot_id": "b33542b73bfa9040f6adeec9112b08ad5aeddf390ebb37dd6ccd52dbd5b6e3c1"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-28T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-49f0882029cc7f8e",
+"offered": [
+"f2-49f0882029cc7f8e"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.spread_bps.0"
+],
+"latency_ms": 8248,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان مجاز و قیمت نیز بالاتر از ۴۲ کندل قبل است. وضعیت اجرا مانعی نشان نمی‌دهد؛ اسپرد تهی طبق تعریف استراتژی دلیل وتو نیست و بررسی زنده آن بر عهده موتور ریسک است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان مجاز و قیمت نیز بالاتر از ۴۲ کندل قبل است. وضعیت اجرا مانعی نشان نمی‌دهد؛ اسپرد تهی طبق تعریف استراتژی دلیل وتو نیست و بررسی زنده آن بر عهده موتور ریسک است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.spread_bps.0"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-49f0882029cc7f8e",
+"snapshot_id": "66e3f5d50c88f4abe35b44e6b73c1f9a77eb1e5e1caa0c17664301ff9a603a56"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-28T16:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-d0d8581562b9936c",
+"offered": [
+"f2-d0d8581562b9936c"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 7867,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۳۰۶ و رتبهٔ کارایی ۰٫۴۸۸ رژیم مجاز RANGE را نشان می‌دهند و وضعیت اجرا مانعی ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۳۰۶ و رتبهٔ کارایی ۰٫۴۸۸ رژیم مجاز RANGE را نشان می‌دهند و وضعیت اجرا مانعی ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-d0d8581562b9936c",
+"snapshot_id": "35d9f4a256c2c9bb538e0d3177a46d191b212d1834a86f67d747cb9f200f8075"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-29T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-0c0f73aef94fb351",
+"offered": [
+"f2-0c0f73aef94fb351"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 8083,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و نیز بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۳۰۷۴ در محدوده مجاز و رتبه کارایی ۰٫۴۵۶۵ نشان‌دهنده رژیم رنجِ مجاز است؛ شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و نیز بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۳۰۷۴ در محدوده مجاز و رتبه کارایی ۰٫۴۵۶۵ نشان‌دهنده رژیم رنجِ مجاز است؛ شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-0c0f73aef94fb351",
+"snapshot_id": "241d80cec4973694314fb0f41f779c95d2a0f2090c9b2eeca36476a3038639f5"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-29T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-34f811f1d39aa52b",
+"offered": [
+"f2-34f811f1d39aa52b"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 9403,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌علاوه نصف ATR۱۴ و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۳۰۵ و رشد نسبت به ۴۲ کندل قبل، رژیم مجاز صعودی را تأیید می‌کنند؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌علاوه نصف ATR۱۴ و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۳۰۵ و رشد نسبت به ۴۲ کندل قبل، رژیم مجاز صعودی را تأیید می‌کنند؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-34f811f1d39aa52b",
+"snapshot_id": "ec79a2a8e922ed92013df41d2d7d158aaca671bff9eaead21a9a77095c62a9cc"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-08-29T16:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-65aa9ed5c7058141",
+"offered": [
+"f2-65aa9ed5c7058141"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 9262,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۳۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به کنترل موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۳۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به کنترل موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-65aa9ed5c7058141",
+"snapshot_id": "cf284a0202f8e68a17c10f7a531eccddbc92e1024332639ad6c22097033fe21b"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-08-31T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-21692e72bdbf26da",
+"offered": [
+"f2-21692e72bdbf26da"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7799,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۲۴۹۰۷۴ در محدوده مجاز است و رتبه کارایی ۰٫۳ رژیم رنجِ مجاز را نشان می‌دهد؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۲۴۹۰۷۴ در محدوده مجاز است و رتبه کارایی ۰٫۳ رژیم رنجِ مجاز را نشان می‌دهد؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-21692e72bdbf26da",
+"snapshot_id": "126af976e9801e4679014eb01c42972283be2bc5ed4236a09305725e6c4ca91f"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-08-31T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-48793abfbcb38448",
+"offered": [
+"f2-48793abfbcb38448"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8242,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز و رژیم رنج طبق راهبرد پذیرفته است؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز و رژیم رنج طبق راهبرد پذیرفته است؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-48793abfbcb38448",
+"snapshot_id": "d419ef6881e8315eb664c47cd2e7853a55ec0b023e16cfc9e26a2a5890bff96d"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-01T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-31e12360e03b6789",
+"offered": [
+"f2-31e12360e03b6789"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7966,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۳۵۴ در محدودهٔ مجاز و رتبهٔ کارایی ۰٫۳۸۷ نشان‌دهندهٔ رژیم رنجِ مجاز است؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۳۵۴ در محدودهٔ مجاز و رتبهٔ کارایی ۰٫۳۸۷ نشان‌دهندهٔ رژیم رنجِ مجاز است؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-31e12360e03b6789",
+"snapshot_id": "7666f5010a56fc2a6e5f3ec438e01dbf84f679ada444f549b60722af240e3309"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-01T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-85317a69a11bede0",
+"offered": [
+"f2-85317a69a11bede0"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.spread_bps.0"
+],
+"latency_ms": 9823,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۸۵ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ اسپرد تهی طبق راهبرد به کنترل زنده موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۸۵ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ اسپرد تهی طبق راهبرد به کنترل زنده موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.spread_bps.0"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-85317a69a11bede0",
+"snapshot_id": "6c02558818d195af6bf25defbaf6fda2231cda2e5be0453326cafd3f58a46f68"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-01T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-ece0c84011c5d6fb",
+"offered": [
+"f2-ece0c84011c5d6fb"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8231,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۶۲۴ و افزایش قیمت نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۶۲۴ و افزایش قیمت نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-ece0c84011c5d6fb",
+"snapshot_id": "39346cd53e38e5e3f67e6a84b1692346787e6ee1fece12e5b3a26603f2397ed7"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-02T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-389a79cd0da1c156",
+"offered": [
+"f2-389a79cd0da1c156"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8393,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۵۵۸۳ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد به‌تنهایی ایراد داده نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۵۵۸۳ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد به‌تنهایی ایراد داده نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-389a79cd0da1c156",
+"snapshot_id": "480d869b6370429c2c49999785c5b57813b078d05229f1b74c91481f3312c4c0"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-02T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-d8ac9352d3c9a445",
+"offered": [
+"f2-d8ac9352d3c9a445"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 9176,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۵ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا اجازه ورود می‌دهد و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به کنترل موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۵ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا اجازه ورود می‌دهد و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به کنترل موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-d8ac9352d3c9a445",
+"snapshot_id": "708d9dcc3b7f67dcba5ad4dc3a365a68ecaa0cc679e6e6ebee80d2d586f7727a"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-02T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-9e20f65b6a110018",
+"offered": [
+"f2-9e20f65b6a110018"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8069,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۴۳ و رشد نسبت به ۴۲ کندل قبل، رژیم مجاز راهبرد را تأیید می‌کنند و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۴۳ و رشد نسبت به ۴۲ کندل قبل، رژیم مجاز راهبرد را تأیید می‌کنند و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-9e20f65b6a110018",
+"snapshot_id": "39a2307ed2a07163de6cad67a8bca1f939bc0a020a8ffbfcf3ac13ee10cbbb48"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-03T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-aea236b6520a6e48",
+"offered": [
+"f2-aea236b6520a6e48"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7197,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۳۴۸ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند؛ وضعیت اجرا مجاز است و شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۳۴۸ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند؛ وضعیت اجرا مجاز است و شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-aea236b6520a6e48",
+"snapshot_id": "dc932cb73bab322e8fcc8f810d3c55498a757e3e477cce4b18367fc02f8cfba3"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-03T12:00:00+00:00",
+"baseline_entered": true,
+"status": "UNKNOWN_REFERENCE",
+"action": "WAIT",
+"detail": "snapshot_id not the one provided",
+"model_action": "ENTER",
+"candidate": "f2-edf1a8ff25f26e2d",
+"offered": [
+"f2-edf1a8ff25f26e2d"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8641,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۳۹۶ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و وضعیت اجرا مانعی نشان نمی‌دهد. نبود اسپرد زنده طبق تعریف استراتژی دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۳۹۶ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و وضعیت اجرا مانعی نشان نمی‌دهد. نبود اسپرد زنده طبق تعریف استراتژی دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-edf1a8ff25f26e2d",
+"snapshot_id": "fe73515eb2423e397c4102fc2877a2de35"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-03T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-f72c454f65f483ff",
+"offered": [
+"f2-f72c454f65f483ff"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.close_lag.42",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 7923,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۵۷۹ در محدودهٔ مجاز است و قیمت از ۴۲ کندل قبل بالاتر است؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۵۷۹ در محدودهٔ مجاز است و قیمت از ۴۲ کندل قبل بالاتر است؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.close_lag.42",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-f72c454f65f483ff",
+"snapshot_id": "ba02b643515b296b5ab3316a52abb33bd20356d1f944602cc8e3a9329d6dc982"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-04T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-cf452279e93498e8",
+"offered": [
+"f2-cf452279e93498e8"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8828,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۵۲۳ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. منع اجرایی یا شاهد معتبری برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد به‌تنهایی دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۵۲۳ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. منع اجرایی یا شاهد معتبری برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد به‌تنهایی دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-cf452279e93498e8",
+"snapshot_id": "ad5ffc8e074e3796acdb83db2fb4abc1ed4ac8410b6b1d13b3fed0d17f1f5bec"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-04T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-61c03c570ea9df05",
+"offered": [
+"f2-61c03c570ea9df05"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 9153,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۵۸۲ و رشد نسبت به ۴۲ کندل قبل، رژیم مجاز راهبرد را تأیید می‌کنند؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۵۸۲ و رشد نسبت به ۴۲ کندل قبل، رژیم مجاز راهبرد را تأیید می‌کنند؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-61c03c570ea9df05",
+"snapshot_id": "4e86308adfcae0c9e45c5a45b64adb6c9a18c18e5adab017745f3a750ca33cc4"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-04T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-f8792ed48eb12f7b",
+"offered": [
+"f2-f8792ed48eb12f7b"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 7807,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۷۷۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا اجازه ورود می‌دهد و دلیل معتبری برای وتو دیده نمی‌شود؛ اسپرد تهی طبق تعریف راهبرد به کنترل زنده موتور ریسک واگذار شده است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۷۷۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا اجازه ورود می‌دهد و دلیل معتبری برای وتو دیده نمی‌شود؛ اسپرد تهی طبق تعریف راهبرد به کنترل زنده موتور ریسک واگذار شده است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-f8792ed48eb12f7b",
+"snapshot_id": "d588685c7638720b92e7d939056a5f229f2edceff26bd491aa8b815ce720c39d"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-05T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-a198364f4b4e3d02",
+"offered": [
+"f2-a198364f4b4e3d02"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7078,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۷۱۸ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۷۱۸ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-a198364f4b4e3d02",
+"snapshot_id": "fa94f98f6d8dcf04192559aa2711763dc90cbe343e45da57211d91d35b651bbd"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-05T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-cfa3db3aa5846f00",
+"offered": [
+"f2-cfa3db3aa5846f00"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 7812,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۷۵۷۴ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۷۵۷۴ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-cfa3db3aa5846f00",
+"snapshot_id": "47766c1f938b496ea9e805f6e1b8aa16df5e69a89392d8a3b51d2bd7d86005b9"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-05T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-3ef08b77e6dd30ff",
+"offered": [
+"f2-3ef08b77e6dd30ff"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8475,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۷۲۲۲ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۷۲۲۲ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-3ef08b77e6dd30ff",
+"snapshot_id": "cd8169f77ff8efe77590bafe3faff4a84ca45ec66d800330faf6c4ea8cfd3962"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-06T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-95f2d873794f0e00",
+"offered": [
+"f2-95f2d873794f0e00"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 11816,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۵۱۶ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۵۱۶ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-95f2d873794f0e00",
+"snapshot_id": "728d9b26b120c02f6dc2e348658a1e3f0226b693b671ee6ffebaf0da0ea7d68a"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-06T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-287e2456f58f4f49",
+"offered": [
+"f2-287e2456f58f4f49"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.spread_bps.0"
+],
+"latency_ms": 11042,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۵۶۷ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و دلیل مستندی برای وتو وجود ندارد؛ اسپرد تهی طبق تعریف راهبرد به بررسی زندهٔ موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۵۶۷ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و دلیل مستندی برای وتو وجود ندارد؛ اسپرد تهی طبق تعریف راهبرد به بررسی زندهٔ موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.spread_bps.0"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-287e2456f58f4f49",
+"snapshot_id": "375300646789e5dc00a760d566f273609f32f8092b29a1dc12fca2782b8fa288"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-06T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-4abfc122b1ddb979",
+"offered": [
+"f2-4abfc122b1ddb979"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 7733,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۶۰۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد مانع تأیید نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۶۰۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد مانع تأیید نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-4abfc122b1ddb979",
+"snapshot_id": "95c8258bd754ff762436aa47a861e92fee9ad2020b9fcfa4c24f540974922b59"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-07T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-e23e6679d74ece03",
+"offered": [
+"f2-e23e6679d74ece03"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 7167,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۲۹۱ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۲۹۱ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-e23e6679d74ece03",
+"snapshot_id": "b3de150e10be68021877d37571864a6a2c8b5e7fa059b631f580b0f1471c39ea"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-07T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-bd66d42abaee3031",
+"offered": [
+"f2-bd66d42abaee3031"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 6812,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز و قیمت بالاتر از ۴۲ کندل قبل است؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز و قیمت بالاتر از ۴۲ کندل قبل است؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-bd66d42abaee3031",
+"snapshot_id": "23ba66cd947b8e38b97bac7f9e00f06044d908070e912dcfbea162f7fd6fb3d4"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-07T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-827bb3e5bc884dac",
+"offered": [
+"f2-827bb3e5bc884dac"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 9309,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و نیز بالاتر از قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۳۰ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و دلیل معتبری برای وتو دیده نمی‌شود؛ نبود اسپرد زنده طبق راهبرد به بررسی موتور ریسک واگذار شده است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و نیز بالاتر از قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۳۰ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و دلیل معتبری برای وتو دیده نمی‌شود؛ نبود اسپرد زنده طبق راهبرد به بررسی موتور ریسک واگذار شده است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-827bb3e5bc884dac",
+"snapshot_id": "f54407643980bb85ceb422144cf05221a54e9658e82eca278eac7c24b4f1b755"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-08T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-e3f4e710da23b50b",
+"offered": [
+"f2-e3f4e710da23b50b"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8584,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۴۲۷ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ مانع اجرایی یا دلیل مستندی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۴۲۷ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ مانع اجرایی یا دلیل مستندی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-e3f4e710da23b50b",
+"snapshot_id": "d026d0f62fd521185d6eac2d2b490467b34d83b576f99177a984c22dc010c7cb"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-08T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-abee34151dd57495",
+"offered": [
+"f2-abee34151dd57495"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 9325,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۰۷۴ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد نقص داده نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۰۷۴ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد نقص داده نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-abee34151dd57495",
+"snapshot_id": "1d141689d8fbe0341294e4461413392dc6b18665bfb63ad1072d1d289d0e359c"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-08T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-fec1c9dd24fcac64",
+"offered": [
+"f2-fec1c9dd24fcac64"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8457,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نصف ATR14 و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۲۷ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. پرچم کیفیت یا مانع اجرایی گزارش نشده؛ نبود اسپرد زنده طبق راهبرد دلیل وتو نیست و بررسی آن بر عهده موتور ریسک است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نصف ATR14 و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۲۷ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. پرچم کیفیت یا مانع اجرایی گزارش نشده؛ نبود اسپرد زنده طبق راهبرد دلیل وتو نیست و بررسی آن بر عهده موتور ریسک است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-fec1c9dd24fcac64",
+"snapshot_id": "761d2ed402052e7353f3b3422d40eb270a2435de8f8033d17261311ab974e182"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-09T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-05bbb060ad0be776",
+"offered": [
+"f2-05bbb060ad0be776"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8420,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۲۶۸۵ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. پرچم کیفیت یا وضعیت اجرایی ناامن گزارش نشده و نبود داده اسپرد، طبق تعریف راهبرد، به‌تنهایی دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۲۶۸۵ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. پرچم کیفیت یا وضعیت اجرایی ناامن گزارش نشده و نبود داده اسپرد، طبق تعریف راهبرد، به‌تنهایی دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-05bbb060ad0be776",
+"snapshot_id": "3453da65e3712077f1ef0eb946c3d18663719b8798745c3df5ad48e98e9c6668"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-09T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-a721633d3b1bf958",
+"offered": [
+"f2-a721633d3b1bf958"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 6878,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان در محدودهٔ مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل افزایش یافته است. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد مانع تأیید نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان در محدودهٔ مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل افزایش یافته است. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد مانع تأیید نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-a721633d3b1bf958",
+"snapshot_id": "10a40b26e3641bdaacacaea5c24451e50e2659fad1e476fee610326f509032d0"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-09T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-82eae0a2cb607f4e",
+"offered": [
+"f2-82eae0a2cb607f4e"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8381,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۲۶۱ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. پرچم کیفیت یا مانع اجرایی گزارش نشده و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۲۶۱ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. پرچم کیفیت یا مانع اجرایی گزارش نشده و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-82eae0a2cb607f4e",
+"snapshot_id": "f3d544e0114fb0dca70d96a414d8dc208b818180b62f8a36baaac80b00b826ec"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-10T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-7551edc13858e841",
+"offered": [
+"f2-7551edc13858e841"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8763,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان در محدوده مجاز قرار دارد و قیمت از ۴۲ کندل قبل نیز بالاتر است. پرچم کیفیت یا مانع اجرایی گزارش نشده و نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان در محدوده مجاز قرار دارد و قیمت از ۴۲ کندل قبل نیز بالاتر است. پرچم کیفیت یا مانع اجرایی گزارش نشده و نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-7551edc13858e841",
+"snapshot_id": "7e728dd674e6d86735d5012baa99503a484fe814c8f30a20fac3d1166a91eaf1"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-10T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-57295b3ad00266e4",
+"offered": [
+"f2-57295b3ad00266e4"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 7621,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از میانگین نمایی ۴۸ به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد مانع تأیید نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از میانگین نمایی ۴۸ به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق تعریف راهبرد مانع تأیید نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-57295b3ad00266e4",
+"snapshot_id": "9aed61d27efae7715787bf61c150b506113441715a5e6e37e5a75e271d95608a"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-10T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-260c65695b6b57f2",
+"offered": [
+"f2-260c65695b6b57f2"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7508,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۳۹۷ و رتبه کارایی ۰٫۴۳۹ در محدوده مجاز راهبرد قرار دارند و رژیم رنج مانع ورود نیست. وضعیت اجرای اعلام‌شده نیز مانعی برای ورود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۳۹۷ و رتبه کارایی ۰٫۴۳۹ در محدوده مجاز راهبرد قرار دارند و رژیم رنج مانع ورود نیست. وضعیت اجرای اعلام‌شده نیز مانعی برای ورود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-260c65695b6b57f2",
+"snapshot_id": "5ebaa84113e9f1f2c3d6cf0bb8779395a151460ad09eb995908abbe45f6c8ba9"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-11T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-2f76656bdf1fb7b4",
+"offered": [
+"f2-2f76656bdf1fb7b4"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7441,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نصف ATR14 و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز و رژیم RANGE نیز طبق راهبرد مجاز است؛ دلیل مستندی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نصف ATR14 و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز و رژیم RANGE نیز طبق راهبرد مجاز است؛ دلیل مستندی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-2f76656bdf1fb7b4",
+"snapshot_id": "1c7fca6bc9816851478a1c9097886699c2e2fe6e85eb040e01d2860f21d321f1"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-11T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-1a4c0eb294b46604",
+"offered": [
+"f2-1a4c0eb294b46604"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8724,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۰۲ و رتبه کارایی ۰٫۳۲۳ در رژیم مجاز راهبرد قرار دارند و قیمت از ۴۲ کندل قبل بالاتر است. پرچم کیفیت یا وضعیت اجرایی ناامن گزارش نشده و دلیل معتبری برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۰۲ و رتبه کارایی ۰٫۳۲۳ در رژیم مجاز راهبرد قرار دارند و قیمت از ۴۲ کندل قبل بالاتر است. پرچم کیفیت یا وضعیت اجرایی ناامن گزارش نشده و دلیل معتبری برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-1a4c0eb294b46604",
+"snapshot_id": "3debc3236d58d0d4ea9eeae9390cee18fe6416b50ade90768f126b04e09a3890"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-11T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-af1874278b28e821",
+"offered": [
+"f2-af1874278b28e821"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 9693,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۸۱۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. پرچم کیفیت یا منع اجرایی گزارش نشده است؛ نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست و بررسی آن بر عهدهٔ موتور ریسک است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۸۱۴ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. پرچم کیفیت یا منع اجرایی گزارش نشده است؛ نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست و بررسی آن بر عهدهٔ موتور ریسک است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-af1874278b28e821",
+"snapshot_id": "0191f0bc3b22c0d1eac1fce595a8390d37b5956a6216b44974b89aaa9b105ef3"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-12T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-bd248181461e502d",
+"offered": [
+"f2-bd248181461e502d"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.spread_bps.0"
+],
+"latency_ms": 8332,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۸۰۲ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است؛ نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست و کنترل آن بر عهده موتور ریسک است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۸۰۲ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است؛ نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست و کنترل آن بر عهده موتور ریسک است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.spread_bps.0"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-bd248181461e502d",
+"snapshot_id": "f78e568f44793078ece1fdd7971630416a1eb7724caedf5e07ec46a6c15a44e4"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-12T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-04ffbe484aeea982",
+"offered": [
+"f2-04ffbe484aeea982"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7880,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۰۹۲۵۹ در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۰۹۲۵۹ در محدوده مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-04ffbe484aeea982",
+"snapshot_id": "904f54059f73547ed49ed701bdbaa629f412b9a25b9aea71671bb38a13d09013"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-13T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-82b5324336be47e3",
+"offered": [
+"f2-82b5324336be47e3"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8059,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۶۸ در محدوده مجاز است و رتبه کارایی پایین، رژیم رنجِ مجاز راهبرد را نشان می‌دهد؛ دلیل معتبری برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۶۸ در محدوده مجاز است و رتبه کارایی پایین، رژیم رنجِ مجاز راهبرد را نشان می‌دهد؛ دلیل معتبری برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-82b5324336be47e3",
+"snapshot_id": "842dda9b00d3cb7407e3d3fbf0beb87e1296bbc2997dcec16daecf9eb99be706"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-14T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-2bb5fb957c6c398c",
+"offered": [
+"f2-2bb5fb957c6c398c"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8379,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۸۴ و رتبه کارایی ۰٫۴۱۷ در رژیم مجاز RANGE قرار دارند و شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۸۴ و رتبه کارایی ۰٫۴۱۷ در رژیم مجاز RANGE قرار دارند و شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-2bb5fb957c6c398c",
+"snapshot_id": "5387e4747d22ea99f9625f172f31606ba4a9383d57a3e93c70c1466c0a069032"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-14T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-ac4352adab37afba",
+"offered": [
+"f2-ac4352adab37afba"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 7569,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۶۳۵ و رژیم رنج با رتبه کارایی ۰٫۲۳۴ مطابق راهبرد مجازند؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۶۳۵ و رژیم رنج با رتبه کارایی ۰٫۲۳۴ مطابق راهبرد مجازند؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-ac4352adab37afba",
+"snapshot_id": "42cf756a3afef87379f1cc5ee0f134f1022fa6432cc21930f5665cd554295305"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-18T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-60e6c67b460948af",
+"offered": [
+"f2-60e6c67b460948af"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 7684,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۵۲۹ و رژیم رنج با رتبهٔ کارایی پایین طبق راهبرد مجازند و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۵۲۹ و رژیم رنج با رتبهٔ کارایی پایین طبق راهبرد مجازند و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-60e6c67b460948af",
+"snapshot_id": "fb769492ceebe409fe4e60d946195a26759d9bd5218489334ce0ad55bf9534ac"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-19T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-e328c5fa44d7b7ae",
+"offered": [
+"f2-e328c5fa44d7b7ae"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 7772,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۴۴۳ و رتبه کارایی ۰٫۰۱۴ با رژیم مجاز RANGE سازگارند و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۴۴۳ و رتبه کارایی ۰٫۰۱۴ با رژیم مجاز RANGE سازگارند و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-e328c5fa44d7b7ae",
+"snapshot_id": "b3f78ba09806441ad7205eafc21908847ec76cbd5d2cedfe71e9766b91d7fb01"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-19T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-31cdad11e8d4e3a4",
+"offered": [
+"f2-31cdad11e8d4e3a4"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 8519,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نصف ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۴۷۰۳۷ و رتبه کارایی ۰٫۲۷۱۲۹۶ در رژیم مجاز RANGE قرار دارند و شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نصف ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۴۷۰۳۷ و رتبه کارایی ۰٫۲۷۱۲۹۶ در رژیم مجاز RANGE قرار دارند و شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-31cdad11e8d4e3a4",
+"snapshot_id": "0f1f1046b0000867800a8cd28a873f044c580595a0978ba7e64d4e2fae93c1ff"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-19T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-f7b4672d06e8d7b1",
+"offered": [
+"f2-f7b4672d06e8d7b1"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 7735,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۴۹۶ و رتبهٔ کارایی ۰٫۳۷۰، رژیم رنجِ مجاز راهبرد را نشان می‌دهند و شاهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۴۹۶ و رتبهٔ کارایی ۰٫۳۷۰، رژیم رنجِ مجاز راهبرد را نشان می‌دهند و شاهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-f7b4672d06e8d7b1",
+"snapshot_id": "35d75852de6a3ffd47752172865470736ba2cdd5333ef776a1322e60228e3468"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-20T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-f1ef667db7494f2b",
+"offered": [
+"f2-f1ef667db7494f2b"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 8687,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان در محدوده مجاز است و رتبه کارایی پایین، طبق راهبرد، مانع ورود نیست؛ وضعیت اجرا نیز اجازه ورود می‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان در محدوده مجاز است و رتبه کارایی پایین، طبق راهبرد، مانع ورود نیست؛ وضعیت اجرا نیز اجازه ورود می‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-f1ef667db7494f2b",
+"snapshot_id": "3d001362ced084a9b02f7814c814121bc3bf8f89d93ddffaf81742070715781b"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-20T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-eb9d18632a63f32c",
+"offered": [
+"f2-eb9d18632a63f32c"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 8644,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۶۵ و رتبه کارایی ۰٫۳۵۶ در رژیم مجاز RANGE قرار دارند و قیمت نسبت به ۴۲ کندل قبل نیز بالاتر است. شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به کنترل موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۶۵ و رتبه کارایی ۰٫۳۵۶ در رژیم مجاز RANGE قرار دارند و قیمت نسبت به ۴۲ کندل قبل نیز بالاتر است. شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به کنترل موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-eb9d18632a63f32c",
+"snapshot_id": "6cdcecc8a4e338d7ada4298f6ddbb29c071f29e48cd40f4c3dd83ca4d3276460"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-21T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-bf3bfc8cd3ea5b0d",
+"offered": [
+"f2-bf3bfc8cd3ea5b0d"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42",
+"BTCTMN.spread_bps.0"
+],
+"latency_ms": 8816,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۲۲۴ و رتبه کارایی ۰٫۳۶۰ در محدوده مجاز راهبرد قرار دارند و رژیم رنج مانع ورود نیست. نبود اسپرد زنده طبق راهبرد دلیل وتو نیست و وضعیت اجرا اجازه ورود می‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۲۲۴ و رتبه کارایی ۰٫۳۶۰ در محدوده مجاز راهبرد قرار دارند و رژیم رنج مانع ورود نیست. نبود اسپرد زنده طبق راهبرد دلیل وتو نیست و وضعیت اجرا اجازه ورود می‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42",
+"BTCTMN.spread_bps.0"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-bf3bfc8cd3ea5b0d",
+"snapshot_id": "f1bcd78375312a7b68a0552de2b39939f80bf9626bea83a5719cc4cceb8e7d87"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-21T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-5bf56409ea4df1b9",
+"offered": [
+"f2-5bf56409ea4df1b9"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8566,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۵۴۱ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی ایراد داده نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۵۴۱ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی ایراد داده نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-5bf56409ea4df1b9",
+"snapshot_id": "6d64d1d3d3c0745391e91d8b6e84df9108f938845391f1d41f6a8f74d319ad98"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-21T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-0523430b5eaadc93",
+"offered": [
+"f2-0523430b5eaadc93"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.spread_bps.0"
+],
+"latency_ms": 8744,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۶۲۱ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ اسپرد ناموجود طبق تعریف راهبرد به کنترل زندهٔ موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۶۲۱ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ اسپرد ناموجود طبق تعریف راهبرد به کنترل زندهٔ موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.spread_bps.0"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-0523430b5eaadc93",
+"snapshot_id": "2a0b1e4100254a0837a0f738df34ab8e6243e6a11836e7bbc1f3a0439252db59"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-22T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-25a71e679559e2bb",
+"offered": [
+"f2-25a71e679559e2bb"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 7655,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نصف ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۶۹۵ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند و شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نصف ATR14 و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۶۹۵ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند و شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-25a71e679559e2bb",
+"snapshot_id": "d2f360acf7b675bec512426805c1d2a5da942c532dcd7f71f90e9a6d1cde9665"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-22T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-c939c224a4a7565d",
+"offered": [
+"f2-c939c224a4a7565d"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8448,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR14 و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۶۸۳۳ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی دلیل رد نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR14 و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۶۸۳۳ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی دلیل رد نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-c939c224a4a7565d",
+"snapshot_id": "7d1dbc113529350eed549e78e7a8d92fcd496e8ca283c397cb04d4d3a8a06032"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-23T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-ef222fec9e536a6d",
+"offered": [
+"f2-ef222fec9e536a6d"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14"
+],
+"latency_ms": 8625,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۸۲۶ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا ورود را مجاز می‌داند و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی مانع تأیید نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۸۲۶ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا ورود را مجاز می‌داند و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی مانع تأیید نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-ef222fec9e536a6d",
+"snapshot_id": "9b5e3f24e51ec5dbeb6abc0a376bc59e80adcccc232166d8de6895857b9ada16"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-23T16:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-209569d8b261c359",
+"offered": [
+"f2-209569d8b261c359"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 9200,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۸۵۷۴ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد مانع تأیید نیست و کنترل آن بر عهده موتور ریسک است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۸۵۷۴ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد مانع تأیید نیست و کنترل آن بر عهده موتور ریسک است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-209569d8b261c359",
+"snapshot_id": "a3014f34d1fb13d2580a9e28a2efb2a2e1bb55acfb1c73abee99f8487d21cb7a"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-24T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-f04d6c8e5b26a272",
+"offered": [
+"f2-f04d6c8e5b26a272"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 7982,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز و قیمت بالاتر از ۴۲ کندل قبل است؛ با نبود پرچم کیفیت داده و مجاز بودن ورود، دلیل مستندی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان در محدوده مجاز و قیمت بالاتر از ۴۲ کندل قبل است؛ با نبود پرچم کیفیت داده و مجاز بودن ورود، دلیل مستندی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-f04d6c8e5b26a272",
+"snapshot_id": "bf6e9a06d6afbcdef3818abf9ad7c022f1e9e7adaeeaa1aa171f03524a6a5d68"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-24T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-5bea64f1c19ebf85",
+"offered": [
+"f2-5bea64f1c19ebf85"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.close_lag.42",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8055,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۷۵۱ در محدوده مجاز قرار دارد و قیمت از ۴۲ کندل قبل بالاتر است؛ شواهدی برای وتوی نامزد وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۷۵۱ در محدوده مجاز قرار دارد و قیمت از ۴۲ کندل قبل بالاتر است؛ شواهدی برای وتوی نامزد وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.close_lag.42",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-5bea64f1c19ebf85",
+"snapshot_id": "4f94809eb091d1cdd4c5aa0b6b5280bbd9a7224c34d46a8a74ae0fbacc4763ad"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-24T16:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-891a967e7df867da",
+"offered": [
+"f2-891a967e7df867da"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8130,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۷۷۷ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۷۷۷ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-891a967e7df867da",
+"snapshot_id": "f3df9a0971379bec534d0c9eb5d65b519d4352d10050ad4f3b01ecc0a97e4144"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-25T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-6096eadaac6ddacc",
+"offered": [
+"f2-6096eadaac6ddacc"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 7681,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۷۳۱ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۷۳۱ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-6096eadaac6ddacc",
+"snapshot_id": "0ba150d9daff6faff881fe92e3bdf098afb3c3b75b7876f204be4e9ac9b134df"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-25T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-968d2ba73d266985",
+"offered": [
+"f2-968d2ba73d266985"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 8999,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۵۳۷ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۵۳۷ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-968d2ba73d266985",
+"snapshot_id": "b0b3c7d1002995c92787861598114b0a850351234306022e0d1a6b5a82caf252"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-25T16:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-9ff8afc799ac6b2b",
+"offered": [
+"f2-9ff8afc799ac6b2b"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 9045,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۶۰۲ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. داده‌های لازم موجود و ورود در وضعیت اجرا مجاز است؛ نبود اسپرد زنده طبق راهبرد دلیل وتو نیست و بررسی آن بر عهده موتور ریسک است.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۶۰۲ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. داده‌های لازم موجود و ورود در وضعیت اجرا مجاز است؛ نبود اسپرد زنده طبق راهبرد دلیل وتو نیست و بررسی آن بر عهده موتور ریسک است.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-9ff8afc799ac6b2b",
+"snapshot_id": "3800dbaf93b82fc5e8d1508aabb9c8af783fe80d9ee49dce057d75bb42bffc79"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-26T00:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-e2a6c9f3dfc7fea9",
+"offered": [
+"f2-e2a6c9f3dfc7fea9"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 7403,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۴۴۵ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند؛ وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۴۴۵ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند؛ وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-e2a6c9f3dfc7fea9",
+"snapshot_id": "b75ada209f97e5d65d08159dd5bebefdabde2d1cee4c70ffe806eea8a7213ba0"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-26T08:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-55a3bfb7080932b5",
+"offered": [
+"f2-55a3bfb7080932b5"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8078,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۳۳۲۴ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. پرچم کیفیت یا مانع اجرایی گزارش نشده؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۳۳۲۴ و رشد نسبت به ۴۲ کندل قبل نیز فیلتر رژیم را تأیید می‌کنند. پرچم کیفیت یا مانع اجرایی گزارش نشده؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-55a3bfb7080932b5",
+"snapshot_id": "4a4c49a27a141b7ce6f65597382e56ea522c5cb86ecbd4999e92c22eacb2d03c"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-09-26T16:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-d751bd468a0af559",
+"offered": [
+"f2-d751bd468a0af559"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"latency_ms": 8481,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان در محدودهٔ مجاز و قیمت بالاتر از ۴۲ کندل قبل است. وضعیت اجرای اعلام‌شده مجاز است و شاهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به کنترل موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان در محدودهٔ مجاز و قیمت بالاتر از ۴۲ کندل قبل است. وضعیت اجرای اعلام‌شده مجاز است و شاهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به کنترل موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-d751bd468a0af559",
+"snapshot_id": "ac671e19d7465ed03be6383d0f1fb18927bd2647c030b94d5aa42f3e2d2f104e"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-29T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-aa9f8108fd6d47c8",
+"offered": [
+"f2-aa9f8108fd6d47c8"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 8857,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۳۰۸۳ و رتبهٔ کارایی ۰٫۴۹۹۱ در محدودهٔ مجاز راهبرد هستند و قیمت از ۴۲ کندل قبل نیز بالاتر است؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان ۰٫۳۰۸۳ و رتبهٔ کارایی ۰٫۴۹۹۱ در محدودهٔ مجاز راهبرد هستند و قیمت از ۴۲ کندل قبل نیز بالاتر است؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "RANGE",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-aa9f8108fd6d47c8",
+"snapshot_id": "fc81850e4ba1f41064b9f309e203c4298a365fce36b73b47316d8eb316a244a9"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-29T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-9308fe21a4a39544",
+"offered": [
+"f2-9308fe21a4a39544"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.spread_bps.0"
+],
+"latency_ms": 9155,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۷۶ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ اسپرد ناموجود طبق تعریف راهبرد به کنترل زنده موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۷۶ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ اسپرد ناموجود طبق تعریف راهبرد به کنترل زنده موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.spread_bps.0"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-9308fe21a4a39544",
+"snapshot_id": "7d7ce2bf1cb9bf30a53425bfb54c7ac74a524ef17f1d019e287c9d815dc808c5"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-29T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-215825c04657b285",
+"offered": [
+"f2-215825c04657b285"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7011,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان در محدوده مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل افزایش یافته است؛ شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان در محدوده مجاز قرار دارد و قیمت نسبت به ۴۲ کندل قبل افزایش یافته است؛ شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-215825c04657b285",
+"snapshot_id": "41970eaeaf7331c98a34c9d8c85ad4afd12fa82767cefd26b6148fa87014455b"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-30T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-03613f6653486c36",
+"offered": [
+"f2-03613f6653486c36"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7945,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۷۳۷ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و نبود اسپرد زنده طبق راهبرد به‌تنهایی دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۷۳۷ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و نبود اسپرد زنده طبق راهبرد به‌تنهایی دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-03613f6653486c36",
+"snapshot_id": "f237d4f954ba6d91cd1ed5093caebe520924c0c6b5eee25d7969bbe6cf98762a"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-30T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-ee1c062c827aa3fe",
+"offered": [
+"f2-ee1c062c827aa3fe"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 9150,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۳۱ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند و دلیل معتبری برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۳۱ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند و دلیل معتبری برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-ee1c062c827aa3fe",
+"snapshot_id": "fe0e4a110b201b7949e08e8d79f005435b6ee0bf89004bf9b99408e9d9a45cda"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-09-30T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-cd76359dc680fb4a",
+"offered": [
+"f2-cd76359dc680fb4a"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 7671,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و نیز بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۸۵۲ در محدودهٔ مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و نیز بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۸۵۲ در محدودهٔ مجاز است و قیمت نسبت به ۴۲ کندل قبل افزایش یافته؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-cd76359dc680fb4a",
+"snapshot_id": "be32e8f4d8600d1d046915260484546d2dbb9e7c7ad5450a27b6a3bb876c3672"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-01T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-04e7083df1602beb",
+"offered": [
+"f2-04e7083df1602beb"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 8410,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۲۸ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۲۸ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-04e7083df1602beb",
+"snapshot_id": "22037477fedbb6e6e0e1cff44d3816c945e491b2481bb071d8b38f5614cc51bc"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-01T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-d61da2f0d260e994",
+"offered": [
+"f2-d61da2f0d260e994"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 7993,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌علاوه نیم ATR۱۴ و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۴۲۶ در محدوده مجاز است و قیمت از ۴۲ کندل قبل نیز بالاتر است؛ شواهدی برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA۴۸ به‌علاوه نیم ATR۱۴ و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۸۴۲۶ در محدوده مجاز است و قیمت از ۴۲ کندل قبل نیز بالاتر است؛ شواهدی برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-d61da2f0d260e994",
+"snapshot_id": "3c40501144bb84b1640eb874c7669f8b79fdb434a4fbed8256b7250ddc550b8b"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-01T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-6b9da885ace78fab",
+"offered": [
+"f2-6b9da885ace78fab"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7448,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان در محدودهٔ مجاز و قیمت بالاتر از ۴۲ کندل قبل است؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبهٔ نوسان در محدودهٔ مجاز و قیمت بالاتر از ۴۲ کندل قبل است؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-6b9da885ace78fab",
+"snapshot_id": "f35c9fc485f7de97c592afde25d6ec03a405b3843b94328900d9f083c3e89f84"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-02T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-17d4097061926590",
+"offered": [
+"f2-17d4097061926590"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 8850,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۷۳۵ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و دلیل معتبری برای وتو دیده نمی‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۷۳۵ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند و دلیل معتبری برای وتو دیده نمی‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-17d4097061926590",
+"snapshot_id": "68f8fd0bceaa05481d6f1f104e9475d810024a58805c8636a6a022105332275d"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-02T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-01de34102f85f39d",
+"offered": [
+"f2-01de34102f85f39d"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 9035,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نصف ATR14 و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۷۳۵۱۸۵ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا اجازهٔ ورود می‌دهد و شاهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نصف ATR14 و بالاتر از قیمت ۴۸ کندل قبل است؛ رتبهٔ نوسان ۰٫۷۳۵۱۸۵ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا اجازهٔ ورود می‌دهد و شاهدی برای وتو وجود ندارد؛ نبود اسپرد زنده طبق راهبرد به‌تنهایی دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-01de34102f85f39d",
+"snapshot_id": "8c67cd93515771eabb30a374c3466b03d3adc219a0f923a21bfa46aeb9596c62"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-02T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-c244dee1e4b35cdd",
+"offered": [
+"f2-c244dee1e4b35cdd"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 7930,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۷۱۹ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز مانعی نشان نمی‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۷۱۹ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز مانعی نشان نمی‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-c244dee1e4b35cdd",
+"snapshot_id": "18227de96b1fe2133b4f47e6d80021429f957db993c1799fc774c10b52eca1be"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-03T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-b990d6ff816ac201",
+"offered": [
+"f2-b990d6ff816ac201"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7444,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۵۵۹ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۵۵۹ و رشد نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-b990d6ff816ac201",
+"snapshot_id": "c131a8de735b5bddde34fb119ab4055eca9d29c5c231f8b7e55e20a1e26ca1c0"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-03T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-8974f7252eb4d358",
+"offered": [
+"f2-8974f7252eb4d358"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 7888,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۶۱۷ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز اجازه ورود می‌دهد و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ بنابراین شرط ورود برقرار است. رتبه نوسان ۰٫۶۱۷ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز اجازه ورود می‌دهد و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-8974f7252eb4d358",
+"snapshot_id": "1f83d95115d5f4a64103b5c8638d1288a1e36fad0c2f09a1d22c1df735361653"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-03T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-bfde4ff53e6b34d4",
+"offered": [
+"f2-bfde4ff53e6b34d4"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"latency_ms": 9170,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۹۳ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. پرچم کیفیت یا منع ورود گزارش نشده و نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۹۳ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. پرچم کیفیت یا منع ورود گزارش نشده و نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-bfde4ff53e6b34d4",
+"snapshot_id": "2409629252a2b47b5e3d72d592bc41031de76d17898850e57bbd0054c3b0b3ee"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-04T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-3d24dc0d0081c9fc",
+"offered": [
+"f2-3d24dc0d0081c9fc"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7548,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۲۹۳ و رشد قیمت نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافهٔ نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۲۹۳ و رشد قیمت نسبت به ۴۲ کندل قبل با رژیم مجاز راهبرد سازگارند؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-3d24dc0d0081c9fc",
+"snapshot_id": "139f80f459b55fef7d7cd000e6dfd3dc580ceeeface56a6d2e0276d86fd20971"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-04T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-59b959e12897eead",
+"offered": [
+"f2-59b959e12897eead"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"latency_ms": 7080,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۴۷۱ در محدودهٔ مجاز است و قیمت از ۴۲ کندل قبل بالاتر است؛ شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوهٔ نیم ATR و قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبهٔ نوسان ۰٫۴۷۱ در محدودهٔ مجاز است و قیمت از ۴۲ کندل قبل بالاتر است؛ شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.vol_rank.14",
+"ETHTMN.er_rank.42",
+"ETHTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-59b959e12897eead",
+"snapshot_id": "6ea03bdaf99d21d5d4d4251c367f56683428b9ce11abe9507c47c161fd7a339b"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "ETHTMN@2026-10-04T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-f31258d2fdf3b39c",
+"offered": [
+"f2-f31258d2fdf3b39c"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"latency_ms": 8380,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۲۴۳ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۲۴۳ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شواهدی برای وتو وجود ندارد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"ETHTMN.close.1",
+"ETHTMN.ema.48",
+"ETHTMN.atr.14",
+"ETHTMN.close_lag.48",
+"ETHTMN.close_lag.42",
+"ETHTMN.vol_rank.14"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-f31258d2fdf3b39c",
+"snapshot_id": "4c04fa23c6b05cf461be397cc2508eebc39beb55b2975335b5de503c9e4b3299"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-10-05T12:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-9c3c3f69ba2aeb21",
+"offered": [
+"f2-9c3c3f69ba2aeb21"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.spread_bps.0"
+],
+"latency_ms": 9875,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۷۷ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ اسپرد ناموجود طبق تعریف راهبرد به کنترل زنده موتور ریسک واگذار می‌شود.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و قیمت ۴۸ کندل قبل است؛ رتبه نوسان ۰٫۴۷۷ و رشد نسبت به ۴۲ کندل قبل نیز با فیلتر رژیم سازگارند. وضعیت اجرا مجاز است و شاهدی برای وتو وجود ندارد؛ اسپرد ناموجود طبق تعریف راهبرد به کنترل زنده موتور ریسک واگذار می‌شود.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.close_lag.42",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.spread_bps.0"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-9c3c3f69ba2aeb21",
+"snapshot_id": "b1347db7a1eda36346e3f511da18cabb9c795f46b65e71759124353707c1c0a8"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-10-06T04:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-d4d85cc68e3390bb",
+"offered": [
+"f2-d4d85cc68e3390bb"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 9171,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۲۸۵۱۸۵ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌اضافه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۲۸۵۱۸۵ و رشد نسبت به ۴۲ کندل قبل، فیلتر رژیم را تأیید می‌کنند. وضعیت اجرا مجاز است و نبود اسپرد زنده طبق تعریف راهبرد دلیل وتو نیست.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-d4d85cc68e3390bb",
+"snapshot_id": "0538deefdc62220bd1165207b1d68dd52667524caca8fd63ffb8afd395b806a1"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+},
+{
+"case": "BTCTMN@2026-10-06T20:00:00+00:00",
+"baseline_entered": false,
+"status": "VALID",
+"action": "ENTER",
+"detail": null,
+"model_action": "ENTER",
+"candidate": "f2-ec8b80165ddaf673",
+"offered": [
+"f2-ec8b80165ddaf673"
+],
+"schema_valid": true,
+"discipline": true,
+"evidence_ok": true,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"evidence": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"latency_ms": 8654,
+"tools": [],
+"offered_tools": [
+"get_open_positions",
+"get_recent_decisions",
+"get_risk_status"
+],
+"responder": "ninerouter:gpt-6.1-sol",
+"rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۰۴ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"raw_output": {
+"action": "ENTER",
+"brief_rationale": "قیمت بسته‌شدن بالاتر از EMA48 به‌علاوه نیم ATR و بالاتر از قیمت ۴۸ کندل قبل است؛ شرط ورود برقرار است. رتبه نوسان ۰٫۴۰۴ و رشد نسبت به ۴۲ کندل قبل با فیلتر رژیم سازگارند؛ وضعیت اجرا نیز مانعی برای ورود نشان نمی‌دهد.",
+"confidence": "HIGH",
+"evidence_feature_ids": [
+"BTCTMN.close.1",
+"BTCTMN.ema.48",
+"BTCTMN.atr.14",
+"BTCTMN.close_lag.48",
+"BTCTMN.vol_rank.14",
+"BTCTMN.er_rank.42",
+"BTCTMN.close_lag.42"
+],
+"position_id": null,
+"reason_codes": [
+"TREND_CONFIRMED"
+],
+"regime_assessment": "TRENDING_UP",
+"risk_posture": "NORMAL",
+"schema_version": "1.0.0",
+"selected_candidate_id": "f2-ec8b80165ddaf673",
+"snapshot_id": "f82400c71e7a86955fd3dda1aa2e9fa51f487b123ea495c487a2fe6668f12a64"
+},
+"prompt_version": "veto_v1",
+"prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346"
+}
+]
+}

@@ -1,0 +1,1 @@
+{"passed": true, "date": "2026-10-23", "command": "NINEROUTER_MODEL=cx/gpt-6.1-sol uv run pytest -m ninerouter tests/ninerouter/test_real_candidate_path.py", "result": "1 passed", "model_id": "cx/gpt-6.1-sol", "real_wallex_writes": 0}

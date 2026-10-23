@@ -1,0 +1,31 @@
+{
+ "status": "PASS",
+ "scope": "Supplement to final verification gate: complete dataset manifest and current public metadata against committed pack manifest",
+ "checks": {
+  "hourly_dataset_manifest": {
+   "expected_sha256": "4111863351c216be16b7115950953acfb32c7ce47467666ae13a503af3b0e492",
+   "actual_sha256": "4111863351c216be16b7115950953acfb32c7ce47467666ae13a503af3b0e492",
+   "match": true
+  },
+  "hourly_metadata/hector_markets.json": {
+   "expected_sha256": "6df31467dfcf245ad3184c692a90b717db9c06013b763e9e4913ba0670381018",
+   "actual_sha256": "6df31467dfcf245ad3184c692a90b717db9c06013b763e9e4913ba0670381018",
+   "match": true
+  },
+  "hourly_metadata/package_183.json": {
+   "expected_sha256": "649295680d41089cf3e945e4bc7b37aab1c0fe9bf5ae963d797da8fae68698a8",
+   "actual_sha256": "649295680d41089cf3e945e4bc7b37aab1c0fe9bf5ae963d797da8fae68698a8",
+   "match": true
+  },
+  "hourly_metadata/udf_config.json": {
+   "expected_sha256": "8939a6a0f0aec969d545bd2eb1c2c4186d3c33389565547947ff7f753fee7b08",
+   "actual_sha256": "8939a6a0f0aec969d545bd2eb1c2c4186d3c33389565547947ff7f753fee7b08",
+   "match": true
+  },
+  "hourly_metadata/v1_markets.json": {
+   "expected_sha256": "bba44a106dc44fa3812d3d5865477320f673b710da164fc23946644bba1cb9e6",
+   "actual_sha256": "bba44a106dc44fa3812d3d5865477320f673b710da164fc23946644bba1cb9e6",
+   "match": true
+  }
+ }
+}

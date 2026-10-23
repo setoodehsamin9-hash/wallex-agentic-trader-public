@@ -1,0 +1,49 @@
+{
+ "coverage": {
+  "BTCTMN": {
+   "bars": 64704,
+   "chunk_flags": [
+    "GAP"
+   ],
+   "coverage": 0.998519,
+   "expected_bars": 64800,
+   "missing_bars": 96
+  },
+  "ETHTMN": {
+   "bars": 64675,
+   "chunk_flags": [
+    "GAP"
+   ],
+   "coverage": 0.998071,
+   "expected_bars": 64800,
+   "missing_bars": 125
+  }
+ },
+ "fetched_at_utc": "2026-10-22T11:09:42.976251+00:00",
+ "metadata_snapshot": "metadata/ (markets + package 183 at fetch time; universe version for this dataset)",
+ "name": "wallex-1m-btctmn-ethtmn",
+ "range_utc": [
+  "2026-09-07T00:00:00+00:00",
+  "2026-10-22T00:00:00+00:00"
+ ],
+ "resolution_seconds": 60,
+ "source": "https://api.wallex.ir/v1/udf/history resolution=1 (public, no key)",
+ "symbols": {
+  "BTCTMN": {
+   "bars": 64704,
+   "bars_sha256": "77490a3ebc40f7ea03538808ed89f64776e8e07957b82d4ee54c1f6aaa184e9a",
+   "file": "BTCTMN_1m.csv.gz",
+   "first_ts": "2026-09-07T00:00:00+00:00",
+   "last_ts": "2026-10-21T23:59:00+00:00",
+   "sha256": "fd83619bfb4b77b5dcc918639e901e9c6474e29cb0366a53a364a1714b6db496"
+  },
+  "ETHTMN": {
+   "bars": 64675,
+   "bars_sha256": "8d8c33a231eb4dc04dc32d5ac199b947f3b81a4818f5167df6a50188d1f00490",
+   "file": "ETHTMN_1m.csv.gz",
+   "first_ts": "2026-09-07T00:00:00+00:00",
+   "last_ts": "2026-10-21T23:59:00+00:00",
+   "sha256": "4758017a0e7cfd9999cf8bc534414206bd9e402f9ac615acab1958ff2ebd3305"
+  }
+ }
+}

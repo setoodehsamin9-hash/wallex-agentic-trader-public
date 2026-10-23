@@ -1,0 +1,59 @@
+{
+ "status": "PASS",
+ "base_commit": "671f661",
+ "branch": "phase-04/experiment-harness-prep",
+ "pytest": {
+  "command": "uv run pytest",
+  "passed": 266,
+  "deselected": 1,
+  "upstream_deprecation_warnings": 1
+ },
+ "pyright": {
+  "command": "uv run pyright",
+  "errors": 0,
+  "warnings": 0
+ },
+ "review": {
+  "independent_reviewers": 1,
+  "critical": 0,
+  "important_fixed": 2,
+  "red_green_regressions": 3,
+  "deferred_minors": 0
+ },
+ "smoke": {
+  "trials_per_run": 4,
+  "repeat_runs": 2,
+  "hashes_and_metrics_equal": true,
+  "test_evaluated": false,
+  "synthetic_only": true,
+  "source_hash": "cb0d0194e0c643c1b7f4cc9fee62d897a7796711416d0e862cc79be3cc41ec7e",
+  "recorded_code": {
+   "git_commit": "671f661776843980c517d45c06e3bd3298324434",
+   "dirty": true
+  },
+  "precommit_provenance_preserved": true,
+  "delivered_source_matches_smoke": true
+ },
+ "private_wallex_calls": 0,
+ "real_wallex_writes": 0,
+ "strategy_selected_or_modified": false,
+ "dependency_changes": false,
+ "secret_scan": {
+  "status": "PASS",
+  "files": 290,
+  "unapproved_hits": 0,
+  "exact_synthetic_exceptions": [
+   {
+    "file": "tests/agent/test_decision_agent.py",
+    "pattern": 1,
+    "match_sha256": "2321e773b0420085a350b5064369eaf4adf0674a6459b82ad13462da6a2dbcee"
+   },
+   {
+    "file": "tests/journal/test_journal.py",
+    "pattern": 0,
+    "match_sha256": "1c996639ed15be25f4db23ea84b049fa2b0e15b6599c85c36c0e6f93cd824a14"
+   }
+  ],
+  "configured_literal_count": 0
+ }
+}

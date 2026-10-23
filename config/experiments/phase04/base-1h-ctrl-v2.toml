@@ -1,0 +1,101 @@
+# PHASE 04 experiment base (1h bars). Derived from config/backtest.toml: only [run] bar interval/label,
+# [features] trend_bars and [strategy] differ; limits/costs/execution are the shipped simulation values.
+# BACKTEST run config. Every numeric limit below is a SIMULATION PLACEHOLDER chosen to exercise the pipeline;
+# none is owner-approved and `approved_by_owner = false` keeps LIVE from ever starting on these values.
+# Rationale per value: docs/DECISION_LOG.md (2026-10-22, "simulation placeholder limits").
+
+[run]
+environment = "BACKTEST"
+autonomy = "AUTONOMOUS"
+live_autonomous_enabled = false
+symbols = ["BTCTMN", "ETHTMN"]
+bar_interval_seconds = 3600
+starting_capital_tmn = "5000000"
+seed = 7
+label = "phase04-c2-drift-control-v2"
+
+[limits]
+version = "sim-placeholder-2026-10-22"
+approved_by_owner = false
+
+[limits.risk]
+per_trade_budget_fraction = "0.005"     # loss at stop ~0.5% of equity (~25,000 TMN on 5M)
+total_loss_budget_tmn = "150000"        # whole-run loss budget; entries stop beyond it
+session_loss_budget_tmn = "75000"
+max_position_notional_tmn = "1500000"   # never all-in: <= 30% of 5M per position
+max_total_exposure_tmn = "2500000"      # <= 50% of 5M across positions incl. pending
+max_open_positions = 2
+drawdown_pause_fraction = "0.02"
+drawdown_emergency_fraction = "0.04"    # latches the kill switch
+loss_streak_count = 3
+loss_streak_window_s = 14400
+cooldown_s = 3600
+max_spread_bps = "30"
+max_depth_fraction = "0.25"
+stress_cost_bps = "10"
+verdict_ttl_s = 30
+cautious_size_fraction = "0.5"
+
+[limits.data]
+max_bar_age_s = 1860                    # 2 bars + 60 s
+max_book_age_s = 30
+
+[limits.approval]
+ticket_ttl_s = 300
+
+[limits.cutoff]
+no_new_entry_before_end_s = 3600
+liquidation_start_before_end_s = 1800
+
+[limits.kill]
+max_consecutive_execution_errors = 3
+reconciliation_tolerance_tmn = "1000"
+
+[costs]
+fee_rate = "0.0025"                     # ASSUMED per side until the account fee is read (U06); stressed x2 in the study
+fee_source = "ASSUMED"
+backtest_slippage_bps = "5"
+
+[execution]
+entry_order_type = "LIMIT"
+entry_limit_slippage_bps = "20"
+exit_limit_slippage_bps = "30"
+entry_ttl_s = 900
+
+[features]
+atr_bars = 14
+trend_bars = 24                         # 24h trend window on 1h bars (Phase 04 design; fixed, not searched)
+volume_bars = 20
+regime_trend_atr = "1.0"
+regime_shock_atr_pct = "0.02"
+
+[strategy]
+active = "C2_trend_hold"
+
+[strategy.c1]
+version = "c1-0.2.0"                    # Phase 04: 1h breakout, no take-profit, stop/time exit
+lookback_bars = 24
+buffer_atr = "0.1"
+stop_atr = "2"
+max_holding_s = 43200
+candidate_ttl_s = 600
+min_edge_over_cost_bps = "20"           # unused in TIME mode (kept for schema)
+exit_mode = "TIME"
+min_atr_cost_ratio = "1.0"              # fixed: bar ATR must cover the estimated round trip
+
+[strategy.c2]
+version = "ctrl-0.2.0"
+trend_gate = false
+# no entry_trend_atr: DRIFT CONTROL (benchmark, not a strategy)
+stop_atr = "3"
+max_holding_s = 172800
+candidate_ttl_s = 600
+min_atr_cost_ratio = "1.0"
+
+[agent]
+decision_provider = "BASELINE"
+
+[backtest]
+dataset = "wallex-1m-btctmn-ethtmn"
+approval_policy = "APPROVE_ALL"
+split = "ALL"

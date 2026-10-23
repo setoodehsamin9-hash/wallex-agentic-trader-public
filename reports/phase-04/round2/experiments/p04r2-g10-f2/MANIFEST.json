@@ -1,0 +1,390 @@
+{
+ "schema_version": "1",
+ "spec": {
+  "schema_version": "1",
+  "experiment_id": "p04r2-g10-f2",
+  "base_config": "base-4h-f2.toml",
+  "dataset_dir": "../../../data/raw/historical-pack/export/datasets/1h",
+  "dataset_resolution_seconds": 3600,
+  "strategy_id": "F2_tsm",
+  "strategy_version": "f2-0.1.0",
+  "seed": 7,
+  "max_trials": 21,
+  "parameters": {},
+  "splits": [
+   {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2025-03-01T00:00:00Z",
+    "end_utc": "2025-08-01T00:00:00Z"
+   },
+   {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2025-08-01T00:00:00Z",
+    "end_utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "name": "v3",
+    "role": "VALIDATION",
+    "start_utc": "2026-01-01T00:00:00Z",
+    "end_utc": "2026-06-01T00:00:00Z"
+   },
+   {
+    "name": "v4",
+    "role": "VALIDATION",
+    "start_utc": "2026-06-01T00:00:00Z",
+    "end_utc": "2026-07-24T00:00:00Z"
+   },
+   {
+    "name": "v5",
+    "role": "VALIDATION",
+    "start_utc": "2026-07-24T00:00:00Z",
+    "end_utc": "2026-08-20T00:00:00Z"
+   },
+   {
+    "name": "v6",
+    "role": "VALIDATION",
+    "start_utc": "2026-08-20T00:00:00Z",
+    "end_utc": "2026-09-16T00:00:00Z"
+   },
+   {
+    "name": "v7",
+    "role": "VALIDATION",
+    "start_utc": "2026-09-16T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   }
+  ],
+  "costs": [
+   {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   }
+  ],
+  "base_cost_id": "base",
+  "min_trades_observation": 5
+ },
+ "spec_hash": "23caaa05095866bb44ee078b5c4b829d58355c5ed2a82d1a22dde66be90d7775",
+ "base_config": {
+  "run": {
+   "environment": "BACKTEST",
+   "autonomy": "AUTONOMOUS",
+   "live_autonomous_enabled": false,
+   "symbols": [
+    "BTCTMN",
+    "ETHTMN"
+   ],
+   "bar_interval_seconds": 14400,
+   "starting_capital_tmn": "5000000",
+   "seed": 7,
+   "label": "phase04r2-f2-tsm"
+  },
+  "limits": {
+   "version": "sim-placeholder-2026-10-22",
+   "approved_by_owner": false,
+   "risk": {
+    "per_trade_budget_fraction": "0.005",
+    "total_loss_budget_tmn": "150000",
+    "session_loss_budget_tmn": "75000",
+    "max_position_notional_tmn": "1500000",
+    "max_total_exposure_tmn": "2500000",
+    "max_open_positions": 2,
+    "drawdown_pause_fraction": "0.02",
+    "drawdown_emergency_fraction": "0.04",
+    "loss_streak_count": 3,
+    "loss_streak_window_s": 14400,
+    "cooldown_s": 3600,
+    "max_spread_bps": "30",
+    "max_depth_fraction": "0.25",
+    "stress_cost_bps": "10",
+    "verdict_ttl_s": 30,
+    "cautious_size_fraction": "0.5"
+   },
+   "data": {
+    "max_bar_age_s": 1860,
+    "max_book_age_s": 30
+   },
+   "approval": {
+    "ticket_ttl_s": 300
+   },
+   "cutoff": {
+    "no_new_entry_before_end_s": 14400,
+    "liquidation_start_before_end_s": 7200
+   },
+   "kill": {
+    "max_consecutive_execution_errors": 3,
+    "reconciliation_tolerance_tmn": "1000"
+   }
+  },
+  "costs": {
+   "fee_rate": "0.0025",
+   "fee_source": "ASSUMED",
+   "backtest_slippage_bps": "5"
+  },
+  "execution": {
+   "entry_order_type": "LIMIT",
+   "entry_limit_slippage_bps": "20",
+   "exit_limit_slippage_bps": "30",
+   "entry_ttl_s": 900
+  },
+  "features": {
+   "atr_bars": 14,
+   "trend_bars": 24,
+   "volume_bars": 20,
+   "regime_trend_atr": "1.0",
+   "regime_shock_atr_pct": "0.02",
+   "ema_bars": 48,
+   "regime_er_bars": 42,
+   "regime_rank_bars": 1080
+  },
+  "strategy": {
+   "c1": {
+    "version": "c1-0.2.0",
+    "lookback_bars": 24,
+    "buffer_atr": "0.1",
+    "stop_atr": "3",
+    "tp_atr": null,
+    "max_holding_s": 43200,
+    "candidate_ttl_s": 600,
+    "min_edge_over_cost_bps": "20",
+    "min_volume_ratio": null,
+    "exit_mode": "TIME",
+    "min_atr_cost_ratio": "1.0"
+   },
+   "c2": null,
+   "f2": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "active": "F2_tsm"
+  },
+  "agent": {
+   "decision_provider": "BASELINE",
+   "model_id": null,
+   "decision_deadline_s": 60,
+   "max_model_requests": 4,
+   "max_tool_calls": 4,
+   "output_retries": 1,
+   "allow_exit_position": false,
+   "invalid_streak_breaker": 3,
+   "use_wallex_mcp_tools": false,
+   "prompt_version": "decision_v2",
+   "model_settings": {},
+   "replay_run_id": null
+  },
+  "trading_window": null,
+  "competition": {
+   "start_utc": null,
+   "end_utc": null
+  },
+  "backtest": {
+   "dataset": "wallex-public-20261022-1h",
+   "start_utc": null,
+   "end_utc": null,
+   "approval_policy": "APPROVE_ALL",
+   "split": "ALL"
+  },
+  "shadow": null
+ },
+ "base_config_hash": "d4f3801005e55668eb01cf040ba21969a72fb6c60453d9fae88b3c1b4d0d0c69",
+ "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+ "dataset_name": "wallex-public-20261022-1h",
+ "splits": {
+  "v1": {
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2025-03-01T00:00:00Z",
+    "end_utc": "2025-08-01T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 3672,
+     "missing_minutes": 216648
+    },
+    "ETHTMN": {
+     "bars": 3672,
+     "missing_minutes": 216648
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "3f35014e73f3f2c794403ecc23dad470a607b9163539f0ab455b83b6e76ba79e",
+    "ETHTMN": "29bac14799fee135221803b08b8ca9dd378acbd827b8eeb94edf965ef20dac5a"
+   },
+   "split_hash": "3d3050e96d9b2ba9afbb943ff3f2a22bab1c20aed4260efd156acab303a10823"
+  },
+  "v2": {
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2025-08-01T00:00:00Z",
+    "end_utc": "2026-01-01T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 3672,
+     "missing_minutes": 216648
+    },
+    "ETHTMN": {
+     "bars": 3672,
+     "missing_minutes": 216648
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "c3eecc45de4c018a99c2dbe025dda31d4e2f741528287afc69d52c5430e5ddc4",
+    "ETHTMN": "7db54644d55bebac2a02098d2b6dd1c448f620ab149cfa7382ab9d1b727b885f"
+   },
+   "split_hash": "f4368641a282f06c8c2dfffc3bf311717b4ec8fc61d18d1fdbb81737b5cce9c0"
+  },
+  "v3": {
+   "split": {
+    "name": "v3",
+    "role": "VALIDATION",
+    "start_utc": "2026-01-01T00:00:00Z",
+    "end_utc": "2026-06-01T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 3622,
+     "missing_minutes": 213818
+    },
+    "ETHTMN": {
+     "bars": 3621,
+     "missing_minutes": 213819
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "46b4389523075fd8080c1338bf2f1ce8c7122179abdd77d79270cb5b8d2a5000",
+    "ETHTMN": "356734078e294f97bb70ad50f400cbfe035e8990dafbed4b92a5a591f0e3a051"
+   },
+   "split_hash": "3de1ba64e8a88b5e4f6e6e241ef3496c503155c5ce5b6811bcca386927aaec85"
+  },
+  "v4": {
+   "split": {
+    "name": "v4",
+    "role": "VALIDATION",
+    "start_utc": "2026-06-01T00:00:00Z",
+    "end_utc": "2026-07-24T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 1272,
+     "missing_minutes": 75048
+    },
+    "ETHTMN": {
+     "bars": 1272,
+     "missing_minutes": 75048
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "17b519c973c8c360dd02db3cd5ee3d9e511a0f086bf8dcb474b08458ac9a625a",
+    "ETHTMN": "a485c52bd8ac93893a2be2bfe113d72bb7d058b4c831b3caff2b593c7c2f9f8f"
+   },
+   "split_hash": "d6499d3a63b6cf3c108de04d012119033fbe2ea0ab49d8d86fc71e2a4e88b49d"
+  },
+  "v5": {
+   "split": {
+    "name": "v5",
+    "role": "VALIDATION",
+    "start_utc": "2026-07-24T00:00:00Z",
+    "end_utc": "2026-08-20T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 648,
+     "missing_minutes": 38232
+    },
+    "ETHTMN": {
+     "bars": 648,
+     "missing_minutes": 38232
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "877907f0bcad98fa1dd6ae10f6b764684bad778d5bdd84e53a44afb0ea430afc",
+    "ETHTMN": "6f86a314851dd2b3144a6074dc38b435c8f78a3034dd0ed8df550b7d106fd58e"
+   },
+   "split_hash": "44d8eca4f711ae9337cf8d16683ecd2fe8e936732057db49e6f3d1b8d193083c"
+  },
+  "v6": {
+   "split": {
+    "name": "v6",
+    "role": "VALIDATION",
+    "start_utc": "2026-08-20T00:00:00Z",
+    "end_utc": "2026-09-16T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 648,
+     "missing_minutes": 38232
+    },
+    "ETHTMN": {
+     "bars": 648,
+     "missing_minutes": 38232
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "917fceb7875cb9a2bc95873f62f162adf483ecbf38b7b9ccb83fd6e859b91e41",
+    "ETHTMN": "b10108bca64e2c469a19c61dfcd1620d17d7c82b0ff722e00fa8ec1fa7707f68"
+   },
+   "split_hash": "b14065505d674d22660cfe3d75d009be6f820acaad6cb888983e5794909927fc"
+  },
+  "v7": {
+   "split": {
+    "name": "v7",
+    "role": "VALIDATION",
+    "start_utc": "2026-09-16T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 647,
+     "missing_minutes": 38233
+    },
+    "ETHTMN": {
+     "bars": 647,
+     "missing_minutes": 38233
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "7c8a1feb1086dbbd2d88f7f5df7d865ab5f69f0707c65e23f2c183283d77acf3",
+    "ETHTMN": "477a32e875ff3a2d85ac7bb2eaaeda47d2a7cdde0472df29648d55f229b3abdd"
+   },
+   "split_hash": "17e8cfb3b9bfc7c5547abcd24f03dc9284ff33aa843b1572107a2916f3c7eece"
+  }
+ },
+ "code": {
+  "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+  "dirty": false
+ },
+ "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+ "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+ "evaluate_test": false,
+ "selected_parameter_hash": null,
+ "trial_count": 21,
+ "fill_assumptions": [
+  "existing BacktestVenue; next-bar entry fills; worse stop when both barriers touch",
+  "past-only feature warmup; fresh capital/ledger per period; no carried positions",
+  "no historical depth, queue or latency model; gaps not filled; explicit assumed fee per side and slippage bps"
+ ],
+ "selection_policy": "external human/Claude decision; no automatic best configuration",
+ "manifest_hash": "ec30cb3d14d7d7f561b576acfb549afec800b4d11547905deeb523ef8603b004"
+}

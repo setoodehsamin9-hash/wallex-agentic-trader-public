@@ -1,0 +1,48 @@
+{
+ "schema_version": "1.0.0",
+ "run_id": "study-T2-test-baseline",
+ "started_at": "2026-10-13T00:00:00Z",
+ "ended_at": null,
+ "environment": "BACKTEST",
+ "autonomy": "AUTONOMOUS",
+ "code": {
+  "git_commit": "b412cde0017aa0de5fe21bbf34cf7e837b50e3e2",
+  "dirty": false
+ },
+ "config_sha256": "3f5ac62470b4089a3d0c6814d830d04eed6a08c71d7b5494c18525b1000b46fc",
+ "limits_version": "sim-placeholder-2026-10-22",
+ "prompt_bundle_sha256": null,
+ "model_id": null,
+ "model_provider": null,
+ "model_endpoint": null,
+ "model_settings_sha256": null,
+ "dependency_lock_sha256": "82acdfa9a9454b520422c258f38e69c9cd5621f94b5801a53a5c7432dbee4b13",
+ "trading_window_version": null,
+ "starting_capital_tmn": "5000000",
+ "universe_version": "u-87dc8f28ced5",
+ "dataset_refs": [
+  {
+   "dataset_id": "wallex-1m-btctmn-ethtmn",
+   "content_sha256": "fd83619bfb4b77b5dcc918639e901e9c6474e29cb0366a53a364a1714b6db496",
+   "source": "WALLEX_REST",
+   "symbol": "BTCTMN",
+   "first_ts": "2026-09-07T00:00:00Z",
+   "last_ts": "2026-10-21T23:59:00Z",
+   "resolution_seconds": 60
+  },
+  {
+   "dataset_id": "wallex-1m-btctmn-ethtmn",
+   "content_sha256": "4758017a0e7cfd9999cf8bc534414206bd9e402f9ac615acab1958ff2ebd3305",
+   "source": "WALLEX_REST",
+   "symbol": "ETHTMN",
+   "first_ts": "2026-09-07T00:00:00Z",
+   "last_ts": "2026-10-21T23:59:00Z",
+   "resolution_seconds": 60
+  }
+ ],
+ "clock": "VIRTUAL",
+ "seed": 7,
+ "strategy_versions": [
+  "c1-0.1.0+T2"
+ ]
+}

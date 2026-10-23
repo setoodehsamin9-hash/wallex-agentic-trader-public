@@ -1,0 +1,42 @@
+{
+  "url": "https://api.wallex.ir/mcp",
+  "access_date": "2026-10-22",
+  "operation": "MCP initialize; metadata only",
+  "authenticated": false,
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+      "protocolVersion": "2025-03-26",
+      "capabilities": {},
+      "clientInfo": {
+        "name": "wallex-phase01-research",
+        "version": "1.0"
+      }
+    }
+  },
+  "http_status": 200,
+  "headers": {
+    "date": "Thu, 22 Oct 2026 08:22:31 GMT",
+    "content-type": "application/json",
+    "content-length": "169",
+    "vary": "Accept-Encoding",
+    "x-authenticated": "false",
+    "x-auth-cache-status": "hit",
+    "access-control-allow-origin": "https://wallex.ir",
+    "access-control-allow-credentials": "true",
+    "x-origin-default": "true",
+    "cache-control": "no-store",
+    "x-content-type-options": "nosniff",
+    "x-ratelimit-limit": "5",
+    "x-ratelimit-remaining": "4",
+    "x-ratelimit-reset": "0",
+    "x-request-id": "19527de5-40e5-49be-9f18-fafc08335e23",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "server": "Wallex",
+    "x-cache-status": "BYPASS",
+    "connection": "close"
+  },
+  "response_text": "{\"id\":1,\"jsonrpc\":\"2.0\",\"result\":{\"capabilities\":{\"tools\":{\"listChanged\":false}},\"protocolVersion\":\"2025-03-26\",\"serverInfo\":{\"name\":\"api.wallex.ir\",\"version\":\"1.0.0\"}}}"
+}

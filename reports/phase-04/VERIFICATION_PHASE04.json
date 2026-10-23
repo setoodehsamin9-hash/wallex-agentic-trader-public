@@ -1,0 +1,19 @@
+{
+ "date": "2026-10-22",
+ "branch": "phase-04/strategy-lab",
+ "pytest": {"command": "uv run pytest (default markers: not ninerouter, not network)", "passed": 319, "skipped": 2, "deselected": 2,
+            "skips": ["tests/agent/test_evaluation.py (optional mlflow evaluation group)", "tests/experiments/test_tracking.py (optional evaluation group)"],
+            "deselected_reason": "opt-in NineRouter real-model tests (no credentials in this session)"},
+ "pyright_strict": {"errors": 0, "warnings": 0,
+                    "note": "first gate run found 36 strict typing errors, all in scripts/phase04_evaluate.py (untyped local containers); fixed with annotations only; regenerated ROUND1/ROUND2 evaluations are byte-identical"},
+ "secret_scan": {"files": 348, "patterns": 8, "configured_credential_literals": 0, "findings": 2,
+                 "findings_detail": "pre-existing documented synthetic fixtures: tests/agent/test_decision_agent.py:34, tests/journal/test_journal.py:68", "status": "PASS"},
+ "deterministic_experiment_rerun": {"experiment": "p04-r2-c2", "trials": 30, "identical_result_hashes": 30,
+                                    "also": "interrupted round-1 C1 run: 100/100 rows identical to the complete rerun"},
+ "replay": {"run": "gate-c2v2-validation (c2-0.2.0, Phase 03 VALIDATION split 2026-10-04..10-13, BASELINE)", "decisions": 430,
+            "identical_decisions": true, "identical_trades": true, "missing_recordings": 0},
+ "test_period": "2026-10-13..10-22 NOT evaluated by any Phase 04 strategy (no configuration survived the pre-registered rules)",
+ "real_wallex_writes": 0,
+ "private_wallex_calls": 0,
+ "real_model_calls": 0
+}

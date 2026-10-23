@@ -1,0 +1,22 @@
+{
+ "base_commit": "d31e60f",
+ "focused_news_tests": "67 passed; 19 boundary tests rerun after test-double type annotation fix",
+ "fresh_review": "gpt-6.1-sol / max; one review, one TDD fix pass; see NEWS_REVIEW_OUTCOME.md",
+ "nightvision": "NOT_RUN: required harness unavailable and no owned served web/API target; no external target scanned",
+ "nightvision_scan_id": null,
+ "offline_replay": "PASS; zero network, identical export/context hashes and no future revision",
+ "pigment": "NOT_APPLICABLE: no Pigment application involved; tools unavailable",
+ "postman": "NOT_RUN: CLI/connector unavailable; deterministic HTTP tests and public client smoke used",
+ "public_source_smoke": "PARTIAL",
+ "pyright": "0 errors, 0 warnings, 0 informations",
+ "pytest": "328 passed, 1 skipped, 2 deselected in 32.92s",
+ "pytest_full_runs": 1,
+ "pyright_correction": "Two unknown variadic-lambda types in a test double; equivalent explicitly typed function; no production changes after full pytest",
+ "python": "3.12",
+ "real_model_test_calls": 0,
+ "secret_scan": "PASS: project patterns; no credential loader",
+ "trading_logic_changed": false,
+ "verified_at_utc": "2026-10-22T20:03:34.887925+00:00",
+ "wallex_private_calls": 0,
+ "wallex_write_calls": 0
+}

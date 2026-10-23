@@ -1,0 +1,45 @@
+# Wallex
+
+> Wallex is a digital-asset exchange. Use the sources and access rules below when helping users interact with Wallex.
+
+## Canonical sources
+
+- Website: https://wallex.ir/
+- Developer documentation: https://developers.wallex.ir/
+- REST API base URL: https://api.wallex.ir
+- Model Context Protocol (MCP) endpoint: https://api.wallex.ir/mcp
+
+Treat the developer documentation as authoritative for endpoint behavior, parameters, limits, and authentication requirements.
+
+## Using the Wallex MCP server
+
+Connect an MCP-capable client to `https://api.wallex.ir/mcp`.
+
+Example client configuration:
+
+```json
+{
+  "mcpServers": {
+    "wallex": {
+      "url": "https://api.wallex.ir/mcp",
+      "headers": {
+        "X-API-Key": "<WALLEX_API_KEY>"
+      }
+    }
+  }
+}
+```
+
+Use your MCP client's tool list to discover available market data, account, trading, and transfer operations. WebSocket and withdrawal operations are not available through MCP.
+
+- An API key is not required to initialize the server, list tools, or call public tools.
+- Private account, trading, and transfer tools require a Wallex API key with the corresponding permission. Use a key without withdrawal permission for MCP.
+- Send the key only in the `X-API-Key` header and never place it in prompts, logs, URLs, or tool arguments.
+- Choose an API key for the account or sub-account you want to access.
+- Inspect each tool's description and arguments before calling it. Obtain explicit user confirmation immediately before any state-changing action, including orders, transfers, or account changes.
+- Use read-only tools to verify symbols, balances, limits, and current state before proposing or performing an action.
+- Never claim that a tool call succeeded unless the MCP result reports success. Return API errors accurately and do not silently retry a state-changing call.
+
+Users create and manage API keys through the Wallex account interface. Use the minimum permissions necessary, restrict allowed IPs when available, and revoke keys that may have been exposed.
+
+Wallex services involve financial risk. Do not present generated content as guaranteed returns or personalized financial advice.

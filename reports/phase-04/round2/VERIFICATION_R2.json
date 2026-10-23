@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-23",
+ "branch": "phase-04/strategy-round2",
+ "gate_commit": "1c55068c554088a15372f2d292646764264b42d4",
+ "pytest": {
+  "command": "uv run pytest (default markers: not ninerouter, not network)",
+  "passed": 463,
+  "skipped": 2,
+  "deselected": 2,
+  "skips": "optional evaluation-group extras (mlflow), as in Phase 04",
+  "deselected_reason": "opt-in NineRouter real-model tests (no credentials used)"
+ },
+ "pyright_strict": {"command": "uv run pyright", "errors": 0, "warnings": 0},
+ "secret_scan": {
+  "command": "uv run python scripts/phase04r2_verify.py secrets",
+  "files": 447,
+  "patterns": 8,
+  "findings": 0,
+  "note": "first pass used an ungrouped 16-digit card pattern and matched 11,943 numeric strings (prices, timestamps, hashes in public market metadata); tightened to grouped digits + Luhn. No credential/key/token pattern matched at any point.",
+  "status": "PASS"
+ },
+ "deterministic_experiment_rerun": {
+  "experiment": "p04r2-g10-f2-off-1m (kernel, 1m data, 9 trials)",
+  "same_source_reruns": {"trials": 9, "identical_result_hashes": 9, "identical_trial_ids": 9},
+  "vs_committed_run": {"trials": 9, "identical_metrics": 9, "identical_parameter_config_dataset_split_hashes": true,
+                       "result_hash_differs_because": "source_hash includes the later harness coverage fix (5be766d)"},
+  "research_scripts": {"GATE.json": "3c38efdedbd5516b066451b56fe388109ac3417ac8e27994ddc08c769672db47",
+                       "ECONOMICS_TRAIN.json": "60f64212362a67bc4f6b0c525e62bcc23318b63f0d5dfb8d27a8d5ef0e139be1",
+                       "DATA_PROFILE.json": "4e769eba00aa2ca1cdd0114da6b74c7f16901819d36d9820009524cac0d39fbf",
+                       "identical_on_rerun": true}
+ },
+ "replay": {
+  "command": "uv run python scripts/phase04r2_verify.py replay",
+  "run": "F2 f2-0.1.0, 1h base, V7 2026-09-16..10-13, BASELINE -> ReplayDecisionProvider",
+  "decisions": 324,
+  "identical_decisions": true,
+  "trades": 4,
+  "identical_trades": true,
+  "missing_recordings": 0,
+  "exit_signal_events": 1
+ },
+ "safety_review": "safety-boundary-reviewer: no blocking issue; liquidation-buffer, journaling, approval-visibility and test-gap findings fixed; LIVE resting-sell expiry and SHADOW history bootstrap recorded as LIVE blockers (HANDOFF_TO_LIVE_READINESS.md)",
+ "test_period": "2026-10-13..10-22 evaluated ONCE (research simulator + Experiment Harness) after G1-G10 passed; 2 trades",
+ "real_wallex_writes": 0,
+ "private_wallex_calls": 0,
+ "real_model_calls": 0,
+ "network": "public read-only GETs of pinned open-source files (raw.githubusercontent.com) for source inspection only; no Wallex network access"
+}

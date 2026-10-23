@@ -1,0 +1,2651 @@
+{
+ "schema_version": "1",
+ "experiment_id": "p04r2-g10-f2",
+ "complete": true,
+ "status": "PASS",
+ "manifest_hash": "ec30cb3d14d7d7f561b576acfb549afec800b4d11547905deeb523ef8603b004",
+ "test_evaluated": false,
+ "trials": [
+  {
+   "trial_id": "f67f2c9f97905c2dcf5de63d00a6a9e719543e2f2a459d564be9015217b08434",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "b91f7686a2a2759cf0e735583343c7e8da217419cfc34e7a84b4a839f620492b",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "3d3050e96d9b2ba9afbb943ff3f2a22bab1c20aed4260efd156acab303a10823",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2025-03-01T00:00:00Z",
+    "end_utc": "2025-08-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:10:40.414941Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "f67f2c9f97905c2dcf5de63d00a6a9e719543e2f2a459d564be9015217b08434",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2025-03-01T00:00:00+00:00",
+    "period_end": "2025-08-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5125962.6660023928500000",
+    "cash_tmn": "5125962.6660023928500000",
+    "realized_pnl_tmn": "125962.6660023928500000",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "44818.7425223532500000",
+    "net_pnl_tmn": "125962.6660023928500000",
+    "realized_return_pct": "2.5193",
+    "return_pct": "2.5193",
+    "peak_equity_tmn": "5130430",
+    "max_drawdown_pct": "1.5778",
+    "trades": 35,
+    "wins": 18,
+    "losses": 17,
+    "win_rate_pct": "51.4286",
+    "avg_trade_pnl_tmn": "3598.933314354081428571428571",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "262176.0184319003406000",
+    "gross_loss_tmn": "136213.3524295074906000",
+    "profit_factor": "1.924745362739533711832861539",
+    "fee_burden_pct": "0.8964",
+    "avg_holding_s": "367097.1428571428571428571429",
+    "time_in_market_pct": "59.1776",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1836,
+    "no_candidate_cycles": 1156,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 641,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 35,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      676
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      641
+     ],
+     [
+      "max_open_positions",
+      524
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "0661e1a32c5a0d9e060a32fbce3a4e38398a27f3514ce8e552f8bc0db9bb5a7f"
+  },
+  {
+   "trial_id": "d1e9283ba1d2120c314c85c3941bb2f73de15e2600fb7ccb97bec91826e39e28",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "e77849e8427881e969814dc06bd00021d56438b64e8ff639939b801af5f884e1",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "3d3050e96d9b2ba9afbb943ff3f2a22bab1c20aed4260efd156acab303a10823",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2025-03-01T00:00:00Z",
+    "end_utc": "2025-08-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:11:03.012845Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "d1e9283ba1d2120c314c85c3941bb2f73de15e2600fb7ccb97bec91826e39e28",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2025-03-01T00:00:00+00:00",
+    "period_end": "2025-08-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5097285.893658888195755",
+    "cash_tmn": "5097285.893658888195755",
+    "realized_pnl_tmn": "97285.893658888195755",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "61305.257747976914245",
+    "net_pnl_tmn": "97285.893658888195755",
+    "realized_return_pct": "1.9457",
+    "return_pct": "1.9457",
+    "peak_equity_tmn": "5107445",
+    "max_drawdown_pct": "1.7202",
+    "trades": 35,
+    "wins": 17,
+    "losses": 18,
+    "win_rate_pct": "48.5714",
+    "avg_trade_pnl_tmn": "2779.596961682519878714285714",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "242892.536768885117295",
+    "gross_loss_tmn": "145606.643109996921540",
+    "profit_factor": "1.668141862081077219629864332",
+    "fee_burden_pct": "1.2261",
+    "avg_holding_s": "367097.1428571428571428571429",
+    "time_in_market_pct": "59.1776",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1836,
+    "no_candidate_cycles": 1156,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 641,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 35,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      676
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      641
+     ],
+     [
+      "max_open_positions",
+      524
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "26764012100b51e570e8eadeaddd04c8f2477b91f071932cf88e336d84320a56"
+  },
+  {
+   "trial_id": "5c3d581aba2f4e210a8f478ae7e712d6741bcaff5947ff50f40bed1030126329",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "736e7f82e3bed8121e64ea89a3f43dabdc8b0b2d4c6362e54162a01c1d16bc7c",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "3d3050e96d9b2ba9afbb943ff3f2a22bab1c20aed4260efd156acab303a10823",
+   "split": {
+    "name": "v1",
+    "role": "VALIDATION",
+    "start_utc": "2025-03-01T00:00:00Z",
+    "end_utc": "2025-08-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:11:19.016384Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "5c3d581aba2f4e210a8f478ae7e712d6741bcaff5947ff50f40bed1030126329",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2025-03-01T00:00:00+00:00",
+    "period_end": "2025-08-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5136249.6215635509939800",
+    "cash_tmn": "5136249.6215635509939800",
+    "realized_pnl_tmn": "136249.6215635509939800",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "36254.6503820915460200",
+    "net_pnl_tmn": "136249.6215635509939800",
+    "realized_return_pct": "2.7250",
+    "return_pct": "2.7250",
+    "peak_equity_tmn": "5140787",
+    "max_drawdown_pct": "1.5316",
+    "trades": 35,
+    "wins": 18,
+    "losses": 17,
+    "win_rate_pct": "51.4286",
+    "avg_trade_pnl_tmn": "3892.846330387171256571428571",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "269719.6170934438020000",
+    "gross_loss_tmn": "133469.9955298928080200",
+    "profit_factor": "2.020825849454948418278696992",
+    "fee_burden_pct": "0.7251",
+    "avg_holding_s": "367097.1428571428571428571429",
+    "time_in_market_pct": "59.1776",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1836,
+    "no_candidate_cycles": 1156,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 641,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 35,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      676
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      641
+     ],
+     [
+      "max_open_positions",
+      524
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "ece59d898e16b9a813b1130853c74421fce5ec5282bca43975e52996545c33fa"
+  },
+  {
+   "trial_id": "f3092a9613b06fdde12b97b8caea3dc2c087e269f1855a02db240773d657d1cc",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "eba470d95c9d66e435c97a9c3c48f921b5591f81869b360ab603a7e851858ba1",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "f4368641a282f06c8c2dfffc3bf311717b4ec8fc61d18d1fdbb81737b5cce9c0",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2025-08-01T00:00:00Z",
+    "end_utc": "2026-01-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:11:35.298947Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "f3092a9613b06fdde12b97b8caea3dc2c087e269f1855a02db240773d657d1cc",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2025-08-01T00:00:00+00:00",
+    "period_end": "2026-01-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4967843.3826086060309500",
+    "cash_tmn": "4967843.3826086060309500",
+    "realized_pnl_tmn": "-32156.6173913939690500",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "53708.3156624545090500",
+    "net_pnl_tmn": "-32156.6173913939690500",
+    "realized_return_pct": "-0.6431",
+    "return_pct": "-0.6431",
+    "peak_equity_tmn": "5091068",
+    "max_drawdown_pct": "2.4526",
+    "trades": 38,
+    "wins": 11,
+    "losses": 27,
+    "win_rate_pct": "28.9474",
+    "avg_trade_pnl_tmn": "-846.2267734577360276315789474",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "177525.0855516851603625",
+    "gross_loss_tmn": "209681.7029430791294125",
+    "profit_factor": "0.8466408039421383943919390019",
+    "fee_burden_pct": "1.0742",
+    "avg_holding_s": "276631.5789473684210526315789",
+    "time_in_market_pct": "52.5871",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1836,
+    "no_candidate_cycles": 1289,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 505,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 38,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      543
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      502
+     ],
+     [
+      "max_open_positions",
+      351
+     ],
+     [
+      "drawdown_pause",
+      21
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "196ca1f1c21c2464022aa7b43f2c0af36e35490297d4ccd933d08fdf22417bfe"
+  },
+  {
+   "trial_id": "d1b834b8fc1975d1047aa498d58a4216193ab72f904aebd99405c7d14ee6e5be",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "c2d94ca8a65fd7c6846225ae69ffb11d448a69e767a5d6109cf72ca816d1e974",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "f4368641a282f06c8c2dfffc3bf311717b4ec8fc61d18d1fdbb81737b5cce9c0",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2025-08-01T00:00:00Z",
+    "end_utc": "2026-01-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:11:49.785514Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "d1b834b8fc1975d1047aa498d58a4216193ab72f904aebd99405c7d14ee6e5be",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2025-08-01T00:00:00+00:00",
+    "period_end": "2026-01-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4955650.513224861269460",
+    "cash_tmn": "4955650.513224861269460",
+    "realized_pnl_tmn": "-44349.486775138730540",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "69506.811918028430540",
+    "net_pnl_tmn": "-44349.486775138730540",
+    "realized_return_pct": "-0.8870",
+    "return_pct": "-0.8870",
+    "peak_equity_tmn": "5075828",
+    "max_drawdown_pct": "2.5151",
+    "trades": 36,
+    "wins": 11,
+    "losses": 25,
+    "win_rate_pct": "30.5556",
+    "avg_trade_pnl_tmn": "-1231.930188198298070555555556",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "161218.760353082624790",
+    "gross_loss_tmn": "205568.247128221355330",
+    "profit_factor": "0.7842590604594875254642420380",
+    "fee_burden_pct": "1.3901",
+    "avg_holding_s": "290400",
+    "time_in_market_pct": "52.2876",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1836,
+    "no_candidate_cycles": 1289,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 507,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 36,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      543
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      501
+     ],
+     [
+      "max_open_positions",
+      351
+     ],
+     [
+      "drawdown_pause",
+      34
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "b4d2801a17779107bddd1abb063626e08449c14081cd3c620f7d8b992b1e54ab"
+  },
+  {
+   "trial_id": "2ddffd863003be1e3263f0f694589e6d12f0384feae7a453bd66aa167a11778a",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "584498e7cd0ebb8fb3bd9daa0bc8bc42a8940890bfe7998d88ffbbf143967629",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "f4368641a282f06c8c2dfffc3bf311717b4ec8fc61d18d1fdbb81737b5cce9c0",
+   "split": {
+    "name": "v2",
+    "role": "VALIDATION",
+    "start_utc": "2025-08-01T00:00:00Z",
+    "end_utc": "2026-01-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:12:04.073459Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "2ddffd863003be1e3263f0f694589e6d12f0384feae7a453bd66aa167a11778a",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2025-08-01T00:00:00+00:00",
+    "period_end": "2026-01-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4977800.4224661574976500",
+    "cash_tmn": "4977800.4224661574976500",
+    "realized_pnl_tmn": "-22199.5775338425023500",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "43513.0850568202973500",
+    "net_pnl_tmn": "-22199.5775338425023500",
+    "realized_return_pct": "-0.4440",
+    "return_pct": "-0.4440",
+    "peak_equity_tmn": "5096976",
+    "max_drawdown_pct": "2.3704",
+    "trades": 38,
+    "wins": 11,
+    "losses": 27,
+    "win_rate_pct": "28.9474",
+    "avg_trade_pnl_tmn": "-584.1994087853290092105263158",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "182716.2344025043500300",
+    "gross_loss_tmn": "204915.8119363468523800",
+    "profit_factor": "0.8916648875259154073637703956",
+    "fee_burden_pct": "0.8703",
+    "avg_holding_s": "276631.5789473684210526315789",
+    "time_in_market_pct": "52.5871",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1836,
+    "no_candidate_cycles": 1289,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 505,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 38,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      543
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      502
+     ],
+     [
+      "max_open_positions",
+      351
+     ],
+     [
+      "drawdown_pause",
+      21
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "33b3ff5f9cddc360c5ffed1be51d826650a2dc8b5c4b7c8f55a93330675cd4e4"
+  },
+  {
+   "trial_id": "0bc6d0ba47e718235c440fa017d5d9e709810be84276a43044a53fcc24c9503d",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "3714ccca40f15e0c167cfaa9418cb6bf757571cac1a9fa557e50c87c02a12eac",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "3de1ba64e8a88b5e4f6e6e241ef3496c503155c5ce5b6811bcca386927aaec85",
+   "split": {
+    "name": "v3",
+    "role": "VALIDATION",
+    "start_utc": "2026-01-01T00:00:00Z",
+    "end_utc": "2026-06-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:12:18.963113Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "0bc6d0ba47e718235c440fa017d5d9e709810be84276a43044a53fcc24c9503d",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-01-01T00:00:00+00:00",
+    "period_end": "2026-06-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5098639.2454808402405375",
+    "cash_tmn": "5098639.2454808402405375",
+    "realized_pnl_tmn": "98639.2454808402405375",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "48240.2847547618644625",
+    "net_pnl_tmn": "98639.2454808402405375",
+    "realized_return_pct": "1.9728",
+    "return_pct": "1.9728",
+    "peak_equity_tmn": "5158388",
+    "max_drawdown_pct": "1.7735",
+    "trades": 31,
+    "wins": 14,
+    "losses": 17,
+    "win_rate_pct": "45.1613",
+    "avg_trade_pnl_tmn": "3181.911144543233565725806452",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "246439.2637709986858500",
+    "gross_loss_tmn": "147800.0182901584453125",
+    "profit_factor": "1.667383175062897326802285587",
+    "fee_burden_pct": "0.9648",
+    "avg_holding_s": "265819.3548387096774193548387",
+    "time_in_market_pct": "40.0110",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1810,
+    "no_candidate_cycles": 1255,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 422,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 31,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      453
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      422
+     ],
+     [
+      "max_open_positions",
+      352
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      98
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "6a708dc64eb4f7eb90e09474331bb12004f43baa36a606c560b7a43aeca91e89"
+  },
+  {
+   "trial_id": "12990f96219dd0a8b92e156cdb46e2a6b1bc8c246c8dcd1f27161a6ec9969d5a",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "d4887615180130f7c41ca16ca9f7557d1a80503f0b0748f8c0e22b5fd162dba3",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "3de1ba64e8a88b5e4f6e6e241ef3496c503155c5ce5b6811bcca386927aaec85",
+   "split": {
+    "name": "v3",
+    "role": "VALIDATION",
+    "start_utc": "2026-01-01T00:00:00Z",
+    "end_utc": "2026-06-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:12:32.742439Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "12990f96219dd0a8b92e156cdb46e2a6b1bc8c246c8dcd1f27161a6ec9969d5a",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-01-01T00:00:00+00:00",
+    "period_end": "2026-06-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5068572.400789208328580",
+    "cash_tmn": "5068572.400789208328580",
+    "realized_pnl_tmn": "68572.400789208328580",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "65731.517123653731420",
+    "net_pnl_tmn": "68572.400789208328580",
+    "realized_return_pct": "1.3714",
+    "return_pct": "1.3714",
+    "peak_equity_tmn": "5129709",
+    "max_drawdown_pct": "1.8606",
+    "trades": 31,
+    "wins": 13,
+    "losses": 18,
+    "win_rate_pct": "41.9355",
+    "avg_trade_pnl_tmn": "2212.012928684139631612903226",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "227230.549862607412875",
+    "gross_loss_tmn": "158658.149073399084295",
+    "profit_factor": "1.432202198183246692251928265",
+    "fee_burden_pct": "1.3146",
+    "avg_holding_s": "265819.3548387096774193548387",
+    "time_in_market_pct": "40.0110",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1810,
+    "no_candidate_cycles": 1255,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 422,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 31,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      453
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      422
+     ],
+     [
+      "max_open_positions",
+      352
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      98
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "8b28b9c1fbcf1b397ea77c61792a69283be7d60d286ffa17c8c0b1dcc73e3d26"
+  },
+  {
+   "trial_id": "8bf70c480b74b8a9f4e8705d1f69f75c3e046b7e893a86a80268a316d09c23a8",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "ebc3004f25443ded16ad117ad8a15a162c1043ba8c6952926c88c5ea0ef9c72b",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "3de1ba64e8a88b5e4f6e6e241ef3496c503155c5ce5b6811bcca386927aaec85",
+   "split": {
+    "name": "v3",
+    "role": "VALIDATION",
+    "start_utc": "2026-01-01T00:00:00Z",
+    "end_utc": "2026-06-01T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:12:46.519929Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "8bf70c480b74b8a9f4e8705d1f69f75c3e046b7e893a86a80268a316d09c23a8",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-01-01T00:00:00+00:00",
+    "period_end": "2026-06-01T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5110243.1094881109798200",
+    "cash_tmn": "5110243.1094881109798200",
+    "realized_pnl_tmn": "110243.1094881109798200",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "39122.1966467134801800",
+    "net_pnl_tmn": "110243.1094881109798200",
+    "realized_return_pct": "2.2049",
+    "return_pct": "2.2049",
+    "peak_equity_tmn": "5169583",
+    "max_drawdown_pct": "1.7513",
+    "trades": 31,
+    "wins": 14,
+    "losses": 17,
+    "win_rate_pct": "45.1613",
+    "avg_trade_pnl_tmn": "3556.229338326160639354838710",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "254800.4850082492739500",
+    "gross_loss_tmn": "144557.3755201382941300",
+    "profit_factor": "1.762625283500342793300750406",
+    "fee_burden_pct": "0.7824",
+    "avg_holding_s": "265819.3548387096774193548387",
+    "time_in_market_pct": "40.0110",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 1810,
+    "no_candidate_cycles": 1255,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 422,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 31,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      453
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      422
+     ],
+     [
+      "max_open_positions",
+      352
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      98
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "997aea57b52062e6c37629b7a7d46a4f9e79d5bdc078bfc64421cbf7222ff601"
+  },
+  {
+   "trial_id": "55962e6d7c6541e4aeb09819dd4b75b761b1fefee0012bfbcdd6565936d7f6db",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "db2e74f2c7e3ef814f1992bdd962e1b664f4e2d9d2487baec6e57ccff3a50c83",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "d6499d3a63b6cf3c108de04d012119033fbe2ea0ab49d8d86fc71e2a4e88b49d",
+   "split": {
+    "name": "v4",
+    "role": "VALIDATION",
+    "start_utc": "2026-06-01T00:00:00Z",
+    "end_utc": "2026-07-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:12:51.766908Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "55962e6d7c6541e4aeb09819dd4b75b761b1fefee0012bfbcdd6565936d7f6db",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-06-01T00:00:00+00:00",
+    "period_end": "2026-07-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5102305.6619426226617750",
+    "cash_tmn": "5102305.6619426226617750",
+    "realized_pnl_tmn": "102305.6619426226617750",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "15535.8227685376282250",
+    "net_pnl_tmn": "102305.6619426226617750",
+    "realized_return_pct": "2.0461",
+    "return_pct": "2.0461",
+    "peak_equity_tmn": "5112216",
+    "max_drawdown_pct": "0.7918",
+    "trades": 10,
+    "wins": 6,
+    "losses": 4,
+    "win_rate_pct": "60.0000",
+    "avg_trade_pnl_tmn": "10230.5661942622661775",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "133474.6548026269407000",
+    "gross_loss_tmn": "31168.9928600042789250",
+    "profit_factor": "4.282289626813710820165993202",
+    "fee_burden_pct": "0.3107",
+    "avg_holding_s": "396720",
+    "time_in_market_pct": "47.4843",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 636,
+    "no_candidate_cycles": 445,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 177,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 10,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      187
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      177
+     ],
+     [
+      "max_open_positions",
+      170
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "f04da4148905c0e49e00cc05887db74573842cb3021f7b7158129f3e297579e7"
+  },
+  {
+   "trial_id": "66e51fdb5ef0e3b6ca7083afb7efee9d8f78d97563c6a163d70440e5201f6da6",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "f3ab3711bea53605fe0217248fb4a6d9ab1aab93bf776c5818ff8d4206218b17",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "d6499d3a63b6cf3c108de04d012119033fbe2ea0ab49d8d86fc71e2a4e88b49d",
+   "split": {
+    "name": "v4",
+    "role": "VALIDATION",
+    "start_utc": "2026-06-01T00:00:00Z",
+    "end_utc": "2026-07-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:12:57.313795Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "66e51fdb5ef0e3b6ca7083afb7efee9d8f78d97563c6a163d70440e5201f6da6",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-06-01T00:00:00+00:00",
+    "period_end": "2026-07-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5091169.480506959699080",
+    "cash_tmn": "5091169.480506959699080",
+    "realized_pnl_tmn": "91169.480506959699080",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "21212.051034692920920",
+    "net_pnl_tmn": "91169.480506959699080",
+    "realized_return_pct": "1.8234",
+    "return_pct": "1.8234",
+    "peak_equity_tmn": "5101861",
+    "max_drawdown_pct": "0.7884",
+    "trades": 10,
+    "wins": 6,
+    "losses": 4,
+    "win_rate_pct": "60.0000",
+    "avg_trade_pnl_tmn": "9116.948050695969908",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "124960.850453730387375",
+    "gross_loss_tmn": "33791.369946770688295",
+    "profit_factor": "3.698010783539494138902181732",
+    "fee_burden_pct": "0.4242",
+    "avg_holding_s": "396720",
+    "time_in_market_pct": "47.4843",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 636,
+    "no_candidate_cycles": 445,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 177,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 10,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      187
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      177
+     ],
+     [
+      "max_open_positions",
+      170
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "5190e7cdee2ab5af61b79647e915280931a6b346df3673d20c334feb01784dc3"
+  },
+  {
+   "trial_id": "991ca80b14dcee82b5d51a75c189e3774444b0d6bffe136d88f8d3cfb3918360",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "3fb9ce5a13ab446d476d7ab39917feab56ccbbc15d787ec2ff221e285688105a",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "d6499d3a63b6cf3c108de04d012119033fbe2ea0ab49d8d86fc71e2a4e88b49d",
+   "split": {
+    "name": "v4",
+    "role": "VALIDATION",
+    "start_utc": "2026-06-01T00:00:00Z",
+    "end_utc": "2026-07-24T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:02.098054Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "991ca80b14dcee82b5d51a75c189e3774444b0d6bffe136d88f8d3cfb3918360",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-06-01T00:00:00+00:00",
+    "period_end": "2026-07-24T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5106613.1749336386439000",
+    "cash_tmn": "5106613.1749336386439000",
+    "realized_pnl_tmn": "106613.1749336386439000",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "12584.8400911820461000",
+    "net_pnl_tmn": "106613.1749336386439000",
+    "realized_return_pct": "2.1323",
+    "return_pct": "2.1323",
+    "peak_equity_tmn": "5116455",
+    "max_drawdown_pct": "0.7971",
+    "trades": 10,
+    "wins": 6,
+    "losses": 4,
+    "win_rate_pct": "60.0000",
+    "avg_trade_pnl_tmn": "10661.3174933638643900",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "136916.4726284889598200",
+    "gross_loss_tmn": "30303.2976948503159200",
+    "profit_factor": "4.518203728426437286080394727",
+    "fee_burden_pct": "0.2517",
+    "avg_holding_s": "396720",
+    "time_in_market_pct": "47.4843",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 636,
+    "no_candidate_cycles": 445,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 177,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 10,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      187
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      177
+     ],
+     [
+      "max_open_positions",
+      170
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "d3f669e088946e14f7d99a18606d73d693053290e128fb955f44cf6483bde40d"
+  },
+  {
+   "trial_id": "e2ab5260f1226dffb0cbc1b704887e542c641091a0bee65bbace8ea65206c1ad",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "ed5a991889bd77c470042707770d195505adb2dc607b4fd55e498a04dcbe318f",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "44d8eca4f711ae9337cf8d16683ecd2fe8e936732057db49e6f3d1b8d193083c",
+   "split": {
+    "name": "v5",
+    "role": "VALIDATION",
+    "start_utc": "2026-07-24T00:00:00Z",
+    "end_utc": "2026-08-20T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:04.395063Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "e2ab5260f1226dffb0cbc1b704887e542c641091a0bee65bbace8ea65206c1ad",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-07-24T00:00:00+00:00",
+    "period_end": "2026-08-20T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5008139.3571830435660875",
+    "cash_tmn": "5008139.3571830435660875",
+    "realized_pnl_tmn": "8139.3571830435660875",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "8282.0482302923489125",
+    "net_pnl_tmn": "8139.3571830435660875",
+    "realized_return_pct": "0.1628",
+    "return_pct": "0.1628",
+    "peak_equity_tmn": "5008659",
+    "max_drawdown_pct": "0.4971",
+    "trades": 5,
+    "wins": 2,
+    "losses": 3,
+    "win_rate_pct": "40.0000",
+    "avg_trade_pnl_tmn": "1627.8714366087132175",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "32721.2903656984252875",
+    "gross_loss_tmn": "24581.9331826548592000",
+    "profit_factor": "1.331111354121926388817274696",
+    "fee_burden_pct": "0.1656",
+    "avg_holding_s": "68400",
+    "time_in_market_pct": "13.7346",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 301,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 14,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      19
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      14
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "0b340e3b15a5333c298ec7f468937467c0e11e1730a80f8830ca57256b621f0a"
+  },
+  {
+   "trial_id": "0368808598810ec71f83ba4a932cc6bdbcfdb3f6db3a16718ed53423c92a94ed",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "0331b35a3d92d2cfad99616bde6a99c069f374b61e280e7507a457ed0fdccf3d",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "44d8eca4f711ae9337cf8d16683ecd2fe8e936732057db49e6f3d1b8d193083c",
+   "split": {
+    "name": "v5",
+    "role": "VALIDATION",
+    "start_utc": "2026-07-24T00:00:00Z",
+    "end_utc": "2026-08-20T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:06.759411Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "0368808598810ec71f83ba4a932cc6bdbcfdb3f6db3a16718ed53423c92a94ed",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-07-24T00:00:00+00:00",
+    "period_end": "2026-08-20T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5003734.221711251361640",
+    "cash_tmn": "5003734.221711251361640",
+    "realized_pnl_tmn": "3734.221711251361640",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "11296.711645840498360",
+    "net_pnl_tmn": "3734.221711251361640",
+    "realized_return_pct": "0.0747",
+    "return_pct": "0.0747",
+    "peak_equity_tmn": "5004599",
+    "max_drawdown_pct": "0.5670",
+    "trades": 5,
+    "wins": 2,
+    "losses": 3,
+    "win_rate_pct": "40.0000",
+    "avg_trade_pnl_tmn": "746.844342250272328",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "30108.948569566477560",
+    "gross_loss_tmn": "26374.726858315115920",
+    "profit_factor": "1.141583332078151164679467328",
+    "fee_burden_pct": "0.2259",
+    "avg_holding_s": "68400",
+    "time_in_market_pct": "13.7346",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 301,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 14,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      19
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      14
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "db8b9c8ad844053f92813e701bed562a49e4bfb1990382707f6d928bb3bb98af"
+  },
+  {
+   "trial_id": "365f50ee120f78693f73c2052841dbe7e82f7edfa141f74f06f0d6e93b983622",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "85dcf828db3665bed01cbc073debb21b09ec7ecd784476c6af914b40c229e23a",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "44d8eca4f711ae9337cf8d16683ecd2fe8e936732057db49e6f3d1b8d193083c",
+   "split": {
+    "name": "v5",
+    "role": "VALIDATION",
+    "start_utc": "2026-07-24T00:00:00Z",
+    "end_utc": "2026-08-20T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:09.944106Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "365f50ee120f78693f73c2052841dbe7e82f7edfa141f74f06f0d6e93b983622",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-07-24T00:00:00+00:00",
+    "period_end": "2026-08-20T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5009949.3904461462333900",
+    "cash_tmn": "5009949.3904461462333900",
+    "realized_pnl_tmn": "9949.3904461462333900",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "6705.8389471853816100",
+    "net_pnl_tmn": "9949.3904461462333900",
+    "realized_return_pct": "0.1990",
+    "return_pct": "0.1990",
+    "peak_equity_tmn": "5010476",
+    "max_drawdown_pct": "0.4786",
+    "trades": 5,
+    "wins": 2,
+    "losses": 3,
+    "win_rate_pct": "40.0000",
+    "avg_trade_pnl_tmn": "1989.8780892292466780",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "33879.7563414670687500",
+    "gross_loss_tmn": "23930.3658953208353600",
+    "profit_factor": "1.415764242371724986097356969",
+    "fee_burden_pct": "0.1341",
+    "avg_holding_s": "68400",
+    "time_in_market_pct": "13.7346",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 301,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 14,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 5,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      19
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      14
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "bb99059c98b419d2a97baeacfbff5bf2727987282b05d695f30ae954a2fa79a2"
+  },
+  {
+   "trial_id": "d3f12484fd0ba3e891d3c24c0f76f8d538a2e2da573edc8daae89548c4cb956a",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "94a7b16f9b7e9d0883b2b15d949b42c06604d9422bb345c0e017dd464c82f7e8",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "b14065505d674d22660cfe3d75d009be6f820acaad6cb888983e5794909927fc",
+   "split": {
+    "name": "v6",
+    "role": "VALIDATION",
+    "start_utc": "2026-08-20T00:00:00Z",
+    "end_utc": "2026-09-16T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:13.161514Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "d3f12484fd0ba3e891d3c24c0f76f8d538a2e2da573edc8daae89548c4cb956a",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-08-20T00:00:00+00:00",
+    "period_end": "2026-09-16T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5120406.3353757299314375",
+    "cash_tmn": "5120406.3353757299314375",
+    "realized_pnl_tmn": "120406.3353757299314375",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "17733.8269510853935625",
+    "net_pnl_tmn": "120406.3353757299314375",
+    "realized_return_pct": "2.4081",
+    "return_pct": "2.4081",
+    "peak_equity_tmn": "5180559",
+    "max_drawdown_pct": "1.1632",
+    "trades": 12,
+    "wins": 8,
+    "losses": 4,
+    "win_rate_pct": "66.6667",
+    "avg_trade_pnl_tmn": "10033.86128131082761979166667",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "155902.9303365294631875",
+    "gross_loss_tmn": "35496.5949607995317500",
+    "profit_factor": "4.392053111254755610434064590",
+    "fee_burden_pct": "0.3547",
+    "avg_holding_s": "341400",
+    "time_in_market_pct": "95.9877",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 77,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 231,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 12,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      243
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      231
+     ],
+     [
+      "max_open_positions",
+      221
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "e053f31503b05092f929f2d94978c36bc61f0ce9563d02c2274aa17d57ed9564"
+  },
+  {
+   "trial_id": "0223863a987c40a51d9a81e13a6d99f319887c2272b5f5ab1b8911e802257291",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "d50b102467f971f79c8eaf2e7b0734affdb5ffb8fd852040a0e3091728699b66",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "b14065505d674d22660cfe3d75d009be6f820acaad6cb888983e5794909927fc",
+   "split": {
+    "name": "v6",
+    "role": "VALIDATION",
+    "start_utc": "2026-08-20T00:00:00Z",
+    "end_utc": "2026-09-16T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:16.111541Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "0223863a987c40a51d9a81e13a6d99f319887c2272b5f5ab1b8911e802257291",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-08-20T00:00:00+00:00",
+    "period_end": "2026-09-16T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5107651.254436809787340",
+    "cash_tmn": "5107651.254436809787340",
+    "realized_pnl_tmn": "107651.254436809787340",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "24276.239652810812660",
+    "net_pnl_tmn": "107651.254436809787340",
+    "realized_return_pct": "2.1530",
+    "return_pct": "2.1530",
+    "peak_equity_tmn": "5170056",
+    "max_drawdown_pct": "1.2070",
+    "trades": 12,
+    "wins": 8,
+    "losses": 4,
+    "win_rate_pct": "66.6667",
+    "avg_trade_pnl_tmn": "8970.937869734148945",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "145602.548376873463575",
+    "gross_loss_tmn": "37951.293940063676235",
+    "profit_factor": "3.836563480729352061117330636",
+    "fee_burden_pct": "0.4855",
+    "avg_holding_s": "341400",
+    "time_in_market_pct": "95.9877",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 77,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 231,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 12,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      243
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      231
+     ],
+     [
+      "max_open_positions",
+      221
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "26d6d2b4ee6ac18c9dcb28492123fc62cd0e674ec7aabbfea77d5a5b97d5fa81"
+  },
+  {
+   "trial_id": "b9d6180aa3f82cadc188ac938696fee01b6d6fdd9b22c8038bffd5cc3bd0bc93",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "2626df4c4baa64d9e52c866336a6438879f91467c0d55c458f74be36343ac167",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "b14065505d674d22660cfe3d75d009be6f820acaad6cb888983e5794909927fc",
+   "split": {
+    "name": "v6",
+    "role": "VALIDATION",
+    "start_utc": "2026-08-20T00:00:00Z",
+    "end_utc": "2026-09-16T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:18.877012Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "b9d6180aa3f82cadc188ac938696fee01b6d6fdd9b22c8038bffd5cc3bd0bc93",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-08-20T00:00:00+00:00",
+    "period_end": "2026-09-16T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5125128.6655771110659500",
+    "cash_tmn": "5125128.6655771110659500",
+    "realized_pnl_tmn": "125128.6655771110659500",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "14361.7904433590290500",
+    "net_pnl_tmn": "125128.6655771110659500",
+    "realized_return_pct": "2.5026",
+    "return_pct": "2.5026",
+    "peak_equity_tmn": "5184992",
+    "max_drawdown_pct": "1.1567",
+    "trades": 12,
+    "wins": 8,
+    "losses": 4,
+    "win_rate_pct": "66.6667",
+    "avg_trade_pnl_tmn": "10427.38879809258882916666667",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "159916.3456048568634900",
+    "gross_loss_tmn": "34787.6800277457975400",
+    "profit_factor": "4.596924700851322118449811855",
+    "fee_burden_pct": "0.2872",
+    "avg_holding_s": "341400",
+    "time_in_market_pct": "95.9877",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 77,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 231,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 12,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      243
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      231
+     ],
+     [
+      "max_open_positions",
+      221
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "cac93c5df5a2457f5f53b22b75d47bb6bf6d99106600c6a614c16bf2bfe532f5"
+  },
+  {
+   "trial_id": "aa1adbd7363dbe0969eaaf1e839a4394e6789d7722d97e175fca42fbbe96fde8",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "2afd475c9751d60157d71b378eeb5a0325338fc691e49418e8c6beadca363956",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "17e8cfb3b9bfc7c5547abcd24f03dc9284ff33aa843b1572107a2916f3c7eece",
+   "split": {
+    "name": "v7",
+    "role": "VALIDATION",
+    "start_utc": "2026-09-16T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:21.197093Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "aa1adbd7363dbe0969eaaf1e839a4394e6789d7722d97e175fca42fbbe96fde8",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-09-16T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5047913.3722336324703000",
+    "cash_tmn": "5047913.3722336324703000",
+    "realized_pnl_tmn": "47913.3722336324703000",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "5470.7705291915897000",
+    "net_pnl_tmn": "47913.3722336324703000",
+    "realized_return_pct": "0.9583",
+    "return_pct": "0.9583",
+    "peak_equity_tmn": "5081837",
+    "max_drawdown_pct": "0.6676",
+    "trades": 4,
+    "wins": 4,
+    "losses": 0,
+    "win_rate_pct": "100.0000",
+    "avg_trade_pnl_tmn": "11978.3430584081175750",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "47913.3722336324703000",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.1094",
+    "avg_holding_s": "581400",
+    "time_in_market_pct": "50.1543",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 113,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 105,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 4,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      109
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      105
+     ],
+     [
+      "max_open_positions",
+      104
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      98
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "30d5760eb8180f5f66fb357791726422c8fb81d3e13c3e752bbab4509d15c2ac"
+  },
+  {
+   "trial_id": "7ccbe97d10f8d973c35c78e57f2b59ff704638b9bd05dd4391e0e9075ce12283",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "7507c937d00509c356e61f96db38663e2cf8304f522521e2123f55610f95cb30",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "17e8cfb3b9bfc7c5547abcd24f03dc9284ff33aa843b1572107a2916f3c7eece",
+   "split": {
+    "name": "v7",
+    "role": "VALIDATION",
+    "start_utc": "2026-09-16T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:23.638004Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "7ccbe97d10f8d973c35c78e57f2b59ff704638b9bd05dd4391e0e9075ce12283",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-09-16T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5043856.047490669496855",
+    "cash_tmn": "5043856.047490669496855",
+    "realized_pnl_tmn": "43856.047490669496855",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "7524.784932785573145",
+    "net_pnl_tmn": "43856.047490669496855",
+    "realized_return_pct": "0.8771",
+    "return_pct": "0.8771",
+    "peak_equity_tmn": "5077579",
+    "max_drawdown_pct": "0.6642",
+    "trades": 4,
+    "wins": 3,
+    "losses": 1,
+    "win_rate_pct": "75.0000",
+    "avg_trade_pnl_tmn": "10964.01187266737421375",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "44220.112470973852380",
+    "gross_loss_tmn": "364.064980304355525",
+    "profit_factor": "121.4621423736119257343966349",
+    "fee_burden_pct": "0.1505",
+    "avg_holding_s": "581400",
+    "time_in_market_pct": "50.1543",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 113,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 105,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 4,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      109
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      105
+     ],
+     [
+      "max_open_positions",
+      104
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      98
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "20b8a24c262fe101f01f9337fd3401338a841d8df2e774eba26fca9a9c90aa41"
+  },
+  {
+   "trial_id": "86b2d8432e9ecedca89b4dc4ef4af6ffcbcc527f34d7913bf4ac240f7d302062",
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "parameters": {
+    "version": "f2-0.1.0",
+    "entry_band_atr": "0.5",
+    "stop_atr": "5",
+    "trail_atr": "5",
+    "max_holding_s": 604800,
+    "candidate_ttl_s": 900,
+    "regime_filter": true
+   },
+   "config_hash": "630795bfa45d5b44eae89627881b64ae000a2fd73bf8ef00f6279ebf346813ea",
+   "dataset_hash": "a9901547b50c22eb7f72da077de626337cbf7821742f4f85b5b2e2eb0b5297bb",
+   "split_hash": "17e8cfb3b9bfc7c5547abcd24f03dc9284ff33aa843b1572107a2916f3c7eece",
+   "split": {
+    "name": "v7",
+    "role": "VALIDATION",
+    "start_utc": "2026-09-16T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "cost": {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   "strategy_id": "F2_tsm",
+   "strategy_version": "f2-0.1.0",
+   "seed": 7,
+   "code": {
+    "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+    "dirty": false
+   },
+   "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+   "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+   "recorded_at": "2026-10-22T21:13:26.297948Z",
+   "status": "PASS",
+   "metrics": {
+    "run_id": "86b2d8432e9ecedca89b4dc4ef4af6ffcbcc527f34d7913bf4ac240f7d302062",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "phase04r2-f2-tsm",
+    "period_start": "2026-09-16T00:00:00+00:00",
+    "period_end": "2026-10-13T00:00:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "5049692.8275318727807600",
+    "cash_tmn": "5049692.8275318727807600",
+    "realized_pnl_tmn": "49692.8275318727807600",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "4428.9419533060192400",
+    "net_pnl_tmn": "49692.8275318727807600",
+    "realized_return_pct": "0.9939",
+    "return_pct": "0.9939",
+    "peak_equity_tmn": "5083849",
+    "max_drawdown_pct": "0.6719",
+    "trades": 4,
+    "wins": 4,
+    "losses": 0,
+    "win_rate_pct": "100.0000",
+    "avg_trade_pnl_tmn": "12423.2068829681951900",
+    "breakeven_trades": 0,
+    "gross_profit_tmn": "49692.8275318727807600",
+    "gross_loss_tmn": "0",
+    "profit_factor": null,
+    "fee_burden_pct": "0.0886",
+    "avg_holding_s": "581400",
+    "time_in_market_pct": "50.1543",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 324,
+    "no_candidate_cycles": 113,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 105,
+    "blocked": 4,
+    "outside_window_or_cutoff": 4,
+    "entries_submitted": 4,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+     [
+      "BEST_OF_CANDIDATES",
+      109
+     ]
+    ],
+    "top_risk_blocks": [
+     [
+      "one_position_per_symbol",
+      105
+     ],
+     [
+      "max_open_positions",
+      104
+     ],
+     [
+      "DATA_QUALITY:GAP",
+      98
+     ],
+     [
+      "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+      2
+     ],
+     [
+      "COMPETITION_ENDED",
+      2
+     ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+     "f2-0.1.0"
+    ]
+   },
+   "error_type": null,
+   "result_hash": "2b10d407b46c961aafd9f740f8291ae14ac395491db941cbc4e043e1ff91f7d1"
+  }
+ ],
+ "observations": [
+  {
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v7/base: 4 < 5"
+  },
+  {
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v7/adverse: 4 < 5"
+  },
+  {
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "code": "LOW_TRADE_COUNT",
+   "detail": "v7/low: 4 < 5"
+  },
+  {
+   "parameter_hash": "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b",
+   "code": "RETURN_SIGN_CHANGE",
+   "detail": "positive and negative returns across base-cost periods"
+  }
+ ],
+ "configurations_for_claude_review": [
+  "8736163683adc4c3d49db874ef6def804a67b661934e7f2047939879674c3c5b"
+ ],
+ "review_policy": "all configurations, ordered by hash; no ranking, selection or KEEP/MODIFY/REJECT decision",
+ "metric_definitions": {
+  "gross_profit_tmn": "sum of positive CLOSED trade net P&L after fees",
+  "gross_loss_tmn": "absolute sum of negative CLOSED trade net P&L after fees",
+  "profit_factor": "gross_profit / gross_loss; null when gross_loss = 0",
+  "fee_burden_pct": "all fees paid / starting capital * 100",
+  "time_in_market_pct": "union of holding intervals / split duration * 100",
+  "undefined": "null in JSON; empty in CSV; — in Persian report"
+ }
+}

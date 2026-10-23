@@ -1,0 +1,104 @@
+{
+  "dataset_id": "d-ca9b79afcced45e9b4ac77240ead6363",
+  "dataset_name": "wallex-public-read-492d9952de16",
+  "discovered_datasets": [],
+  "experiment_id": "1",
+  "run_id": "cb8b95f1eb004b45a7f93951e3e0d4b0",
+  "scorers": [
+    "output_contract",
+    "candidate_discipline",
+    "evidence_references",
+    "tool_boundary",
+    "failure_to_wait"
+  ],
+  "metrics": {
+    "output_contract/mean": 1.0,
+    "candidate_discipline/mean": 1.0,
+    "evidence_references/mean": 1.0,
+    "tool_boundary/mean": 1.0,
+    "failure_to_wait/mean": 1.0
+  },
+  "trace_count": 1,
+  "rows": [
+    {
+      "case_id": "read_tool-4",
+      "scenario": "read_tool",
+      "phase": "public-read",
+      "model_id": "gemini-3.8-flash",
+      "status": "VALID",
+      "schema_valid": true,
+      "action": "WAIT",
+      "raw_action": "WAIT",
+      "candidate": null,
+      "offered_ids": [],
+      "evidence_feature_ids": [
+        "BTCTMN.trend_dist_atr.32",
+        "BTCTMN.breakout_margin_atr.16"
+      ],
+      "rationale": "هیچ موقعیت معاملاتی کاندیدی در این اسنپ‌شات ارائه نشده است، بنابراین تصمیم سیستم در وضعیت فعلی انتظار است.",
+      "reason_codes": [
+        "NO_CANDIDATES"
+      ],
+      "latency_ms": 17709,
+      "model_requests": 2,
+      "responding_model": "ninerouter:gemini-3.8-flash-n",
+      "tools": [],
+      "allowed_tools": [
+        "get_open_positions",
+        "get_recent_decisions",
+        "get_risk_status",
+        "wallex_basic_candle_history",
+        "wallex_basic_get_latest_trades",
+        "wallex_basic_get_market_depth"
+      ],
+      "offered_tools": [
+        "get_open_positions",
+        "get_recent_decisions",
+        "get_risk_status",
+        "wallex_basic_candle_history",
+        "wallex_basic_get_latest_trades",
+        "wallex_basic_get_market_depth"
+      ],
+      "write_tools_exposed": [],
+      "baseline_action": "WAIT",
+      "baseline_candidate": null,
+      "detail": null,
+      "real_model": true
+    }
+  ],
+  "summary": {
+    "calls": 1,
+    "valid": 1,
+    "valid_rate": 1.0,
+    "structured_output_rate": 1.0,
+    "candidate_discipline": true,
+    "candidate_discipline_rate": 1.0,
+    "invalid_reference_count": 0,
+    "timeout_count": 0,
+    "error_count": 0,
+    "wait_rate": 1.0,
+    "baseline_disagreements": 0,
+    "approximate_model_requests": 2,
+    "latency_ms_p50": 17709,
+    "latency_ms_p95": 17709,
+    "status_counts": {
+      "VALID": 1
+    },
+    "actions": {
+      "WAIT": 1
+    },
+    "tool_calls": 0,
+    "tool_successes": 0,
+    "tool_errors": 0,
+    "tools_used": {},
+    "tools_within_allowlist": true,
+    "all_failures_waited": true,
+    "responders": [
+      "ninerouter:gemini-3.8-flash-n"
+    ]
+  },
+  "market_as_of": "2026-10-22T15:12:08.650483+00:00",
+  "source": "current public Wallex REST snapshot; allowlisted public MCP available; no execution",
+  "real_wallex_writes": 0,
+  "private_wallex_calls": 0
+}

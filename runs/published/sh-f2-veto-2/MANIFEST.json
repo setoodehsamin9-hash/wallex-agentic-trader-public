@@ -1,0 +1,29 @@
+{
+ "schema_version": "1.0.0",
+ "run_id": "sh-f2-veto-2",
+ "started_at": "2026-10-23T12:17:49.784350Z",
+ "ended_at": null,
+ "environment": "SHADOW",
+ "autonomy": "AUTONOMOUS",
+ "code": {
+  "git_commit": "79e853fb4e002d895b767f47962e839b77b0e3d4",
+  "dirty": false
+ },
+ "config_sha256": "a38536d786f631874726961541494b685a8b0c608284e4bd80197d3799ca3f49",
+ "limits_version": "sim-placeholder-2026-10-22",
+ "prompt_bundle_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346",
+ "model_id": "cx/gpt-6.1-sol",
+ "model_provider": "ninerouter",
+ "model_endpoint": "http://localhost:20128/v1",
+ "model_settings_sha256": "9d910baeefbcc10273366d74b6f0a07e77669d23bfc7311d4805cd2b21fb7f75",
+ "dependency_lock_sha256": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+ "trading_window_version": null,
+ "starting_capital_tmn": "5000000",
+ "universe_version": "u-live-f2152c8f0430",
+ "dataset_refs": [],
+ "clock": "WALL",
+ "seed": 7,
+ "strategy_versions": [
+  "f2-0.1.0"
+ ]
+}

@@ -1,0 +1,274 @@
+{
+ "schema_version": "1",
+ "spec": {
+  "schema_version": "1",
+  "experiment_id": "p04r2-cal-c2-1m",
+  "base_config": "../phase04/base-1h-c2-v2.toml",
+  "dataset_dir": "../../../data/raw/historical-pack/export/datasets/1m",
+  "dataset_resolution_seconds": 60,
+  "strategy_id": "C2_trend_hold",
+  "strategy_version": "c2-0.2.0",
+  "seed": 7,
+  "max_trials": 9,
+  "parameters": {},
+  "splits": [
+   {
+    "name": "v5",
+    "role": "VALIDATION",
+    "start_utc": "2026-07-24T00:00:00Z",
+    "end_utc": "2026-08-20T00:00:00Z"
+   },
+   {
+    "name": "v6",
+    "role": "VALIDATION",
+    "start_utc": "2026-08-20T00:00:00Z",
+    "end_utc": "2026-09-16T00:00:00Z"
+   },
+   {
+    "name": "v7",
+    "role": "VALIDATION",
+    "start_utc": "2026-09-16T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   }
+  ],
+  "costs": [
+   {
+    "name": "base",
+    "fee_rate": "0.0025",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   },
+   {
+    "name": "adverse",
+    "fee_rate": "0.0035",
+    "slippage_bps": "10",
+    "fee_source": "ASSUMED"
+   },
+   {
+    "name": "low",
+    "fee_rate": "0.0020",
+    "slippage_bps": "5",
+    "fee_source": "ASSUMED"
+   }
+  ],
+  "base_cost_id": "base",
+  "min_trades_observation": 5
+ },
+ "spec_hash": "da3bf0ef060f4bd68f64fd8164b3f68dd090a76fe8dad982cfbb7eeee9b29eb5",
+ "base_config": {
+  "run": {
+   "environment": "BACKTEST",
+   "autonomy": "AUTONOMOUS",
+   "live_autonomous_enabled": false,
+   "symbols": [
+    "BTCTMN",
+    "ETHTMN"
+   ],
+   "bar_interval_seconds": 3600,
+   "starting_capital_tmn": "5000000",
+   "seed": 7,
+   "label": "phase04-c2-trend-hold-v2"
+  },
+  "limits": {
+   "version": "sim-placeholder-2026-10-22",
+   "approved_by_owner": false,
+   "risk": {
+    "per_trade_budget_fraction": "0.005",
+    "total_loss_budget_tmn": "150000",
+    "session_loss_budget_tmn": "75000",
+    "max_position_notional_tmn": "1500000",
+    "max_total_exposure_tmn": "2500000",
+    "max_open_positions": 2,
+    "drawdown_pause_fraction": "0.02",
+    "drawdown_emergency_fraction": "0.04",
+    "loss_streak_count": 3,
+    "loss_streak_window_s": 14400,
+    "cooldown_s": 3600,
+    "max_spread_bps": "30",
+    "max_depth_fraction": "0.25",
+    "stress_cost_bps": "10",
+    "verdict_ttl_s": 30,
+    "cautious_size_fraction": "0.5"
+   },
+   "data": {
+    "max_bar_age_s": 1860,
+    "max_book_age_s": 30
+   },
+   "approval": {
+    "ticket_ttl_s": 300
+   },
+   "cutoff": {
+    "no_new_entry_before_end_s": 3600,
+    "liquidation_start_before_end_s": 1800
+   },
+   "kill": {
+    "max_consecutive_execution_errors": 3,
+    "reconciliation_tolerance_tmn": "1000"
+   }
+  },
+  "costs": {
+   "fee_rate": "0.0025",
+   "fee_source": "ASSUMED",
+   "backtest_slippage_bps": "5"
+  },
+  "execution": {
+   "entry_order_type": "LIMIT",
+   "entry_limit_slippage_bps": "20",
+   "exit_limit_slippage_bps": "30",
+   "entry_ttl_s": 900
+  },
+  "features": {
+   "atr_bars": 14,
+   "trend_bars": 24,
+   "volume_bars": 20,
+   "regime_trend_atr": "1.0",
+   "regime_shock_atr_pct": "0.02",
+   "ema_bars": null,
+   "regime_er_bars": null,
+   "regime_rank_bars": null
+  },
+  "strategy": {
+   "c1": {
+    "version": "c1-0.2.0",
+    "lookback_bars": 24,
+    "buffer_atr": "0.1",
+    "stop_atr": "3",
+    "tp_atr": null,
+    "max_holding_s": 43200,
+    "candidate_ttl_s": 600,
+    "min_edge_over_cost_bps": "20",
+    "min_volume_ratio": null,
+    "exit_mode": "TIME",
+    "min_atr_cost_ratio": "1.0"
+   },
+   "c2": {
+    "version": "c2-0.2.0",
+    "trend_gate": true,
+    "entry_trend_atr": "0.5",
+    "stop_atr": "3",
+    "max_holding_s": 172800,
+    "candidate_ttl_s": 600,
+    "min_atr_cost_ratio": "1.0"
+   },
+   "f2": null,
+   "active": "C2_trend_hold"
+  },
+  "agent": {
+   "decision_provider": "BASELINE",
+   "model_id": null,
+   "decision_deadline_s": 60,
+   "max_model_requests": 4,
+   "max_tool_calls": 4,
+   "output_retries": 1,
+   "allow_exit_position": false,
+   "invalid_streak_breaker": 3,
+   "use_wallex_mcp_tools": false,
+   "prompt_version": "decision_v2",
+   "model_settings": {},
+   "replay_run_id": null
+  },
+  "trading_window": null,
+  "competition": {
+   "start_utc": null,
+   "end_utc": null
+  },
+  "backtest": {
+   "dataset": "wallex-1m-btctmn-ethtmn",
+   "start_utc": null,
+   "end_utc": null,
+   "approval_policy": "APPROVE_ALL",
+   "split": "ALL"
+  },
+  "shadow": null
+ },
+ "base_config_hash": "6361bb7ddd96a4fda6e9201ef2ffc8a8a990855bfe7a1e3872295339dc3a9e9a",
+ "dataset_hash": "97a0284ab579affea17b28fb08640e824654486c13b34b00b6795d16cfd7c618",
+ "dataset_name": "wallex-public-20261022-1m",
+ "splits": {
+  "v5": {
+   "split": {
+    "name": "v5",
+    "role": "VALIDATION",
+    "start_utc": "2026-07-24T00:00:00Z",
+    "end_utc": "2026-08-20T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 38880,
+     "missing_minutes": 0
+    },
+    "ETHTMN": {
+     "bars": 38880,
+     "missing_minutes": 0
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "c259a56a03e0ecc9c92079d70cb14ef218888617298f21ae2284dce1ed39b0ae",
+    "ETHTMN": "4ad60ea7aaca8f3321ba446f9d079e60d33bc028f9b0ad6b2d15b6b7bd858aa8"
+   },
+   "split_hash": "313ea2cbdf99a86847a072198eabfc3233bb2d14bb2bfde5095f69b0e0e62bbd"
+  },
+  "v6": {
+   "split": {
+    "name": "v6",
+    "role": "VALIDATION",
+    "start_utc": "2026-08-20T00:00:00Z",
+    "end_utc": "2026-09-16T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 38880,
+     "missing_minutes": 0
+    },
+    "ETHTMN": {
+     "bars": 38880,
+     "missing_minutes": 0
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "af0b097e857aa570cf6788c988e1899647ef542815a3df16f6240ff2d0bc017a",
+    "ETHTMN": "b50e496ab2f23f2b682d1b78969ba1d2230270f21433b5c5630cac93ab7c614c"
+   },
+   "split_hash": "97a3355c3bdfddde7d238107aedd12e92e00b72811dd482f23664398d4269193"
+  },
+  "v7": {
+   "split": {
+    "name": "v7",
+    "role": "VALIDATION",
+    "start_utc": "2026-09-16T00:00:00Z",
+    "end_utc": "2026-10-13T00:00:00Z"
+   },
+   "counts": {
+    "BTCTMN": {
+     "bars": 38797,
+     "missing_minutes": 83
+    },
+    "ETHTMN": {
+     "bars": 38794,
+     "missing_minutes": 86
+    }
+   },
+   "past_bars_hashes": {
+    "BTCTMN": "e7039e7b52de68056d14be08ef572e2ba3b58e0db7b9bdc187e52de106208a75",
+    "ETHTMN": "5a5921e557b2d89ecd74db048a21aacd70f50a49dcfdbaa3dca9ba0400293b0b"
+   },
+   "split_hash": "26f99fe2dd2382e6b492b3fcc503dd12ec5d6d805b306eb8ae0e459c93cf347f"
+  }
+ },
+ "code": {
+  "git_commit": "b8b830a83d12b3918d1e2943a4fe11a9cc498d8d",
+  "dirty": false
+ },
+ "source_hash": "19f00109bbc6c968eaca3bf2f17802605ea21426e36a63bbcb6631a0c31d5d02",
+ "dependency_hash": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+ "evaluate_test": false,
+ "selected_parameter_hash": null,
+ "trial_count": 9,
+ "fill_assumptions": [
+  "existing BacktestVenue; next-bar entry fills; worse stop when both barriers touch",
+  "past-only feature warmup; fresh capital/ledger per period; no carried positions",
+  "no historical depth, queue or latency model; gaps not filled; explicit assumed fee per side and slippage bps"
+ ],
+ "selection_policy": "external human/Claude decision; no automatic best configuration",
+ "manifest_hash": "db8cf2b8889e52c89220e0abab61bdf95447cde779d6bab1a44d288c4b087f3b"
+}

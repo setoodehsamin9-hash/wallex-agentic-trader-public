@@ -1,0 +1,71 @@
+{
+ "run_id": "sh-f2-p05",
+ "environment": "SHADOW",
+ "autonomy": "AUTONOMOUS",
+ "label": "phase05-f2-shadow",
+ "period_start": "2026-10-23T05:35:21.148768+00:00",
+ "period_end": "2026-10-23T08:12:25.478698+00:00",
+ "starting_capital_tmn": "5000000",
+ "final_equity_tmn": "5000000",
+ "cash_tmn": "5000000",
+ "realized_pnl_tmn": "0",
+ "unrealized_pnl_tmn": "0",
+ "fees_tmn": "0",
+ "net_pnl_tmn": "0",
+ "realized_return_pct": "0.0000",
+ "return_pct": "0.0000",
+ "peak_equity_tmn": "5000000",
+ "max_drawdown_pct": "0.0000",
+ "trades": 0,
+ "wins": 0,
+ "losses": 0,
+ "win_rate_pct": null,
+ "avg_trade_pnl_tmn": null,
+ "breakeven_trades": 0,
+ "gross_profit_tmn": "0",
+ "gross_loss_tmn": "0",
+ "profit_factor": null,
+ "fee_burden_pct": "0.0000",
+ "avg_holding_s": null,
+ "time_in_market_pct": "0.0000",
+ "open_positions": [],
+ "exposure_tmn": "0",
+ "dust": {},
+ "decisions_total": 2,
+ "no_candidate_cycles": 0,
+ "wait_decisions": 2,
+ "proposed": 0,
+ "awaiting_approval": 0,
+ "risk_rejected": 0,
+ "blocked": 0,
+ "outside_window_or_cutoff": 0,
+ "entries_submitted": 0,
+ "ai_calls": 2,
+ "ai_valid": 2,
+ "ai_invalid_by_status": {},
+ "ai_latency_ms_p50": 14538,
+ "ai_latency_ms_p95": 15017,
+ "ai_latency_ms_max": 15017,
+ "execution_errors": 0,
+ "unresolved_orders": 0,
+ "kill_switch_latched": false,
+ "top_reason_codes": [
+  [
+   "CONFLICTING_SIGNALS",
+   2
+  ],
+  [
+   "WEAK_EVIDENCE",
+   2
+  ]
+ ],
+ "top_risk_blocks": [],
+ "model_id": "cx/gpt-6.1-sol",
+ "model_provider": "ninerouter",
+ "responding_models": [
+  "ninerouter:gpt-6.1-sol"
+ ],
+ "strategy_versions": [
+  "f2-0.1.0"
+ ]
+}

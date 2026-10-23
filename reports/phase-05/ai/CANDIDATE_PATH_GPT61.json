@@ -1,0 +1,211 @@
+{
+ "generated_at": "2026-10-23T05:40:10.684351+00:00",
+ "scenario": "synthetic BTCTMN C1 breakout at 2026-10-03T06:15Z, SHADOW config, ShadowVenue IOC fills on a 1-level book",
+ "cases": [
+  {
+   "label": "b0",
+   "source": {
+    "status": "FILLED",
+    "candidates": [
+     "c1-24294a1b0a044d3f"
+    ],
+    "effective_action": "ENTER",
+    "selected_candidate_id": "c1-24294a1b0a044d3f",
+    "validation": "VALID",
+    "provenance": "BASELINE",
+    "model_id": null,
+    "policy": "EXECUTE",
+    "risk_outcome": "APPROVE",
+    "risk_failed_checks": [],
+    "intent": {
+     "side": "BUY",
+     "qty": "0.00942697",
+     "limit_price": "144234683",
+     "client_order_id": "wa9650fa020708ee3338ebf3"
+    },
+    "execution_states": [
+     "INTENT",
+     "SUBMITTING",
+     "ACKED",
+     "FILLED"
+    ],
+    "simulated_submissions": 1,
+    "venue_environment": "SHADOW",
+    "venue_fill_source": "SHADOW_SIM",
+    "position_qty": "0.00942697",
+    "stop_price": "142443649",
+    "state_log_replays_to_ledger": true
+   },
+   "replay": {
+    "status": "FILLED",
+    "candidates": [
+     "c1-24294a1b0a044d3f"
+    ],
+    "effective_action": "ENTER",
+    "selected_candidate_id": "c1-24294a1b0a044d3f",
+    "validation": "VALID",
+    "provenance": "REPLAY",
+    "model_id": "replay:BASELINE",
+    "policy": "EXECUTE",
+    "risk_outcome": "APPROVE",
+    "risk_failed_checks": [],
+    "intent": {
+     "side": "BUY",
+     "qty": "0.00942697",
+     "limit_price": "144234683",
+     "client_order_id": "wab47d87a556ee6454cce8cf"
+    },
+    "execution_states": [
+     "INTENT",
+     "SUBMITTING",
+     "ACKED",
+     "FILLED"
+    ],
+    "simulated_submissions": 1,
+    "venue_environment": "SHADOW",
+    "venue_fill_source": "SHADOW_SIM",
+    "position_qty": "0.00942697",
+    "stop_price": "142443649"
+   },
+   "replay_matches": true,
+   "real_wallex_writes": 0
+  },
+  {
+   "label": "scripted-llm",
+   "source": {
+    "status": "FILLED",
+    "candidates": [
+     "c1-24294a1b0a044d3f"
+    ],
+    "effective_action": "ENTER",
+    "selected_candidate_id": "c1-24294a1b0a044d3f",
+    "validation": "VALID",
+    "provenance": "LLM",
+    "model_id": "scripted:scripted-selector",
+    "policy": "EXECUTE",
+    "risk_outcome": "APPROVE",
+    "risk_failed_checks": [],
+    "intent": {
+     "side": "BUY",
+     "qty": "0.00942697",
+     "limit_price": "144234683",
+     "client_order_id": "wa023d8a8e96709a00748e83"
+    },
+    "execution_states": [
+     "INTENT",
+     "SUBMITTING",
+     "ACKED",
+     "FILLED"
+    ],
+    "simulated_submissions": 1,
+    "venue_environment": "SHADOW",
+    "venue_fill_source": "SHADOW_SIM",
+    "position_qty": "0.00942697",
+    "stop_price": "142443649",
+    "state_log_replays_to_ledger": true
+   },
+   "replay": {
+    "status": "FILLED",
+    "candidates": [
+     "c1-24294a1b0a044d3f"
+    ],
+    "effective_action": "ENTER",
+    "selected_candidate_id": "c1-24294a1b0a044d3f",
+    "validation": "VALID",
+    "provenance": "REPLAY",
+    "model_id": "replay:scripted-selector",
+    "policy": "EXECUTE",
+    "risk_outcome": "APPROVE",
+    "risk_failed_checks": [],
+    "intent": {
+     "side": "BUY",
+     "qty": "0.00942697",
+     "limit_price": "144234683",
+     "client_order_id": "wa7d940a7a302c6eb3f9707c"
+    },
+    "execution_states": [
+     "INTENT",
+     "SUBMITTING",
+     "ACKED",
+     "FILLED"
+    ],
+    "simulated_submissions": 1,
+    "venue_environment": "SHADOW",
+    "venue_fill_source": "SHADOW_SIM",
+    "position_qty": "0.00942697",
+    "stop_price": "142443649"
+   },
+   "replay_matches": true,
+   "real_wallex_writes": 0,
+   "note": "SCRIPTED FunctionModel selecting the first offered candidate; proves the execution path, not AI judgement"
+  },
+  {
+   "label": "ninerouter",
+   "source": {
+    "status": "FILLED",
+    "candidates": [
+     "c1-24294a1b0a044d3f"
+    ],
+    "effective_action": "ENTER",
+    "selected_candidate_id": "c1-24294a1b0a044d3f",
+    "validation": "VALID",
+    "provenance": "LLM",
+    "model_id": "ninerouter:gpt-6.1-sol",
+    "policy": "EXECUTE",
+    "risk_outcome": "REDUCE",
+    "risk_failed_checks": [],
+    "intent": {
+     "side": "BUY",
+     "qty": "0.00471348",
+     "limit_price": "144234683",
+     "client_order_id": "wa4a55ba2dd00a964f51c34b"
+    },
+    "execution_states": [
+     "INTENT",
+     "SUBMITTING",
+     "ACKED",
+     "FILLED"
+    ],
+    "simulated_submissions": 1,
+    "venue_environment": "SHADOW",
+    "venue_fill_source": "SHADOW_SIM",
+    "position_qty": "0.00471348",
+    "stop_price": "142443649",
+    "state_log_replays_to_ledger": true
+   },
+   "replay": {
+    "status": "FILLED",
+    "candidates": [
+     "c1-24294a1b0a044d3f"
+    ],
+    "effective_action": "ENTER",
+    "selected_candidate_id": "c1-24294a1b0a044d3f",
+    "validation": "VALID",
+    "provenance": "REPLAY",
+    "model_id": "replay:gpt-6.1-sol",
+    "policy": "EXECUTE",
+    "risk_outcome": "REDUCE",
+    "risk_failed_checks": [],
+    "intent": {
+     "side": "BUY",
+     "qty": "0.00471348",
+     "limit_price": "144234683",
+     "client_order_id": "wa7a339696e5eab703871e12"
+    },
+    "execution_states": [
+     "INTENT",
+     "SUBMITTING",
+     "ACKED",
+     "FILLED"
+    ],
+    "simulated_submissions": 1,
+    "venue_environment": "SHADOW",
+    "venue_fill_source": "SHADOW_SIM",
+    "position_qty": "0.00471348",
+    "stop_price": "142443649"
+   },
+   "replay_matches": true,
+   "real_wallex_writes": 0
+  }
+ ]
+}

@@ -1,0 +1,1008 @@
+{
+  "url": "https://api.wallex.ir/mcp",
+  "access_date": "2026-10-22",
+  "authenticated": false,
+  "http_status": 200,
+  "operation": "tools/list; metadata only",
+  "jsonrpc_id": 2,
+  "tool_count": 52,
+  "nextCursor": null,
+  "raw_capture_sha256": "e04b8e7b1f75e82bb3717b1ae1a7c390fcf1ecd7514472521b1954605e17273f",
+  "tools": [
+    {
+      "name": "wallex_basic_add_account_iban",
+      "title": "Add a bank IBAN to the account",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "iban": {
+            "type": "string",
+            "example": "230170000000230285711000"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "iban"
+        ]
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_basic_candle_history",
+      "title": "Get market candle history",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "example": "BTCTMN"
+          },
+          "resolution": {
+            "type": "string",
+            "example": "60"
+          },
+          "from": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1733425200
+          },
+          "to": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1733428800
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "symbol",
+          "resolution",
+          "from",
+          "to"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_basic_get_account_balances",
+      "title": "List account asset balances",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_basic_get_account_card_numbers",
+      "title": "List account bank cards",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_basic_get_account_fees",
+      "title": "Get account trading fee rates",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_basic_get_account_ibans",
+      "title": "List account bank IBANs",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "per_page": {
+            "type": "integer",
+            "example": 10
+          },
+          "page": {
+            "type": "integer",
+            "example": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_basic_get_account_wallet_by_symbol",
+      "title": "Get an account deposit address",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "example": "eth"
+          },
+          "network": {
+            "type": "string",
+            "example": "erc20"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "symbol"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_basic_get_latest_trades",
+      "title": "List latest public market trades",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "example": "USDCUSDT"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "symbol"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_basic_get_market_depth",
+      "title": "Get a public market order book",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "example": "USDCUSDT"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "symbol"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_basic_get_markets",
+      "title": "List markets through the basic API",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_activate_user_package",
+      "title": "Activate a prop trading package",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "prop_package_id": {
+            "type": "number",
+            "example": 69
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_credit_active_sub_accounts_list",
+      "title": "List active credit sub-accounts",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_active_user_package_details",
+      "title": "Get a sub-account's active prop package",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_active_user_packages_overview",
+      "title": "Get active prop packages overview",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_cancel_user_package",
+      "title": "Cancel a sub-account's prop package",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_credit_check_prop_package_availability",
+      "title": "Check prop package activation availability",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": ""
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_create_transfer_to_sub_account",
+      "title": "Transfer funds to a credit sub-account",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "currency": {
+            "type": "string",
+            "example": "TMN"
+          },
+          "subAccount_client_id": {
+            "type": "string",
+            "example": "{{subAccountClientId}}"
+          },
+          "value": {
+            "type": "string",
+            "example": "1000"
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_credit_disable_connect_to_wallet",
+      "title": "Disconnect a prop package from its wallet",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_credit_enable_connect_to_wallet",
+      "title": "Connect a prop package to a wallet",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "credit": {
+            "type": "string",
+            "example": "10000"
+          },
+          "currency": {
+            "type": "string",
+            "example": "USDT"
+          },
+          "usageCount": {
+            "type": "number",
+            "example": 3
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_credit_enable_user_package_renew",
+      "title": "Enable prop package auto-renewal",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "body": {}
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_credit_prop_package_details",
+      "title": "Get prop package offering details",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": ""
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_prop_packages_list",
+      "title": "List available prop package offerings",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "": {
+            "type": "string",
+            "example": ""
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_sub_account_balances_details",
+      "title": "Get detailed credit sub-account balances",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_sub_account_transfer",
+      "title": "List transfers for a credit sub-account",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_user_package_history_details",
+      "title": "Get prop package history for one sub-account",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "subAccountClientId": {
+            "type": "string",
+            "example": ""
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "subAccountClientId"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_credit_user_package_history_list",
+      "title": "List account-wide prop package history",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_calculate_loan",
+      "title": "Calculate margin collateral and loan limits",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "collateral": {
+            "type": "string"
+          },
+          "market": {
+            "type": "string"
+          },
+          "open_price": {
+            "type": "string"
+          },
+          "risk_coef": {
+            "type": "string"
+          },
+          "side": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_close_position_id",
+      "title": "Close a margin position by ID",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "price": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ]
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_margin_detailed_information",
+      "title": "Preview a margin position",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "collateral": {
+            "type": "string"
+          },
+          "market": {
+            "type": "string"
+          },
+          "open_price": {
+            "type": "string"
+          },
+          "risk_coef": {
+            "type": "string"
+          },
+          "side": {
+            "type": "string"
+          },
+          "stop_loss": {
+            "type": "string"
+          },
+          "take_profit": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_edit_colateral",
+      "title": "Adjust a margin position's collateral",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "change": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ]
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_margin_edit_sltp",
+      "title": "Update a margin position's exit targets",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "stop_loss": {
+            "type": "string"
+          },
+          "take_profit": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ]
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_margin_get_levels",
+      "title": "Get account-wide margin trading levels",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_get_levels_market",
+      "title": "Get margin trading level for a market",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "market": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "market"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_get_markets",
+      "title": "List active margin markets",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_get_orders",
+      "title": "List filtered margin orders",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "active": {
+            "type": "boolean"
+          },
+          "market": {
+            "type": "string"
+          },
+          "position_side": {
+            "type": "string"
+          },
+          "position_id": {
+            "type": "string"
+          },
+          "position_type": {
+            "type": "string"
+          },
+          "side": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_get_pnl",
+      "title": "Get margin profit-and-loss summary",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_get_position_id",
+      "title": "Get a margin position by ID",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_get_positions",
+      "title": "List filtered margin positions",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "active": {
+            "type": "boolean"
+          },
+          "position_side": {
+            "type": "string"
+          },
+          "market": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_open_position",
+      "title": "Open a new margin position",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "collateral": {
+            "type": "string"
+          },
+          "market": {
+            "type": "string"
+          },
+          "open_price": {
+            "type": "string"
+          },
+          "risk_coef": {
+            "type": "string"
+          },
+          "side": {
+            "type": "string"
+          },
+          "stop_loss": {
+            "type": "string"
+          },
+          "take_profit": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_margin_profit_position_id",
+      "title": "Calculate profit for a margin position",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "close_price": {
+            "type": "string"
+          },
+          "strategy": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_margin_public_ratio",
+      "title": "Get a market's long-to-short position ratio",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "market": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "market"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_otc_get_otc_price",
+      "title": "Get an OTC buy or sell quote",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "example": "BTCTMN"
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "BUY",
+              "SELL"
+            ],
+            "example": "BUY"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "symbol",
+          "side"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_otc_get_otcmarkets",
+      "title": "List OTC-enabled markets",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_otc_place_easy_trade_order",
+      "title": "Place an OTC easy-trade order",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "example": "BTCTMN"
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "BUY",
+              "SELL"
+            ],
+            "example": "BUY"
+          },
+          "quantity": {
+            "type": "number",
+            "format": "float",
+            "example": 2.9e-05
+          },
+          "from": {
+            "type": "string",
+            "example": "otc"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "symbol",
+          "side",
+          "quantity",
+          "from"
+        ]
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_spot_delete_account_orders",
+      "title": "Cancel a spot order using a body ID",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "clientOrderId": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "clientOrderId"
+        ]
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_spot_delete_orders_client",
+      "title": "Cancel a spot order using a path ID",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "client_id": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "client_id"
+        ]
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    },
+    {
+      "name": "wallex_spot_get_depth",
+      "title": "Get order-book depth for all spot markets",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_spot_get_markets",
+      "title": "List markets through the spot API",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_spot_get_open_order",
+      "title": "List open spot orders",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "per_page": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_spot_get_orders",
+      "title": "Search spot order history",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "market": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "STOP_LIMIT",
+              "STOP_MARKET",
+              "LIMIT",
+              "MARKET"
+            ]
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "BUY",
+              "SELL"
+            ]
+          },
+          "page": {
+            "type": "integer"
+          },
+          "per_page": {
+            "type": "integer"
+          },
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_spot_get_orders_client",
+      "title": "Get a spot order by client ID",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "client_id": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "client_id"
+        ]
+      },
+      "declared_state_changing": false,
+      "declared_explicit_confirmation_required": false
+    },
+    {
+      "name": "wallex_spot_post_account_orders",
+      "title": "Place a new spot order",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "client_id": {
+            "type": "string"
+          },
+          "price": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "string"
+          },
+          "side": {
+            "type": "string"
+          },
+          "stop_Price": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "side",
+          "symbol",
+          "type"
+        ]
+      },
+      "declared_state_changing": true,
+      "declared_explicit_confirmation_required": true
+    }
+  ]
+}

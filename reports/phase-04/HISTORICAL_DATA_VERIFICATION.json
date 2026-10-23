@@ -1,0 +1,20 @@
+{
+ "bars": 899377,
+ "base_commit": "d31e60f",
+ "compatibility": "PASS: minute loader + existing metadata consumer; non-minute inputs require explicit interval",
+ "daily_grid_quarantined": 440,
+ "exchange_writes": 0,
+ "manifest_sha256": "c856c4e1bf6646792e3071422efbc993abc5988487437d2bdd0b945ce39e7a7e",
+ "notebook_and_chronological_boundary": "PASS: all cells executed offline; no split ratio selected",
+ "offline_regeneration": "PASS: identical manifest, dataset and quality hashes",
+ "ohlcv_quarantined": 4,
+ "private_calls": 0,
+ "pyright": "0 errors, 0 warnings, 0 informations",
+ "pytest": "309 passed, 1 skipped, 2 deselected in 34.81s",
+ "python": "3.12",
+ "raw_public_responses": 549,
+ "real_model_calls": 0,
+ "secret_scan": "PASS: project patterns on staged files, report evidence and public raw/export artifacts; no key loader used",
+ "series": 25,
+ "verified_at_utc": "2026-10-22T17:55:39.480673+00:00"
+}

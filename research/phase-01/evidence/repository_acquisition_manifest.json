@@ -1,0 +1,529 @@
+[
+  {
+    "repo": "jesse-ai/jesse",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/jesse-ai/jesse/4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae/README.md",
+    "bytes": 12899,
+    "status": "ok"
+  },
+  {
+    "repo": "jesse-ai/jesse",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/jesse-ai/jesse/4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae/LICENSE",
+    "bytes": 1068,
+    "status": "ok"
+  },
+  {
+    "repo": "jesse-ai/jesse",
+    "path": "jesse/strategies/Strategy.py",
+    "url": "https://raw.githubusercontent.com/jesse-ai/jesse/4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae/jesse/strategies/Strategy.py",
+    "bytes": 75565,
+    "status": "ok"
+  },
+  {
+    "repo": "jesse-ai/jesse",
+    "path": "jesse/models/Order.py",
+    "url": "https://raw.githubusercontent.com/jesse-ai/jesse/4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae/jesse/models/Order.py",
+    "bytes": 4326,
+    "status": "ok"
+  },
+  {
+    "repo": "jesse-ai/jesse",
+    "path": "jesse/modes/backtest_mode.py",
+    "url": "https://raw.githubusercontent.com/jesse-ai/jesse/4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae/jesse/modes/backtest_mode.py",
+    "bytes": 91167,
+    "status": "ok"
+  },
+  {
+    "repo": "jesse-ai/jesse",
+    "path": "tests/test_price_gap_backtest.py",
+    "url": "https://raw.githubusercontent.com/jesse-ai/jesse/4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae/tests/test_price_gap_backtest.py",
+    "bytes": 11437,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/README.md",
+    "bytes": 12770,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/LICENSE",
+    "bytes": 35141,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "docs/includes/protections.md",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/docs/includes/protections.md",
+    "bytes": 10079,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "docs/backtesting.md",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/docs/backtesting.md",
+    "bytes": 57906,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "docs/lookahead-analysis.md",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/docs/lookahead-analysis.md",
+    "bytes": 7801,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "docs/recursive-analysis.md",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/docs/recursive-analysis.md",
+    "bytes": 7896,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "docs/freqai.md",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/docs/freqai.md",
+    "bytes": 11870,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "docs/strategy-callbacks.md",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/docs/strategy-callbacks.md",
+    "bytes": 69047,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "freqtrade/plugins/protections/max_drawdown_protection.py",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/freqtrade/plugins/protections/max_drawdown_protection.py",
+    "bytes": 5095,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "freqtrade/plugins/protections/stoploss_guard.py",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/freqtrade/plugins/protections/stoploss_guard.py",
+    "bytes": 3943,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "freqtrade/freqtradebot.py",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/freqtrade/freqtradebot.py",
+    "bytes": 122316,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "freqtrade/strategy/interface.py",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/freqtrade/strategy/interface.py",
+    "bytes": 81628,
+    "status": "ok"
+  },
+  {
+    "repo": "freqtrade/freqtrade",
+    "path": "tests/plugins/test_protections.py",
+    "url": "https://raw.githubusercontent.com/freqtrade/freqtrade/c051e9065c5b677f03817dd1f83cb980af1ed684/tests/plugins/test_protections.py",
+    "bytes": 38279,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/README.md",
+    "bytes": 40010,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/LICENSE",
+    "bytes": 7651,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "docs/concepts/risk.md",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/docs/concepts/risk.md",
+    "status": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "docs/concepts/execution.md",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/docs/concepts/execution.md",
+    "status": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "docs/concepts/backtesting.md",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/docs/concepts/backtesting.md",
+    "status": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "docs/concepts/adapters.md",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/docs/concepts/adapters.md",
+    "bytes": 13336,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "nautilus_trader/risk/engine.pyx",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/nautilus_trader/risk/engine.pyx",
+    "status": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "nautilus_trader/risk/sizing.py",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/nautilus_trader/risk/sizing.py",
+    "status": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/README.md",
+    "bytes": 16992,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/LICENSE",
+    "bytes": 11352,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "hummingbot/strategy_v2/executors/position_executor/data_types.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/hummingbot/strategy_v2/executors/position_executor/data_types.py",
+    "bytes": 4313,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "hummingbot/strategy_v2/executors/position_executor/position_executor.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/hummingbot/strategy_v2/executors/position_executor/position_executor.py",
+    "bytes": 39333,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "hummingbot/core/data_type/in_flight_order.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/hummingbot/core/data_type/in_flight_order.py",
+    "bytes": 14681,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "hummingbot/strategy_v2/backtesting/executors_simulator/position_executor_simulator.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/hummingbot/strategy_v2/backtesting/executors_simulator/position_executor_simulator.py",
+    "bytes": 5023,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "test/hummingbot/strategy_v2/executors/position_executor/test_position_executor.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/test/hummingbot/strategy_v2/executors/position_executor/test_position_executor.py",
+    "bytes": 53658,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/README.md",
+    "bytes": 25632,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/LICENSE",
+    "bytes": 1078,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "condor/agents/risk.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/condor/agents/risk.py",
+    "bytes": 59432,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "condor/agents/strategy.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/condor/agents/strategy.py",
+    "bytes": 15437,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "tests/test_risk_gate.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/tests/test_risk_gate.py",
+    "bytes": 49273,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "tests/trading_agent/test_risk_drawdown.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/tests/trading_agent/test_risk_drawdown.py",
+    "bytes": 6915,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/README.md",
+    "bytes": 16808,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/LICENSE",
+    "bytes": 11352,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "path": "src/strategies/execution_engine.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/src/strategies/execution_engine.py",
+    "bytes": 17282,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "path": "src/strategies/adaptive_rotation/risk_manager.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/src/strategies/adaptive_rotation/risk_manager.py",
+    "bytes": 16580,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "path": "src/strategies/adaptive_rotation/walk_forward.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/src/strategies/adaptive_rotation/walk_forward.py",
+    "bytes": 19632,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "path": "src/backtest/backtest_engine.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/src/backtest/backtest_engine.py",
+    "bytes": 31402,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "path": "src/trading/trade_executor.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/src/trading/trade_executor.py",
+    "bytes": 20433,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/c0018c25de864157dc8470f0047b0d10ec721715/README.md",
+    "bytes": 23178,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/c0018c25de864157dc8470f0047b0d10ec721715/LICENSE",
+    "bytes": 1093,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL",
+    "path": "finrl/meta/env_cryptocurrency_trading/env_multiple_crypto.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/c0018c25de864157dc8470f0047b0d10ec721715/finrl/meta/env_cryptocurrency_trading/env_multiple_crypto.py",
+    "bytes": 4434,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL",
+    "path": "finrl/meta/env_stock_trading/env_stocktrading.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/c0018c25de864157dc8470f0047b0d10ec721715/finrl/meta/env_stock_trading/env_stocktrading.py",
+    "bytes": 23862,
+    "status": "ok"
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinRL",
+    "path": "unit_tests/environments/test_env_stocktrading.py",
+    "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL/c0018c25de864157dc8470f0047b0d10ec721715/unit_tests/environments/test_env_stocktrading.py",
+    "bytes": 3924,
+    "status": "ok"
+  },
+  {
+    "repo": "polakowo/vectorbt",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/polakowo/vectorbt/dd8eb3a3fe9ed918b1cdaf177455759ae4ac68cb/README.md",
+    "bytes": 17459,
+    "status": "ok"
+  },
+  {
+    "repo": "polakowo/vectorbt",
+    "path": "LICENSE.md",
+    "url": "https://raw.githubusercontent.com/polakowo/vectorbt/dd8eb3a3fe9ed918b1cdaf177455759ae4ac68cb/LICENSE.md",
+    "bytes": 12321,
+    "status": "ok"
+  },
+  {
+    "repo": "polakowo/vectorbt",
+    "path": "vectorbt/portfolio/base.py",
+    "url": "https://raw.githubusercontent.com/polakowo/vectorbt/dd8eb3a3fe9ed918b1cdaf177455759ae4ac68cb/vectorbt/portfolio/base.py",
+    "bytes": 248264,
+    "status": "ok"
+  },
+  {
+    "repo": "polakowo/vectorbt",
+    "path": "vectorbt/portfolio/nb.py",
+    "url": "https://raw.githubusercontent.com/polakowo/vectorbt/dd8eb3a3fe9ed918b1cdaf177455759ae4ac68cb/vectorbt/portfolio/nb.py",
+    "bytes": 290039,
+    "status": "ok"
+  },
+  {
+    "repo": "polakowo/vectorbt",
+    "path": "tests/test_portfolio.py",
+    "url": "https://raw.githubusercontent.com/polakowo/vectorbt/dd8eb3a3fe9ed918b1cdaf177455759ae4ac68cb/tests/test_portfolio.py",
+    "bytes": 437209,
+    "status": "ok"
+  },
+  {
+    "repo": "kernc/backtesting.py",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/kernc/backtesting.py/ca2e2611621e472542ba90f7243a1fa06a7d7108/README.md",
+    "bytes": 5689,
+    "status": "ok"
+  },
+  {
+    "repo": "kernc/backtesting.py",
+    "path": "LICENSE.md",
+    "url": "https://raw.githubusercontent.com/kernc/backtesting.py/ca2e2611621e472542ba90f7243a1fa06a7d7108/LICENSE.md",
+    "bytes": 34283,
+    "status": "ok"
+  },
+  {
+    "repo": "kernc/backtesting.py",
+    "path": "backtesting/backtesting.py",
+    "url": "https://raw.githubusercontent.com/kernc/backtesting.py/ca2e2611621e472542ba90f7243a1fa06a7d7108/backtesting/backtesting.py",
+    "bytes": 75119,
+    "status": "ok"
+  },
+  {
+    "repo": "ccxt/ccxt",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/ccxt/ccxt/92c1eb27f4652735258468adb4e53beb0c6b3cd0/README.md",
+    "bytes": 153700,
+    "status": "ok"
+  },
+  {
+    "repo": "ccxt/ccxt",
+    "path": "LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/ccxt/ccxt/92c1eb27f4652735258468adb4e53beb0c6b3cd0/LICENSE.txt",
+    "bytes": 1068,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "crates/risk/src/engine/mod.rs",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/crates/risk/src/engine/mod.rs",
+    "bytes": 102932,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "crates/risk/src/sizing.rs",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/crates/risk/src/sizing.rs",
+    "bytes": 19231,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "crates/risk/tests/risk_engine.rs",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/crates/risk/tests/risk_engine.rs",
+    "bytes": 564309,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "docs/concepts/backtesting/fill-models.md",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/docs/concepts/backtesting/fill-models.md",
+    "bytes": 7893,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "docs/concepts/backtesting/bar-execution.md",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/docs/concepts/backtesting/bar-execution.md",
+    "bytes": 7132,
+    "status": "ok"
+  },
+  {
+    "repo": "nautechsystems/nautilus_trader",
+    "path": "docs/concepts/execution/reconciliation.md",
+    "url": "https://raw.githubusercontent.com/nautechsystems/nautilus_trader/9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8/docs/concepts/execution/reconciliation.md",
+    "bytes": 63295,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "condor/agents/engine.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/condor/agents/engine.py",
+    "bytes": 105500,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "condor/agents/journal.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/condor/agents/journal.py",
+    "bytes": 49820,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "condor/agents/actions.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/condor/agents/actions.py",
+    "bytes": 20678,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/condor",
+    "path": "condor/agents/closeout.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/condor/8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c/condor/agents/closeout.py",
+    "bytes": 47317,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "controllers/directional_trading/bollinger_v1.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/controllers/directional_trading/bollinger_v1.py",
+    "bytes": 3674,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "controllers/directional_trading/bollinger_v2.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/controllers/directional_trading/bollinger_v2.py",
+    "bytes": 4774,
+    "status": "ok"
+  },
+  {
+    "repo": "hummingbot/hummingbot",
+    "path": "controllers/directional_trading/macd_bb_v1.py",
+    "url": "https://raw.githubusercontent.com/hummingbot/hummingbot/9af100d6822da7d2d0291a906c730ef172284ee2/controllers/directional_trading/macd_bb_v1.py",
+    "bytes": 4508,
+    "status": "ok"
+  },
+  {
+    "repo": "jesse-ai/jesse",
+    "path": "jesse/utils.py",
+    "url": "https://raw.githubusercontent.com/jesse-ai/jesse/4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae/jesse/utils.py",
+    "bytes": 12878,
+    "status": "ok"
+  }
+]

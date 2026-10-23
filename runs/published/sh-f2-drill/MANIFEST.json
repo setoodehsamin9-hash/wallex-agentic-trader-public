@@ -1,0 +1,29 @@
+{
+ "schema_version": "1.0.0",
+ "run_id": "sh-f2-drill",
+ "started_at": "2026-10-23T05:41:08.836027Z",
+ "ended_at": null,
+ "environment": "SHADOW",
+ "autonomy": "AUTONOMOUS",
+ "code": {
+  "git_commit": "7bc3d402c113dc0d5c7119f883f71ed8e1bb65b4",
+  "dirty": false
+ },
+ "config_sha256": "85b0fb5b112e36f4cb54407923ed9a6e29706eb2a98796fa587c80da98dd8e0f",
+ "limits_version": "sim-placeholder-2026-10-22",
+ "prompt_bundle_sha256": null,
+ "model_id": null,
+ "model_provider": null,
+ "model_endpoint": null,
+ "model_settings_sha256": null,
+ "dependency_lock_sha256": "20033d570231ce5b6ad2fc171758d45cb2f5bd311f2f20916c33abe299addc78",
+ "trading_window_version": null,
+ "starting_capital_tmn": "5000000",
+ "universe_version": "u-live-f2152c8f0430",
+ "dataset_refs": [],
+ "clock": "WALL",
+ "seed": 7,
+ "strategy_versions": [
+  "f2-0.1.0"
+ ]
+}

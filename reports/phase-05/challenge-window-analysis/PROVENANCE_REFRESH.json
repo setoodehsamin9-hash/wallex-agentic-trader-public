@@ -1,0 +1,21 @@
+{
+ "all_non_provenance_json_fields_identical": true,
+ "changed_provenance_keys": [
+  "test_read removed (false)",
+  "protected_test_evaluated added (false)",
+  "backtest_manifest_dirty added (true)",
+  "raw_file_scope added (hash full bytes; cut TEST before evaluation)"
+ ],
+ "csv_products_byte_identical": [
+  "CONTROLS.csv.gz",
+  "REFERENCE_TRADES.csv.gz",
+  "TRADES.csv.gz",
+  "WINDOWS.csv.gz"
+ ],
+ "final_summary_sha256": "f6d4a74105b91d16960c4d409dc4a87ca1c333ebbb9f5ff9df353b019934a70c",
+ "initial_strict_command_exit_code": 1,
+ "initial_summary_sha256": "5b0ad77fcc4145788b5ff49528b1969ba099bb46beaf320cd34e9a4341d16c3a",
+ "numeric_json_sha256": "aff3b95dc14df98e15c515e1b189a7c870a637369d6eac740d79eb9f14f82f50",
+ "reason": "Provenance wording was edited while first long run was active; loaded first-run code retained the old wording. Full rerun on final source reproduced every CSV byte and every analytical JSON field. Final summary is copied from that full final-source rerun; no result was changed.",
+ "status": "PASS_NUMERIC_REPRODUCIBILITY_WITH_PROVENANCE_REFRESH"
+}

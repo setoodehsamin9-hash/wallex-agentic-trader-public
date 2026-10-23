@@ -1,0 +1,52 @@
+[project]
+name = "wallex-agentic-trader"
+version = "0.1.0"
+description = "Agentic AI trading engine for the Wallex challenge: bounded AI agent + deterministic risk/execution kernel."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Proprietary - challenge submission; see docs/OPEN_SOURCE_DECISIONS.md for third-party terms" }
+dependencies = [
+    "pydantic>=2.14,<3",
+    # Bounded AI agent loop, MCP client and OpenAI-compatible client (NineRouter). Pinned exactly:
+    # verified against the public Wallex MCP endpoint (Phase 02) and local NineRouter (Phase 03).
+    "pydantic-ai-slim[mcp,openai]==2.59.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "pyright>=1.1.400",
+]
+evaluation = [
+    "mlflow==3.8.1",
+    "sqlalchemy>=2.0,<2.1",
+]
+
+[project.scripts]
+wallex-agent = "wallex_agent.interface.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wallex_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
+# Layer 1 runs by default. Layer 3 (real model via NineRouter) and public-network tests are opt-in:
+#   uv run pytest -m ninerouter      uv run pytest -m network
+addopts = "-q --import-mode=importlib -m 'not ninerouter and not network'"
+markers = [
+    "ninerouter: real-model evaluation through the owner's local NineRouter (opt-in, needs NINEROUTER_API_KEY[_FILE])",
+    "network: calls public Wallex endpoints (opt-in, read-only, no key)",
+]
+
+[tool.pyright]
+include = ["src", "tests", "scripts"]
+pythonVersion = "3.12"
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
+extraPaths = ["src", "tests"]

@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-22T15:34:44.951281+00:00",
+  "phase_status": "PARTIAL",
+  "branch": "phase-03/trading-kernel",
+  "recovered_commit": "fbac63e",
+  "code_commit": "3aabb72db0f33cb6d0a7d60c67c43ead7d80c6b6",
+  "baseline_tests": 197,
+  "deterministic_tests": {
+    "passed": 217,
+    "deselected": 1,
+    "command": "uv run pytest",
+    "model_calls": 0
+  },
+  "pyright": {
+    "errors": 0,
+    "warnings": 0,
+    "command": "uv run pyright",
+    "mode": "strict"
+  },
+  "ninerouter_test": {
+    "passed": 1,
+    "deselected": 217,
+    "duration_s": 201.11,
+    "command": "NINEROUTER_MODEL=gemini-3.8-flash uv run --group evaluation pytest -m ninerouter"
+  },
+  "ninerouter": {
+    "model": "gemini-3.8-flash",
+    "final_operational": {
+      "calls": 7,
+      "valid": 7,
+      "valid_rate": 1.0,
+      "structured_output_rate": 1.0,
+      "candidate_discipline": true,
+      "candidate_discipline_rate": 1.0,
+      "invalid_reference_count": 0,
+      "timeout_count": 0,
+      "error_count": 0,
+      "wait_rate": 0.8571428571428571,
+      "baseline_disagreements": 6,
+      "approximate_model_requests": 17,
+      "latency_ms_p50": 9669,
+      "latency_ms_p95": 43973,
+      "status_counts": {
+        "VALID": 7
+      },
+      "actions": {
+        "WAIT": 6,
+        "ENTER": 1
+      },
+      "tool_calls": 3,
+      "tool_successes": 0,
+      "tool_errors": 3,
+      "tools_used": {
+        "get_risk_status": 2,
+        "get_open_positions": 1
+      },
+      "tools_within_allowlist": true,
+      "all_failures_waited": true,
+      "responders": [
+        "ninerouter:gemini-3.8-flash-control",
+        "ninerouter:gemini-3.8-flash-n"
+      ],
+      "faults": {
+        "timeout_1s": {
+          "status": "TIMEOUT",
+          "action": "WAIT"
+        },
+        "network_error": {
+          "status": "PROVIDER_ERROR",
+          "action": "WAIT"
+        },
+        "unknown_model": {
+          "status": "PROVIDER_ERROR",
+          "action": "WAIT"
+        }
+      }
+    },
+    "final_all_phase_decisions": 15,
+    "all_phase_valid": 15,
+    "all_phase_approximate_model_requests": 34,
+    "ordinary_decision_invocations_across_continuation": 50,
+    "fault_invocations": 9,
+    "offline_faults_not_reaching_router": 3,
+    "evidence": "ai/EVAL_RUN_INDEX.json"
+  },
+  "mlflow": {
+    "version": "3.8.1",
+    "optional_group": "evaluation",
+    "native_datasets": true,
+    "native_evaluate": true,
+    "scorers": "source-controlled deterministic @scorer functions; local registry registration unsupported",
+    "telemetry_disabled_before_import": true,
+    "broad_autolog_disabled": true,
+    "private_reasoning_persisted": false,
+    "trace_count_semantics": "cumulative experiment traces within each suite, not additive per phase"
+  },
+  "paired_backtest": {
+    "period": [
+      "2026-10-05T00:30:00+00:00",
+      "2026-10-05T08:30:00+00:00"
+    ],
+    "baseline_return_pct": "-0.8793",
+    "ai_return_pct": "-0.5577",
+    "baseline_net_pnl_tmn": "-43964",
+    "ai_net_pnl_tmn": "-27884",
+    "ai_decisions": 3,
+    "waits": 1,
+    "replay_checks": {
+      "decisions": true,
+      "trades": true,
+      "execution_events": true
+    },
+    "replayed_decisions": 64,
+    "replay_missing": 0,
+    "evidence": "ai/PAIRED_BACKTEST.json",
+    "caveat": "Small already-seen validation window; no strategy tuning, no out-of-sample/profitability conclusion."
+  },
+  "shadow": {
+    "cycles": 8,
+    "candidates": 0,
+    "ai_calls_in_cycles": 0,
+    "simulated_orders": 0,
+    "simulated_fills": 0,
+    "hypothetical_pnl_tmn": "0",
+    "risk_rejects": 0,
+    "risk_reductions": 0,
+    "evidence": "shadow/REAL_AI_PUBLIC_SMOKE.json",
+    "active_ai_forward_gate": "NOT PROVEN; no natural candidates"
+  },
+  "real_wallex_writes": 0,
+  "private_wallex_calls": 0,
+  "live_enabled": false,
+  "persistent_recovery_changed": false,
+  "financial_core_changed_since_checkpoint": false,
+  "original_197_tests_preserved": true,
+  "independent_review": {
+    "model": "gpt-6.1-sol",
+    "reasoning": "max",
+    "verdict": "PASS",
+    "scope": "main agent integration; later MLflow-only telemetry/flush fix author-tested, awaiting Claude"
+  },
+  "known_limitations": [
+    "Read-tool argument adherence weak; final attempted calls rejected extra reason.",
+    "Short SHADOW had no candidates; public standalone Agent probe is separate.",
+    "Local journals are required for exact recorded replay; exports are not complete portable bundles.",
+    "Durable recovery and final Claude review intentionally unfinished."
+  ],
+  "previous_verification": "CODEX_VERIFICATION_PRE_REAL_AI.json",
+  "secret_scan": "CODEX_SECRET_SCAN.json"
+}

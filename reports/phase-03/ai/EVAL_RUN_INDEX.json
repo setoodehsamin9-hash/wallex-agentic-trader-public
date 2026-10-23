@@ -1,0 +1,85 @@
+{
+  "model_id": "gemini-3.8-flash",
+  "suites": [
+    {
+      "artifact": "NINEROUTER_PRELIMINARY.json",
+      "decisions": 15,
+      "structured_outputs": 13,
+      "approximate_model_requests": 32,
+      "tool_attempts": 4,
+      "tool_successes": 0,
+      "fault_probes": {
+        "timeout_1s": {
+          "status": "TIMEOUT",
+          "action": "WAIT"
+        },
+        "network_error": {
+          "status": "PROVIDER_ERROR",
+          "action": "WAIT"
+        },
+        "unknown_model": {
+          "status": "PROVIDER_ERROR",
+          "action": "WAIT"
+        }
+      }
+    },
+    {
+      "artifact": "NINEROUTER_LIFECYCLE_FIXED.json",
+      "decisions": 15,
+      "structured_outputs": 15,
+      "approximate_model_requests": 35,
+      "tool_attempts": 5,
+      "tool_successes": 1,
+      "fault_probes": {
+        "timeout_1s": {
+          "status": "TIMEOUT",
+          "action": "WAIT"
+        },
+        "network_error": {
+          "status": "PROVIDER_ERROR",
+          "action": "WAIT"
+        },
+        "unknown_model": {
+          "status": "PROVIDER_ERROR",
+          "action": "WAIT"
+        }
+      }
+    },
+    {
+      "artifact": "NINEROUTER_FINAL.json",
+      "decisions": 15,
+      "structured_outputs": 15,
+      "approximate_model_requests": 34,
+      "tool_attempts": 4,
+      "tool_successes": 0,
+      "fault_probes": {
+        "timeout_1s": {
+          "status": "TIMEOUT",
+          "action": "WAIT"
+        },
+        "network_error": {
+          "status": "PROVIDER_ERROR",
+          "action": "WAIT"
+        },
+        "unknown_model": {
+          "status": "PROVIDER_ERROR",
+          "action": "WAIT"
+        }
+      }
+    }
+  ],
+  "initial_probe_decisions": 1,
+  "initial_probe_requests": 2,
+  "paired_backtest_decisions": 3,
+  "paired_backtest_requests": 9,
+  "current_public_probe_decisions": 1,
+  "current_public_probe_requests": 2,
+  "ordinary_real_model_decision_invocations": 50,
+  "injected_fault_invocations": 9,
+  "offline_faults_not_reaching_router": 3,
+  "note": "Decision invocations differ from model HTTP requests; stages repeat cases and are not independent samples.",
+  "raw_journals": "local var/real-ai-evidence/; export JSON is not a full portable replay bundle",
+  "financial_config_unchanged": true,
+  "real_wallex_writes": 0,
+  "private_wallex_calls": 0
+}

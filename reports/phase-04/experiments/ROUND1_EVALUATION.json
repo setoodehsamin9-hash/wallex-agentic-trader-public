@@ -1,0 +1,2702 @@
+{
+ "round": "ROUND1",
+ "roles": [
+  "TRAIN",
+  "VALIDATION"
+ ],
+ "rules": "reports/phase-04/PREREGISTRATION.md section 6",
+ "buy_and_hold_benchmark_pct": {
+  "t1": {
+   "role": "TRAIN",
+   "BTCTMN": "-5.40",
+   "ETHTMN": "-4.98",
+   "equal_weight_pct": "-5.19"
+  },
+  "t2": {
+   "role": "TRAIN",
+   "BTCTMN": "11.42",
+   "ETHTMN": "11.67",
+   "equal_weight_pct": "11.55"
+  },
+  "t3": {
+   "role": "TRAIN",
+   "BTCTMN": "8.70",
+   "ETHTMN": "9.89",
+   "equal_weight_pct": "9.29"
+  },
+  "v1": {
+   "role": "VALIDATION",
+   "BTCTMN": "7.64",
+   "ETHTMN": "6.34",
+   "equal_weight_pct": "6.99"
+  },
+  "v2": {
+   "role": "VALIDATION",
+   "BTCTMN": "-6.94",
+   "ETHTMN": "-12.37",
+   "equal_weight_pct": "-9.65"
+  }
+ },
+ "control": [
+  {
+   "config": "trend_gate=False entry_trend=None stop=3 hold=12h",
+   "cost": "adverse",
+   "net_tmn": "-156451.3019",
+   "trades": 44,
+   "profit_factor": "0.3448",
+   "positive_slices": 2,
+   "worst_slice_pct": "-2.0907",
+   "fees_tmn": "185407.6861"
+  },
+  {
+   "config": "trend_gate=False entry_trend=None stop=3 hold=12h",
+   "cost": "base",
+   "net_tmn": "-253242.5164",
+   "trades": 99,
+   "profit_factor": "0.6155",
+   "positive_slices": 1,
+   "worst_slice_pct": "-2.9916",
+   "fees_tmn": "385029.1020"
+  },
+  {
+   "config": "trend_gate=False entry_trend=None stop=3 hold=12h",
+   "cost": "low",
+   "net_tmn": "-52403.0024",
+   "trades": 107,
+   "profit_factor": "0.9169",
+   "positive_slices": 2,
+   "worst_slice_pct": "-3.0456",
+   "fees_tmn": "361469.9524"
+  },
+  {
+   "config": "trend_gate=False entry_trend=None stop=3 hold=24h",
+   "cost": "adverse",
+   "net_tmn": "-143352.2379",
+   "trades": 32,
+   "profit_factor": "0.4543",
+   "positive_slices": 2,
+   "worst_slice_pct": "-2.6850",
+   "fees_tmn": "136242.4406"
+  },
+  {
+   "config": "trend_gate=False entry_trend=None stop=3 hold=24h",
+   "cost": "base",
+   "net_tmn": "-146295.3766",
+   "trades": 65,
+   "profit_factor": "0.7265",
+   "positive_slices": 2,
+   "worst_slice_pct": "-3.4469",
+   "fees_tmn": "255335.7367"
+  },
+  {
+   "config": "trend_gate=False entry_trend=None stop=3 hold=24h",
+   "cost": "low",
+   "net_tmn": "-61686.5205",
+   "trades": 70,
+   "profit_factor": "0.8965",
+   "positive_slices": 3,
+   "worst_slice_pct": "-3.5726",
+   "fees_tmn": "242903.4525"
+  }
+ ],
+ "configurations": [
+  {
+   "experiment": "p04-r1-c1",
+   "parameter_hash": "10ad72d256acb385c6599872dea59a083d5f84431191eefe589a6440450dfc46",
+   "config": "lookback=24 stop=2 hold=12h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R2 trades 22 < 30 (insufficient evidence)",
+    "R3 positive slices 2/5, worst -1.5189%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-112300.3859",
+    "fees_tmn": "114655.0888",
+    "pre_fee_tmn": "2354.7030",
+    "trades": 22,
+    "profit_factor": "0.5674",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.5189",
+    "max_dd_pct": "2.3303",
+    "fee_share": "48.6920",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-75944",
+      "return_pct": "-1.5189",
+      "trades": 4,
+      "max_dd_pct": "2.3303"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "30691",
+      "return_pct": "0.6138",
+      "trades": 7,
+      "max_dd_pct": "1.3654"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-49765",
+      "return_pct": "-0.9953",
+      "trades": 7,
+      "max_dd_pct": "1.8418"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "2170",
+      "return_pct": "0.0434",
+      "trades": 3,
+      "max_dd_pct": "0.9252"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-19451",
+      "return_pct": "-0.3890",
+      "trades": 1,
+      "max_dd_pct": "0.4244"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-77905.8792",
+    "fees_tmn": "44525.5430",
+    "pre_fee_tmn": "-33380.3363",
+    "trades": 8,
+    "profit_factor": "0.3039",
+    "positive_slices": 1,
+    "worst_slice_pct": "-0.9497",
+    "max_dd_pct": "0.9794",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-23976",
+      "return_pct": "-0.4795",
+      "trades": 1,
+      "max_dd_pct": "0.4795"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-20478",
+      "return_pct": "-0.4096",
+      "trades": 4,
+      "max_dd_pct": "0.9794"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-47486",
+      "return_pct": "-0.9497",
+      "trades": 2,
+      "max_dd_pct": "0.9497"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "14034",
+      "return_pct": "0.2807",
+      "trades": 1,
+      "max_dd_pct": "0.1535"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-61325.5554",
+    "fees_tmn": "127896.9592",
+    "pre_fee_tmn": "66571.4037",
+    "trades": 28,
+    "profit_factor": "0.8192",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.4965",
+    "max_dd_pct": "2.4130",
+    "fee_share": "1.9212",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-74826",
+      "return_pct": "-1.4965",
+      "trades": 4,
+      "max_dd_pct": "2.4130"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "114679",
+      "return_pct": "2.2936",
+      "trades": 9,
+      "max_dd_pct": "1.4873"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-52198",
+      "return_pct": "-1.0440",
+      "trades": 9,
+      "max_dd_pct": "1.8571"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-7525",
+      "return_pct": "-0.1505",
+      "trades": 4,
+      "max_dd_pct": "1.6073"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-41456",
+      "return_pct": "-0.8291",
+      "trades": 2,
+      "max_dd_pct": "0.8291"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-65559.4209",
+   "control_net_tmn": "-253242.5164"
+  },
+  {
+   "experiment": "p04-r1-c1",
+   "parameter_hash": "443c65878a8bf6cbd0e081fa2b6669ba67a01591c35c1ef597de265c52055820",
+   "config": "lookback=24 stop=3 hold=24h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R2 trades 18 < 30 (insufficient evidence)",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "15809.6712",
+    "fees_tmn": "72305.1207",
+    "pre_fee_tmn": "88114.7919",
+    "trades": 18,
+    "profit_factor": "1.0926",
+    "positive_slices": 3,
+    "worst_slice_pct": "-1.0142",
+    "max_dd_pct": "1.7500",
+    "fee_share": "0.8206",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-50711",
+      "return_pct": "-1.0142",
+      "trades": 4,
+      "max_dd_pct": "1.7500"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "70686",
+      "return_pct": "1.4137",
+      "trades": 6,
+      "max_dd_pct": "0.8914"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "7333",
+      "return_pct": "0.1467",
+      "trades": 5,
+      "max_dd_pct": "0.9523"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "11045",
+      "return_pct": "0.2209",
+      "trades": 2,
+      "max_dd_pct": "0.9312"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-22544",
+      "return_pct": "-0.4509",
+      "trades": 1,
+      "max_dd_pct": "0.4777"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-55208.7224",
+    "fees_tmn": "34809.5502",
+    "pre_fee_tmn": "-20399.1722",
+    "trades": 8,
+    "profit_factor": "0.4176",
+    "positive_slices": 2,
+    "worst_slice_pct": "-0.9511",
+    "max_dd_pct": "0.9511",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-24223",
+      "return_pct": "-0.4845",
+      "trades": 1,
+      "max_dd_pct": "0.4845"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "5025",
+      "return_pct": "0.1005",
+      "trades": 4,
+      "max_dd_pct": "0.6176"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-47555",
+      "return_pct": "-0.9511",
+      "trades": 2,
+      "max_dd_pct": "0.9511"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "11545",
+      "return_pct": "0.2309",
+      "trades": 1,
+      "max_dd_pct": "0.2936"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "55836.8974",
+    "fees_tmn": "79104.3124",
+    "pre_fee_tmn": "134941.2099",
+    "trades": 22,
+    "profit_factor": "1.2405",
+    "positive_slices": 1,
+    "worst_slice_pct": "-0.9797",
+    "max_dd_pct": "1.7955",
+    "fee_share": "0.5862",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-48983",
+      "return_pct": "-0.9797",
+      "trades": 4,
+      "max_dd_pct": "1.7955"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "135247",
+      "return_pct": "2.7049",
+      "trades": 7,
+      "max_dd_pct": "1.0803"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-4658",
+      "return_pct": "-0.0932",
+      "trades": 7,
+      "max_dd_pct": "1.4313"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-2909",
+      "return_pct": "-0.0582",
+      "trades": 3,
+      "max_dd_pct": "1.2063"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-22860",
+      "return_pct": "-0.4572",
+      "trades": 1,
+      "max_dd_pct": "0.5915"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-34085.3961",
+   "control_net_tmn": "-146295.3766"
+  },
+  {
+   "experiment": "p04-r1-c1",
+   "parameter_hash": "7f0531fd540fa8dec80660b06eb63e220161ad31688ff8884fa5f04e69115d6a",
+   "config": "lookback=48 stop=3 hold=12h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R2 trades 18 < 30 (insufficient evidence)",
+    "R3 positive slices 1/5, worst -1.0683%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-104454.1724",
+    "fees_tmn": "69754.0089",
+    "pre_fee_tmn": "-34700.1635",
+    "trades": 18,
+    "profit_factor": "0.4500",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.0683",
+    "max_dd_pct": "1.7407",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-53415",
+      "return_pct": "-1.0683",
+      "trades": 3,
+      "max_dd_pct": "1.2884"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "40721",
+      "return_pct": "0.8144",
+      "trades": 6,
+      "max_dd_pct": "0.8224"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-41035",
+      "return_pct": "-0.8207",
+      "trades": 6,
+      "max_dd_pct": "1.7407"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-28181",
+      "return_pct": "-0.5636",
+      "trades": 2,
+      "max_dd_pct": "0.9217"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-22544",
+      "return_pct": "-0.4509",
+      "trades": 1,
+      "max_dd_pct": "0.4777"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-73968.3161",
+    "fees_tmn": "29045.8248",
+    "pre_fee_tmn": "-44922.4913",
+    "trades": 7,
+    "profit_factor": "0.1698",
+    "positive_slices": 0,
+    "worst_slice_pct": "-0.9511",
+    "max_dd_pct": "0.9511",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-24223",
+      "return_pct": "-0.4845",
+      "trades": 1,
+      "max_dd_pct": "0.4845"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-2190",
+      "return_pct": "-0.0438",
+      "trades": 4,
+      "max_dd_pct": "0.4902"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-47555",
+      "return_pct": "-0.9511",
+      "trades": 2,
+      "max_dd_pct": "0.9511"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-16994.2278",
+    "fees_tmn": "77020.6848",
+    "pre_fee_tmn": "60026.4571",
+    "trades": 22,
+    "profit_factor": "0.9112",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.0533",
+    "max_dd_pct": "1.7518",
+    "fee_share": "1.2831",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-52666",
+      "return_pct": "-1.0533",
+      "trades": 3,
+      "max_dd_pct": "1.3334"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "93658",
+      "return_pct": "1.8732",
+      "trades": 7,
+      "max_dd_pct": "1.0097"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-29095",
+      "return_pct": "-0.5819",
+      "trades": 7,
+      "max_dd_pct": "1.7518"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-5867",
+      "return_pct": "-0.1173",
+      "trades": 3,
+      "max_dd_pct": "1.2444"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-23025",
+      "return_pct": "-0.4605",
+      "trades": 2,
+      "max_dd_pct": "0.5102"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-78715.0852",
+   "control_net_tmn": "-253242.5164"
+  },
+  {
+   "experiment": "p04-r1-c1",
+   "parameter_hash": "911855b3de523079dba64bdb0e9796cbdaa2129cc8a19d3687551a6f49410a9f",
+   "config": "lookback=48 stop=2 hold=24h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R2 trades 17 < 30 (insufficient evidence)",
+    "R3 positive slices 2/5, worst -1.3401%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-17861.0605",
+    "fees_tmn": "90935.2175",
+    "pre_fee_tmn": "73074.1570",
+    "trades": 17,
+    "profit_factor": "0.9207",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.3401",
+    "max_dd_pct": "1.6492",
+    "fee_share": "1.2444",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-49909",
+      "return_pct": "-0.9982",
+      "trades": 3,
+      "max_dd_pct": "1.6492"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "83183",
+      "return_pct": "1.6637",
+      "trades": 6,
+      "max_dd_pct": "1.2817"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "35323",
+      "return_pct": "0.7065",
+      "trades": 4,
+      "max_dd_pct": "0.9528"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-67007",
+      "return_pct": "-1.3401",
+      "trades": 3,
+      "max_dd_pct": "1.3401"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-19451",
+      "return_pct": "-0.3890",
+      "trades": 1,
+      "max_dd_pct": "0.4244"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-91261.4828",
+    "fees_tmn": "38765.7627",
+    "pre_fee_tmn": "-52495.7201",
+    "trades": 7,
+    "profit_factor": "0.1878",
+    "positive_slices": 0,
+    "worst_slice_pct": "-0.9497",
+    "max_dd_pct": "1.0757",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-23976",
+      "return_pct": "-0.4795",
+      "trades": 1,
+      "max_dd_pct": "0.4795"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-19799",
+      "return_pct": "-0.3960",
+      "trades": 4,
+      "max_dd_pct": "1.0757"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-47486",
+      "return_pct": "-0.9497",
+      "trades": 2,
+      "max_dd_pct": "0.9497"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-9708.4190",
+    "fees_tmn": "96577.7855",
+    "pre_fee_tmn": "86869.3665",
+    "trades": 21,
+    "profit_factor": "0.9659",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.1662",
+    "max_dd_pct": "1.8978",
+    "fee_share": "1.1118",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-48738",
+      "return_pct": "-0.9748",
+      "trades": 3,
+      "max_dd_pct": "1.7206"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "106587",
+      "return_pct": "2.1317",
+      "trades": 7,
+      "max_dd_pct": "1.8211"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "32210",
+      "return_pct": "0.6442",
+      "trades": 5,
+      "max_dd_pct": "1.5958"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-58311",
+      "return_pct": "-1.1662",
+      "trades": 4,
+      "max_dd_pct": "1.8978"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-41456",
+      "return_pct": "-0.8291",
+      "trades": 2,
+      "max_dd_pct": "0.8291"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-40760.0363",
+   "control_net_tmn": "-146295.3766"
+  },
+  {
+   "experiment": "p04-r1-c1",
+   "parameter_hash": "9b399e7a9a922258f12bfd408405010947b45e7c25eb1928f1977779d45d5b02",
+   "config": "lookback=24 stop=2 hold=24h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R2 trades 19 < 30 (insufficient evidence)",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "17025.3172",
+    "fees_tmn": "100618.2214",
+    "pre_fee_tmn": "117643.5386",
+    "trades": 19,
+    "profit_factor": "1.0742",
+    "positive_slices": 3,
+    "worst_slice_pct": "-1.4721",
+    "max_dd_pct": "2.2839",
+    "fee_share": "0.8553",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-73604",
+      "return_pct": "-1.4721",
+      "trades": 4,
+      "max_dd_pct": "2.2839"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "61406",
+      "return_pct": "1.2281",
+      "trades": 7,
+      "max_dd_pct": "1.2820"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "33515",
+      "return_pct": "0.6703",
+      "trades": 5,
+      "max_dd_pct": "0.9530"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "15159",
+      "return_pct": "0.3032",
+      "trades": 2,
+      "max_dd_pct": "1.2394"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-19451",
+      "return_pct": "-0.3890",
+      "trades": 1,
+      "max_dd_pct": "0.4244"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-75805.9068",
+    "fees_tmn": "44482.7388",
+    "pre_fee_tmn": "-31323.1680",
+    "trades": 8,
+    "profit_factor": "0.3254",
+    "positive_slices": 1,
+    "worst_slice_pct": "-0.9497",
+    "max_dd_pct": "1.0757",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-23976",
+      "return_pct": "-0.4795",
+      "trades": 1,
+      "max_dd_pct": "0.4795"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-19799",
+      "return_pct": "-0.3960",
+      "trades": 4,
+      "max_dd_pct": "1.0757"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-47486",
+      "return_pct": "-0.9497",
+      "trades": 2,
+      "max_dd_pct": "0.9497"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "15456",
+      "return_pct": "0.3091",
+      "trades": 1,
+      "max_dd_pct": "0.3923"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "24849.2445",
+    "fees_tmn": "111135.9879",
+    "pre_fee_tmn": "135985.2324",
+    "trades": 24,
+    "profit_factor": "1.0738",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.4477",
+    "max_dd_pct": "2.3646",
+    "fee_share": "0.8173",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-72386",
+      "return_pct": "-1.4477",
+      "trades": 4,
+      "max_dd_pct": "2.3646"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "111227",
+      "return_pct": "2.2245",
+      "trades": 8,
+      "max_dd_pct": "1.7342"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "32879",
+      "return_pct": "0.6576",
+      "trades": 7,
+      "max_dd_pct": "1.4261"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-5415",
+      "return_pct": "-0.1083",
+      "trades": 3,
+      "max_dd_pct": "1.5509"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-41456",
+      "return_pct": "-0.8291",
+      "trades": 2,
+      "max_dd_pct": "0.8291"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-38117.2584",
+   "control_net_tmn": "-146295.3766"
+  },
+  {
+   "experiment": "p04-r1-c1",
+   "parameter_hash": "b24d472544534659b770b035456781e2787faca53076a73c62bc32c0e8808756",
+   "config": "lookback=24 stop=3 hold=12h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R2 trades 22 < 30 (insufficient evidence)",
+    "R3 positive slices 1/5, worst -1.2266%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-96839.8297",
+    "fees_tmn": "86084.3501",
+    "pre_fee_tmn": "-10755.4796",
+    "trades": 22,
+    "profit_factor": "0.5233",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.2266",
+    "max_dd_pct": "1.7359",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-43429",
+      "return_pct": "-0.8686",
+      "trades": 4,
+      "max_dd_pct": "1.6965"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "35284",
+      "return_pct": "0.7057",
+      "trades": 7,
+      "max_dd_pct": "0.8232"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-61330",
+      "return_pct": "-1.2266",
+      "trades": 7,
+      "max_dd_pct": "1.7359"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-4820",
+      "return_pct": "-0.0964",
+      "trades": 3,
+      "max_dd_pct": "0.8210"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-22544",
+      "return_pct": "-0.4509",
+      "trades": 1,
+      "max_dd_pct": "0.4777"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-63485.0678",
+    "fees_tmn": "33312.5525",
+    "pre_fee_tmn": "-30172.5153",
+    "trades": 8,
+    "profit_factor": "0.2875",
+    "positive_slices": 1,
+    "worst_slice_pct": "-0.9511",
+    "max_dd_pct": "0.9511",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-24223",
+      "return_pct": "-0.4845",
+      "trades": 1,
+      "max_dd_pct": "0.4845"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-2190",
+      "return_pct": "-0.0438",
+      "trades": 4,
+      "max_dd_pct": "0.4902"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-47555",
+      "return_pct": "-0.9511",
+      "trades": 2,
+      "max_dd_pct": "0.9511"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "10483",
+      "return_pct": "0.2097",
+      "trades": 1,
+      "max_dd_pct": "0.1147"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-41147.4067",
+    "fees_tmn": "97939.2295",
+    "pre_fee_tmn": "56791.8228",
+    "trades": 28,
+    "profit_factor": "0.8389",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.4301",
+    "max_dd_pct": "1.7442",
+    "fee_share": "1.7245",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-41435",
+      "return_pct": "-0.8287",
+      "trades": 4,
+      "max_dd_pct": "1.7400"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "107993",
+      "return_pct": "2.1599",
+      "trades": 9,
+      "max_dd_pct": "1.0408"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-71506",
+      "return_pct": "-1.4301",
+      "trades": 9,
+      "max_dd_pct": "1.7442"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-13175",
+      "return_pct": "-0.2635",
+      "trades": 4,
+      "max_dd_pct": "1.3759"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-23025",
+      "return_pct": "-0.4605",
+      "trades": 2,
+      "max_dd_pct": "0.5102"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-66981.6290",
+   "control_net_tmn": "-253242.5164"
+  },
+  {
+   "experiment": "p04-r1-c1",
+   "parameter_hash": "e05cc826ed9c9a177b93983b14724179ae5a3be8ae9f352d4691b40b17ed29d7",
+   "config": "lookback=48 stop=2 hold=12h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R2 trades 19 < 30 (insufficient evidence)",
+    "R3 positive slices 1/5, worst -1.3401%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-116863.7503",
+    "fees_tmn": "98939.2155",
+    "pre_fee_tmn": "-17924.5348",
+    "trades": 19,
+    "profit_factor": "0.5074",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.3401",
+    "max_dd_pct": "1.8387",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-52260",
+      "return_pct": "-1.0452",
+      "trades": 3,
+      "max_dd_pct": "1.5346"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "52301",
+      "return_pct": "1.0460",
+      "trades": 6,
+      "max_dd_pct": "1.3656"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-30447",
+      "return_pct": "-0.6089",
+      "trades": 6,
+      "max_dd_pct": "1.8387"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-67007",
+      "return_pct": "-1.3401",
+      "trades": 3,
+      "max_dd_pct": "1.3401"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-19451",
+      "return_pct": "-0.3890",
+      "trades": 1,
+      "max_dd_pct": "0.4244"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-91940.0876",
+    "fees_tmn": "38813.5591",
+    "pre_fee_tmn": "-53126.5285",
+    "trades": 7,
+    "profit_factor": "0.1785",
+    "positive_slices": 0,
+    "worst_slice_pct": "-0.9497",
+    "max_dd_pct": "0.9794",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-23976",
+      "return_pct": "-0.4795",
+      "trades": 1,
+      "max_dd_pct": "0.4795"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-20478",
+      "return_pct": "-0.4096",
+      "trades": 4,
+      "max_dd_pct": "0.9794"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-47486",
+      "return_pct": "-0.9497",
+      "trades": 2,
+      "max_dd_pct": "0.9497"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-34588.7363",
+    "fees_tmn": "104762.2826",
+    "pre_fee_tmn": "70173.5463",
+    "trades": 23,
+    "profit_factor": "0.8682",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.0238",
+    "max_dd_pct": "1.8650",
+    "fee_share": "1.4929",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-51191",
+      "return_pct": "-1.0238",
+      "trades": 3,
+      "max_dd_pct": "1.6011"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "111867",
+      "return_pct": "2.2373",
+      "trades": 7,
+      "max_dd_pct": "1.5772"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-14648",
+      "return_pct": "-0.2930",
+      "trades": 7,
+      "max_dd_pct": "1.8650"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-39160",
+      "return_pct": "-0.7832",
+      "trades": 4,
+      "max_dd_pct": "1.6394"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-41456",
+      "return_pct": "-0.8291",
+      "trades": 2,
+      "max_dd_pct": "0.8291"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-78205.2062",
+   "control_net_tmn": "-253242.5164"
+  },
+  {
+   "experiment": "p04-r1-c1",
+   "parameter_hash": "e8033326e413e48b81d2316116347ff9889706a3a2d42938488dd63c1380cf16",
+   "config": "lookback=48 stop=3 hold=24h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R2 trades 15 < 30 (insufficient evidence)",
+    "R3 positive slices 2/5, worst -1.0329%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-22441.6757",
+    "fees_tmn": "60500.2212",
+    "pre_fee_tmn": "38058.5454",
+    "trades": 15,
+    "profit_factor": "0.8745",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.0329",
+    "max_dd_pct": "1.3749",
+    "fee_share": "1.5897",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-51646",
+      "return_pct": "-1.0329",
+      "trades": 3,
+      "max_dd_pct": "1.3749"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "71555",
+      "return_pct": "1.4311",
+      "trades": 5,
+      "max_dd_pct": "0.8913"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "14263",
+      "return_pct": "0.2853",
+      "trades": 4,
+      "max_dd_pct": "0.9515"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-34070",
+      "return_pct": "-0.6814",
+      "trades": 2,
+      "max_dd_pct": "1.1721"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-22544",
+      "return_pct": "-0.4509",
+      "trades": 1,
+      "max_dd_pct": "0.4777"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-66753.7014",
+    "fees_tmn": "30539.0934",
+    "pre_fee_tmn": "-36214.6080",
+    "trades": 7,
+    "profit_factor": "0.2959",
+    "positive_slices": 1,
+    "worst_slice_pct": "-0.9511",
+    "max_dd_pct": "0.9511",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-24223",
+      "return_pct": "-0.4845",
+      "trades": 1,
+      "max_dd_pct": "0.4845"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "5025",
+      "return_pct": "0.1005",
+      "trades": 4,
+      "max_dd_pct": "0.6176"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-47555",
+      "return_pct": "-0.9511",
+      "trades": 2,
+      "max_dd_pct": "0.9511"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "22556.5668",
+    "fees_tmn": "64936.4742",
+    "pre_fee_tmn": "87493.0410",
+    "trades": 18,
+    "profit_factor": "1.1147",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.0166",
+    "max_dd_pct": "1.6069",
+    "fee_share": "0.7422",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-50832",
+      "return_pct": "-1.0166",
+      "trades": 3,
+      "max_dd_pct": "1.4230"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "114663",
+      "return_pct": "2.2933",
+      "trades": 6,
+      "max_dd_pct": "1.0494"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "6392",
+      "return_pct": "0.1278",
+      "trades": 5,
+      "max_dd_pct": "1.5630"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-24806",
+      "return_pct": "-0.4961",
+      "trades": 3,
+      "max_dd_pct": "1.6069"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-22860",
+      "return_pct": "-0.4572",
+      "trades": 1,
+      "max_dd_pct": "0.5915"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-35501.8539",
+   "control_net_tmn": "-146295.3766"
+  },
+  {
+   "experiment": "p04-r1-c2",
+   "parameter_hash": "3621855be6dce49c51a811fa1d5ad5db1220ecad3332bfdbfb6183cd7c94a5d7",
+   "config": "trend_gate=True entry_trend=0.5 stop=3 hold=12h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R3 positive slices 1/5, worst -3.3410%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R6 not above drift control (beta only)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-341638.7627",
+    "fees_tmn": "257085.7575",
+    "pre_fee_tmn": "-84553.0052",
+    "trades": 64,
+    "profit_factor": "0.4032",
+    "positive_slices": 1,
+    "worst_slice_pct": "-3.3410",
+    "max_dd_pct": "3.6358",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-167048",
+      "return_pct": "-3.3410",
+      "trades": 11,
+      "max_dd_pct": "3.6358"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "47833",
+      "return_pct": "0.9567",
+      "trades": 18,
+      "max_dd_pct": "1.1095"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-80469",
+      "return_pct": "-1.6094",
+      "trades": 16,
+      "max_dd_pct": "1.8242"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-63893",
+      "return_pct": "-1.2779",
+      "trades": 12,
+      "max_dd_pct": "2.0881"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-78062",
+      "return_pct": "-1.5612",
+      "trades": 7,
+      "max_dd_pct": "1.5612"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-140214.2386",
+    "fees_tmn": "100121.4103",
+    "pre_fee_tmn": "-40092.8283",
+    "trades": 23,
+    "profit_factor": "0.2605",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.6469",
+    "max_dd_pct": "1.7247",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-82347",
+      "return_pct": "-1.6469",
+      "trades": 6,
+      "max_dd_pct": "1.7247"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-699",
+      "return_pct": "-0.0140",
+      "trades": 7,
+      "max_dd_pct": "0.5976"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-33322",
+      "return_pct": "-0.6664",
+      "trades": 6,
+      "max_dd_pct": "0.9831"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "518",
+      "return_pct": "0.0104",
+      "trades": 3,
+      "max_dd_pct": "0.4309"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-24364",
+      "return_pct": "-0.4873",
+      "trades": 1,
+      "max_dd_pct": "0.4873"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-217711.7331",
+    "fees_tmn": "237833.6039",
+    "pre_fee_tmn": "20121.8708",
+    "trades": 69,
+    "profit_factor": "0.5857",
+    "positive_slices": 1,
+    "worst_slice_pct": "-2.3584",
+    "max_dd_pct": "2.8460",
+    "fee_share": "11.8197",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-117922",
+      "return_pct": "-2.3584",
+      "trades": 12,
+      "max_dd_pct": "2.8460"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "64443",
+      "return_pct": "1.2889",
+      "trades": 18,
+      "max_dd_pct": "1.0853"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-56084",
+      "return_pct": "-1.1217",
+      "trades": 17,
+      "max_dd_pct": "1.7253"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-24317",
+      "return_pct": "-0.4863",
+      "trades": 15,
+      "max_dd_pct": "1.7793"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-83831",
+      "return_pct": "-1.6766",
+      "trades": 7,
+      "max_dd_pct": "1.6864"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-174316.4868",
+   "control_net_tmn": "-253242.5164"
+  },
+  {
+   "experiment": "p04-r1-c2",
+   "parameter_hash": "3f416d6136969246082cf9fdab8edfc8b297d576cb92580181d44a97b304117b",
+   "config": "trend_gate=True entry_trend=1 stop=2 hold=12h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R3 positive slices 1/5, worst -2.9009%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R6 not above drift control (beta only)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-257246.7948",
+    "fees_tmn": "260624.0567",
+    "pre_fee_tmn": "3377.2619",
+    "trades": 50,
+    "profit_factor": "0.5355",
+    "positive_slices": 1,
+    "worst_slice_pct": "-2.9009",
+    "max_dd_pct": "3.7010",
+    "fee_share": "77.1702",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-145047",
+      "return_pct": "-2.9009",
+      "trades": 8,
+      "max_dd_pct": "3.7010"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "83955",
+      "return_pct": "1.6791",
+      "trades": 13,
+      "max_dd_pct": "1.2103"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-64765",
+      "return_pct": "-1.2953",
+      "trades": 13,
+      "max_dd_pct": "1.9906"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-76358",
+      "return_pct": "-1.5272",
+      "trades": 12,
+      "max_dd_pct": "2.1546"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-55031",
+      "return_pct": "-1.1006",
+      "trades": 4,
+      "max_dd_pct": "1.1006"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-228222.5208",
+    "fees_tmn": "115503.2464",
+    "pre_fee_tmn": "-112719.2743",
+    "trades": 20,
+    "profit_factor": "0.1631",
+    "positive_slices": 1,
+    "worst_slice_pct": "-2.1903",
+    "max_dd_pct": "2.1903",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-109515",
+      "return_pct": "-2.1903",
+      "trades": 5,
+      "max_dd_pct": "2.1903"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-15664",
+      "return_pct": "-0.3133",
+      "trades": 6,
+      "max_dd_pct": "0.7982"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-103735",
+      "return_pct": "-2.0747",
+      "trades": 6,
+      "max_dd_pct": "2.0747"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "692",
+      "return_pct": "0.0138",
+      "trades": 3,
+      "max_dd_pct": "0.5744"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-275870.9647",
+    "fees_tmn": "272051.4201",
+    "pre_fee_tmn": "-3819.5446",
+    "trades": 60,
+    "profit_factor": "0.5988",
+    "positive_slices": 1,
+    "worst_slice_pct": "-3.1966",
+    "max_dd_pct": "3.4619",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-159832",
+      "return_pct": "-3.1966",
+      "trades": 9,
+      "max_dd_pct": "3.4619"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "101031",
+      "return_pct": "2.0206",
+      "trades": 15,
+      "max_dd_pct": "1.2165"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-76044",
+      "return_pct": "-1.5209",
+      "trades": 15,
+      "max_dd_pct": "2.1594"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-57991",
+      "return_pct": "-1.1598",
+      "trades": 16,
+      "max_dd_pct": "2.1250"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-83035",
+      "return_pct": "-1.6607",
+      "trades": 5,
+      "max_dd_pct": "1.6607"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-228073.7246",
+   "control_net_tmn": "-253242.5164"
+  },
+  {
+   "experiment": "p04-r1-c2",
+   "parameter_hash": "46ee9c1872ad08ecd397a96809f55b50269231bb79c2a76fa7cb52a0b08239aa",
+   "config": "trend_gate=True entry_trend=1 stop=2 hold=24h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R3 positive slices 1/5, worst -1.9596%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R6 not above drift control (beta only)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-180831.2646",
+    "fees_tmn": "206138.0976",
+    "pre_fee_tmn": "25306.8330",
+    "trades": 38,
+    "profit_factor": "0.6473",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.9596",
+    "max_dd_pct": "2.9811",
+    "fee_share": "8.1456",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-97978",
+      "return_pct": "-1.9596",
+      "trades": 6,
+      "max_dd_pct": "2.9811"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "72794",
+      "return_pct": "1.4559",
+      "trades": 9,
+      "max_dd_pct": "0.9748"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-38095",
+      "return_pct": "-0.7619",
+      "trades": 10,
+      "max_dd_pct": "2.3090"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-48609",
+      "return_pct": "-0.9722",
+      "trades": 10,
+      "max_dd_pct": "1.8303"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-68943",
+      "return_pct": "-1.3789",
+      "trades": 3,
+      "max_dd_pct": "1.3789"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-149082.7576",
+    "fees_tmn": "93470.7536",
+    "pre_fee_tmn": "-55612.0040",
+    "trades": 16,
+    "profit_factor": "0.3906",
+    "positive_slices": 2,
+    "worst_slice_pct": "-2.4685",
+    "max_dd_pct": "2.4685",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-123423",
+      "return_pct": "-2.4685",
+      "trades": 5,
+      "max_dd_pct": "2.4685"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "18756",
+      "return_pct": "0.3751",
+      "trades": 4,
+      "max_dd_pct": "0.8138"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-78272",
+      "return_pct": "-1.5654",
+      "trades": 5,
+      "max_dd_pct": "1.8199"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "33856",
+      "return_pct": "0.6771",
+      "trades": 2,
+      "max_dd_pct": "0.5744"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-129474.1129",
+    "fees_tmn": "214913.5951",
+    "pre_fee_tmn": "85439.4822",
+    "trades": 46,
+    "profit_factor": "0.7815",
+    "positive_slices": 2,
+    "worst_slice_pct": "-3.2263",
+    "max_dd_pct": "3.7184",
+    "fee_share": "2.5154",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-161316",
+      "return_pct": "-3.2263",
+      "trades": 9,
+      "max_dd_pct": "3.7184"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "131307",
+      "return_pct": "2.6261",
+      "trades": 10,
+      "max_dd_pct": "1.3368"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-35423",
+      "return_pct": "-0.7085",
+      "trades": 12,
+      "max_dd_pct": "2.2836"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "25136",
+      "return_pct": "0.5027",
+      "trades": 11,
+      "max_dd_pct": "1.9149"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-89178",
+      "return_pct": "-1.7836",
+      "trades": 4,
+      "max_dd_pct": "1.7836"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-135916.0156",
+   "control_net_tmn": "-146295.3766"
+  },
+  {
+   "experiment": "p04-r1-c2",
+   "parameter_hash": "527103e0337cb032b425237efb5aa0f50b8490c6fb22e836b8a478ecb442079f",
+   "config": "trend_gate=True entry_trend=0.5 stop=3 hold=24h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-19559.5513",
+    "fees_tmn": "161630.9935",
+    "pre_fee_tmn": "142071.4422",
+    "trades": 40,
+    "profit_factor": "0.9427",
+    "positive_slices": 3,
+    "worst_slice_pct": "-1.6377",
+    "max_dd_pct": "2.2880",
+    "fee_share": "1.1377",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-81885",
+      "return_pct": "-1.6377",
+      "trades": 8,
+      "max_dd_pct": "2.2880"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "110939",
+      "return_pct": "2.2188",
+      "trades": 9,
+      "max_dd_pct": "0.7903"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "20717",
+      "return_pct": "0.4143",
+      "trades": 9,
+      "max_dd_pct": "1.1673"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "10534",
+      "return_pct": "0.2107",
+      "trades": 9,
+      "max_dd_pct": "1.5251"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-79864",
+      "return_pct": "-1.5973",
+      "trades": 5,
+      "max_dd_pct": "1.5973"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-96071.5892",
+    "fees_tmn": "83582.8580",
+    "pre_fee_tmn": "-12488.7312",
+    "trades": 19,
+    "profit_factor": "0.4798",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.8207",
+    "max_dd_pct": "1.8985",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-91037",
+      "return_pct": "-1.8207",
+      "trades": 6,
+      "max_dd_pct": "1.8985"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-8230",
+      "return_pct": "-0.1646",
+      "trades": 6,
+      "max_dd_pct": "0.8964"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "2152",
+      "return_pct": "0.0430",
+      "trades": 4,
+      "max_dd_pct": "0.9158"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "25408",
+      "return_pct": "0.5082",
+      "trades": 2,
+      "max_dd_pct": "0.4309"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-24364",
+      "return_pct": "-0.4873",
+      "trades": 1,
+      "max_dd_pct": "0.4873"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "55656.5818",
+    "fees_tmn": "155690.8842",
+    "pre_fee_tmn": "211347.4660",
+    "trades": 44,
+    "profit_factor": "1.1602",
+    "positive_slices": 3,
+    "worst_slice_pct": "-2.0365",
+    "max_dd_pct": "2.3808",
+    "fee_share": "0.7367",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-101824",
+      "return_pct": "-2.0365",
+      "trades": 9,
+      "max_dd_pct": "2.3808"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "141186",
+      "return_pct": "2.8237",
+      "trades": 10,
+      "max_dd_pct": "1.1228"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "42819",
+      "return_pct": "0.8564",
+      "trades": 11,
+      "max_dd_pct": "1.1804"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "52291",
+      "return_pct": "1.0458",
+      "trades": 9,
+      "max_dd_pct": "1.5492"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-78816",
+      "return_pct": "-1.5763",
+      "trades": 5,
+      "max_dd_pct": "1.5861"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-164046.6715",
+   "control_net_tmn": "-146295.3766"
+  },
+  {
+   "experiment": "p04-r1-c2",
+   "parameter_hash": "959db21e9696fedf82df7af4010cc9e3d24fc94bd7face953652f003c598c3cb",
+   "config": "trend_gate=True entry_trend=0.5 stop=2 hold=12h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R3 positive slices 1/5, worst -3.4235%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R6 not above drift control (beta only)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-358039.6291",
+    "fees_tmn": "333934.8663",
+    "pre_fee_tmn": "-24104.7629",
+    "trades": 63,
+    "profit_factor": "0.4695",
+    "positive_slices": 1,
+    "worst_slice_pct": "-3.4235",
+    "max_dd_pct": "3.7794",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-171175",
+      "return_pct": "-3.4235",
+      "trades": 9,
+      "max_dd_pct": "3.7794"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "76473",
+      "return_pct": "1.5295",
+      "trades": 18,
+      "max_dd_pct": "1.1419"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-115349",
+      "return_pct": "-2.3070",
+      "trades": 18,
+      "max_dd_pct": "2.5622"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-69471",
+      "return_pct": "-1.3894",
+      "trades": 11,
+      "max_dd_pct": "2.1584"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-78518",
+      "return_pct": "-1.5704",
+      "trades": 7,
+      "max_dd_pct": "1.5704"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-214837.0369",
+    "fees_tmn": "143017.9982",
+    "pre_fee_tmn": "-71819.0387",
+    "trades": 25,
+    "profit_factor": "0.2536",
+    "positive_slices": 2,
+    "worst_slice_pct": "-2.7260",
+    "max_dd_pct": "2.7260",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-136298",
+      "return_pct": "-2.7260",
+      "trades": 7,
+      "max_dd_pct": "2.7260"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "8350",
+      "return_pct": "0.1670",
+      "trades": 7,
+      "max_dd_pct": "0.7924"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-63421",
+      "return_pct": "-1.2684",
+      "trades": 7,
+      "max_dd_pct": "1.2706"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "692",
+      "return_pct": "0.0138",
+      "trades": 3,
+      "max_dd_pct": "0.5744"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-24159",
+      "return_pct": "-0.4832",
+      "trades": 1,
+      "max_dd_pct": "0.4832"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-295371.8043",
+    "fees_tmn": "305111.4677",
+    "pre_fee_tmn": "9739.6634",
+    "trades": 68,
+    "profit_factor": "0.5562",
+    "positive_slices": 1,
+    "worst_slice_pct": "-3.7564",
+    "max_dd_pct": "4.1595",
+    "fee_share": "31.3267",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-187819",
+      "return_pct": "-3.7564",
+      "trades": 10,
+      "max_dd_pct": "4.1595"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "100370",
+      "return_pct": "2.0074",
+      "trades": 18,
+      "max_dd_pct": "1.1702"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-94354",
+      "return_pct": "-1.8871",
+      "trades": 18,
+      "max_dd_pct": "2.4103"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-29878",
+      "return_pct": "-0.5976",
+      "trades": 15,
+      "max_dd_pct": "2.0967"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-83691",
+      "return_pct": "-1.6738",
+      "trades": 7,
+      "max_dd_pct": "1.6868"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-247635.6831",
+   "control_net_tmn": "-253242.5164"
+  },
+  {
+   "experiment": "p04-r1-c2",
+   "parameter_hash": "97120edb2d1e4c35fd873749a9fdd4e797360ca46f88fba575fd1180054d57b0",
+   "config": "trend_gate=True entry_trend=0.5 stop=2 hold=24h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R3 positive slices 2/5, worst -3.4182%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-144021.4919",
+    "fees_tmn": "248645.2241",
+    "pre_fee_tmn": "104623.7322",
+    "trades": 46,
+    "profit_factor": "0.7420",
+    "positive_slices": 2,
+    "worst_slice_pct": "-3.4182",
+    "max_dd_pct": "3.7741",
+    "fee_share": "2.3766",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-170910",
+      "return_pct": "-3.4182",
+      "trades": 9,
+      "max_dd_pct": "3.7741"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "130508",
+      "return_pct": "2.6102",
+      "trades": 11,
+      "max_dd_pct": "1.4239"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "45911",
+      "return_pct": "0.9182",
+      "trades": 10,
+      "max_dd_pct": "2.0060"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-68343",
+      "return_pct": "-1.3669",
+      "trades": 11,
+      "max_dd_pct": "2.2693"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-81188",
+      "return_pct": "-1.6238",
+      "trades": 5,
+      "max_dd_pct": "1.6238"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-186099.6225",
+    "fees_tmn": "121238.7377",
+    "pre_fee_tmn": "-64860.8848",
+    "trades": 21,
+    "profit_factor": "0.3872",
+    "positive_slices": 2,
+    "worst_slice_pct": "-3.1389",
+    "max_dd_pct": "3.1389",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-156944",
+      "return_pct": "-3.1389",
+      "trades": 7,
+      "max_dd_pct": "3.1389"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "3903",
+      "return_pct": "0.0781",
+      "trades": 6,
+      "max_dd_pct": "1.0455"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-42755",
+      "return_pct": "-0.8551",
+      "trades": 5,
+      "max_dd_pct": "1.3596"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "33856",
+      "return_pct": "0.6771",
+      "trades": 2,
+      "max_dd_pct": "0.5744"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-24159",
+      "return_pct": "-0.4832",
+      "trades": 1,
+      "max_dd_pct": "0.4832"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "2975.2837",
+    "fees_tmn": "209544.7534",
+    "pre_fee_tmn": "212520.0371",
+    "trades": 46,
+    "profit_factor": "1.0059",
+    "positive_slices": 3,
+    "worst_slice_pct": "-3.4089",
+    "max_dd_pct": "3.8838",
+    "fee_share": "0.9860",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-170445",
+      "return_pct": "-3.4089",
+      "trades": 8,
+      "max_dd_pct": "3.8838"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "149663",
+      "return_pct": "2.9933",
+      "trades": 11,
+      "max_dd_pct": "1.4340"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "68405",
+      "return_pct": "1.3681",
+      "trades": 11,
+      "max_dd_pct": "1.1749"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "34674",
+      "return_pct": "0.6935",
+      "trades": 11,
+      "max_dd_pct": "1.8623"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-79322",
+      "return_pct": "-1.5864",
+      "trades": 5,
+      "max_dd_pct": "1.5995"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-186143.4817",
+   "control_net_tmn": "-146295.3766"
+  },
+  {
+   "experiment": "p04-r1-c2",
+   "parameter_hash": "cbebd5be1bda3002df40b9be6c2c5cc2b21ccd5e23670ca815d84a619f92c053",
+   "config": "trend_gate=True entry_trend=1 stop=3 hold=12h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R3 positive slices 1/5, worst -1.6430%",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-145350.2800",
+    "fees_tmn": "183029.9579",
+    "pre_fee_tmn": "37679.6779",
+    "trades": 46,
+    "profit_factor": "0.5891",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.6430",
+    "max_dd_pct": "2.2554",
+    "fee_share": "4.8575",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-82151",
+      "return_pct": "-1.6430",
+      "trades": 7,
+      "max_dd_pct": "2.2554"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "88049",
+      "return_pct": "1.7610",
+      "trades": 11,
+      "max_dd_pct": "0.7093"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-39332",
+      "return_pct": "-0.7866",
+      "trades": 13,
+      "max_dd_pct": "1.3596"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-57952",
+      "return_pct": "-1.1590",
+      "trades": 11,
+      "max_dd_pct": "1.7460"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-53964",
+      "return_pct": "-1.0793",
+      "trades": 4,
+      "max_dd_pct": "1.0793"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-131775.7852",
+    "fees_tmn": "81786.6320",
+    "pre_fee_tmn": "-49989.1532",
+    "trades": 19,
+    "profit_factor": "0.2010",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.4732",
+    "max_dd_pct": "1.4732",
+    "fee_share": null,
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-73661",
+      "return_pct": "-1.4732",
+      "trades": 5,
+      "max_dd_pct": "1.4732"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "-18830",
+      "return_pct": "-0.3766",
+      "trades": 6,
+      "max_dd_pct": "0.6467"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-39802",
+      "return_pct": "-0.7960",
+      "trades": 5,
+      "max_dd_pct": "0.9908"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "518",
+      "return_pct": "0.0104",
+      "trades": 3,
+      "max_dd_pct": "0.4309"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "-127289.7282",
+    "fees_tmn": "195106.4208",
+    "pre_fee_tmn": "67816.6926",
+    "trades": 55,
+    "profit_factor": "0.7196",
+    "positive_slices": 1,
+    "worst_slice_pct": "-1.7557",
+    "max_dd_pct": "2.5514",
+    "fee_share": "2.8770",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-87787",
+      "return_pct": "-1.7557",
+      "trades": 9,
+      "max_dd_pct": "2.5514"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "102339",
+      "return_pct": "2.0468",
+      "trades": 13,
+      "max_dd_pct": "0.9092"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-58750",
+      "return_pct": "-1.1750",
+      "trades": 15,
+      "max_dd_pct": "1.8043"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "-21935",
+      "return_pct": "-0.4387",
+      "trades": 14,
+      "max_dd_pct": "1.6206"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-61156",
+      "return_pct": "-1.2231",
+      "trades": 4,
+      "max_dd_pct": "1.2231"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-201788.4391",
+   "control_net_tmn": "-253242.5164"
+  },
+  {
+   "experiment": "p04-r1-c2",
+   "parameter_hash": "edc3384f2dfcdeb0f524e64e1f67479bc321a1264738c09a048416e2b6f78f2d",
+   "config": "trend_gate=True entry_trend=1 stop=3 hold=24h",
+   "verdict": "REJECT",
+   "reasons": [
+    "R1 pooled net <= 0",
+    "R4 profit factor < 1.1",
+    "R5 fees > 50% of pre-fee P&L (or pre-fee <= 0)",
+    "R7 neighbours' mean net <= 0 (no plateau)"
+   ],
+   "base": {
+    "net_tmn": "-6479.7599",
+    "fees_tmn": "133650.8073",
+    "pre_fee_tmn": "127171.0474",
+    "trades": 32,
+    "profit_factor": "0.9768",
+    "positive_slices": 3,
+    "worst_slice_pct": "-1.3058",
+    "max_dd_pct": "2.0320",
+    "fee_share": "1.0510",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-45203",
+      "return_pct": "-0.9041",
+      "trades": 5,
+      "max_dd_pct": "2.0320"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "86460",
+      "return_pct": "1.7292",
+      "trades": 8,
+      "max_dd_pct": "0.8329"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "3090",
+      "return_pct": "0.0618",
+      "trades": 8,
+      "max_dd_pct": "1.2441"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "14464",
+      "return_pct": "0.2893",
+      "trades": 8,
+      "max_dd_pct": "1.5255"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-65290",
+      "return_pct": "-1.3058",
+      "trades": 3,
+      "max_dd_pct": "1.3058"
+     }
+    }
+   },
+   "adverse": {
+    "net_tmn": "-44369.6664",
+    "fees_tmn": "61161.5153",
+    "pre_fee_tmn": "16791.8489",
+    "trades": 14,
+    "profit_factor": "0.6183",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.1673",
+    "max_dd_pct": "1.5493",
+    "fee_share": "3.6423",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-58366",
+      "return_pct": "-1.1673",
+      "trades": 4,
+      "max_dd_pct": "1.5493"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "8108",
+      "return_pct": "0.1622",
+      "trades": 4,
+      "max_dd_pct": "0.6703"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-19519",
+      "return_pct": "-0.3904",
+      "trades": 4,
+      "max_dd_pct": "0.8627"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "25408",
+      "return_pct": "0.5082",
+      "trades": 2,
+      "max_dd_pct": "0.4309"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "0",
+      "return_pct": "0.0000",
+      "trades": 0,
+      "max_dd_pct": "0.0000"
+     }
+    }
+   },
+   "low": {
+    "net_tmn": "77322.7433",
+    "fees_tmn": "133068.1860",
+    "pre_fee_tmn": "210390.9293",
+    "trades": 36,
+    "profit_factor": "1.2556",
+    "positive_slices": 2,
+    "worst_slice_pct": "-1.2192",
+    "max_dd_pct": "2.3065",
+    "fee_share": "0.6325",
+    "failed": 0,
+    "slices": {
+     "t1": {
+      "role": "TRAIN",
+      "net": "-49025",
+      "return_pct": "-0.9805",
+      "trades": 6,
+      "max_dd_pct": "2.3065"
+     },
+     "t2": {
+      "role": "TRAIN",
+      "net": "136248",
+      "return_pct": "2.7250",
+      "trades": 9,
+      "max_dd_pct": "1.1491"
+     },
+     "t3": {
+      "role": "TRAIN",
+      "net": "-1369",
+      "return_pct": "-0.0274",
+      "trades": 10,
+      "max_dd_pct": "1.4609"
+     },
+     "v1": {
+      "role": "VALIDATION",
+      "net": "52431",
+      "return_pct": "1.0486",
+      "trades": 8,
+      "max_dd_pct": "1.5575"
+     },
+     "v2": {
+      "role": "VALIDATION",
+      "net": "-60962",
+      "return_pct": "-1.2192",
+      "trades": 3,
+      "max_dd_pct": "1.2192"
+     }
+    }
+   },
+   "neighbour_mean_net_tmn": "-115247.0320",
+   "control_net_tmn": "-146295.3766"
+  }
+ ]
+}

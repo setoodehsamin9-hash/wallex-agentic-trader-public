@@ -1,0 +1,18 @@
+{
+ "schema_version": "1",
+ "name": "wallex-public-20261022",
+ "symbols": ["BTCTMN", "USDTTMN", "ETHTMN", "XAUTTMN", "BNBTMN"],
+ "end_utc": "2026-10-22T00:00:00+00:00",
+ "datasets": [
+  {"id": "1m", "resolution": "1", "seconds": 60, "start_utc": "2026-07-24T00:00:00+00:00", "chunk_seconds": 172800},
+  {"id": "1h", "resolution": "60", "seconds": 3600, "start_utc": "2022-10-22T00:00:00+00:00", "chunk_seconds": 2419200},
+  {"id": "1d", "resolution": "1D", "seconds": 86400, "start_utc": "2016-10-22T00:00:00+00:00", "chunk_seconds": 31536000}
+ ],
+ "views": [
+  {"id": "15m", "source": "1m", "seconds": 900},
+  {"id": "4h", "source": "1h", "seconds": 14400}
+ ],
+ "candidate_source": "Muse WALLEX_MARKET_SELECTION_RESEARCH_FA.md section 9; collection only, not trade selection",
+ "fee": null,
+ "eligibility": "UNRESOLVED"
+}

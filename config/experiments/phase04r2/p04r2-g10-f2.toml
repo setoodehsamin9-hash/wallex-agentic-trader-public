@@ -1,0 +1,72 @@
+# G10: frozen F2 (4h, EMA48, m5, regime-r2 on) in the kernel, 1h base, VAL-A+VAL-B
+schema_version = "1"
+experiment_id = "p04r2-g10-f2"
+base_config = "base-4h-f2.toml"
+dataset_dir = "../../../data/raw/historical-pack/export/datasets/1h"
+dataset_resolution_seconds = 3600
+strategy_id = "F2_tsm"
+strategy_version = "f2-0.1.0"
+seed = 7
+max_trials = 21
+base_cost_id = "base"
+min_trades_observation = 5
+
+[[splits]]
+name = "v1"
+role = "VALIDATION"
+start_utc = 2025-03-01T00:00:00Z
+end_utc = 2025-08-01T00:00:00Z
+
+[[splits]]
+name = "v2"
+role = "VALIDATION"
+start_utc = 2025-08-01T00:00:00Z
+end_utc = 2026-01-01T00:00:00Z
+
+[[splits]]
+name = "v3"
+role = "VALIDATION"
+start_utc = 2026-01-01T00:00:00Z
+end_utc = 2026-06-01T00:00:00Z
+
+[[splits]]
+name = "v4"
+role = "VALIDATION"
+start_utc = 2026-06-01T00:00:00Z
+end_utc = 2026-07-24T00:00:00Z
+
+[[splits]]
+name = "v5"
+role = "VALIDATION"
+start_utc = 2026-07-24T00:00:00Z
+end_utc = 2026-08-20T00:00:00Z
+
+[[splits]]
+name = "v6"
+role = "VALIDATION"
+start_utc = 2026-08-20T00:00:00Z
+end_utc = 2026-09-16T00:00:00Z
+
+[[splits]]
+name = "v7"
+role = "VALIDATION"
+start_utc = 2026-09-16T00:00:00Z
+end_utc = 2026-10-13T00:00:00Z
+
+[[costs]]
+name = "base"
+fee_rate = "0.0025"
+slippage_bps = "5"
+fee_source = "ASSUMED"
+
+[[costs]]
+name = "adverse"
+fee_rate = "0.0035"
+slippage_bps = "10"
+fee_source = "ASSUMED"
+
+[[costs]]
+name = "low"
+fee_rate = "0.0020"
+slippage_bps = "5"
+fee_source = "ASSUMED"

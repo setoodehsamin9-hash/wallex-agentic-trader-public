@@ -1,0 +1,82 @@
+{
+  "jesse-ai/jesse": {
+    "repo": "jesse-ai/jesse",
+    "sha": "4fcbcdd500b9cd14ca9bdb142e4f46a34884a1ae",
+    "commit_date": "2026-10-17T14:26:18Z",
+    "branch": "master",
+    "archived": false,
+    "license": "MIT"
+  },
+  "freqtrade/freqtrade": {
+    "repo": "freqtrade/freqtrade",
+    "sha": "c051e9065c5b677f03817dd1f83cb980af1ed684",
+    "commit_date": "2026-10-22T05:26:11Z",
+    "branch": "develop",
+    "archived": false,
+    "license": "GPL-3.0"
+  },
+  "nautechsystems/nautilus_trader": {
+    "repo": "nautechsystems/nautilus_trader",
+    "sha": "9156e8f2d7126236269b6fcd2e6402b7a8e4e6d8",
+    "commit_date": "2026-10-22T06:18:08Z",
+    "branch": "develop",
+    "archived": false,
+    "license": "LGPL-3.0"
+  },
+  "hummingbot/hummingbot": {
+    "repo": "hummingbot/hummingbot",
+    "sha": "9af100d6822da7d2d0291a906c730ef172284ee2",
+    "commit_date": "2026-09-22T08:53:54Z",
+    "branch": "master",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "hummingbot/condor": {
+    "repo": "hummingbot/condor",
+    "sha": "8e4860fa3d7efd4b55c2b74dd7f1f439e5a4f32c",
+    "commit_date": "2026-10-19T15:13:28Z",
+    "branch": "main",
+    "archived": false,
+    "license": "MIT"
+  },
+  "AI4Finance-Foundation/FinRL-Trading": {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "sha": "4409abe925c904e570be78ebfb5e77ac3491dff8",
+    "commit_date": "2026-09-18T01:13:20Z",
+    "branch": "master",
+    "archived": false,
+    "license": "Apache-2.0"
+  },
+  "AI4Finance-Foundation/FinRL": {
+    "repo": "AI4Finance-Foundation/FinRL",
+    "sha": "c0018c25de864157dc8470f0047b0d10ec721715",
+    "commit_date": "2026-10-20T08:26:37Z",
+    "branch": "master",
+    "archived": false,
+    "license": "MIT"
+  },
+  "polakowo/vectorbt": {
+    "repo": "polakowo/vectorbt",
+    "sha": "dd8eb3a3fe9ed918b1cdaf177455759ae4ac68cb",
+    "commit_date": "2026-10-19T21:31:04Z",
+    "branch": "master",
+    "archived": false,
+    "license": "Apache-2.0 + Commons Clause"
+  },
+  "kernc/backtesting.py": {
+    "repo": "kernc/backtesting.py",
+    "sha": "ca2e2611621e472542ba90f7243a1fa06a7d7108",
+    "commit_date": "2026-08-05T12:39:16Z",
+    "branch": "master",
+    "archived": false,
+    "license": "AGPL-3.0"
+  },
+  "ccxt/ccxt": {
+    "repo": "ccxt/ccxt",
+    "sha": "92c1eb27f4652735258468adb4e53beb0c6b3cd0",
+    "commit_date": "2026-10-22T06:52:28Z",
+    "branch": "master",
+    "archived": false,
+    "license": "MIT"
+  }
+}

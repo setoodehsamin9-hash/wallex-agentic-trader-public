@@ -1,0 +1,20 @@
+PASS     SHADOW strategy_buildable         strategy builds from config
+PASS     SHADOW exit_order_ttl             execution.exit_order_ttl_s=60
+PASS     SHADOW warmup_path                history needed 4496h; native-1h warm-up required
+BLOCKED  LIVE   official_trading_window    trading_window=missing; source=None
+BLOCKED  LIVE   competition_cutoff         competition.end_utc=None
+BLOCKED  LIVE   u04_autonomy               autonomy=AUTONOMOUS owner_answer=None live_autonomous_enabled=False
+BLOCKED  LIVE   market_eligibility         symbols=['BTCTMN', 'ETHTMN'] confirmed=[]
+BLOCKED  LIVE   account_preflight          no read-only account preflight result (fee, balance, open orders)
+BLOCKED  LIVE   actual_fee_rate            needs the read-only account preflight
+BLOCKED  LIVE   available_tmn_balance      needs the read-only account preflight
+BLOCKED  LIVE   existing_orders_assets     needs the read-only account preflight
+PASS     LIVE   precision_min_order        precision/min-order metadata present for ['BTCTMN', 'ETHTMN']
+PASS     LIVE   exit_ttl_cancel_safety     exit_order_ttl_s=60 (LIVE max 300s; resting exit is cancelled, confirmed, re-issued)
+BLOCKED  LIVE   owner_limits               missing=['limits.approved_by_owner']; approved_on=None
+PASS     LIVE   execution_state_safe       unfinished runs needing recovery/abandon: []
+PASS     LIVE   real_model_qa              NineRouter QA passed=True model=cx/gpt-6.1-sol
+PASS     LIVE   ai_role_eval               role VETO/VETO; prompt veto_v1/veto_v1 sha_match=True; model config=cx/gpt-6.1-sol resolved=cx/gpt-6.1-sol eval=cx/gpt-6.1-sol; eval passed=True (reports/phase-05/ai/f2-alignment/EVAL_SUMMARY.json)
+PASS     LIVE   observability_evidence     evidence bundle verified offline (hashes, reconstruction, REAL WRITE=0)
+PASS     LIVE   news_disabled_for_trading  news overlay is not part of RunConfig or the trading path (news-overlay-0.1.0 produced a false-positive MACRO veto)
+LEVEL READY_FOR_SHADOW

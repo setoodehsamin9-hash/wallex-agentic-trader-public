@@ -1,0 +1,742 @@
+{
+ "protocol": "Pre-registered backtest study (Phase 03). Every trial is recorded; nothing is dropped.\n\nProtocol (fixed before running):\n  data      data/datasets/wallex-1m-btctmn-ethtmn (45 days, BTCTMN+ETHTMN, 1m, hash-pinned)\n  splits    time-ordered 60/20/20: TRAIN / VALIDATION / TEST (TEST is read once, for the chosen setting only)\n  trials    6 C1 settings (below), decided by B0 (deterministic selector) on TRAIN and VALIDATION\n  selection highest VALIDATION realized return; tie -> lower max drawdown\n  test      chosen setting on TEST with B0, then with the LLM agent via NineRouter (ablation: same data/costs)\n  stress    chosen setting on TEST with fee x2 and slippage x2 (B0)\n\nUsage:\n  uv run python scripts/backtest_study.py [--llm-model av/claude-sonnet-5-5] [--skip-llm]\nOutputs: reports/phase-03/backtest/TRIALS.jsonl, STUDY.json, and per-run exports under runs/published/.\n",
+ "chosen_trial": "T2",
+ "selection_row": {
+  "run_id": "study-T2-validation-baseline",
+  "trial": "c1-0.1.0+T2",
+  "split": "VALIDATION",
+  "decider": "BASELINE",
+  "model": null,
+  "period": [
+   "2026-10-04T00:00:00+00:00",
+   "2026-10-13T00:00:00+00:00"
+  ],
+  "fee_rate": "0.0025",
+  "slippage_bps": "5",
+  "trades": 9,
+  "wins": 0,
+  "realized_pnl_tmn": "-141470",
+  "realized_return_pct": "-2.8294",
+  "fees_tmn": "67065",
+  "max_drawdown_pct": "2.8294",
+  "candidate_cycles": 18,
+  "ai_calls": 0,
+  "ai_valid": 0,
+  "wait_decisions": 0,
+  "risk_rejected": 9,
+  "top_risk_blocks": [
+   [
+    "DATA_QUALITY:GAP",
+    8
+   ],
+   [
+    "drawdown_pause",
+    6
+   ],
+   [
+    "one_position_per_symbol",
+    3
+   ]
+  ],
+  "ai_latency_ms_p50": null,
+  "ai_latency_ms_p95": null
+ },
+ "rows": [
+  {
+   "run_id": "study-T1-train-baseline",
+   "trial": "c1-0.1.0+T1",
+   "split": "TRAIN",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-09-07T00:00:00+00:00",
+    "2026-10-04T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 15,
+   "wins": 3,
+   "realized_pnl_tmn": "-155964",
+   "realized_return_pct": "-3.1193",
+   "fees_tmn": "104522",
+   "max_drawdown_pct": "3.1193",
+   "candidate_cycles": 237,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 222,
+   "top_risk_blocks": [
+    [
+     "total_loss_budget",
+     206
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     126
+    ],
+    [
+     "drawdown_pause",
+     13
+    ],
+    [
+     "one_position_per_symbol",
+     7
+    ],
+    [
+     "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+     4
+    ],
+    [
+     "COMPETITION_LIQUIDATION",
+     4
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T1-validation-baseline",
+   "trial": "c1-0.1.0+T1",
+   "split": "VALIDATION",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-10-04T00:00:00+00:00",
+    "2026-10-13T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 9,
+   "wins": 0,
+   "realized_pnl_tmn": "-165497",
+   "realized_return_pct": "-3.3099",
+   "fees_tmn": "64505",
+   "max_drawdown_pct": "3.3099",
+   "candidate_cycles": 29,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 20,
+   "top_risk_blocks": [
+    [
+     "total_loss_budget",
+     15
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     8
+    ],
+    [
+     "drawdown_pause",
+     6
+    ],
+    [
+     "one_position_per_symbol",
+     2
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T2-train-baseline",
+   "trial": "c1-0.1.0+T2",
+   "split": "TRAIN",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-09-07T00:00:00+00:00",
+    "2026-10-04T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 15,
+   "wins": 3,
+   "realized_pnl_tmn": "-172600",
+   "realized_return_pct": "-3.4520",
+   "fees_tmn": "102017",
+   "max_drawdown_pct": "3.4520",
+   "candidate_cycles": 190,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 175,
+   "top_risk_blocks": [
+    [
+     "total_loss_budget",
+     162
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     126
+    ],
+    [
+     "one_position_per_symbol",
+     6
+    ],
+    [
+     "drawdown_pause",
+     6
+    ],
+    [
+     "max_open_positions",
+     5
+    ],
+    [
+     "sizing",
+     5
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T2-validation-baseline",
+   "trial": "c1-0.1.0+T2",
+   "split": "VALIDATION",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-10-04T00:00:00+00:00",
+    "2026-10-13T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 9,
+   "wins": 0,
+   "realized_pnl_tmn": "-141470",
+   "realized_return_pct": "-2.8294",
+   "fees_tmn": "67065",
+   "max_drawdown_pct": "2.8294",
+   "candidate_cycles": 18,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 9,
+   "top_risk_blocks": [
+    [
+     "DATA_QUALITY:GAP",
+     8
+    ],
+    [
+     "drawdown_pause",
+     6
+    ],
+    [
+     "one_position_per_symbol",
+     3
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T3-train-baseline",
+   "trial": "c1-0.1.0+T3",
+   "split": "TRAIN",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-09-07T00:00:00+00:00",
+    "2026-10-04T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 17,
+   "wins": 3,
+   "realized_pnl_tmn": "-157878",
+   "realized_return_pct": "-3.1576",
+   "fees_tmn": "109503",
+   "max_drawdown_pct": "3.1576",
+   "candidate_cycles": 322,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 305,
+   "top_risk_blocks": [
+    [
+     "total_loss_budget",
+     274
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     126
+    ],
+    [
+     "one_position_per_symbol",
+     22
+    ],
+    [
+     "drawdown_pause",
+     14
+    ],
+    [
+     "max_open_positions",
+     10
+    ],
+    [
+     "sizing",
+     10
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T3-validation-baseline",
+   "trial": "c1-0.1.0+T3",
+   "split": "VALIDATION",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-10-04T00:00:00+00:00",
+    "2026-10-13T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 14,
+   "wins": 2,
+   "realized_pnl_tmn": "-154922",
+   "realized_return_pct": "-3.0984",
+   "fees_tmn": "91898",
+   "max_drawdown_pct": "3.2369",
+   "candidate_cycles": 58,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 44,
+   "top_risk_blocks": [
+    [
+     "total_loss_budget",
+     26
+    ],
+    [
+     "one_position_per_symbol",
+     12
+    ],
+    [
+     "drawdown_pause",
+     11
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     8
+    ],
+    [
+     "max_open_positions",
+     2
+    ],
+    [
+     "sizing",
+     2
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T4-train-baseline",
+   "trial": "c1-0.1.0+T4",
+   "split": "TRAIN",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-09-07T00:00:00+00:00",
+    "2026-10-04T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 17,
+   "wins": 4,
+   "realized_pnl_tmn": "-155216",
+   "realized_return_pct": "-3.1043",
+   "fees_tmn": "118881",
+   "max_drawdown_pct": "3.1043",
+   "candidate_cycles": 167,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 150,
+   "top_risk_blocks": [
+    [
+     "total_loss_budget",
+     137
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     126
+    ],
+    [
+     "drawdown_pause",
+     15
+    ],
+    [
+     "one_position_per_symbol",
+     6
+    ],
+    [
+     "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+     4
+    ],
+    [
+     "COMPETITION_LIQUIDATION",
+     4
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T4-validation-baseline",
+   "trial": "c1-0.1.0+T4",
+   "split": "VALIDATION",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-10-04T00:00:00+00:00",
+    "2026-10-13T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 11,
+   "wins": 1,
+   "realized_pnl_tmn": "-166247",
+   "realized_return_pct": "-3.3249",
+   "fees_tmn": "79518",
+   "max_drawdown_pct": "3.3249",
+   "candidate_cycles": 18,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 7,
+   "top_risk_blocks": [
+    [
+     "DATA_QUALITY:GAP",
+     8
+    ],
+    [
+     "drawdown_pause",
+     5
+    ],
+    [
+     "one_position_per_symbol",
+     2
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T5-train-baseline",
+   "trial": "c1-0.1.0+T5",
+   "split": "TRAIN",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-09-07T00:00:00+00:00",
+    "2026-10-04T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 17,
+   "wins": 4,
+   "realized_pnl_tmn": "-165342",
+   "realized_return_pct": "-3.3068",
+   "fees_tmn": "112031",
+   "max_drawdown_pct": "3.3068",
+   "candidate_cycles": 168,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 151,
+   "top_risk_blocks": [
+    [
+     "total_loss_budget",
+     136
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     126
+    ],
+    [
+     "one_position_per_symbol",
+     12
+    ],
+    [
+     "max_open_positions",
+     10
+    ],
+    [
+     "sizing",
+     10
+    ],
+    [
+     "exposure_caps",
+     9
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T5-validation-baseline",
+   "trial": "c1-0.1.0+T5",
+   "split": "VALIDATION",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-10-04T00:00:00+00:00",
+    "2026-10-13T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 12,
+   "wins": 1,
+   "realized_pnl_tmn": "-159950",
+   "realized_return_pct": "-3.1990",
+   "fees_tmn": "81781",
+   "max_drawdown_pct": "3.2411",
+   "candidate_cycles": 25,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 13,
+   "top_risk_blocks": [
+    [
+     "drawdown_pause",
+     7
+    ],
+    [
+     "one_position_per_symbol",
+     6
+    ],
+    [
+     "max_open_positions",
+     4
+    ],
+    [
+     "sizing",
+     4
+    ],
+    [
+     "total_loss_budget",
+     4
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     4
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T6-train-baseline",
+   "trial": "c1-0.1.0+T6",
+   "split": "TRAIN",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-09-07T00:00:00+00:00",
+    "2026-10-04T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 12,
+   "wins": 1,
+   "realized_pnl_tmn": "-158069",
+   "realized_return_pct": "-3.1614",
+   "fees_tmn": "77034",
+   "max_drawdown_pct": "3.1614",
+   "candidate_cycles": 199,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 187,
+   "top_risk_blocks": [
+    [
+     "total_loss_budget",
+     169
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     126
+    ],
+    [
+     "one_position_per_symbol",
+     10
+    ],
+    [
+     "drawdown_pause",
+     10
+    ],
+    [
+     "max_open_positions",
+     7
+    ],
+    [
+     "sizing",
+     7
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T6-validation-baseline",
+   "trial": "c1-0.1.0+T6",
+   "split": "VALIDATION",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-10-04T00:00:00+00:00",
+    "2026-10-13T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 14,
+   "wins": 2,
+   "realized_pnl_tmn": "-155409",
+   "realized_return_pct": "-3.1082",
+   "fees_tmn": "92966",
+   "max_drawdown_pct": "3.1770",
+   "candidate_cycles": 43,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 29,
+   "top_risk_blocks": [
+    [
+     "one_position_per_symbol",
+     11
+    ],
+    [
+     "total_loss_budget",
+     11
+    ],
+    [
+     "drawdown_pause",
+     10
+    ],
+    [
+     "DATA_QUALITY:GAP",
+     4
+    ],
+    [
+     "max_open_positions",
+     3
+    ],
+    [
+     "sizing",
+     3
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T2-test-baseline",
+   "trial": "c1-0.1.0+T2",
+   "split": "TEST",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-10-13T00:00:00+00:00",
+    "2026-10-22T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0025",
+   "slippage_bps": "5",
+   "trades": 20,
+   "wins": 6,
+   "realized_pnl_tmn": "-145716",
+   "realized_return_pct": "-2.9143",
+   "fees_tmn": "133452",
+   "max_drawdown_pct": "2.9143",
+   "candidate_cycles": 45,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 25,
+   "top_risk_blocks": [
+    [
+     "DATA_QUALITY:GAP",
+     120
+    ],
+    [
+     "one_position_per_symbol",
+     19
+    ],
+    [
+     "max_open_positions",
+     9
+    ],
+    [
+     "sizing",
+     9
+    ],
+    [
+     "drawdown_pause",
+     8
+    ],
+    [
+     "exposure_caps",
+     7
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  },
+  {
+   "run_id": "study-T2-test-baseline-stress2x",
+   "trial": "c1-0.1.0+T2",
+   "split": "TEST",
+   "decider": "BASELINE",
+   "model": null,
+   "period": [
+    "2026-10-13T00:00:00+00:00",
+    "2026-10-22T00:00:00+00:00"
+   ],
+   "fee_rate": "0.0050",
+   "slippage_bps": "10",
+   "trades": 5,
+   "wins": 1,
+   "realized_pnl_tmn": "-35257",
+   "realized_return_pct": "-0.7051",
+   "fees_tmn": "56529",
+   "max_drawdown_pct": "0.9790",
+   "candidate_cycles": 13,
+   "ai_calls": 0,
+   "ai_valid": 0,
+   "wait_decisions": 0,
+   "risk_rejected": 8,
+   "top_risk_blocks": [
+    [
+     "DATA_QUALITY:GAP",
+     120
+    ],
+    [
+     "one_position_per_symbol",
+     8
+    ],
+    [
+     "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+     4
+    ],
+    [
+     "COMPETITION_LIQUIDATION",
+     4
+    ],
+    [
+     "max_open_positions",
+     2
+    ],
+    [
+     "COMPETITION_ENDED",
+     2
+    ]
+   ],
+   "ai_latency_ms_p50": null,
+   "ai_latency_ms_p95": null
+  }
+ ]
+}

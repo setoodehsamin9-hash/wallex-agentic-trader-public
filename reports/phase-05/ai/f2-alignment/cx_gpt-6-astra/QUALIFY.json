@@ -1,0 +1,149 @@
+{
+ "model_id": "cx/gpt-6-astra",
+ "role": "VETO",
+ "prompt_version": "veto_v1",
+ "prompt_sha256": "8a71819aead2080445d2091f8055d7200cb353953daf8a112269f7fcedf87346",
+ "rule": "Fixed before the run: the candidate model qualifies for the FROZEN role/prompt when it passes the same hard gates and its re-validated score is >= the frozen model's VETO score - 0.05. Prompt and brief are unchanged.",
+ "frozen_model": "cx/gpt-6.1-sol",
+ "frozen_model_score": 0.9886363636363636,
+ "passed": true,
+ "metrics": {
+  "calls": 67,
+  "structured_validity": 1.0,
+  "transport_failures": 0,
+  "candidate_discipline": true,
+  "evidence_discipline": true,
+  "wait_rate": 0.3582089552238806,
+  "model_wait_rate_on_valid": 0.0,
+  "valid_entry_preservation": 0.9772727272727273,
+  "invalid_entry_veto": 1.0,
+  "baseline_entry_points_preserved": "8/8",
+  "veto_unsupported": 0,
+  "score": 0.9886363636363636,
+  "latency_ms_p50": 7927,
+  "latency_ms_p95": 9912,
+  "latency_ms_max": 10411,
+  "tool_calls": 0,
+  "tool_errors": 0,
+  "write_tools_offered": [],
+  "responders": [
+   "ninerouter:gpt-6-astra"
+  ],
+  "silent_fallback": false,
+  "failures_waited": true,
+  "status_counts": {
+   "VALID": 66,
+   "UNKNOWN_REFERENCE": 1
+  },
+  "veto_reasons": {
+   "DATA_QUALITY": 11,
+   "CONFLICTING_SIGNALS": 4,
+   "REGIME_UNFAVORABLE": 4,
+   "EXECUTION_STATE_UNSAFE": 4
+  },
+  "scripted_faults_ok": true,
+  "hard_gates": true
+ },
+ "by_class": {
+  "strong": {
+   "n": 10,
+   "expected": "ENTER",
+   "matched": 10,
+   "model_wait": 0,
+   "statuses": {
+    "VALID": 10
+   }
+  },
+  "typical": {
+   "n": 6,
+   "expected": "ENTER",
+   "matched": 6,
+   "model_wait": 0,
+   "statuses": {
+    "VALID": 6
+   }
+  },
+  "weak": {
+   "n": 10,
+   "expected": "ENTER",
+   "matched": 9,
+   "model_wait": 0,
+   "statuses": {
+    "VALID": 9,
+    "UNKNOWN_REFERENCE": 1
+   }
+  },
+  "conflicting": {
+   "n": 10,
+   "expected": "ENTER",
+   "matched": 10,
+   "model_wait": 0,
+   "statuses": {
+    "VALID": 10
+   }
+  },
+  "entry_point": {
+   "n": 8,
+   "expected": "ENTER",
+   "matched": 8,
+   "model_wait": 0,
+   "statuses": {
+    "VALID": 8
+   }
+  },
+  "stale_flags": {
+   "n": 4,
+   "expected": "WAIT",
+   "matched": 4,
+   "model_wait": 4,
+   "statuses": {
+    "VALID": 4
+   }
+  },
+  "missing_evidence": {
+   "n": 4,
+   "expected": "WAIT",
+   "matched": 4,
+   "model_wait": 4,
+   "statuses": {
+    "VALID": 4
+   }
+  },
+  "entry_rule_broken": {
+   "n": 4,
+   "expected": "WAIT",
+   "matched": 4,
+   "model_wait": 4,
+   "statuses": {
+    "VALID": 4
+   }
+  },
+  "regime_conflict": {
+   "n": 4,
+   "expected": "WAIT",
+   "matched": 4,
+   "model_wait": 4,
+   "statuses": {
+    "VALID": 4
+   }
+  },
+  "execution_unsafe": {
+   "n": 4,
+   "expected": "WAIT",
+   "matched": 4,
+   "model_wait": 4,
+   "statuses": {
+    "VALID": 4
+   }
+  },
+  "no_candidate": {
+   "n": 3,
+   "expected": "WAIT",
+   "matched": 3,
+   "model_wait": 3,
+   "statuses": {
+    "VALID": 3
+   }
+  }
+ }
+}

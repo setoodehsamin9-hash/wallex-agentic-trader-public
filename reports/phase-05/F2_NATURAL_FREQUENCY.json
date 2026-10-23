@@ -1,0 +1,43 @@
+{
+ "period": [
+  "2025-03-01T00:00:00+00:00",
+  "2026-10-13T00:00:00+00:00"
+ ],
+ "strategy": "f2-0.1.0 (frozen)",
+ "decision_interval_h": 4,
+ "per_symbol": {
+  "BTCTMN": {
+   "boundaries": 3545,
+   "candidate_share": 0.34217207334273625,
+   "persistence_p_next_given_now": 0.9027205276174773,
+   "entries": 69,
+   "entries_per_day": 0.116751269035533
+  },
+  "ETHTMN": {
+   "boundaries": 3545,
+   "candidate_share": 0.3069111424541608,
+   "persistence_p_next_given_now": 0.9090073529411765,
+   "entries": 64,
+   "entries_per_day": 0.10829103214890017
+  }
+ },
+ "p_any_candidate_within_next_k_boundaries": {
+  "1": 0.41495063469675597,
+  "2": 0.4473906911142454,
+  "3": 0.47165021156558534,
+  "6": 0.5263751763046545,
+  "18": 0.6578279266572638
+ },
+ "p_any_entry_within_next_k_boundaries": {
+  "1": 0.033286318758815235,
+  "2": 0.06431593794076164,
+  "3": 0.09421720733427362,
+  "6": 0.1768688293370945,
+  "18": 0.4389280677009873
+ },
+ "p_next_boundary_candidate_given_both_symbols_now": 0.9795180722891567,
+ "both_symbols_candidate_boundaries": 830,
+ "total_entries": 133,
+ "entries_per_day_both_symbols": 0.22504230118443316,
+ "note": "entries need a flat book: while a position is open new candidates are not entries. Descriptive only."
+}

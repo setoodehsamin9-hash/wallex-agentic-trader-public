@@ -1,0 +1,378 @@
+{
+ "model_id": "cx/gpt-6.1-sol",
+ "selection_rule": "Fixed before any real call. Hard gates for a role: structured output on every answered call, candidate discipline (only offered ids), zero silent fallback (every responder is gpt-6.1-sol), every failure WAITs. Score = (valid-entry preservation + invalid-entry veto rate) / 2 on effective actions. Pick the higher score; within 0.05 pick VETO (smaller authority). If the picked role vetoes < 50% of invalid cases, the AI is reported as not causal enough (PARTIAL).",
+ "roles": {
+  "SELECTOR": {
+   "calls": 67,
+   "structured_validity": 1.0,
+   "transport_failures": 1,
+   "candidate_discipline": true,
+   "evidence_discipline": true,
+   "wait_rate": 0.3582089552238806,
+   "model_wait_rate_on_valid": 0.0,
+   "valid_entry_preservation": 0.9772727272727273,
+   "invalid_entry_veto": 1.0,
+   "baseline_entry_points_preserved": "8/8",
+   "veto_unsupported": 0,
+   "score": 0.9886363636363636,
+   "latency_ms_p50": 8282,
+   "latency_ms_p95": 11349,
+   "latency_ms_max": 60017,
+   "tool_calls": 0,
+   "tool_errors": 0,
+   "write_tools_offered": [],
+   "responders": [
+    "ninerouter:cx/gpt-6.1-sol",
+    "ninerouter:gpt-6.1-sol"
+   ],
+   "silent_fallback": false,
+   "failures_waited": true,
+   "status_counts": {
+    "VALID": 66,
+    "TIMEOUT": 1
+   },
+   "veto_reasons": {
+    "DATA_QUALITY": 8,
+    "CONFLICTING_SIGNALS": 4,
+    "REGIME_UNFAVORABLE": 4,
+    "EXECUTION_STATE_UNSAFE": 4,
+    "NO_CANDIDATES": 3
+   },
+   "by_class": {
+    "strong": {
+     "n": 10,
+     "expected": "ENTER",
+     "matched": 10,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 10
+     }
+    },
+    "typical": {
+     "n": 6,
+     "expected": "ENTER",
+     "matched": 6,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 6
+     }
+    },
+    "weak": {
+     "n": 10,
+     "expected": "ENTER",
+     "matched": 9,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 9,
+      "TIMEOUT": 1
+     }
+    },
+    "conflicting": {
+     "n": 10,
+     "expected": "ENTER",
+     "matched": 10,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 10
+     }
+    },
+    "entry_point": {
+     "n": 8,
+     "expected": "ENTER",
+     "matched": 8,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 8
+     }
+    },
+    "stale_flags": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "missing_evidence": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "entry_rule_broken": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "regime_conflict": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "execution_unsafe": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "no_candidate": {
+     "n": 3,
+     "expected": "WAIT",
+     "matched": 3,
+     "model_wait": 3,
+     "statuses": {
+      "VALID": 3
+     }
+    }
+   },
+   "scripted_faults_ok": true,
+   "hard_gates": true
+  },
+  "VETO": {
+   "calls": 67,
+   "structured_validity": 1.0,
+   "transport_failures": 2,
+   "candidate_discipline": true,
+   "evidence_discipline": true,
+   "wait_rate": 0.3582089552238806,
+   "model_wait_rate_on_valid": 0.0,
+   "valid_entry_preservation": 0.9772727272727273,
+   "invalid_entry_veto": 1.0,
+   "baseline_entry_points_preserved": "8/8",
+   "veto_unsupported": 0,
+   "score": 0.9886363636363636,
+   "latency_ms_p50": 7967,
+   "latency_ms_p95": 10397,
+   "latency_ms_max": 60018,
+   "tool_calls": 0,
+   "tool_errors": 0,
+   "write_tools_offered": [],
+   "responders": [
+    "ninerouter:cx/gpt-6.1-sol",
+    "ninerouter:gpt-6.1-sol"
+   ],
+   "silent_fallback": false,
+   "failures_waited": true,
+   "status_counts": {
+    "VALID": 65,
+    "TIMEOUT": 2
+   },
+   "veto_reasons": {
+    "DATA_QUALITY": 11,
+    "CONFLICTING_SIGNALS": 3,
+    "REGIME_UNFAVORABLE": 4,
+    "EXECUTION_STATE_UNSAFE": 4
+   },
+   "by_class": {
+    "strong": {
+     "n": 10,
+     "expected": "ENTER",
+     "matched": 10,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 10
+     }
+    },
+    "typical": {
+     "n": 6,
+     "expected": "ENTER",
+     "matched": 6,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 6
+     }
+    },
+    "weak": {
+     "n": 10,
+     "expected": "ENTER",
+     "matched": 10,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 10
+     }
+    },
+    "conflicting": {
+     "n": 10,
+     "expected": "ENTER",
+     "matched": 9,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 9,
+      "TIMEOUT": 1
+     }
+    },
+    "entry_point": {
+     "n": 8,
+     "expected": "ENTER",
+     "matched": 8,
+     "model_wait": 0,
+     "statuses": {
+      "VALID": 8
+     }
+    },
+    "stale_flags": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "missing_evidence": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "entry_rule_broken": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 3,
+     "statuses": {
+      "VALID": 3,
+      "TIMEOUT": 1
+     }
+    },
+    "regime_conflict": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "execution_unsafe": {
+     "n": 4,
+     "expected": "WAIT",
+     "matched": 4,
+     "model_wait": 4,
+     "statuses": {
+      "VALID": 4
+     }
+    },
+    "no_candidate": {
+     "n": 3,
+     "expected": "WAIT",
+     "matched": 3,
+     "model_wait": 3,
+     "statuses": {
+      "VALID": 3
+     }
+    }
+   },
+   "scripted_faults_ok": true,
+   "hard_gates": true
+  }
+ },
+ "recorded_roles": {
+  "SELECTOR": {
+   "calls": 67,
+   "structured_validity": 1.0,
+   "transport_failures": 1,
+   "candidate_discipline": true,
+   "evidence_discipline": true,
+   "wait_rate": 0.3582089552238806,
+   "model_wait_rate_on_valid": 0.0,
+   "valid_entry_preservation": 0.9772727272727273,
+   "invalid_entry_veto": 1.0,
+   "baseline_entry_points_preserved": "8/8",
+   "veto_unsupported": 0,
+   "score": 0.9886363636363636,
+   "latency_ms_p50": 8282,
+   "latency_ms_p95": 11349,
+   "latency_ms_max": 60017,
+   "tool_calls": 0,
+   "tool_errors": 0,
+   "write_tools_offered": [],
+   "responders": [
+    "ninerouter:cx/gpt-6.1-sol",
+    "ninerouter:gpt-6.1-sol"
+   ],
+   "silent_fallback": false,
+   "failures_waited": true,
+   "status_counts": {
+    "VALID": 66,
+    "TIMEOUT": 1
+   },
+   "veto_reasons": {
+    "DATA_QUALITY": 8,
+    "CONFLICTING_SIGNALS": 4,
+    "REGIME_UNFAVORABLE": 4,
+    "EXECUTION_STATE_UNSAFE": 4,
+    "NO_CANDIDATES": 3
+   }
+  },
+  "VETO": {
+   "calls": 67,
+   "structured_validity": 1.0,
+   "transport_failures": 2,
+   "candidate_discipline": true,
+   "evidence_discipline": true,
+   "wait_rate": 0.34328358208955223,
+   "model_wait_rate_on_valid": 0.0,
+   "valid_entry_preservation": 0.9772727272727273,
+   "invalid_entry_veto": 0.9565217391304348,
+   "baseline_entry_points_preserved": "8/8",
+   "veto_unsupported": 1,
+   "score": 0.966897233201581,
+   "latency_ms_p50": 7967,
+   "latency_ms_p95": 10397,
+   "latency_ms_max": 60018,
+   "tool_calls": 0,
+   "tool_errors": 0,
+   "write_tools_offered": [],
+   "responders": [
+    "ninerouter:cx/gpt-6.1-sol",
+    "ninerouter:gpt-6.1-sol"
+   ],
+   "silent_fallback": false,
+   "failures_waited": true,
+   "status_counts": {
+    "VALID": 64,
+    "VETO_UNSUPPORTED": 1,
+    "TIMEOUT": 2
+   },
+   "veto_reasons": {
+    "DATA_QUALITY": 11,
+    "CONFLICTING_SIGNALS": 3,
+    "REGIME_UNFAVORABLE": 4,
+    "EXECUTION_STATE_UNSAFE": 4
+   }
+  }
+ },
+ "revalidation_changes": {
+  "SELECTOR": [],
+  "VETO": [
+   {
+    "case_id": "stale_flags:ETHTMN@2025-07-20T04:00:00+00:00",
+    "recorded": "VETO_UNSUPPORTED/ENTER",
+    "now": "VALID/WAIT"
+   }
+  ]
+ },
+ "choice": "VETO",
+ "why": "VETO score within 0.05 of or above SELECTOR; smaller authority wins the tie",
+ "ai_causal_enough": true,
+ "status": "PASS"
+}

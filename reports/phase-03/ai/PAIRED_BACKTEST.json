@@ -1,0 +1,218 @@
+{
+  "period": [
+    "2026-10-05T00:30:00+00:00",
+    "2026-10-05T08:30:00+00:00"
+  ],
+  "selection_rule": "first validation candidate, start one hour earlier, eight hours; declared before outcome",
+  "dataset": "wallex-1m-btctmn-ethtmn",
+  "model_id": "gemini-3.8-flash",
+  "baseline": {
+    "run_id": "paired-b0",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "backtest-c1-baseline",
+    "period_start": "2026-10-05T00:30:00+00:00",
+    "period_end": "2026-10-05T08:30:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4956036",
+    "cash_tmn": "4956036",
+    "realized_pnl_tmn": "-43964",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "19853",
+    "net_pnl_tmn": "-43964",
+    "realized_return_pct": "-0.8793",
+    "return_pct": "-0.8793",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "0.8793",
+    "trades": 3,
+    "wins": 0,
+    "losses": 3,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-14655",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 64,
+    "no_candidate_cycles": 51,
+    "wait_decisions": 0,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 0,
+    "blocked": 10,
+    "outside_window_or_cutoff": 10,
+    "entries_submitted": 3,
+    "ai_calls": 0,
+    "ai_valid": 0,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": null,
+    "ai_latency_ms_p95": null,
+    "ai_latency_ms_max": null,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+      [
+        "BEST_OF_CANDIDATES",
+        3
+      ]
+    ],
+    "top_risk_blocks": [
+      [
+        "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+        4
+      ],
+      [
+        "COMPETITION_LIQUIDATION",
+        4
+      ],
+      [
+        "COMPETITION_ENDED",
+        2
+      ]
+    ],
+    "model_id": null,
+    "model_provider": null,
+    "responding_models": [],
+    "strategy_versions": [
+      "c1-0.1.0"
+    ]
+  },
+  "agent": {
+    "run_id": "paired-gemini",
+    "environment": "BACKTEST",
+    "autonomy": "AUTONOMOUS",
+    "label": "backtest-c1-baseline",
+    "period_start": "2026-10-05T00:30:00+00:00",
+    "period_end": "2026-10-05T08:30:00+00:00",
+    "starting_capital_tmn": "5000000",
+    "final_equity_tmn": "4972116",
+    "cash_tmn": "4972116",
+    "realized_pnl_tmn": "-27884",
+    "unrealized_pnl_tmn": "0",
+    "fees_tmn": "12387",
+    "net_pnl_tmn": "-27884",
+    "realized_return_pct": "-0.5577",
+    "return_pct": "-0.5577",
+    "peak_equity_tmn": "5000000",
+    "max_drawdown_pct": "0.5577",
+    "trades": 2,
+    "wins": 0,
+    "losses": 2,
+    "win_rate_pct": "0.0000",
+    "avg_trade_pnl_tmn": "-13942",
+    "open_positions": [],
+    "exposure_tmn": "0",
+    "dust": {},
+    "decisions_total": 64,
+    "no_candidate_cycles": 51,
+    "wait_decisions": 1,
+    "proposed": 0,
+    "awaiting_approval": 0,
+    "risk_rejected": 0,
+    "blocked": 10,
+    "outside_window_or_cutoff": 10,
+    "entries_submitted": 2,
+    "ai_calls": 3,
+    "ai_valid": 3,
+    "ai_invalid_by_status": {},
+    "ai_latency_ms_p50": 13068,
+    "ai_latency_ms_p95": 15691,
+    "ai_latency_ms_max": 15691,
+    "execution_errors": 0,
+    "unresolved_orders": 0,
+    "kill_switch_latched": false,
+    "top_reason_codes": [
+      [
+        "BREAKOUT_CONFIRMED",
+        2
+      ],
+      [
+        "VOLUME_CONFIRMED",
+        2
+      ],
+      [
+        "TREND_CONFIRMED",
+        2
+      ],
+      [
+        "COST_TOO_HIGH",
+        1
+      ],
+      [
+        "WEAK_EVIDENCE",
+        1
+      ],
+      [
+        "DATA_QUALITY",
+        1
+      ]
+    ],
+    "top_risk_blocks": [
+      [
+        "NO_NEW_ENTRY_BEFORE_COMPETITION_END",
+        4
+      ],
+      [
+        "COMPETITION_LIQUIDATION",
+        4
+      ],
+      [
+        "COMPETITION_ENDED",
+        2
+      ]
+    ],
+    "model_id": "gemini-3.8-flash",
+    "model_provider": "ninerouter",
+    "responding_models": [
+      "ninerouter:gemini-3.8-flash-n"
+    ],
+    "strategy_versions": [
+      "c1-0.1.0"
+    ]
+  },
+  "paired_ai_decisions": [
+    {
+      "cycle_id": "BTCTMN@2026-10-05T01:30:00+00:00",
+      "candidates": 1,
+      "baseline_status": "SUBMITTED",
+      "baseline_action": "ENTER",
+      "ai_status": "WAITED",
+      "ai_action": "WAIT",
+      "ai_validation": "VALID",
+      "rationale": "حجم معاملات پایین‌تر از میانگین است و هزینه کارمزد بخش عمده‌ای از سود مورد انتظار را مصرف می‌کند. همچنین نبود داده‌های دفتر سفارشات ریسک معامله را افزایش داده و ترجیح بر انتظار است."
+    },
+    {
+      "cycle_id": "BTCTMN@2026-10-05T07:00:00+00:00",
+      "candidates": 1,
+      "baseline_status": "SUBMITTED",
+      "baseline_action": "ENTER",
+      "ai_status": "SUBMITTED",
+      "ai_action": "ENTER",
+      "ai_validation": "VALID",
+      "rationale": "شکست سقف قیمتی قبلی با افزایش چشمگیر حجم معاملات (۸.۴ برابر میانه) و تثبیت بالاتر از میانگین متحرک تایید شده است. بازدهی پیش‌بینی‌شده هزینه تخمینی معامله را پوشش می‌دهد."
+    },
+    {
+      "cycle_id": "ETHTMN@2026-10-05T07:00:00+00:00",
+      "candidates": 1,
+      "baseline_status": "SUBMITTED",
+      "baseline_action": "ENTER",
+      "ai_status": "SUBMITTED",
+      "ai_action": "ENTER",
+      "ai_validation": "VALID",
+      "rationale": "شکست سقف قیمتی با حجم معاملاتی بیش از سه برابر میانگین و در جهت روند صعودی تایید شده است. نسبت سود به هزینه نیز توجیه‌پذیر است."
+    }
+  ],
+  "disagreements": 1,
+  "waits": 1,
+  "replay_exact": true,
+  "replay_missing": 0,
+  "real_wallex_writes": 0,
+  "caveat": "Small already-seen validation window; no strategy tuning, no out-of-sample/profitability conclusion.",
+  "replay_checks": {
+    "decisions": true,
+    "trades": true,
+    "execution_events": true
+  },
+  "replayed_decisions": 64,
+  "replay_identity_note": "run/order/decision identity fields differ by run; semantic decisions, trade economics and event payloads compared"
+}

@@ -1,0 +1,101 @@
+{
+ "archive_directory": "var/news-intelligence/public-smoke",
+ "as_of_utc": "2026-10-22T20:03:34.636264+00:00",
+ "checked_at_utc": "2026-10-22T20:03:34.670408+00:00",
+ "coindesk_requests": 0,
+ "context_chars": 5508,
+ "context_flags": [
+  "PARTIAL_PROVIDER:bitcoin_core",
+  "PARTIAL_PROVIDER:cryptocurrency_cv",
+  "PROVIDER_FAILURE:gdelt",
+  "STALE_STORIES_EXCLUDED",
+  "UNTRUSTED_CONTENT"
+ ],
+ "context_sha256": "c23ee14eeb2b1ff73548926b10a3aa06412ab8e77376998480cbca36011a12f7",
+ "history": "Current local observation only; no prior point-in-time history certified.",
+ "mode": "PUBLIC_REGISTERED_GET_ONLY",
+ "model_calls": 0,
+ "source_count": 3,
+ "sources": [
+  {
+   "error_code": null,
+   "fetched_at_utc": "2026-10-22T20:03:00.903803+00:00",
+   "flags": [
+    "PROVIDER_LIMITED",
+    "PROVIDER_PAGINATION"
+   ],
+   "items": 3,
+   "missing_publication_rows": 0,
+   "payload_sha256": "5a03b5b183722af1707e98f2b3dbbcd0d043583631393626b6faf5ac82898754",
+   "provider": "cryptocurrency_cv",
+   "provider_has_more": true,
+   "provider_limited": true,
+   "provider_total_rows": 2932,
+   "rejected_rows": 0,
+   "snapshot_sha256": "2cfc07081725f289b1f0cf252d7d022ba87d1fa09b142b6f41fda82843541f3e",
+   "source_rows": 3,
+   "status": "OK",
+   "url": "https://cryptocurrency.cv/api/news?limit=50"
+  },
+  {
+   "error_code": null,
+   "fetched_at_utc": "2026-10-22T20:03:03.304058+00:00",
+   "flags": [],
+   "items": 15,
+   "missing_publication_rows": 0,
+   "payload_sha256": "69b638039ee490f01aea90ac4623d67f9041273322daa48a262c50fed94ca2b1",
+   "provider": "federal_reserve",
+   "provider_has_more": null,
+   "provider_limited": null,
+   "provider_total_rows": null,
+   "rejected_rows": 0,
+   "snapshot_sha256": "2c69ebe3ecc3ae5b3f571f5180ad1df6f077ac9942a1126ec0e421505f5d68c7",
+   "source_rows": 15,
+   "status": "OK",
+   "url": "https://www.federalreserve.gov/feeds/press_monetary.xml"
+  },
+  {
+   "error_code": null,
+   "fetched_at_utc": "2026-10-22T20:03:08.482760+00:00",
+   "flags": [
+    "SOURCE_ITEM_LIMIT"
+   ],
+   "items": 50,
+   "missing_publication_rows": 0,
+   "payload_sha256": "3c7b130110a1711a837f76496f205a3d173301d652c68d77b7f826ecde2cd9bb",
+   "provider": "bitcoin_core",
+   "provider_has_more": null,
+   "provider_limited": null,
+   "provider_total_rows": null,
+   "rejected_rows": 0,
+   "snapshot_sha256": "61c848ddd07b655048a8dc5e756b3f3550755d9ecf0cafcde1b399dcb903c0c9",
+   "source_rows": 112,
+   "status": "OK",
+   "url": "https://bitcoincore.org/en/rss.xml"
+  },
+  {
+   "error_code": "HTTP_429",
+   "fetched_at_utc": "2026-10-22T20:03:34.636264+00:00",
+   "flags": [
+    "HTTP_429"
+   ],
+   "items": 0,
+   "missing_publication_rows": 0,
+   "payload_sha256": null,
+   "provider": "gdelt",
+   "provider_has_more": null,
+   "provider_limited": null,
+   "provider_total_rows": null,
+   "rejected_rows": 0,
+   "snapshot_sha256": "76768059a02483e70134dbb54408727138a4c93ce75120194b7460006755847e",
+   "source_rows": 0,
+   "status": "ERROR",
+   "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=inflation&mode=artlist&format=json&maxrecords=50&timespan=24h&sort=DateDesc"
+  }
+ ],
+ "status": "PARTIAL",
+ "stories": 3,
+ "usable_providers": 3,
+ "wallex_requests": 0,
+ "write_requests": 0
+}

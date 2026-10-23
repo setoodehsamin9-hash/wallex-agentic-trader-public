@@ -1,0 +1,15 @@
+{
+ "as_of_utc": "2026-10-22T18:00:00+00:00",
+ "capture_sha256": "f17cc31b1ddf27bf82ee21aa54de466c99eeefa49cf2d9669c172e5258d39685",
+ "checks": [
+  "default disabled",
+  "publication and fetched-time gates",
+  "future revision non-interference",
+  "immutable export/hash equality",
+  "bounded context"
+ ],
+ "context_sha256": "8ada906e8bc920881f601d900cefba3a95691a7bbe5219f633b67dd9e40a880c",
+ "mode": "SYNTHETIC_OFFLINE_REPLAY",
+ "network_calls": 0,
+ "status": "PASS"
+}
